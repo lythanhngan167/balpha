@@ -1,0 +1,215 @@
+@media (min-width: 576px) {
+    #billingForm, #shippingForm, #customerForm {
+        max-width: 600px;
+        margin: 30px auto;
+        min-width: 500px;
+        max-height: calc(100vh - 40px);
+        left: calc((100vw - 600px) / 2);
+        .modal-header{
+            h3{
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        .row_modal{
+            padding: 0 30px;
+            .row{
+                margin-left: -15px;
+                input, select{
+                    width: 100%;
+                }
+                label{
+                    margin-top: 15px;
+                }
+                .input_field{
+                    input, select{
+                        margin-bottom: 3px;
+                    }
+                    label.error{
+                        color: red;
+                        margin: 0;
+                        padding: 3px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.timeline {
+    position: relative;
+    padding: 21px 0px 10px;
+    margin-top: 4px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.timeline .line {
+    position: absolute;
+    width: 4px;
+    display: block;
+    background: #e3e9ed;
+    top: 0px;
+    bottom: 0px;
+
+}
+
+.timeline .separator {
+    padding: 25px 5px;
+    padding-left: 15px;
+    font-weight: bold;
+
+}
+.next-input{
+    display: block;
+    width: 95%;
+    height: 38px;
+    line-height: 18px;
+    font-size: 14px;
+    padding: 0;
+    border-width: 0;
+    padding-left: 10px;
+    &:focus{
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: 0;
+        border: transparent;
+    }
+
+}
+.timeline .line::before { top: -4px; }
+.timeline .line::after { bottom: -4px; }
+.timeline .line::before,
+.timeline .line::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: #7790b6;
+}
+
+.timeline .panel {
+    position: relative;
+    margin: 0 0px 0 15px;
+    clear: both;
+}
+
+.timeline .panel::before {
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: -24px;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: inherit;
+    border-width: 12px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.timeline .panel .panel-heading{
+    line-height: 150%;
+    font-size: 14px;
+    position: relative;
+    padding-right: 100px;
+    &.add_message{
+        padding-right: 150px;
+    }
+}
+
+.timeline .panel .panel-heading{
+    span{
+        position: absolute;
+        right: 0;
+    }
+}
+.timeline .panel .icon * { font-size: 20px; vertical-align: middle; line-height: 40px; }
+.timeline .panel .icon {
+    position: absolute;
+    left: -21px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    background: #7790b6;
+    text-align: center;
+    float: left;
+    border-radius: 50%;
+}
+.timeline .panel  .user_icon{
+    position: absolute;
+    left: -21px;
+    top: 2px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    text-align: center;
+    float: left;
+
+}
+.panel-body{
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
+
+    &.have_background{
+        padding: 10px;
+        background: #F0F0F0;
+        word-break: break-word;
+    }
+}
+.order-history{
+    font-weight: bold;
+    margin: 50px 0 25px 0;
+}
+.add_message{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: #2979ff;
+    height: 40px;
+    width: 100px;
+    span{
+        position: relative !important;
+        top: 3px;
+    }
+}
+.timeline .panel .big_icon {
+    position: absolute;
+    left: -33px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+
+    float: left;
+
+}
+.input_box{
+    margin-left: 30px;
+    border: 1px solid  #7790b6;
+    input{
+
+    }
+}
+.timeline .panel-outline {
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+}
+
+.timeline .panel-outline .panel-body {
+    padding: 10px 0px;
+}
+
+.timeline .panel-outline .panel-heading:not(.icon),
+.timeline .panel-outline .panel-footer {
+    display: none;
+}

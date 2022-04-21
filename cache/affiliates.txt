@@ -1,0 +1,26 @@
+
+July 23, 2021, 11:17 pm
+Array
+(
+    [name] => User registration
+    [component] => com_users
+    [extended_name] => nganly
+    [type] => 1
+    [value] => 10
+    [reference_id] => 4888
+    [approved] => 1
+    [atid] => 0
+)
+
+August 2, 2021, 3:10 am
+Array
+(
+    [name] => User registration
+    [component] => com_users
+    [extended_name] => tonghop
+    [type] => 1
+    [value] => 10
+    [reference_id] => 4889
+    [approved] => 1
+    [atid] => 0
+)

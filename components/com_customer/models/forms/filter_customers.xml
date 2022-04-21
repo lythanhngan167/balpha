@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_CUSTOMER_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="category_id" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_CATEGORY_ID" type="category" extension="com_customer" show_root="1" onchange="this.form.submit();"/>
+<!-- <field name="status_id" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_STATUS_ID" type="list" onchange="this.form.submit();" default="COM_CUSTOMER_CUSTOMERS_STATUS_ID_FILTER">
+  <option value="">COM_CUSTOMER_CUSTOMERS_STATUS_ID_FILTER</option>
+  <option value="1">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_1</option>
+  <option value="2">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_2</option>
+  <option value="3">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_3</option>
+  <option value="4">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_4</option>
+  <option value="5">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_5</option>
+  <option value="6">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_6</option>
+  <option value="7">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_7</option>
+  <option value="8">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_8</option>
+</field> -->
+
+
+    </fields>
+</form>

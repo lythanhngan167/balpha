@@ -1,0 +1,193 @@
+/* function90 Profiler Frontend UI*/
+#f90pro {
+}
+.f90pro-wrapper {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    padding: 20px;
+}
+.f90pro-header .f90pro-right {
+    border-bottom: 1px solid #D6D6D6;
+    box-shadow: 0 1px 0 #FAFAFA;
+    padding-bottom: 20px;
+}
+.f90pro-left {
+}
+.f90pro-right {
+}
+.f90pro-avtar {
+}
+.f90pro-user {
+    margin: 40px 0 0 10px;
+}
+h1.f90pro-display-name {
+   text-shadow: 0 1px #BBBBBB;
+   text-transform: capitalize;
+}
+.f90pro-usermeta {
+    color: #777777;
+    margin-top: 12px;
+}
+.f90pro-usermeta.clearfix > ul {
+    list-style: none outside none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.f90pro-usermeta.clearfix > ul li {
+    float: left;
+    margin-right: 20px;
+}
+.f90pro-online-status {
+}
+.f90-online{
+	color:#5CB85C;
+}
+.f90-away{
+	color: #ED9C28;
+}
+.f90pro-user-since {
+}
+.f90pro-location {
+	color:#428BCA;
+}
+.f90pro-detail {
+}
+#f90pro-fieldgroup-tab {
+}
+#f90pro-fgtab-profile {
+}
+.f90pro-stack-nav {
+}
+ul.f90pro-stack-nav {
+    margin-bottom: 40px;
+    margin-top: 24px;
+    list-style: none outside none;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-shadow: 0 1px #EEEEEE;
+}
+ul.f90pro-stack-nav:first-child {
+    border-top: 1px solid #DDDDDD;
+    max-width: 200px;
+}
+ul.f90pro-stack-nav li {
+    border-bottom: 1px solid #DDDDDD;
+    max-width: 200px;
+    padding-left: 5px;
+}
+ul.f90pro-stack-nav li a {
+    color: #666666;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+ul.f90pro-stack-nav li a:hover {
+    color: #444444;
+    font-weight: 700;
+}
+ul.f90pro-stack-nav li.active {
+}
+ul.f90pro-stack-nav li.active a {
+    border-right: 5px solid #5FADDC;
+    color: #5FADDC;
+    font-weight: 700;
+}
+.f90pro-detail .f90pro-right {
+    color: #666666;
+    font-size: 16px;
+}
+.f90pro-sn-tabname {
+}
+.f90pro-fgtab-content {
+}
+.f90pro-action{
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+.f90pro-action span {
+	margin-right: 10px;
+}
+.btn-f90pro {
+	border-radius: 0px;
+	font-size: 14px;
+}
+.f90pro-cancel i{
+	color:#D9534F;
+}
+.f90pro-field-display {
+	margin-bottom: 20px;
+}
+.f90pro-field-name h4 {
+    border-bottom: 1px solid #D6D6D6;
+    color: #777777;
+    margin-top: 0px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-top: 0;
+    text-align: right;
+}
+.f90pro-field-name h4.control-label label {
+    font-weight: 500;
+}
+.f90pro-field-content {
+    line-height: 1.3em;
+    padding: 0 10px;
+    word-spacing: 1px;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.f90pro-field-name h4{
+		font-size: 16px;
+		padding-bottom: 4px;
+		padding-right: 6px
+	}
+	ul.f90pro-stack-nav{
+		margin-top: 24px;
+	}
+	.f90pro-action{
+//	margin-top: -28px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+	.f90pro-field-name h4{
+		text-align: left;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.f90pro-field-display{
+		margin-top: 30px;
+	}
+	.f90pro-field-name h4{
+		text-align: left;
+	}
+	.f90pro-field-content {
+		line-height: 1.4em;
+		padding: 12px 10px;
+	}
+	.f90pro-action{
+//	margin-top: -20px;
+	}
+	
+}
+/* Portrait phones and down */
+@media (max-width: 320px) {
+	.f90pro-avtar{
+		text-align: center;
+	}
+	.f90pro-user{
+		margin: 24px 0 5px
+	}
+	h1.f90pro-display-name{
+		font-size: 30px;
+	}
+	ul.f90pro-stack-nav:first-child {
+		max-width: 100%;
+		margin-top: 30px;
+	}
+	ul.f90pro-stack-nav li{
+		max-width: 100%;
+	}
+}

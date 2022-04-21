@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="dom_type"  
+				type="list"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DOM_TYPE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DOM_TYPE_DESC" 
+				default="textbox">
+				<option value="textbox">COM_JOOMPROFILE_FIELD_PARAMS_DOM_TYPE_TEXTBOX</option>
+				<option value="selectbox">COM_JOOMPROFILE_FIELD_PARAMS_DOM_TYPE_SELECTBOX</option>
+			</field>
+				
+			<field  
+				name="default_value"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_DESC" 
+				default=""/>
+				
+			<field  
+				name="placeholder"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_PLACEHOLDER_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_PLACEHOLDER_DESC" 
+				default=""/>
+			
+			<field  
+				name="min_value"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_MIN_VALUE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_MIN_VALUE_DESC" 
+				default=""/>
+			
+			<field  
+				name="max_value"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_MAX_VALUE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_MAX_VALUE_DESC" 
+				default=""/>
+			
+			<field  
+				name="min_length"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_MIN_LENGTH_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_MIN_LENGTH_DESC" 
+				default=""/>
+								
+			<field  
+				name="max_length"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_MAX_LENGTH_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_MAX_LENGTH_DESC" 
+				default=""/>
+		</fieldset>	
+	</fields>
+</config>

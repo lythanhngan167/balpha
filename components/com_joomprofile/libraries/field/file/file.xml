@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="allowed_ext"  
+				type="list"
+				class="chosen"
+				multiple="true"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ALLOWED_EXT_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ALLOWED_EXT_DESC" 
+				default="">
+				<option value="ppt">ppt</option>
+				<option value="gz">gz</option>
+				<option value="pdf">pdf</option>
+				<option value="tar">tar</option>
+				<option value="tgz">tgz</option>
+				<option value="zip">zip</option>
+				<option value="bmp">bmp</option>
+				<option value="gif">gif</option>
+				<option value="jpeg">jpeg</option>
+				<option value="jpg">jpg</option>
+				<option value="jpe">jpe</option>
+				<option value="png">png</option>
+				<option value="tiff">tiff</option>
+				<option value="tif">tif</option>
+				<option value="txt">txt</option>
+				<option value="mpeg">mpeg</option>
+				<option value="mpg">mpg</option>
+				<option value="mpe">mpe</option>
+				<option value="qt">qt</option>
+				<option value="mov">mov</option>
+				<option value="avi">avi</option>
+				<option value="flv">flv</option>
+				<option value="doc">doc</option>
+				<option value="mp4">mp4</option>
+			</field>
+				
+			
+		</fieldset>	
+	</fields>
+</config>

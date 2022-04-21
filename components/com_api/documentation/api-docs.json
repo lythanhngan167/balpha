@@ -1,0 +1,126 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Minh Cau API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/sync/price": {
+            "get": {
+                "tags": [
+                    "Đồng bộ sản phẩm"
+                ],
+                "summary": "Cập nhật giá sản ",
+                "description": "Cập nhật giá sản phẩm",
+                "operationId": "post",
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "query",
+                        "description": "Token",
+                        "required": true,
+                        "style": "form",
+                        "schema": {
+                            "type": "string",
+                            "default": ""
+                        }
+                    },
+                    {
+                        "name": "product_sku",
+                        "in": "query",
+                        "description": "Mã sản phẩm",
+                        "required": true,
+                        "style": "form",
+                        "schema": {
+                            "type": "string",
+                            "default": "8935008890556"
+                        }
+                    },
+                    {
+                        "name": "product_price",
+                        "in": "query",
+                        "description": "Giá bán ",
+                        "required": true,
+                        "style": "form",
+                        "schema": {
+                            "type": "integer",
+                            "default": "1000000"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{  'err_msg': '',  'err_code': '',  'response_id': '',  'api': '',  'version': '',  'data': 'Nội dung thông báo' }"
+                    },
+                    "401": {
+                        "description": "{  'err_msg': 'Nôi dung lỗi',  'err_code': 403,  'response_id': '',  'api': '',  'version': '',  'data': {} }"
+                    }
+                }
+            }
+        },
+        "/api/sync/stock": {
+            "get": {
+                "tags": [
+                    "Đồng bộ sản phẩm"
+                ],
+                "summary": "Cập nhật số lượng sản phẩm tồn kho ",
+                "description": "Cập nhật số lượng sản phẩm tồn kho",
+                "operationId": "post",
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "query",
+                        "description": "Token",
+                        "required": true,
+                        "style": "form",
+                        "schema": {
+                            "type": "string",
+                            "default": ""
+                        }
+                    },
+                    {
+                        "name": "product_sku",
+                        "in": "query",
+                        "description": "Mã sản phẩm",
+                        "required": true,
+                        "style": "form",
+                        "schema": {
+                            "type": "string",
+                            "default": "8935008890556"
+                        }
+                    },
+                    {
+                        "name": "product_quantity",
+                        "in": "query",
+                        "description": "Số lượng tồn kho ",
+                        "required": true,
+                        "style": "form",
+                        "schema": {
+                            "type": "integer",
+                            "default": "100"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{  'err_msg': '',  'err_code': '',  'response_id': '',  'api': '',  'version': '',  'data': 'Nội dung thông báo' }"
+                    },
+                    "401": {
+                        "description": "{  'err_msg': 'Nôi dung lỗi',  'err_code': 403,  'response_id': '',  'api': '',  'version': '',  'data': {} }"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "name": "Authorization",
+                "in": "header",
+                "scheme": "bearer"
+            }
+        }
+    }
+}

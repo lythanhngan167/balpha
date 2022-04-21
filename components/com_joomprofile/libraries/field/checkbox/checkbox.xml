@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="options"  
+				type="joomprofile.fieldoptions"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_OPTIONS_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_OPTIONS_DESC" 
+				default=""/>
+		</fieldset>	
+	</fields>
+</config>

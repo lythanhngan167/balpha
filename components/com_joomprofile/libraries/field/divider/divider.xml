@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field
+				name="show_label"
+				class="btn-group"
+				type="hidden"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_SHOW_LABEL_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_SHOW_LABEL_DESC"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>	
+	</fields>
+</config>

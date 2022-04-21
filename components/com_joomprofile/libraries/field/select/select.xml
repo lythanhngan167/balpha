@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="multiselect"  
+				type="checkbox"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_SELECT_MULTISELECT_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_SELECT_MULTISELECT_DESC" >
+				<option value="1"></option>
+			</field>
+
+			<field  
+				name="select_option_text"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_SELECT_OPTION_TEXT_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_SELECT_OPTION_TEXT_DESC" />
+			
+			<field  
+				name="options"  
+				type="joomprofile.fieldoptions"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_OPTIONS_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_OPTIONS_DESC" 
+				default=""/>
+		</fieldset>	
+	</fields>
+</config>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_CREATED_BY" description="COM_AGENT_IMAGES_FORM_DESC_AGENTIMAGE_CREATED_BY" hidden="true" hint="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_MODIFIED_BY" description="COM_AGENT_IMAGES_FORM_DESC_AGENTIMAGE_MODIFIED_BY" hidden="true" hint="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_MODIFIED_BY"/>
+    <field name="image1" type="FileMultiple" label="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE1" description="COM_AGENT_IMAGES_FORM_DESC_AGENTIMAGE_IMAGE1" hint="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE1"/>
+    <field name="image2" type="FileMultiple" label="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE2" description="COM_AGENT_IMAGES_FORM_DESC_AGENTIMAGE_IMAGE2" hint="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE2"/>
+    <field name="image3" type="FileMultiple" label="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE3" description="COM_AGENT_IMAGES_FORM_DESC_AGENTIMAGE_IMAGE3" hint="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE3"/>
+    <field name="image4" type="FileMultiple" label="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE4" description="COM_AGENT_IMAGES_FORM_DESC_AGENTIMAGE_IMAGE4" hint="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE4"/>
+    <field name="image5" type="FileMultiple" label="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE5" description="COM_AGENT_IMAGES_FORM_DESC_AGENTIMAGE_IMAGE5" hint="COM_AGENT_IMAGES_FORM_LBL_AGENTIMAGE_IMAGE5"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_agent_images" section="agentimage"/>
+  </fieldset>
+</form>

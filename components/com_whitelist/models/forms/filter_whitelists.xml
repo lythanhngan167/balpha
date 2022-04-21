@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_WHITELIST_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="project_id" label="COM_WHITELIST_FORM_LBL_WHITELIST_PROJECT_ID" type="sql" query="SELECT '' AS `id`, 'COM_WHITELIST_WHITELISTS_PROJECT_ID_FILTER' AS `title` UNION SELECT * FROM `#__projects` WHERE state = 1 ORDER BY title ASC" translate="true" key_field="id" value_field="title" onchange="this.form.submit();"/>
+
+
+    </fields>
+</form>

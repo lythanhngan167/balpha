@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="config">
+		<fieldset name="joomprofile-config">			
+			<field  
+				name="tmpl_load_jquery"  
+				type="radio"
+				class="btn-group"
+				label="COM_JOOMPROFILE_CONFIG_TMPL_LOAD_JQUERY_LABEL"
+				description ="COM_JOOMPROFILE_CONFIG_TMPL_LOAD_JQUERY_DESC" 
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field  
+				name="tmpl_load_bootstrap"  
+				type="radio"
+				class="btn-group"
+				label="COM_JOOMPROFILE_CONFIG_TMPL_LOAD_BOOTSTRAP_LABEL"
+				description ="COM_JOOMPROFILE_CONFIG_TMPL_LOAD_BOOTSTRAP_DESC" 
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>	
+	</fields>
+</form>

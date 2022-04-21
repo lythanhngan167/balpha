@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="reference_id" filter="safehtml" type="text" label="ID" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_REFERENCE" hint=""/>
+    <field name="reference_type" filter="safehtml" type="text" label="Loại" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_REFERENCE" hint=""/>
+    <field name="name" filter="safehtml" type="text" required="true" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_NAME" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_NAME" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_NAME"/>
+    <field name="phone" filter="safehtml" type="text" required="true" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_PHONE" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_PHONE" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_PHONE"/>
+    <field name="email" filter="safehtml" type="text" required="false" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_EMAIL" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_EMAIL" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_EMAIL"/>
+    <field name="place" filter="safehtml" type="text" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_PLACE" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_PLACE" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_PLACE"/>
+    <field name="sale_id" default="0" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_SALE_ID" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_SALE_ID" hidden="true" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_SALE_ID"/>
+    <field name="category_id" extension="com_customer" type="category" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_CATEGORY_ID" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_CATEGORY_ID" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_CATEGORY_ID"/>
+    <field name="project_id" query="SELECT * FROM #__projects WHERE state = 1" key_field="id" value_field="title" type="sql" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_PROJECT_ID" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_PROJECT_ID" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_PROJECT_ID"/>
+    <field name="status_id" default="1" type="list" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_STATUS_ID" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_STATUS_ID" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_STATUS_ID">
+      <option value="1">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_1</option>
+      <option value="2">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_2</option>
+      <option value="3">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_3</option>
+      <!-- <option value="4">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_4</option> -->
+      <!-- <option value="5">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_5</option> -->
+
+      <option value="7">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_7</option>
+      <option value="6">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_6</option>
+      <!-- <option value="8">COM_CUSTOMER_CUSTOMERS_STATUS_ID_OPTION_8</option> -->
+    </field>
+    <field name="province" type="list" required="false" label="COM_CUSTOMER_FORM_PROVINCE" description="COM_CUSTOMER_FORM_PROVINCE" hint="">
+      <option value="">COM_CUSTOMER_FORM_PROVINCE_</option>
+      <option value="1">COM_CUSTOMER_FORM_PROVINCE_1</option>
+      <option value="2">COM_CUSTOMER_FORM_PROVINCE_2</option>
+      <option value="3">COM_CUSTOMER_FORM_PROVINCE_3</option>
+      <option value="4">COM_CUSTOMER_FORM_PROVINCE_4</option>
+      <option value="5">COM_CUSTOMER_FORM_PROVINCE_5</option>
+      <option value="6">COM_CUSTOMER_FORM_PROVINCE_6</option>
+      <option value="7">COM_CUSTOMER_FORM_PROVINCE_7</option>
+      <option value="8">COM_CUSTOMER_FORM_PROVINCE_8</option>
+      <option value="9">COM_CUSTOMER_FORM_PROVINCE_9</option>
+      <option value="10">COM_CUSTOMER_FORM_PROVINCE_10</option>
+      <option value="11">COM_CUSTOMER_FORM_PROVINCE_11</option>
+      <option value="12">COM_CUSTOMER_FORM_PROVINCE_12</option>
+      <option value="13">COM_CUSTOMER_FORM_PROVINCE_13</option>
+      <option value="14">COM_CUSTOMER_FORM_PROVINCE_14</option>
+      <option value="15">COM_CUSTOMER_FORM_PROVINCE_15</option>
+      <option value="16">COM_CUSTOMER_FORM_PROVINCE_16</option>
+      <option value="17">COM_CUSTOMER_FORM_PROVINCE_17</option>
+      <option value="18">COM_CUSTOMER_FORM_PROVINCE_18</option>
+      <option value="19">COM_CUSTOMER_FORM_PROVINCE_19</option>
+      <option value="20">COM_CUSTOMER_FORM_PROVINCE_20</option>
+      <option value="21">COM_CUSTOMER_FORM_PROVINCE_21</option>
+      <option value="22">COM_CUSTOMER_FORM_PROVINCE_22</option>
+      <option value="23">COM_CUSTOMER_FORM_PROVINCE_23</option>
+      <option value="24">COM_CUSTOMER_FORM_PROVINCE_24</option>
+      <option value="25">COM_CUSTOMER_FORM_PROVINCE_25</option>
+      <option value="26">COM_CUSTOMER_FORM_PROVINCE_26</option>
+      <option value="27">COM_CUSTOMER_FORM_PROVINCE_27</option>
+      <option value="28">COM_CUSTOMER_FORM_PROVINCE_28</option>
+      <option value="29">COM_CUSTOMER_FORM_PROVINCE_29</option>
+      <option value="30">COM_CUSTOMER_FORM_PROVINCE_30</option>
+      <option value="31">COM_CUSTOMER_FORM_PROVINCE_31</option>
+      <option value="32">COM_CUSTOMER_FORM_PROVINCE_32</option>
+      <option value="33">COM_CUSTOMER_FORM_PROVINCE_33</option>
+      <option value="34">COM_CUSTOMER_FORM_PROVINCE_34</option>
+      <option value="35">COM_CUSTOMER_FORM_PROVINCE_35</option>
+      <option value="36">COM_CUSTOMER_FORM_PROVINCE_36</option>
+      <option value="37">COM_CUSTOMER_FORM_PROVINCE_37</option>
+      <option value="38">COM_CUSTOMER_FORM_PROVINCE_38</option>
+      <option value="39">COM_CUSTOMER_FORM_PROVINCE_39</option>
+      <option value="40">COM_CUSTOMER_FORM_PROVINCE_40</option>
+      <option value="41">COM_CUSTOMER_FORM_PROVINCE_41</option>
+      <option value="42">COM_CUSTOMER_FORM_PROVINCE_42</option>
+      <option value="43">COM_CUSTOMER_FORM_PROVINCE_43</option>
+      <option value="44">COM_CUSTOMER_FORM_PROVINCE_44</option>
+      <option value="45">COM_CUSTOMER_FORM_PROVINCE_45</option>
+      <option value="46">COM_CUSTOMER_FORM_PROVINCE_46</option>
+      <option value="47">COM_CUSTOMER_FORM_PROVINCE_47</option>
+      <option value="48">COM_CUSTOMER_FORM_PROVINCE_48</option>
+      <option value="49">COM_CUSTOMER_FORM_PROVINCE_49</option>
+      <option value="50">COM_CUSTOMER_FORM_PROVINCE_50</option>
+      <option value="51">COM_CUSTOMER_FORM_PROVINCE_51</option>
+      <option value="52">COM_CUSTOMER_FORM_PROVINCE_52</option>
+      <option value="53">COM_CUSTOMER_FORM_PROVINCE_53</option>
+      <option value="54">COM_CUSTOMER_FORM_PROVINCE_54</option>
+      <option value="55">COM_CUSTOMER_FORM_PROVINCE_55</option>
+      <option value="56">COM_CUSTOMER_FORM_PROVINCE_56</option>
+      <option value="57">COM_CUSTOMER_FORM_PROVINCE_57</option>
+      <option value="58">COM_CUSTOMER_FORM_PROVINCE_58</option>
+      <option value="59">COM_CUSTOMER_FORM_PROVINCE_59</option>
+      <option value="60">COM_CUSTOMER_FORM_PROVINCE_60</option>
+      <option value="61">COM_CUSTOMER_FORM_PROVINCE_61</option>
+      <option value="62">COM_CUSTOMER_FORM_PROVINCE_62</option>
+      <option value="63">COM_CUSTOMER_FORM_PROVINCE_63</option>
+    </field>
+    <field name="total_revenue" label="COM_CUSTOMER_CUSTOMERS_TOTAL_REVENUE" description="COM_CUSTOMER_CUSTOMERS_TOTAL_REVENUE" hint="COM_CUSTOMER_CUSTOMERS_TOTAL_REVENUE"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="ordering"/>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="modified_date" type="timecreated" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_MODIFIED_DATE" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_MODIFIED_DATE" hidden="true" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_MODIFIED_DATE"/>
+    <field name="created_by" type="createdby" default="0" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_CREATED_BY" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_CREATED_BY" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_MODIFIED_BY" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_MODIFIED_BY" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_MODIFIED_BY"/>
+    <field name="create_date" type="timecreated" label="COM_CUSTOMER_FORM_LBL_CUSTOMER_CREATE_DATE" description="COM_CUSTOMER_FORM_DESC_CUSTOMER_CREATE_DATE" hidden="true" hint="COM_CUSTOMER_FORM_LBL_CUSTOMER_CREATE_DATE"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_customer" section="customer"/>
+  </fieldset>
+</form>

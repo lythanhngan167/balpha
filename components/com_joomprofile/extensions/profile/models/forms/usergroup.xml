@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="usergroup">
+		<field 
+			name="id"  
+			type="hidden" 
+			default="0"/>
+		<field 
+			name="usergroup_id"  
+			type="hidden" 
+			default="0"/>
+	</fieldset>
+
+	<fields name="params">
+		<fieldset name="params">	
+			<field 
+				name="not_searchable"
+				type="usergroup"
+				multiple="true"
+				class="chosen"
+				label="COM_JOOMPROFILE_USERGROUP_NOT_SEARCHABLE"/>		
+		</fieldset>	
+	</fields>
+</form>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="shipping">
+	<name>eshop_ups</name>
+	<title>UPS</title>
+	<author>Giang Dinh Truong</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright 2013 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>3.1.0</version>
+	<description>This is UPS Shipping method for Eshop</description>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_eshop/elements/">
+			<fieldset name="basic">
+				<field name="shipping_area" type="text" label="Thái Nguyên" description="This is fee for package" size="5" default="50"></field>
+				<field name="shipping_name" type="text" label="Thái Nguyên" description="This is fee for package" size="5" default="Minh cau"></field>
+
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename>eshop_bizappco.php</filename>
+	</files>
+	<installsql />
+	<installfile />
+</install>

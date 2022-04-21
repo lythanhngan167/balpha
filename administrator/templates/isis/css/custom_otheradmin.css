@@ -1,0 +1,24 @@
+/* #menu li.dropdown, #menu li.disabled {
+  display: none;
+} */
+
+.page-title span:before {
+    content: "\2d";
+}
+/* #j-sidebar-container{
+	display: none;
+} */
+/* #j-main-container{
+  width: 100%;
+  float: left;
+} */
+
+/* #system-message-container.j-toggle-main, #j-main-container.j-toggle-main, #system-debug.j-toggle-main {
+    float: left;
+    width: 100%;
+    margin-left: 0px!important;
+} */
+
+#toolbar-delete,#toolbar-trash,#toolbar-archive,#toolbar-checkin,#toolbar-copy{
+  display: none;
+}

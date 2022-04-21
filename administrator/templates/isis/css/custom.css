@@ -1,0 +1,73 @@
+.hidde-group7{
+  display: none;
+}
+.hidde-group10{
+  display: none;
+}
+.hidde-group11{
+  display: none;
+}
+.hidde-group12{
+  display: none;
+}
+.container-logo{
+  display: none;
+}
+.admin-logo{
+  display: none;
+}
+.container-title h1.page-title{
+     padding-top: 0px!important;
+}
+.header {
+    padding: 8px 25px;
+}
+#toolbar{
+  display: block;
+}
+.isJ30 header.header {
+    display: block;
+}
+
+.navbar-inverse .navbar-inner {
+    background: #063331;
+}
+.header {
+    background-color: #00acaa;
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    background-color: #00acaa;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #00acaa;
+    color: #fff;
+}
+.navbar-inverse .navbar-inner {
+  border-color: #063331;
+}
+.view-login, .com_login {
+    background-color: #00acaa!important;
+}
+.dropdown-menu > li > a:hover{
+    background-color: #00acaa!important;
+}
+.sidebar-nav .nav-list > li > a:focus, .sidebar-nav .nav-list > li > a:hover{
+  background-color: #00acaa!important;
+}
+
+#menu-item-368,
+#menu-item-390,
+#menu-item-391 ,
+#menu-item-392 ,
+#menu-item-393 ,
+#menu-item-376 ,
+#menu-item-415 ,
+#menu-item-417 ,
+#menu-item-418
+{
+  display: none;
+}

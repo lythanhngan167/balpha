@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_MAXPICK_LEVEL_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="level" label="COM_MAXPICK_LEVEL_FORM_LBL_MAXPICKLEVEL_LEVEL" type="category" extension="com_maxpick_level" show_root="1" onchange="this.form.submit();"/>
+
+
+    </fields>
+</form>

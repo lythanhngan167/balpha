@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_REGISTRATION_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="status" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_STATUS" type="list" onchange="this.form.submit();" default="COM_REGISTRATION_REGISTRATIONS_STATUS_FILTER">
+  <option value="">COM_REGISTRATION_REGISTRATIONS_STATUS_FILTER</option>
+  <option value="new">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_NEW</option>
+  <option value="confirmed">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CONFIRMED</option>
+  <option value="converted">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CONVERTED</option>
+  <option value="cancel">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CANCEL</option>
+</field>
+
+
+    </fields>
+</form>

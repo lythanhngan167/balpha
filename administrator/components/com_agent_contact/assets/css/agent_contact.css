@@ -1,0 +1,18 @@
+.icon-48-agentcontacts {
+      background-image: url(../images/l_agentcontacts.png);
+      padding-left:60px!important;
+}
+
+.icon-48-agentcontact {
+      background-image: url(../images/l_agentcontacts.png);
+      padding-left:60px!important;
+}
+
+.color-box-agentcontacts { 
+      float: left;      width: 15px;      height: 15px;      margin-right: 5px;      border: 1px solid rgba(0, 0, 0, .2);}
+
+
+
+.other-filters{
+    padding: 0 14px;
+}

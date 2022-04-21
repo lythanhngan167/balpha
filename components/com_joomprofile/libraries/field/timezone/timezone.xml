@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="default_value"  
+				type="timezone"
+				default="UTC"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_DESC" >
+			<option value="UTC">JLIB_FORM_VALUE_TIMEZONE_UTC</option>
+		</field>
+			
+			
+		</fieldset>	
+	</fields>
+</config>

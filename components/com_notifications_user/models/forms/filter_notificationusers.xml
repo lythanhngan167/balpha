@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_NOTIFICATIONS_USER_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <!-- <field name="created_date.from" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_FROM" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_FROM"/>
+<field name="created_date.to" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_TO" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_TO"/>
+<field name="updated_date.from" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_FROM" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_FROM"/>
+<field name="updated_date.to" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_TO" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_TO"/>
+<field name="category" label="COM_NOTIFICATIONS_USER_FORM_LBL_NOTIFICATIONUSER_CATEGORY" type="category" extension="com_notifications_user.notificationusers" onchange="this.form.submit();" default="">
+  <option value=""/>
+  <option value="">JOPTION_SELECT_CATEGORY</option>
+</field>
+<field name="status" label="COM_NOTIFICATIONS_USER_FORM_LBL_NOTIFICATIONUSER_STATUS" type="list" onchange="this.form.submit();" default="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_FILTER">
+  <option value="">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_FILTER</option>
+  <option value="1">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_OPTION_1</option>
+  <option value="2">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_OPTION_2</option>
+  <option value="99">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_OPTION_99</option>
+</field> -->
+
+
+    </fields>
+</form>

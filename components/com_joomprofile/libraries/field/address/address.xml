@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="default_distance"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_DEFAULT_DISTANCE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_DEFAULT_DISTANCE_DESC" 
+				default="100"/>
+
+			<field
+				name="default_unit"
+				type="list"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_DEFAULT_DISTANCE_UNIT_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_DEFAULT_DISTANCE_UNIT_DESC"
+				default="km">
+					<option value="km"></option>
+					<option value="mile"></option>
+			</field>
+				
+			<field  
+				name="google_key"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_GOOGLE_KEY_LABEL"
+				description="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_GOOGLE_KEY_DESC"
+				default=""/>
+
+			<field  
+				name="show_line" 
+				class="btn-group" 
+				type="radio"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_LINE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_LINE_DESC"
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field  
+				name="show_city"  
+				class="btn-group"
+				type="radio"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_CITY_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_CITY_DESC"
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field  
+				name="show_zipcode"  
+				class="btn-group"
+				type="radio"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_ZIPCODE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_ZIPCODE_DESC"
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field  
+				name="show_state" 
+				class="btn-group" 
+				type="radio"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_STATE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_STATE_DESC"
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field  
+				name="show_country"  
+				class="btn-group"
+				type="radio"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_COUNTRY_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ADDRESS_SHOW_COUNTRY_DESC"
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>	
+	</fields>
+</config>

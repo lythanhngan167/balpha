@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" description="COM_USERLOGS_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="state"
+               type="status"
+               label="COM_USERLOGS_FILTER_STATE"
+               description="COM_USERLOGS_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+    </fields>
+
+    <fields name="list">
+
+        <field name="type" label="COM_USERLOGS_FORM_LBL_USERLOG_TYPE" type="category" extension="com_userlogs.userlogs" onchange="this.form.submit();" default="">
+            
+        </field>
+
+        <field name="fullordering"
+               type="list"
+               label="COM_USERLOGS_LIST_FULL_ORDERING"
+               description="COM_USERLOGS_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.`id` ASC">COM_USERLOGS_ID_ASC</option><option value="a.`id` DESC">COM_USERLOGS_ID_DESC</option><option value="a.`ordering` ASC">COM_USERLOGS_ORDERING_ASC</option><option value="a.`ordering` DESC">COM_USERLOGS_ORDERING_DESC</option><option value="a.`agent_id` ASC">COM_USERLOGS_AGENT_ID_ASC</option><option value="a.`agent_id` DESC">COM_USERLOGS_AGENT_ID_DESC</option><option value="a.`user_id` ASC">COM_USERLOGS_USER_ID_ASC</option><option value="a.`user_id` DESC">COM_USERLOGS_USER_ID_DESC</option><option value="a.`old_level` ASC">COM_USERLOGS_OLD_LEVEL_ASC</option><option value="a.`old_level` DESC">COM_USERLOGS_OLD_LEVEL_DESC</option><option value="a.`new_level` ASC">COM_USERLOGS_NEW_LEVEL_ASC</option><option value="a.`new_level` DESC">COM_USERLOGS_NEW_LEVEL_DESC</option><option value="a.`created_date` ASC">COM_USERLOGS_CREATED_DATE_ASC</option><option value="a.`created_date` DESC">COM_USERLOGS_CREATED_DATE_DESC</option><option value="a.`state` ASC">COM_USERLOGS_STATE_ASC</option><option value="a.`state` DESC">COM_USERLOGS_STATE_DESC</option><option value="a.`type` ASC">COM_USERLOGS_TYPE_ASC</option><option value="a.`type` DESC">COM_USERLOGS_TYPE_DESC</option><option value="a.`transfer_id` ASC">COM_USERLOGS_TRANSFER_ID_ASC</option><option value="a.`transfer_id` DESC">COM_USERLOGS_TRANSFER_ID_DESC</option><option value="a.`customer_id` ASC">COM_USERLOGS_CUSTOMER_ID_ASC</option><option value="a.`customer_id` DESC">COM_USERLOGS_CUSTOMER_ID_DESC</option>
+
+        </field>
+
+       <field name="limit"
+               type="limitbox"
+               label="COM_USERLOGS_LIST_LIMIT"
+               description="COM_USERLOGS_LIST_LIMIT_DESC"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

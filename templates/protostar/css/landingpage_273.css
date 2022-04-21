@@ -1,0 +1,6110 @@
+#sp-banner-body{
+	height:auto;
+	display: block;
+	background: none;
+}
+#sp-header{
+	display: none;
+}
+.ladi-shape svg {
+    /* width: 60px; */
+		width: 100%;
+		height: 100%;
+}
+#sp-title{
+	display: none;
+}
+.team-member{
+	display: none;
+}
+#sp-footer{
+	display: none;
+}
+#registration-wrap{
+	display: block!important;
+}
+.landingpage-intro{
+	display: none;
+}
+#form-province{
+	background: transparent;
+}
+#form-province2{
+	background: transparent;
+}
+#sp-main-body{
+	min-height: 0px;
+	display: none;
+}
+#GROUP263 a{
+	text-decoration: none;
+}
+@media screen and (max-width: 768px){
+	#PARAGRAPH332 .ladi-paragraph {
+	    text-align: left !important;
+	}
+}
+.main-content{
+	display: none;
+}
+.landingpage{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+	a,
+	abbr,
+	acronym,
+	address,
+	applet,
+	article,
+	aside,
+	audio,
+	b,
+	big,
+	blockquote,
+	body,
+	button,
+	canvas,
+	caption,
+	center,
+	cite,
+	code,
+	dd,
+	del,
+	details,
+	dfn,
+	div,
+	dl,
+	dt,
+	em,
+	embed,
+	fieldset,
+	figcaption,
+	figure,
+	footer,
+	form,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	header,
+	hgroup,
+	html,
+	i,
+	iframe,
+	img,
+	input,
+	ins,
+	kbd,
+	label,
+	legend,
+	li,
+	mark,
+	menu,
+	nav,
+	object,
+	ol,
+	output,
+	p,
+	pre,
+	q,
+	ruby,
+	s,
+	samp,
+	section,
+	select,
+	small,
+	span,
+	strike,
+	strong,
+	sub,
+	summary,
+	sup,
+	table,
+	tbody,
+	td,
+	textarea,
+	tfoot,
+	th,
+	thead,
+	time,
+	tr,
+	tt,
+	u,
+	ul,
+	var,
+	video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale
+	}
+
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	section {
+		display: block
+	}
+
+	body {
+		line-height: 1
+	}
+
+	a {
+		text-decoration: none
+	}
+
+	ol,
+	ul {
+		list-style: none
+	}
+
+	blockquote,
+	q {
+		quotes: none
+	}
+
+	blockquote:after,
+	blockquote:before,
+	q:after,
+	q:before {
+		content: '';
+		content: none
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0
+	}
+
+	body {
+		font-size: 12px;
+		-ms-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-o-text-size-adjust: none;
+		-webkit-text-size-adjust: none;
+		background: #fff
+	}
+
+	.overflow-hidden {
+		overflow: hidden
+	}
+
+	.ladi-transition {
+		transition: all 150ms linear 0s
+	}
+
+	.ladipage-message {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1000000000;
+		background: rgba(0, 0, 0, .3)
+	}
+
+	.ladipage-message .ladipage-message-box {
+		width: 400px;
+		max-width: calc(100% - 50px);
+		height: 160px;
+		border: 1px solid rgba(0, 0, 0, .3);
+		background-color: #fff;
+		position: fixed;
+		top: calc(50% - 155px);
+		left: 0;
+		right: 0;
+		margin: auto;
+		border-radius: 10px
+	}
+
+	.ladipage-message .ladipage-message-box h1 {
+		background-color: rgba(6, 21, 40, .05);
+		color: #000;
+		padding: 12px 15px;
+		font-weight: 600;
+		font-size: 16px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px
+	}
+
+	.ladipage-message .ladipage-message-box .ladipage-message-text {
+		font-size: 14px;
+		padding: 0 20px;
+		margin-top: 10px;
+		line-height: 18px;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box
+	}
+
+	.ladipage-message .ladipage-message-box .ladipage-message-close {
+		display: block;
+		position: absolute;
+		right: 15px;
+		bottom: 10px;
+		margin: 0 auto;
+		padding: 10px 0;
+		border: none;
+		width: 80px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #000;
+		background-color: #e6e6e6;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 600;
+		cursor: pointer
+	}
+
+	.ladi-wraper {
+		width: 100%;
+		height: 100%;
+		overflow: hidden
+	}
+
+	.ladi-section {
+		margin: 0 auto;
+		position: relative
+	}
+
+	.ladi-section .ladi-section-arrow-down {
+		position: absolute;
+		width: 36px;
+		height: 30px;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		background-position: 4px;
+		cursor: pointer;
+		z-index: 90000040
+	}
+
+	.ladi-section.ladi-section-readmore {
+		transition: height 350ms linear 0s
+	}
+
+	.ladi-section .ladi-section-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		pointer-events: none
+	}
+
+	.ladi-container {
+		position: relative;
+		margin: 0 auto;
+		height: 100%
+	}
+
+	.ladi-element {
+		position: absolute
+	}
+
+	.ladi-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		pointer-events: none
+	}
+
+	.ladi-carousel {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden
+	}
+
+	.ladi-carousel .ladi-carousel-content {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		transition: left 350ms ease-in-out
+	}
+
+	.ladi-carousel .ladi-carousel-arrow {
+		position: absolute;
+		width: 30px;
+		height: 36px;
+		top: calc(50% - 18px);
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		cursor: pointer;
+		z-index: 90000040
+	}
+
+	.ladi-carousel .ladi-carousel-arrow-left {
+		left: 5px;
+		background-position: -28px
+	}
+
+	.ladi-carousel .ladi-carousel-arrow-right {
+		right: 5px;
+		background-position: -52px
+	}
+
+	.ladi-gallery {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-gallery .ladi-gallery-view {
+		position: absolute;
+		overflow: hidden
+	}
+
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		display: none;
+		transition: transform 350ms ease-in-out;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-perspective: 1000px;
+		perspective: 1000px
+	}
+
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.play-video {
+		cursor: pointer
+	}
+
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.play-video:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 60px;
+		height: 60px;
+		background: url(https://w.ladicdn.com/source/ladipage-play.svg) no-repeat center center;
+		background-size: contain;
+		pointer-events: none;
+		cursor: pointer
+	}
+
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.next,
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected.right {
+		left: 0;
+		transform: translate3d(100%, 0, 0)
+	}
+
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.prev,
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected.left {
+		left: 0;
+		transform: translate3d(-100%, 0, 0)
+	}
+
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.next.left,
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.prev.right,
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected {
+		left: 0;
+		transform: translate3d(0, 0, 0)
+	}
+
+	.ladi-gallery .ladi-gallery-view>.next,
+	.ladi-gallery .ladi-gallery-view>.prev,
+	.ladi-gallery .ladi-gallery-view>.selected {
+		display: block
+	}
+
+	.ladi-gallery .ladi-gallery-view>.selected {
+		left: 0
+	}
+
+	.ladi-gallery .ladi-gallery-view>.next,
+	.ladi-gallery .ladi-gallery-view>.prev {
+		position: absolute;
+		top: 0;
+		width: 100%
+	}
+
+	.ladi-gallery .ladi-gallery-view>.next {
+		left: 100%
+	}
+
+	.ladi-gallery .ladi-gallery-view>.prev {
+		left: -100%
+	}
+
+	.ladi-gallery .ladi-gallery-view>.next.left,
+	.ladi-gallery .ladi-gallery-view>.prev.right {
+		left: 0
+	}
+
+	.ladi-gallery .ladi-gallery-view>.selected.left {
+		left: -100%
+	}
+
+	.ladi-gallery .ladi-gallery-view>.selected.right {
+		left: 100%
+	}
+
+	.ladi-gallery .ladi-gallery-control {
+		position: absolute;
+		overflow: hidden
+	}
+
+	.ladi-gallery.ladi-gallery-top .ladi-gallery-view {
+		width: 100%
+	}
+
+	.ladi-gallery.ladi-gallery-top .ladi-gallery-control {
+		top: 0;
+		width: 100%
+	}
+
+	.ladi-gallery.ladi-gallery-bottom .ladi-gallery-view {
+		top: 0;
+		width: 100%
+	}
+
+	.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control {
+		width: 100%;
+		bottom: 0
+	}
+
+	.ladi-gallery.ladi-gallery-left .ladi-gallery-view {
+		height: 100%
+	}
+
+	.ladi-gallery.ladi-gallery-left .ladi-gallery-control {
+		height: 100%
+	}
+
+	.ladi-gallery.ladi-gallery-right .ladi-gallery-view {
+		height: 100%
+	}
+
+	.ladi-gallery.ladi-gallery-right .ladi-gallery-control {
+		height: 100%;
+		right: 0
+	}
+
+	.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow {
+		position: absolute;
+		width: 30px;
+		height: 36px;
+		top: calc(50% - 18px);
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		cursor: pointer;
+		z-index: 90000040
+	}
+
+	.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow-left {
+		left: 5px;
+		background-position: -28px
+	}
+
+	.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow-right {
+		right: 5px;
+		background-position: -52px
+	}
+
+	.ladi-gallery .ladi-gallery-control .ladi-gallery-control-arrow {
+		position: absolute;
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		cursor: pointer;
+		z-index: 90000040
+	}
+
+	.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow,
+	.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow {
+		top: calc(50% - 18px);
+		width: 30px;
+		height: 36px
+	}
+
+	.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow-left {
+		left: 0;
+		background-position: -28px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow-right {
+		right: 0;
+		background-position: -52px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-left {
+		left: 0;
+		background-position: -28px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-right {
+		right: 0;
+		background-position: -52px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow,
+	.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow {
+		left: calc(50% - 18px);
+		width: 36px;
+		height: 30px
+	}
+
+	.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow-left {
+		top: 0;
+		background-position: -77px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow-right {
+		bottom: 0;
+		background-position: 3px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow-left {
+		top: 0;
+		background-position: -77px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow-right {
+		bottom: 0;
+		background-position: 3px;
+		transform: scale(.6)
+	}
+
+	.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box {
+		position: relative
+	}
+
+	.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-box {
+		display: inline-flex;
+		left: 0;
+		transition: left 150ms ease-in-out
+	}
+
+	.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-box {
+		display: inline-flex;
+		left: 0;
+		transition: left 150ms ease-in-out
+	}
+
+	.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-box {
+		display: inline-grid;
+		top: 0;
+		transition: top 150ms ease-in-out
+	}
+
+	.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-box {
+		display: inline-grid;
+		top: 0;
+		transition: top 150ms ease-in-out
+	}
+
+	.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		float: left;
+		position: relative;
+		cursor: pointer;
+		filter: invert(15%)
+	}
+
+	.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.play-video:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 30px;
+		height: 30px;
+		background: url(https://w.ladicdn.com/source/ladipage-play.svg) no-repeat center center;
+		background-size: contain;
+		pointer-events: none;
+		cursor: pointer
+	}
+
+	.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:hover {
+		filter: none
+	}
+
+	.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.selected {
+		filter: none
+	}
+
+	.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:last-child {
+		margin-right: 0 !important;
+		margin-bottom: 0 !important
+	}
+
+	.ladi-box {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden
+	}
+
+	.ladi-frame {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden
+	}
+
+	.ladi-frame .ladi-frame-background {
+		height: 100%;
+		width: 100%;
+		pointer-events: none
+	}
+
+	.ladi-banner {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden
+	}
+
+	.ladi-banner .ladi-banner-background {
+		height: 100%;
+		width: 100%;
+		pointer-events: none
+	}
+
+	#SECTION_POPUP .ladi-container {
+		z-index: 90000070
+	}
+
+	#SECTION_POPUP .ladi-container>.ladi-element {
+		z-index: 90000070;
+		position: fixed;
+		display: none
+	}
+
+	#SECTION_POPUP .ladi-container>.ladi-element.hide-visibility {
+		display: block !important;
+		visibility: hidden !important
+	}
+
+	#SECTION_POPUP .popup-close {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: scale(.8);
+		-webkit-transform: scale(.8);
+		z-index: 9000000080;
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		background-position: -108px;
+		cursor: pointer;
+		display: none
+	}
+
+	.ladi-popup {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-popup .ladi-popup-background {
+		height: 100%;
+		width: 100%;
+		pointer-events: none
+	}
+
+	.ladi-countdown {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-countdown .ladi-countdown-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit;
+		display: table;
+		pointer-events: none
+	}
+
+	.ladi-countdown .ladi-countdown-text {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		text-decoration: inherit;
+		display: table;
+		pointer-events: none
+	}
+
+	.ladi-countdown .ladi-countdown-text span {
+		display: table-cell;
+		vertical-align: middle
+	}
+
+	.ladi-countdown>.ladi-element {
+		text-decoration: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit;
+		position: relative;
+		display: inline-block
+	}
+
+	.ladi-countdown>.ladi-element:last-child {
+		margin-right: 0 !important
+	}
+
+	.ladi-button {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden
+	}
+
+	.ladi-button:active {
+		transform: translateY(2px)
+	}
+
+	.ladi-button .ladi-button-background {
+		height: 100%;
+		width: 100%;
+		pointer-events: none
+	}
+
+	.ladi-button>.ladi-element {
+		width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+		display: table;
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none
+	}
+
+	.ladi-button>.ladi-element .ladi-headline {
+		display: table-cell;
+		vertical-align: middle
+	}
+
+	.ladi-collection {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-collection.carousel {
+		overflow: hidden
+	}
+
+	.ladi-collection .ladi-collection-content {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		transition: left 350ms ease-in-out
+	}
+
+	.ladi-collection .ladi-collection-content .ladi-collection-item {
+		display: block;
+		position: relative;
+		float: left;
+		box-shadow: 0 0 0 1px #fff
+	}
+
+	.ladi-collection .ladi-collection-content .ladi-collection-page {
+		float: left
+	}
+
+	.ladi-collection .ladi-collection-arrow {
+		position: absolute;
+		width: 30px;
+		height: 36px;
+		top: calc(50% - 18px);
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		cursor: pointer;
+		z-index: 90000040
+	}
+
+	.ladi-collection .ladi-collection-arrow-left {
+		left: 5px;
+		background-position: -28px
+	}
+
+	.ladi-collection .ladi-collection-arrow-right {
+		right: 5px;
+		background-position: -52px
+	}
+
+	.ladi-collection .ladi-collection-button-next {
+		position: absolute;
+		width: 36px;
+		height: 30px;
+		bottom: -40px;
+		right: 0;
+		left: 0;
+		margin: auto;
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		background-position: 4px;
+		cursor: pointer;
+		z-index: 90000040
+	}
+
+	.ladi-form {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-form>.ladi-element {
+		text-transform: inherit;
+		text-decoration: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form .ladi-element[id^=BUTTON_TEXT] {
+		color: initial;
+		font-size: initial;
+		font-weight: initial;
+		text-transform: initial;
+		text-decoration: initial;
+		font-style: initial;
+		text-align: initial;
+		letter-spacing: initial;
+		line-height: initial
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container {
+		text-transform: inherit;
+		text-decoration: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item {
+		text-transform: inherit;
+		text-decoration: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item-background {
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-size: 9px 6px !important;
+		background-position: right .5rem center;
+		background-repeat: no-repeat
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3 {
+		width: calc(100% / 3 - 5px);
+		max-width: calc(100% / 3 - 5px);
+		min-width: calc(100% / 3 - 5px)
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(3) {
+		margin-left: 7.5px
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(4) {
+		margin-left: 7.5px
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select option {
+		color: initial
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control:not(.ladi-form-control-select) {
+		text-transform: inherit;
+		text-decoration: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select:not([data-selected=""]) {
+		text-transform: inherit;
+		text-decoration: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select[data-selected=""] {
+		text-transform: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item {
+		text-transform: inherit;
+		text-decoration: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span {
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked=true] {
+		text-transform: inherit;
+		text-decoration: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked=false] {
+		text-transform: inherit;
+		text-align: inherit;
+		letter-spacing: inherit;
+		color: inherit;
+		background-size: inherit;
+		background-attachment: inherit;
+		background-origin: inherit
+	}
+
+	.ladi-form .ladi-form-item-container {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-form .ladi-form-item {
+		width: 100%;
+		height: 100%;
+		position: absolute
+	}
+
+	.ladi-form .ladi-form-item-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		pointer-events: none
+	}
+
+	.ladi-form .ladi-form-item.ladi-form-checkbox {
+		height: auto
+	}
+
+	.ladi-form .ladi-form-item .ladi-form-control {
+		background-color: transparent;
+		min-width: 100%;
+		min-height: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		width: 100%;
+		height: 100%;
+		padding: 0 5px;
+		color: inherit;
+		font-size: inherit;
+		border: none
+	}
+
+	.ladi-form .ladi-form-item.ladi-form-checkbox {
+		padding: 10px 5px
+	}
+
+	.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-vertical .ladi-form-checkbox-item {
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		display: block;
+		border: none
+	}
+
+	.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item {
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		margin-bottom: 0 !important;
+		display: inline-block;
+		border: none
+	}
+
+	.ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item:last-child {
+		margin-bottom: 0 !important
+	}
+
+	.ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span {
+		display: inline-block;
+		margin-left: 5px;
+		cursor: default
+	}
+
+	.ladi-form .ladi-form-item textarea.ladi-form-control {
+		resize: none;
+		padding: 5px
+	}
+
+	.ladi-form .ladi-button {
+		cursor: pointer
+	}
+
+	.ladi-form .ladi-button .ladi-headline {
+		cursor: pointer;
+		user-select: none
+	}
+
+	.ladi-cart {
+		position: absolute;
+		width: 100%;
+		font-size: 12px
+	}
+
+	.ladi-cart .ladi-cart-row {
+		position: relative;
+		display: inline-table;
+		width: 100%
+	}
+
+	.ladi-cart .ladi-cart-row:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 1px;
+		width: 100%;
+		background: #dcdcdc
+	}
+
+	.ladi-cart .ladi-cart-no-product {
+		text-align: center;
+		font-size: 16px;
+		vertical-align: middle
+	}
+
+	.ladi-cart .ladi-cart-image {
+		width: 16%;
+		vertical-align: middle;
+		position: relative;
+		text-align: center
+	}
+
+	.ladi-cart .ladi-cart-image img {
+		max-width: 100%
+	}
+
+	.ladi-cart .ladi-cart-title {
+		vertical-align: middle;
+		padding: 0 5px;
+		word-break: break-all
+	}
+
+	.ladi-cart .ladi-cart-title .ladi-cart-title-name {
+		display: block;
+		margin-bottom: 5px
+	}
+
+	.ladi-cart .ladi-cart-title .ladi-cart-title-variant {
+		font-weight: 700;
+		display: block
+	}
+
+	.ladi-cart .ladi-cart-image .ladi-cart-image-quantity {
+		position: absolute;
+		top: -3px;
+		right: -5px;
+		background: rgba(150, 149, 149, .9);
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		text-align: center;
+		color: #fff;
+		line-height: 20px
+	}
+
+	.ladi-cart .ladi-cart-quantity {
+		width: 70px;
+		vertical-align: middle;
+		text-align: center
+	}
+
+	.ladi-cart .ladi-cart-quantity-content {
+		display: inline-flex
+	}
+
+	.ladi-cart .ladi-cart-quantity input {
+		width: 24px;
+		text-align: center;
+		height: 22px;
+		-moz-appearance: textfield;
+		border-top: 1px solid #dcdcdc;
+		border-bottom: 1px solid #dcdcdc
+	}
+
+	.ladi-cart .ladi-cart-quantity input::-webkit-inner-spin-button,
+	.ladi-cart .ladi-cart-quantity input::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0
+	}
+
+	.ladi-cart .ladi-cart-quantity button {
+		border: 1px solid #dcdcdc;
+		cursor: pointer;
+		text-align: center;
+		width: 21px;
+		height: 22px;
+		position: relative;
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none
+	}
+
+	.ladi-cart .ladi-cart-quantity button:active {
+		transform: translateY(2px)
+	}
+
+	.ladi-cart .ladi-cart-quantity button span {
+		font-size: 18px;
+		position: relative;
+		left: .5px
+	}
+
+	.ladi-cart .ladi-cart-quantity button:first-child span {
+		top: -1.2px
+	}
+
+	.ladi-cart .ladi-cart-price {
+		width: 100px;
+		vertical-align: middle;
+		text-align: right;
+		padding: 0 5px
+	}
+
+	.ladi-cart .ladi-cart-action {
+		width: 28px;
+		vertical-align: middle;
+		text-align: center
+	}
+
+	.ladi-cart .ladi-cart-action button {
+		border: 1px solid #dcdcdc;
+		cursor: pointer;
+		text-align: center;
+		width: 25px;
+		height: 22px;
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none
+	}
+
+	.ladi-cart .ladi-cart-action button:active {
+		transform: translateY(2px)
+	}
+
+	.ladi-cart .ladi-cart-action button span {
+		font-size: 13px;
+		position: relative;
+		top: .5px
+	}
+
+	.ladi-video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		overflow: hidden
+	}
+
+	.ladi-video .ladi-video-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		pointer-events: none
+	}
+
+	.ladi-group {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-checkout {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-shape {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		pointer-events: none
+	}
+
+	.ladi-html-code {
+		position: absolute;
+		width: 100%;
+		height: 100%
+	}
+
+	.ladi-image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		pointer-events: none
+	}
+
+	.ladi-image .ladi-image-background {
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		position: absolute;
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		pointer-events: none
+	}
+
+	.ladi-headline {
+		width: 100%;
+		display: inline-block;
+		background-size: cover;
+		background-position: center center
+	}
+
+	.ladi-headline a {
+		text-decoration: underline
+	}
+
+	.ladi-paragraph {
+		width: 100%;
+		display: inline-block
+	}
+
+	.ladi-paragraph a {
+		text-decoration: underline
+	}
+
+	.ladi-list-paragraph {
+		width: 100%;
+		display: inline-block
+	}
+
+	.ladi-list-paragraph a {
+		text-decoration: underline
+	}
+
+	.ladi-list-paragraph ul li {
+		position: relative;
+		counter-increment: linum
+	}
+
+	.ladi-list-paragraph ul li:before {
+		position: absolute;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		left: 0
+	}
+
+	.ladi-list-paragraph ul li:last-child {
+		padding-bottom: 0 !important
+	}
+
+	.ladi-line {
+		position: relative
+	}
+
+	.ladi-line .ladi-line-container {
+		border-bottom: 0 !important;
+		border-right: 0 !important;
+		width: 100%;
+		height: 100%
+	}
+
+	a[data-action] {
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		cursor: pointer
+	}
+
+	a:visited {
+		color: inherit
+	}
+
+	a:link {
+		color: inherit
+	}
+
+	[data-opacity="0"] {
+		opacity: 0
+	}
+
+	[data-hidden=true] {
+		display: none
+	}
+
+	[data-action=true] {
+		cursor: pointer
+	}
+
+	.ladi-hidden {
+		display: none
+	}
+
+	.backdrop-popup {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 90000060
+	}
+
+	.lightbox-screen {
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: auto;
+		z-index: 9000000080;
+		background: rgba(0, 0, 0, .5)
+	}
+
+	.lightbox-screen .lightbox-close {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		z-index: 9000000090;
+		background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, .2) no-repeat;
+		background-position: -108px;
+		transform: scale(.7);
+		-webkit-transform: scale(.7);
+		cursor: pointer
+	}
+
+	.ladi-animation-hidden {
+		visibility: hidden !important
+	}
+
+	/* .ladi-lazyload {
+		background-image: none !important
+	} */
+
+	.ladi-list-paragraph ul li.ladi-lazyload:before {
+		background-image: none !important
+	}
+
+	@media (min-width:768px) {
+		.ladi-fullwidth {
+			width: 100vw !important;
+			left: calc(-50vw + 50%) !important;
+			box-sizing: border-box !important;
+			transform: none !important
+		}
+	}
+
+	@media (max-width:767px) {
+		.ladi-element.ladi-auto-scroll {
+			overflow-x: scroll;
+			overflow-y: hidden;
+			width: 100% !important;
+			left: 0 !important;
+			-webkit-overflow-scrolling: touch
+		}
+
+		.ladi-section.ladi-auto-scroll {
+			overflow-x: scroll;
+			overflow-y: hidden;
+			-webkit-overflow-scrolling: touch
+		}
+
+		.ladi-carousel .ladi-carousel-content {
+			transition: left .3s ease-in-out
+		}
+
+		.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item {
+			transition: transform .3s ease-in-out
+		}
+
+		.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item input {
+			vertical-align: middle
+		}
+	}
+
+	.ladi-notify-transition {
+		transition: top .5s ease-in-out, bottom .5s ease-in-out, opacity .5s ease-in-out
+	}
+
+	.ladi-notify {
+		padding: 5px;
+		box-shadow: 0 0 1px rgba(64, 64, 64, .3), 0 8px 50px rgba(64, 64, 64, .05);
+		border-radius: 40px;
+		color: rgba(64, 64, 64, 1);
+		background: rgba(250, 250, 250, .9);
+		line-height: 1.6;
+		width: 100%;
+		height: 100%;
+		font-size: 13px
+	}
+
+	.ladi-notify .ladi-notify-image img {
+		float: left;
+		margin-right: 13px;
+		border-radius: 50%;
+		width: 53px;
+		height: 53px;
+		pointer-events: none
+	}
+
+	.ladi-notify .ladi-notify-title {
+		font-size: 100%;
+		height: 17px;
+		overflow: hidden;
+		font-weight: 700;
+		overflow-wrap: break-word;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		line-height: 1
+	}
+
+	.ladi-notify .ladi-notify-content {
+		font-size: 92.308%;
+		height: 17px;
+		overflow: hidden;
+		overflow-wrap: break-word;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		line-height: 1;
+		padding-top: 2px
+	}
+
+	.ladi-notify .ladi-notify-time {
+		line-height: 1.6;
+		font-size: 84.615%;
+		display: inline-block;
+		overflow-wrap: break-word;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: calc(100% - 155px);
+		overflow: hidden
+	}
+
+	.ladi-notify .ladi-notify-copyright {
+		font-size: 76.9231%;
+		margin-left: 2px;
+		position: relative;
+		padding: 0 5px;
+		cursor: pointer;
+		opacity: .6;
+		display: inline-block;
+		top: -4px
+	}
+
+	.ladi-notify .ladi-notify-copyright svg {
+		vertical-align: middle
+	}
+
+	.ladi-notify .ladi-notify-copyright svg:not(:root) {
+		overflow: hidden
+	}
+
+	.ladi-notify .ladi-notify-copyright div {
+		text-decoration: none;
+		color: rgba(64, 64, 64, 1);
+		display: inline
+	}
+
+	.ladi-notify .ladi-notify-copyright strong {
+		font-weight: 700
+	}
+
+	.builder-container .ladi-notify {
+		transition: unset
+	}
+
+	.ladi-spin-lucky {
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		box-shadow: 0 0 7px 0 rgba(64, 64, 64, .6), 0 8px 50px rgba(64, 64, 64, .3);
+		background-repeat: no-repeat;
+		background-size: cover
+	}
+
+	.ladi-spin-lucky .ladi-spin-lucky-start {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 20%;
+		height: 20%;
+		cursor: pointer;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+		transition: transform .3s ease-in-out;
+		-webkit-transition: transform .3s ease-in-out
+	}
+
+	.ladi-spin-lucky .ladi-spin-lucky-start:hover {
+		transform: scale(1.1)
+	}
+
+	.ladi-spin-lucky .ladi-spin-lucky-screen {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		border-radius: 100%;
+		transition: transform 7s cubic-bezier(.25, .1, 0, 1);
+		-webkit-transition: transform 7s cubic-bezier(.25, .1, 0, 1);
+		text-decoration-line: inherit;
+		text-transform: inherit;
+		-webkit-text-decoration-line: inherit
+	}
+
+	.ladi-spin-lucky .ladi-spin-lucky-label {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		overflow: hidden;
+		text-align: center;
+		width: 42%;
+		padding-left: 12%;
+		transform-origin: 0 0;
+		-webkit-transform-origin: 0 0;
+		text-decoration-line: inherit;
+		text-transform: inherit;
+		-webkit-text-decoration-line: inherit;
+		line-height: 1;
+		text-shadow: rgba(0, 0, 0, .5) 1px 0 2px
+	}
+
+	#mySidenav{
+		display: none!important;
+	}
+
+
+	@media (min-width: 768px) {
+		.ladi-section .ladi-container {
+			width: 960px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.ladi-section .ladi-container {
+			width: 420px;
+		}
+	}
+
+	body {
+		font-family: "Open Sans", sans-serif
+	}
+
+	@media (min-width: 768px) {
+		#SECTION_POPUP {
+			height: 0px;
+		}
+
+		#SECTION1 {
+			height: 438px;
+		}
+
+		#HEADLINE2 {
+			width: 664px;
+			top: 12.5px;
+			left: 182.5px;
+		}
+
+		#HEADLINE2>.ladi-headline {
+			color: rgb(31, 12, 238);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SECTION3 {
+			height: 554.1px;
+		}
+
+		#SECTION3>.ladi-section-background {
+			background-color: rgba(255, 255, 255, 0);
+		}
+
+		#IMAGE4 {
+			width: 389.265px;
+			height: 407.811px;
+			top: 89.1px;
+			left: 0px;
+		}
+
+		#IMAGE4>.ladi-image>.ladi-image-background {
+			width: 407.811px;
+			height: 407.811px;
+			top: 0px;
+			left: -10px;
+			background-image: url("http://bcavietnam.com/images/100824230_1539697872874165_1970708553647783936_n-20200610115310.jpg");
+		}
+
+		#HEADLINE5 {
+			width: 520px;
+			top: 89.1px;
+			left: 440px;
+		}
+
+		#HEADLINE5>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE6 {
+			width: 960px;
+			top: 32.1px;
+			left: 0px;
+		}
+
+		#HEADLINE6>.ladi-headline {
+			color: rgb(32, 13, 238);
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.2;
+		}
+
+		#PARAGRAPH8 {
+			width: 520px;
+			top: 229.1px;
+			left: 440px;
+		}
+
+		#PARAGRAPH8>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH9 {
+			width: 720px;
+			top: 124px;
+			left: 154.5px;
+		}
+
+		#PARAGRAPH9>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 16px;
+			line-height: 1.6;
+		}
+
+		#LINE11 {
+			height: 100px;
+			top: 124px;
+			left: 136.5px;
+		}
+
+		#LINE11>.ladi-line>.ladi-line-container {
+			border-top: 0px !important;
+			border-right: 2px solid rgb(38, 17, 242);
+			border-bottom: 2px solid rgb(38, 17, 242);
+			border-left: 2px solid rgb(38, 17, 242);
+		}
+
+		#LINE11>.ladi-line {
+			height: 100%;
+			padding: 0px 8px;
+		}
+
+		#PARAGRAPH12 {
+			width: 720px;
+			top: 238px;
+			left: 154.5px;
+		}
+
+		#PARAGRAPH12>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 16px;
+			line-height: 1.6;
+		}
+
+		#SECTION13 {
+			height: 899.4px;
+		}
+
+		#PARAGRAPH20 {
+			width: 960px;
+			top: 88.4px;
+			left: 0px;
+		}
+
+		#PARAGRAPH20>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE21 {
+			width: 960px;
+			top: 46px;
+			left: 0px;
+		}
+
+		#HEADLINE21>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH22 {
+			width: 960px;
+			top: 595.4px;
+			left: 0px;
+		}
+
+		#PARAGRAPH22>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE23 {
+			width: 960px;
+			top: 555.4px;
+			left: 0px;
+		}
+
+		#HEADLINE23>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH24 {
+			width: 960px;
+			top: 792.4px;
+			left: 0px;
+		}
+
+		#PARAGRAPH24>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE25 {
+			width: 960px;
+			top: 756.4px;
+			left: 0px;
+		}
+
+		#HEADLINE25>.ladi-headline {
+			color: rgb(250, 1, 1);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#SECTION28 {
+			height: 410px;
+		}
+
+		#SECTION28>.ladi-section-background {
+			background-color: rgb(234, 242, 254);
+		}
+
+		#BOX29 {
+			width: 689px;
+			height: 250.5px;
+			top: 73.217px;
+			left: 196.5px;
+		}
+
+		#BOX29>.ladi-box {
+			background: rgba(5, 31, 77, 1.0);
+			background: -webkit-linear-gradient(90deg, rgba(5, 31, 77, 1.0), rgba(13, 98, 242, 0.2));
+			background: linear-gradient(90deg, rgba(5, 31, 77, 1.0), rgba(13, 98, 242, 0.2));
+			border-radius: 0px;
+		}
+
+		#IMAGE30 {
+			width: 289.276px;
+			height: 290px;
+			top: 53.217px;
+			left: 74.5px;
+		}
+
+		#IMAGE30>.ladi-image>.ladi-image-background {
+			width: 446.87px;
+			height: 290px;
+			top: 0px;
+			left: -75.5735px;
+			background-image: url("http://bcavietnam.com/images/dsc09878-20200506081953.jpg");
+		}
+
+		#IMAGE30>.ladi-image {
+			border-style: solid;
+			border-color: rgb(255, 255, 255);
+			border-width: 2px;
+			border-radius: 145px;
+		}
+
+		#HEADLINE31 {
+			width: 463px;
+			top: 103.217px;
+			left: 414.5px;
+		}
+
+		#HEADLINE31>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+			font-weight: bold;
+			letter-spacing: 0px;
+			line-height: 1.2;
+		}
+
+		#BUTTON32 {
+			width: 185.999px;
+			height: 40px;
+			top: 203.217px;
+			left: 414.5px;
+		}
+
+		#BUTTON32>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON32>.ladi-button {
+			border-color: rgb(244, 64, 37);
+			border-width: 1px;
+			border-radius: 79px;
+		}
+
+		#BUTTON_TEXT32 {
+			width: 185px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT32>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SECTION115 {
+			height: 595.9px;
+		}
+
+		#SHAPE116 {
+			width: 513px;
+			height: 413.931px;
+			top: 75.7055px;
+			left: 676px;
+		}
+
+		#SHAPE116 svg:last-child {
+			fill: rgba(235, 243, 255, 0.4);
+		}
+
+		#PARAGRAPH117 {
+			width: 344px;
+			top: 217.7px;
+			left: 623.183px;
+		}
+
+		#PARAGRAPH117>.ladi-paragraph {
+			color: rgb(5, 31, 77);
+			font-size: 16px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BUTTON118 {
+			width: 173.26px;
+			height: 40px;
+			top: 293.45px;
+			left: 623.183px;
+		}
+
+		#BUTTON118>.ladi-button>.ladi-button-background {
+			background-color: rgb(242, 66, 13);
+		}
+
+		#BUTTON118>.ladi-button {
+			border-radius: 112px;
+		}
+
+		#BUTTON_TEXT118 {
+			width: 173px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT118>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP120 {
+			width: 427px;
+			height: 97.611px;
+			top: 95.706px;
+			left: 589.183px;
+		}
+
+		#HEADLINE121 {
+			width: 393px;
+			top: 25.611px;
+			left: 34px;
+		}
+
+		#HEADLINE121>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#SHAPE122 {
+			width: 55px;
+			height: 55px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE122 svg:last-child {
+			fill: rgba(242, 67, 13, 0.5);
+		}
+
+		#GROUP123 {
+			width: 689.947px;
+			height: 484.968px;
+			top: 55.7055px;
+			left: -134.701px;
+		}
+
+		#GROUP124 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 12px;
+			left: 381.209px;
+		}
+
+		#SHAPE125 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE125 svg:last-child {
+			fill: url("#SHAPE125_desktop_gradient");
+		}
+
+		#HEADLINE126 {
+			width: 193px;
+			top: 52.3145px;
+			left: 10.741px;
+		}
+
+		#HEADLINE126>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE127 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20.3151px;
+			left: 94.246px;
+		}
+
+		#SHAPE127 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#PARAGRAPH128 {
+			width: 155px;
+			top: 107.315px;
+			left: 29.746px;
+		}
+
+		#PARAGRAPH128>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP129 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 149px;
+		}
+
+		#SHAPE130 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE130 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE131 {
+			width: 184px;
+			top: 54.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE131>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE132 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE132 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH133 {
+			width: 155px;
+			top: 91.143px;
+			left: 29.746px;
+		}
+
+		#PARAGRAPH133>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP134 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 210.132px;
+			left: 0px;
+		}
+
+		#SHAPE135 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE135 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE136 {
+			width: 184px;
+			top: 54.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE136>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE137 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE137 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH138 {
+			width: 155px;
+			top: 88.8718px;
+			left: 29.2405px;
+		}
+
+		#PARAGRAPH138>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP139 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 281.745px;
+			left: 231.963px;
+		}
+
+		#SHAPE140 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE140 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE141 {
+			width: 184px;
+			top: 54.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE141>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE142 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE142 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH143 {
+			width: 155px;
+			top: 82.1425px;
+			left: 29.746px;
+		}
+
+		#PARAGRAPH143>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 12px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP144 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 249.994px;
+			left: 475.455px;
+		}
+
+		#SHAPE145 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE145 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE146 {
+			width: 184px;
+			top: 54.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE146>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE147 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE147 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH148 {
+			width: 155px;
+			top: 88.8718px;
+			left: 29.2405px;
+		}
+
+		#PARAGRAPH148>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SECTION149 {
+			height: 394px;
+		}
+
+		#SECTION149>.ladi-overlay {
+			background-color: rgba(33, 30, 70, 0.8);
+		}
+
+		#SECTION149>.ladi-section-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("http://bcavietnam.com/images/83720543_173233444193540_2018467576367022080_o-20200610125243.jpg");
+			background-position: center top;
+			background-repeat: repeat;
+		}
+
+		#HEADLINE150 {
+			width: 833px;
+			top: 97.1px;
+			left: 73px;
+		}
+
+		#HEADLINE150>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(255, 255, 255);
+			font-size: 31px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 0px;
+			line-height: 1.4;
+		}
+
+		#BUTTON151 {
+			width: 260.999px;
+			height: 40px;
+			top: 270.1px;
+			left: 349.5px;
+		}
+
+		#BUTTON151>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON151>.ladi-button {
+			border-color: rgb(244, 64, 37);
+			border-width: 1px;
+			border-radius: 15px;
+		}
+
+		#BUTTON151>.ladi-button:hover .ladi-button-background {
+			background-color: rgb(255, 255, 255);
+			background-image: none;
+		}
+
+		#BUTTON_TEXT151 {
+			width: 260px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT151>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE155 {
+			width: 268px;
+			top: 32.6px;
+			left: 351px;
+		}
+
+		#HEADLINE155>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BOX156 {
+			width: 200px;
+			height: 39px;
+			top: 29.1px;
+			left: 380px;
+		}
+
+		#BOX156>.ladi-box {
+			background-color: rgb(32, 13, 238);
+		}
+
+		#LINE158 {
+			width: 88px;
+			top: 127.828px;
+			left: 431px;
+		}
+
+		#LINE158>.ladi-line>.ladi-line-container {
+			border-top: 2px solid rgb(242, 67, 13);
+			border-right: 2px solid rgb(242, 67, 13);
+			border-bottom: 2px solid rgb(242, 67, 13);
+			border-left: 0px !important;
+		}
+
+		#LINE158>.ladi-line {
+			width: 100%;
+			padding: 8px 0px;
+		}
+
+		#HEADLINE159 {
+			width: 465px;
+			top: 77.828px;
+			left: 265.5px;
+		}
+
+		#HEADLINE159>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#HEADLINE161 {
+			width: 228px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE161>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#HEADLINE162 {
+			width: 204px;
+			top: 28px;
+			left: 0px;
+		}
+
+		#HEADLINE162>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 14px;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#GROUP160 {
+			width: 226px;
+			height: 45px;
+			top: 515.199px;
+			left: -102.56px;
+		}
+
+		#SHAPE163 {
+			width: 60px;
+			height: 60px;
+			top: 108px;
+			left: 180.667px;
+		}
+
+		#SHAPE163 svg:last-child {
+			fill: rgba(0, 0, 0, 0.5);
+		}
+
+		#VIDEO163 {
+			width: 421.333px;
+			height: 276px;
+			top: 204.756px;
+			left: -206px;
+		}
+
+		#VIDEO163>.ladi-video>.ladi-video-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("https://img.youtube.com/vi/eV8h9ROf1Ec/hqdefault.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		#HEADLINE166 {
+			width: 228px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE166>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 0px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#HEADLINE167 {
+			width: 204px;
+			top: 28px;
+			left: 0px;
+		}
+
+		#HEADLINE167>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 14px;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#HEADLINE168 {
+			width: 228px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE168>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#GROUP165 {
+			width: 226px;
+			height: 45px;
+			top: 509.161px;
+			left: 379px;
+		}
+
+		#SHAPE169 {
+			width: 60px;
+			height: 60px;
+			top: 108px;
+			left: 180.667px;
+		}
+
+		#SHAPE169 svg:last-child {
+			fill: rgba(0, 0, 0, 0.5);
+		}
+
+		#VIDEO169 {
+			width: 421.333px;
+			height: 276px;
+			top: 204.756px;
+			left: 262.833px;
+		}
+
+		#VIDEO169>.ladi-video>.ladi-video-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("https://img.youtube.com/vi/8IPFhDMY2f4/hqdefault.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		#HEADLINE172 {
+			width: 228px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE172>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 0px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#HEADLINE173 {
+			width: 204px;
+			top: 28px;
+			left: 0px;
+		}
+
+		#HEADLINE173>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 14px;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#HEADLINE174 {
+			width: 228px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE174>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#GROUP171 {
+			width: 226px;
+			height: 45px;
+			top: 515.199px;
+			left: 893px;
+		}
+
+		#SHAPE175 {
+			width: 60px;
+			height: 60px;
+			top: 108px;
+			left: 180.667px;
+		}
+
+		#SHAPE175 svg:last-child {
+			fill: rgba(0, 0, 0, 0.5);
+		}
+
+		#VIDEO175 {
+			width: 421.333px;
+			height: 276px;
+			top: 204.756px;
+			left: 739.833px;
+		}
+
+		#VIDEO175>.ladi-video>.ladi-video-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("https://img.youtube.com/vi/W8XoQSGalkw/hqdefault.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		#BUTTON_TEXT177 {
+			width: 173px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT177>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BUTTON177 {
+			width: 173.26px;
+			height: 40px;
+			top: 587.306px;
+			left: 373.493px;
+		}
+
+		#BUTTON177>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON177>.ladi-button {
+			border-radius: 100px;
+		}
+
+		#BUTTON177>.ladi-button:hover {
+			transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+		}
+
+		#BUTTON177>.ladi-button:hover .ladi-button-background {
+			background-color: rgb(255, 255, 255);
+			background-image: none;
+		}
+
+		#SECTION157 {
+			height: 685.512px;
+		}
+
+		#HEADLINE180 {
+			width: 409px;
+			top: 37.1px;
+			left: 275.5px;
+		}
+
+		#HEADLINE180>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#IMAGE182 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#IMAGE182>.ladi-image>.ladi-image-background {
+			width: 397.919px;
+			height: 283.517px;
+			top: 0px;
+			left: -12px;
+			background-image: url("http://bcavietnam.com/images/81938784_493565431301525_7713152348922576896_n-20200224090534.jpg");
+		}
+
+		#IMAGE183 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 0px;
+			left: 392.366px;
+		}
+
+		#IMAGE183>.ladi-image>.ladi-image-background {
+			width: 419.702px;
+			height: 278.708px;
+			top: 4.80864px;
+			left: -51.144px;
+			background-image: url("http://bcavietnam.com/images/65ea8dbc3631ce6f972017-20200224090534.jpg");
+		}
+
+		#IMAGE184 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 0px;
+			left: 784.732px;
+		}
+
+		#IMAGE184>.ladi-image>.ladi-image-background {
+			width: 426.943px;
+			height: 283.517px;
+			top: 0px;
+			left: -18px;
+			background-image: url("http://bcavietnam.com/images/d89193c7284ad014895b13-20200224090534.jpg");
+		}
+
+		#IMAGE185 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 305.141px;
+			left: 0px;
+		}
+
+		#IMAGE185>.ladi-image>.ladi-image-background {
+			width: 397.919px;
+			height: 283.517px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/82123435_2755376247872324_150924704104841216_n-20200224090534.jpg");
+		}
+
+		#IMAGE186 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 305.141px;
+			left: 392.366px;
+		}
+
+		#IMAGE186>.ladi-image>.ladi-image-background {
+			width: 379.913px;
+			height: 283.517px;
+			top: 0px;
+			left: -11.355px;
+			background-image: url("http://bcavietnam.com/images/img_7778-20200224090532.jpg");
+		}
+
+		#IMAGE187 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 305.141px;
+			left: 784.732px;
+		}
+
+		#IMAGE187>.ladi-image>.ladi-image-background {
+			width: 379.913px;
+			height: 283.517px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/img_7786-20200224090533.jpg");
+		}
+
+		#IMAGE188 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 610.283px;
+			left: 0px;
+		}
+
+		#IMAGE188>.ladi-image>.ladi-image-background {
+			width: 397.919px;
+			height: 283.517px;
+			top: 0px;
+			left: -1px;
+			background-image: url("http://bcavietnam.com/images/82290925_1623305691160703_5530674475625873408_n-20200224090534.jpg");
+		}
+
+		#IMAGE189 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 610.283px;
+			left: 392.366px;
+		}
+
+		#IMAGE189>.ladi-image>.ladi-image-background {
+			width: 378.022px;
+			height: 283.517px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/0bf5bb3981b579eb20a45-20200224085219.jpg");
+		}
+
+		#IMAGE190 {
+			width: 368.558px;
+			height: 283.517px;
+			top: 610.283px;
+			left: 784.732px;
+		}
+
+		#IMAGE190>.ladi-image>.ladi-image-background {
+			width: 448.396px;
+			height: 283.517px;
+			top: 0px;
+			left: -61.8376px;
+			background-image: url("http://bcavietnam.com/images/image1-20200224091137.jpeg");
+		}
+
+		#GROUP181 {
+			width: 1153.29px;
+			height: 893.8px;
+			top: 158.1px;
+			left: -90px;
+		}
+
+		#LINE191 {
+			width: 168px;
+			top: 114.1px;
+			left: 396.5px;
+		}
+
+		#LINE191>.ladi-line>.ladi-line-container {
+			border-top: 1px dashed rgb(242, 67, 13);
+			border-right: 1px dashed rgb(242, 67, 13);
+			border-bottom: 1px dashed rgb(242, 67, 13);
+			border-left: 0px !important;
+		}
+
+		#LINE191>.ladi-line {
+			width: 100%;
+			padding: 8px 0px;
+		}
+
+		#SECTION179 {
+			height: 1110.9px;
+		}
+
+		#SECTION179>.ladi-section-background {
+			background-color: rgba(235, 243, 255, 0.4);
+		}
+
+		#PARAGRAPH218 {
+			width: 960px;
+			top: 370.4px;
+			left: 0px;
+		}
+
+		#PARAGRAPH218>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE219 {
+			width: 960px;
+			top: 330.4px;
+			left: 0px;
+		}
+
+		#HEADLINE219>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#SECTION220 {
+			height: 625.9px;
+		}
+
+		#SECTION220>.ladi-section-background {
+			background-color: rgb(255, 255, 255);
+		}
+
+		#BOX221 {
+			width: 902px;
+			height: 474px;
+			top: 43.5px;
+			left: 27.25px;
+		}
+
+		#BOX221>.ladi-box {
+			box-shadow: 20px 20px 30px -20px rgba(0, 0, 0, 0.2);
+			-webkit-box-shadow: 20px 20px 30px -20px rgba(0, 0, 0, 0.2);
+			background-color: rgb(5, 31, 77);
+		}
+
+		#BOX222 {
+			width: 904px;
+			height: 466px;
+			top: 30px;
+			left: 10.75px;
+		}
+
+		#BOX222>.ladi-box {
+			background-color: rgba(253, 251, 251, 0);
+			border-style: solid;
+			border-color: rgba(255, 93, 46, 0.5);
+			border-width: 1px;
+		}
+
+		#PARAGRAPH223 {
+			width: 339px;
+			top: 202.95px;
+			left: 115px;
+		}
+
+		#PARAGRAPH223>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 16px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP224 {
+			width: 360px;
+			height: 440.665px;
+			top: 98.1175px;
+			left: 588.25px;
+		}
+
+		#BOX225 {
+			width: 360px;
+			height: 440.665px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#BOX225>.ladi-box>.ladi-overlay {
+			background: #0D61F2;
+			background: -webkit-linear-gradient(180deg, #0D61F2, #154290);
+			background: linear-gradient(180deg, #0D61F2, #154290);
+			opacity: 0.9;
+		}
+
+		#BOX225>.ladi-box {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("http://bcavietnam.com/images/verne-ho-0lajfsna-xq-unsplash-20200117034330.jpg");
+			background-position: center top;
+			background-repeat: repeat;
+		}
+
+		#FORM226 {
+			width: 302.425px;
+			height: 237px;
+			top: 163.45px;
+			left: 33.143px;
+		}
+
+		#FORM226>.ladi-form {
+			color: rgba(5, 31, 78, 0.6);
+			font-size: 14px;
+			line-height: 1.6;
+		}
+
+		#FORM226 .ladi-form-item .ladi-form-control::placeholder,
+		#FORM226 .ladi-form .ladi-form-item .ladi-form-control-select[data-selected=""],
+		#FORM226 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+			color: rgba(5, 31, 78, 0.6);
+		}
+
+		#FORM226 .ladi-form-item {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+
+		#FORM226 .ladi-form-item.ladi-form-checkbox {
+			padding-left: 13px;
+			padding-right: 13px;
+		}
+
+		#FORM226 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+			background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(5%2C%2031%2C%2078%2C%200.6)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+		}
+
+		#FORM226 .ladi-form-item-container {
+			border-style: solid;
+			border-color: rgb(238, 238, 238);
+			border-width: 1px;
+		}
+
+		#FORM226 .ladi-form-item-background {
+			background-color: rgb(255, 255, 255);
+		}
+
+		#BUTTON227 {
+			width: 301.714px;
+			height: 40px;
+			top: 197px;
+			left: 0.710545px;
+		}
+
+		#BUTTON227>.ladi-button>.ladi-button-background {
+			background-color: rgb(255, 92, 44);
+		}
+
+		#BUTTON227>.ladi-button {
+			border-radius: 0px;
+		}
+
+		#BUTTON_TEXT227 {
+			width: 301px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT227>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#FORM_ITEM229 {
+			width: 301.714px;
+			height: 40px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#FORM_ITEM230 {
+			width: 301.714px;
+			height: 40px;
+			top: 48px;
+			left: 0px;
+		}
+
+		#FORM_ITEM231 {
+			width: 301.714px;
+			height: 40px;
+			top: 96px;
+			left: 0px;
+		}
+
+		#HEADLINE232 {
+			width: 303px;
+			top: 38px;
+			left: 29px;
+		}
+
+		#HEADLINE232>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.4;
+		}
+
+		#PARAGRAPH233 {
+			width: 303px;
+			top: 97px;
+			left: 28.857px;
+		}
+
+		#PARAGRAPH233>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH234 {
+			width: 303px;
+			top: 385px;
+			left: 29.143px;
+		}
+
+		#PARAGRAPH234>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 12px;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#GROUP237 {
+			width: 427.5px;
+			height: 80px;
+			top: 104.5px;
+			left: 70.75px;
+		}
+
+		#HEADLINE238 {
+			width: 393px;
+			top: 8px;
+			left: 34.5px;
+		}
+
+		#HEADLINE238>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#SHAPE239 {
+			width: 80px;
+			height: 80px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE239 svg:last-child {
+			fill: rgba(255, 255, 255, 0.1);
+		}
+
+		#SHAPE240 {
+			width: 80px;
+			height: 79.8935px;
+			top: 84.5533px;
+			left: 563.25px;
+		}
+
+		#SHAPE240 svg:last-child {
+			fill: rgba(255, 255, 255, 0.3);
+		}
+
+		#LINE262 {
+			width: 960px;
+			top: 235px;
+			left: 0.425px;
+		}
+
+		#LINE262>.ladi-line>.ladi-line-container {
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			border-right: 1px solid rgba(255, 255, 255, 0.1);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			border-left: 0px !important;
+		}
+
+		#LINE262>.ladi-line {
+			width: 100%;
+			padding: 8px 0px;
+		}
+
+		#HEADLINE264 {
+			width: 624px;
+			top: 0px;
+			left: 210.096px;
+		}
+
+		#HEADLINE264>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.4;
+		}
+
+		#SHAPE266 {
+			width: 28.8006px;
+			height: 22.5469px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE266 svg:last-child {
+			fill: rgba(255, 255, 255, 1);
+		}
+
+		#HEADLINE267 {
+			width: 315px;
+			top: 4px;
+			left: 37.0435px;
+		}
+
+		#HEADLINE267>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#GROUP265 {
+			width: 351.275px;
+			height: 48px;
+			top: 63.833px;
+			left: 0px;
+		}
+
+		#SHAPE269 {
+			width: 28.8005px;
+			height: 32.8809px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE269 svg:last-child {
+			fill: rgba(255, 255, 255, 1);
+		}
+
+		#HEADLINE270 {
+			width: 220px;
+			top: 4.91667px;
+			left: 35.7662px;
+		}
+
+		#HEADLINE270>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: left;
+			line-height: 1.4;
+		}
+
+		#GROUP268 {
+			width: 255.473px;
+			height: 32.8809px;
+			top: 64.666px;
+			left: 394.388px;
+		}
+
+		#SHAPE272 {
+			width: 25.1463px;
+			height: 22.5469px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE272 svg:last-child {
+			fill: rgba(255, 255, 255, 1);
+		}
+
+		#HEADLINE273 {
+			width: 288px;
+			top: 2px;
+			left: 32.3433px;
+		}
+
+		#HEADLINE273>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: left;
+			line-height: 1.4;
+		}
+
+		#GROUP271 {
+			width: 318.761px;
+			height: 22.5469px;
+			top: 69.833px;
+			left: 640.152px;
+		}
+
+		#GROUP263 {
+			width: 958.913px;
+			height: 111.833px;
+			top: 65.5px;
+			left: 0.425px;
+		}
+
+		#IMAGE274 {
+			width: 113px;
+			height: 113px;
+			top: 5.704px;
+			left: 0px;
+		}
+
+		#IMAGE274>.ladi-image>.ladi-image-background {
+			width: 113px;
+			height: 113px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/logo-bca-final-02-1-copy-20200226061304.png");
+		}
+
+		#SECTION261 {
+			height: 297px;
+		}
+
+		#SECTION261>.ladi-overlay {
+			background: rgba(13, 98, 242, 0.6);
+			background: -webkit-linear-gradient(180deg, rgba(13, 98, 242, 0.6), rgba(5, 31, 77, 1.0));
+			background: linear-gradient(180deg, rgba(13, 98, 242, 0.6), rgba(5, 31, 77, 1.0));
+		}
+
+		#SECTION261>.ladi-section-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("http://bcavietnam.com/images/6yn9ilez20200313033505.jpg");
+			background-position: left top;
+			background-repeat: no-repeat;
+		}
+
+		#HEADLINE275 {
+			width: 960px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE275>.ladi-headline {
+			color: rgb(32, 13, 238);
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.2;
+		}
+
+		#SECTION280 {
+			height: 459.9px;
+		}
+
+		#SECTION280>.ladi-section-background {
+			background-color: rgb(5, 31, 77);
+		}
+
+		#GROUP282 {
+			width: 960px;
+			height: 229.75px;
+			top: 122.704px;
+			left: 0px;
+		}
+
+		#BOX283 {
+			width: 407px;
+			height: 229.75px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#BOX283>.ladi-box {
+			background: rgba(13, 98, 242, 1.0);
+			background: -webkit-linear-gradient(-90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+			background: linear-gradient(-90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+		}
+
+		#BOX284 {
+			width: 421px;
+			height: 229.75px;
+			top: 0px;
+			left: 539px;
+		}
+
+		#BOX284>.ladi-box {
+			background: rgba(13, 98, 242, 1.0);
+			background: -webkit-linear-gradient(90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+			background: linear-gradient(90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+		}
+
+		#BOX285 {
+			width: 132px;
+			height: 229.75px;
+			top: 0px;
+			left: 407px;
+		}
+
+		#BOX285>.ladi-box {
+			background-color: rgb(13, 98, 242);
+		}
+
+		#HEADLINE286 {
+			width: 960px;
+			top: 153.7px;
+			left: 0px;
+		}
+
+		#HEADLINE286>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(255, 255, 255);
+			font-size: 22px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 0px;
+			line-height: 1.2;
+		}
+
+		#BUTTON287 {
+			width: 220.999px;
+			height: 40px;
+			top: 257.7px;
+			left: 369.5px;
+		}
+
+		#BUTTON287>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON287>.ladi-button {
+			border-color: rgb(244, 64, 37);
+			border-width: 1px;
+			border-radius: 0px;
+		}
+
+		#BUTTON_TEXT287 {
+			width: 220px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT287>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SECTION290 {
+			height: 430.9px;
+		}
+
+		#SECTION290>.ladi-section-background {
+			background-color: rgb(234, 242, 254);
+		}
+
+		#BOX291 {
+			width: 391px;
+			height: 229.75px;
+			top: 100.575px;
+			left: -334px;
+		}
+
+		#BOX291>.ladi-box {
+			background: rgba(13, 98, 242, 0.2);
+			background: -webkit-linear-gradient(-90deg, rgba(13, 98, 242, 0.2), rgba(234, 237, 238, 0.0));
+			background: linear-gradient(-90deg, rgba(13, 98, 242, 0.2), rgba(234, 237, 238, 0.0));
+		}
+
+		#HEADLINE292 {
+			width: 528px;
+			top: 123.5px;
+			left: 0px;
+		}
+
+		#HEADLINE292>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(36, 36, 36);
+			font-size: 19px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			letter-spacing: 0px;
+			line-height: 1.2;
+		}
+
+		#HEADLINE295 {
+			width: 308px;
+			top: 278.887px;
+			left: 0px;
+		}
+
+		#HEADLINE295>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 12px;
+			text-align: left;
+			line-height: 1.4;
+		}
+
+		#IMAGE297 {
+			width: 431.956px;
+			height: 430.9px;
+			top: 0px;
+			left: 528.044px;
+		}
+
+		#IMAGE297>.ladi-image>.ladi-image-background {
+			width: 431.956px;
+			height: 430.9px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/90790617_1484654481711838_1435138016011091968_n-20200616061103.jpg");
+		}
+
+		#HEADLINE298 {
+			width: 528px;
+			top: 161.6px;
+			left: 0px;
+		}
+
+		#HEADLINE298>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(36, 36, 36);
+			font-size: 16px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			letter-spacing: 0px;
+			line-height: 1.6;
+		}
+
+		#SECTION299 {
+			height: 390px;
+		}
+
+		#SECTION299>.ladi-section-background {
+			background-color: rgba(255, 255, 255, 0);
+		}
+
+		#HEADLINE300 {
+			width: 450px;
+			top: 37.382px;
+			left: 255px;
+		}
+
+		#HEADLINE300>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#GROUP302 {
+			width: 958.114px;
+			height: 181.308px;
+			top: 154.082px;
+			left: 1.88608px;
+		}
+
+		#GROUP303 {
+			width: 225.283px;
+			height: 181.308px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#BOX304 {
+			width: 225.283px;
+			height: 150.219px;
+			top: 31.0888px;
+			left: 0px;
+		}
+
+		#BOX304>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX305 {
+			width: 55.9599px;
+			height: 55.9599px;
+			top: 0px;
+			left: 84.662px;
+		}
+
+		#BOX305>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE306 {
+			width: 34.4368px;
+			height: 34.4369px;
+			top: 10.7615px;
+			left: 95.4236px;
+		}
+
+		#SHAPE306 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH307 {
+			width: 168px;
+			top: 105.224px;
+			left: 28.6151px;
+		}
+
+		#PARAGRAPH307>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE308 {
+			width: 203px;
+			top: 78.4394px;
+			left: 11.7229px;
+		}
+
+		#HEADLINE308>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 17px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP309 {
+			width: 225.283px;
+			height: 181.308px;
+			top: 0px;
+			left: 243.02px;
+		}
+
+		#BOX310 {
+			width: 225.283px;
+			height: 150.219px;
+			top: 31.0888px;
+			left: 0px;
+		}
+
+		#BOX310>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX311 {
+			width: 55.9599px;
+			height: 55.9599px;
+			top: 0px;
+			left: 84.662px;
+		}
+
+		#BOX311>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE312 {
+			width: 30.6105px;
+			height: 30.6105px;
+			top: 12.6747px;
+			left: 97.4888px;
+		}
+
+		#SHAPE312 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH313 {
+			width: 168px;
+			top: 105.224px;
+			left: 28.6151px;
+		}
+
+		#PARAGRAPH313>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE314 {
+			width: 203px;
+			top: 78.4394px;
+			left: 11.7229px;
+		}
+
+		#HEADLINE314>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 17px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BOX316 {
+			width: 225.283px;
+			height: 150.219px;
+			top: 31.0888px;
+			left: 732.831px;
+		}
+
+		#BOX316>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX317 {
+			width: 55.9599px;
+			height: 55.9599px;
+			top: 0px;
+			left: 817.493px;
+		}
+
+		#BOX317>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE318 {
+			width: 34.4368px;
+			height: 34.4369px;
+			top: 10.7615px;
+			left: 828.255px;
+		}
+
+		#SHAPE318 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH319 {
+			width: 168px;
+			top: 105.224px;
+			left: 761.446px;
+		}
+
+		#PARAGRAPH319>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE320 {
+			width: 214px;
+			top: 76.6539px;
+			left: 726.831px;
+		}
+
+		#HEADLINE320>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 17px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP321 {
+			width: 236px;
+			height: 181.308px;
+			top: 0px;
+			left: 482.567px;
+		}
+
+		#BOX322 {
+			width: 225.283px;
+			height: 150.219px;
+			top: 31.0888px;
+			left: 5.35805px;
+		}
+
+		#BOX322>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX323 {
+			width: 55.9599px;
+			height: 55.9599px;
+			top: 0px;
+			left: 90.02px;
+		}
+
+		#BOX323>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE324 {
+			width: 34.4368px;
+			height: 34.4369px;
+			top: 10.7615px;
+			left: 100.782px;
+		}
+
+		#SHAPE324 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH325 {
+			width: 168px;
+			top: 105.224px;
+			left: 33.9732px;
+		}
+
+		#PARAGRAPH325>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE326 {
+			width: 236px;
+			top: 76.6539px;
+			left: 0px;
+		}
+
+		#HEADLINE326>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 17px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#FORM_ITEM327 {
+			width: 302.425px;
+			height: 40px;
+			top: 146px;
+			left: 0px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		#SECTION_POPUP {
+			height: 0px;
+		}
+
+		#SECTION1 {
+			height: 639px;
+		}
+
+		#HEADLINE2 {
+			width: 400px;
+			top: 10px;
+			left: 10px;
+		}
+
+		#HEADLINE2>.ladi-headline {
+			color: rgb(31, 12, 238);
+			font-size: 27px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.4;
+		}
+
+		#SECTION3 {
+			height: 1463px;
+		}
+
+		#SECTION3>.ladi-section-background {
+			background-color: rgba(255, 255, 255, 0);
+		}
+
+		#IMAGE4 {
+			width: 420px;
+			height: 440px;
+			top: 157px;
+			left: 0px;
+		}
+
+		#IMAGE4>.ladi-image>.ladi-image-background {
+			width: 440px;
+			height: 440px;
+			top: 0px;
+			left: -7px;
+			background-image: url("http://bcavietnam.com/images/100824230_1539697872874165_1970708553647783936_n-20200610115310.jpg");
+		}
+
+		#HEADLINE5 {
+			width: 380px;
+			top: 770px;
+			left: 22px;
+		}
+
+		#HEADLINE5>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 18px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE6 {
+			width: 380px;
+			top: 610px;
+			left: 22px;
+		}
+
+		#HEADLINE6>.ladi-headline {
+			color: rgb(32, 13, 238);
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 1.2;
+		}
+
+		#PARAGRAPH8 {
+			width: 380px;
+			top: 991px;
+			left: 22px;
+		}
+
+		#PARAGRAPH8>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 17px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH9 {
+			width: 400px;
+			top: 151px;
+			left: 18px;
+		}
+
+		#PARAGRAPH9>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 18px;
+			line-height: 1.6;
+		}
+
+		#LINE11 {
+			height: 175px;
+			top: 151px;
+			left: 0px;
+		}
+
+		#LINE11>.ladi-line>.ladi-line-container {
+			border-top: 0px !important;
+			border-right: 2px solid rgb(38, 17, 242);
+			border-bottom: 2px solid rgb(38, 17, 242);
+			border-left: 2px solid rgb(38, 17, 242);
+		}
+
+		#LINE11>.ladi-line {
+			height: 100%;
+			padding: 0px 8px;
+		}
+
+		#PARAGRAPH12 {
+			width: 400px;
+			top: 433px;
+			left: 12px;
+		}
+
+		#PARAGRAPH12>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 18px;
+			line-height: 1.6;
+		}
+
+		#SECTION13 {
+			height: 1900px;
+		}
+
+		#PARAGRAPH20 {
+			width: 400px;
+			top: 196px;
+			left: 10px;
+		}
+
+		#PARAGRAPH20>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 17px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE21 {
+			width: 400px;
+			top: 137px;
+			left: 10px;
+		}
+
+		#HEADLINE21>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 18px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH22 {
+			width: 400px;
+			top: 1261px;
+			left: 10.5px;
+		}
+
+		#PARAGRAPH22>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 17px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE23 {
+			width: 400px;
+			top: 1166px;
+			left: 10px;
+		}
+
+		#HEADLINE23>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 18px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH24 {
+			width: 400px;
+			top: 1684px;
+			left: 10.5px;
+		}
+
+		#PARAGRAPH24>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 17px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE25 {
+			width: 400px;
+			top: 1619px;
+			left: 10.5px;
+		}
+
+		#HEADLINE25>.ladi-headline {
+			color: rgb(250, 1, 1);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#SECTION28 {
+			height: 604.428px;
+		}
+
+		#SECTION28>.ladi-section-background {
+			background-color: rgb(234, 242, 254);
+		}
+
+		#BOX29 {
+			width: 420px;
+			height: 210px;
+			top: 335.961px;
+			left: 0px;
+		}
+
+		#BOX29>.ladi-box {
+			background: rgba(5, 31, 77, 1.0);
+			background: -webkit-linear-gradient(90deg, rgba(5, 31, 77, 1.0), rgba(13, 98, 242, 0.2));
+			background: linear-gradient(90deg, rgba(5, 31, 77, 1.0), rgba(13, 98, 242, 0.2));
+			border-radius: 0px;
+		}
+
+		#IMAGE30 {
+			width: 289.276px;
+			height: 290px;
+			top: 35px;
+			left: 65.362px;
+		}
+
+		#IMAGE30>.ladi-image>.ladi-image-background {
+			width: 446.87px;
+			height: 290px;
+			top: 0px;
+			left: -75.5735px;
+			background-image: url("http://bcavietnam.com/images/dsc09878-20200506081953.jpg");
+		}
+
+		#IMAGE30>.ladi-image {
+			border-style: solid;
+			border-color: rgb(255, 255, 255);
+			border-width: 2px;
+			border-radius: 145px;
+		}
+
+		#HEADLINE31 {
+			width: 380px;
+			top: 355.961px;
+			left: 20px;
+		}
+
+		#HEADLINE31>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 0px;
+			line-height: 1.2;
+		}
+
+		#BUTTON32 {
+			width: 185.999px;
+			height: 40px;
+			top: 488.961px;
+			left: 117px;
+		}
+
+		#BUTTON32>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON32>.ladi-button {
+			border-color: rgb(244, 64, 37);
+			border-width: 1px;
+			border-radius: 79px;
+		}
+
+		#BUTTON_TEXT32 {
+			width: 185px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT32>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SECTION115 {
+			height: 1441.48px;
+		}
+
+		#SHAPE116 {
+			width: 400px;
+			height: 322.753px;
+			top: 162.727px;
+			left: -211px;
+		}
+
+		#SHAPE116 svg:last-child {
+			fill: rgba(235, 243, 255, 0.4);
+		}
+
+		#PARAGRAPH117 {
+			width: 371px;
+			top: 130.81px;
+			left: 26.5px;
+		}
+
+		#PARAGRAPH117>.ladi-paragraph {
+			color: rgb(5, 31, 77);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BUTTON118 {
+			width: 173.26px;
+			height: 40px;
+			top: 1349.48px;
+			left: 123.37px;
+		}
+
+		#BUTTON118>.ladi-button>.ladi-button-background {
+			background-color: rgb(242, 66, 13);
+		}
+
+		#BUTTON118>.ladi-button {
+			border-radius: 112px;
+		}
+
+		#BUTTON_TEXT118 {
+			width: 173px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT118>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP120 {
+			width: 392px;
+			height: 97.611px;
+			top: 19.199px;
+			left: 14px;
+		}
+
+		#HEADLINE121 {
+			width: 361px;
+			top: 25.611px;
+			left: 31.2131px;
+		}
+
+		#HEADLINE121>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#SHAPE122 {
+			width: 50.4918px;
+			height: 55px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE122 svg:last-child {
+			fill: rgba(242, 67, 13, 0.5);
+		}
+
+		#GROUP123 {
+			width: 214.492px;
+			height: 1122.22px;
+			top: 196.223px;
+			left: 102.754px;
+		}
+
+		#GROUP124 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 226px;
+			left: 0px;
+		}
+
+		#SHAPE125 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE125 svg:last-child {
+			fill: url("#SHAPE125_desktop_gradient");
+		}
+
+		#HEADLINE126 {
+			width: 192px;
+			top: 52.3145px;
+			left: 10.741px;
+		}
+
+		#HEADLINE126>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE127 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20.3151px;
+			left: 94.246px;
+		}
+
+		#SHAPE127 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#PARAGRAPH128 {
+			width: 155px;
+			top: 104.872px;
+			left: 29.746px;
+		}
+
+		#PARAGRAPH128>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP129 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE130 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE130 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE131 {
+			width: 184px;
+			top: 54.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE131>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE132 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE132 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH133 {
+			width: 155px;
+			top: 88.8718px;
+			left: 29.2405px;
+		}
+
+		#PARAGRAPH133>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP134 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 452px;
+			left: 0px;
+		}
+
+		#SHAPE135 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE135 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE136 {
+			width: 184px;
+			top: 54.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE136>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE137 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE137 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH138 {
+			width: 155px;
+			top: 88.8718px;
+			left: 29.2405px;
+		}
+
+		#PARAGRAPH138>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP139 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 919px;
+			left: 0px;
+		}
+
+		#SHAPE140 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE140 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE141 {
+			width: 184px;
+			top: 48.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE141>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE142 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE142 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH143 {
+			width: 155px;
+			top: 79.8718px;
+			left: 29.2405px;
+		}
+
+		#PARAGRAPH143>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 12px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP144 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 682px;
+			left: 0px;
+		}
+
+		#SHAPE145 {
+			width: 214.492px;
+			height: 203.223px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE145 svg:last-child {
+			fill: rgba(234, 242, 255, 1.0);
+		}
+
+		#HEADLINE146 {
+			width: 184px;
+			top: 54.1425px;
+			left: 14.7405px;
+		}
+
+		#HEADLINE146>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SHAPE147 {
+			width: 26px;
+			height: 25.9999px;
+			top: 20px;
+			left: 94.246px;
+		}
+
+		#SHAPE147 svg:last-child {
+			fill: rgba(5, 31, 78, 0.5);
+		}
+
+		#PARAGRAPH148 {
+			width: 155px;
+			top: 88.8718px;
+			left: 29.2405px;
+		}
+
+		#PARAGRAPH148>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SECTION149 {
+			height: 452.5px;
+		}
+
+		#SECTION149>.ladi-overlay {
+			background-color: rgba(33, 30, 70, 0.8);
+		}
+
+		#SECTION149>.ladi-section-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("http://bcavietnam.com/images/83720543_173233444193540_2018467576367022080_o-20200610125243.jpg");
+			background-position: center top;
+			background-repeat: repeat;
+		}
+
+		#HEADLINE150 {
+			width: 400px;
+			top: 162.5px;
+			left: 10px;
+		}
+
+		#HEADLINE150>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(255, 255, 255);
+			font-size: 27px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 0px;
+			line-height: 1.2;
+		}
+
+		#BUTTON151 {
+			width: 260.999px;
+			height: 40px;
+			top: 365.5px;
+			left: 82.501px;
+		}
+
+		#BUTTON151>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON151>.ladi-button {
+			border-color: rgb(244, 64, 37);
+			border-width: 1px;
+			border-radius: 15px;
+		}
+
+		#BUTTON151>.ladi-button:hover .ladi-button-background {
+			background-color: rgb(255, 255, 255);
+			background-image: none;
+		}
+
+		#BUTTON_TEXT151 {
+			width: 261px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT151>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE155 {
+			width: 267px;
+			top: 59px;
+			left: 76.5px;
+		}
+
+		#HEADLINE155>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BOX156 {
+			width: 200px;
+			height: 39px;
+			top: 55.5px;
+			left: 109.631px;
+		}
+
+		#BOX156>.ladi-box {
+			background-color: rgb(32, 13, 238);
+		}
+
+		#LINE158 {
+			width: 86px;
+			top: 112px;
+			left: 167.5px;
+		}
+
+		#LINE158>.ladi-line>.ladi-line-container {
+			border-top: 2px solid rgb(242, 67, 13);
+			border-right: 2px solid rgb(242, 67, 13);
+			border-bottom: 2px solid rgb(242, 67, 13);
+			border-left: 0px !important;
+		}
+
+		#LINE158>.ladi-line {
+			width: 100%;
+			padding: 8px 0px;
+		}
+
+		#HEADLINE159 {
+			width: 349px;
+			top: 33px;
+			left: 29.1309px;
+		}
+
+		#HEADLINE159>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#HEADLINE161 {
+			width: 213px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE161>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#HEADLINE162 {
+			width: 192px;
+			top: 26.3593px;
+			left: 10.5px;
+		}
+
+		#HEADLINE162>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 14px;
+			font-style: italic;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#GROUP160 {
+			width: 213px;
+			height: 42.3593px;
+			top: 423.124px;
+			left: 103.5px;
+		}
+
+		#SHAPE163 {
+			width: 60px;
+			height: 60px;
+			top: 101.013px;
+			left: 170px;
+		}
+
+		#SHAPE163 svg:last-child {
+			fill: rgba(0, 0, 0, 0.5);
+		}
+
+		#VIDEO163 {
+			width: 400px;
+			height: 262.026px;
+			top: 140px;
+			left: 10px;
+		}
+
+		#VIDEO163>.ladi-video>.ladi-video-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("https://img.youtube.com/vi/eV8h9ROf1Ec/hqdefault.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		#HEADLINE166 {
+			width: 213px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE166>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 0px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#HEADLINE167 {
+			width: 192px;
+			top: 27.3592px;
+			left: 10.5px;
+		}
+
+		#HEADLINE167>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 14px;
+			font-style: italic;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#HEADLINE168 {
+			width: 213px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE168>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#GROUP165 {
+			width: 213px;
+			height: 43.3592px;
+			top: 1159.03px;
+			left: 103.5px;
+		}
+
+		#SHAPE169 {
+			width: 60px;
+			height: 60px;
+			top: 101.013px;
+			left: 170px;
+		}
+
+		#SHAPE169 svg:last-child {
+			fill: rgba(0, 0, 0, 0.5);
+		}
+
+		#VIDEO169 {
+			width: 400px;
+			height: 262.026px;
+			top: 878.483px;
+			left: 10px;
+		}
+
+		#VIDEO169>.ladi-video>.ladi-video-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("https://img.youtube.com/vi/8IPFhDMY2f4/hqdefault.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		#HEADLINE172 {
+			width: 213px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE172>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 0px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.2;
+		}
+
+		#HEADLINE173 {
+			width: 192px;
+			top: 26.3592px;
+			left: 10.5px;
+		}
+
+		#HEADLINE173>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(5, 31, 77);
+			font-size: 14px;
+			font-style: italic;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#HEADLINE174 {
+			width: 213px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE174>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(33, 33, 33);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#GROUP171 {
+			width: 213px;
+			height: 42.3592px;
+			top: 793.124px;
+			left: 107.5px;
+		}
+
+		#SHAPE175 {
+			width: 60px;
+			height: 60px;
+			top: 101.013px;
+			left: 170px;
+		}
+
+		#SHAPE175 svg:last-child {
+			fill: rgba(0, 0, 0, 0.5);
+		}
+
+		#VIDEO175 {
+			width: 400px;
+			height: 262.026px;
+			top: 504.501px;
+			left: 10px;
+		}
+
+		#VIDEO175>.ladi-video>.ladi-video-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("https://img.youtube.com/vi/W8XoQSGalkw/hqdefault.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		#BUTTON_TEXT177 {
+			width: 173px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT177>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BUTTON177 {
+			width: 173.26px;
+			height: 40px;
+			top: 1228.48px;
+			left: 123.37px;
+		}
+
+		#BUTTON177>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON177>.ladi-button {
+			border-radius: 100px;
+		}
+
+		#BUTTON177>.ladi-button:hover {
+			transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+		}
+
+		#BUTTON177>.ladi-button:hover .ladi-button-background {
+			background-color: rgb(255, 255, 255);
+			background-image: none;
+		}
+
+		#SECTION157 {
+			height: 1302.55px;
+		}
+
+		#HEADLINE180 {
+			width: 409px;
+			top: 22px;
+			left: 5.5px;
+		}
+
+		#HEADLINE180>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#IMAGE182 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#IMAGE182>.ladi-image>.ladi-image-background {
+			width: 144.806px;
+			height: 103.25px;
+			top: 0px;
+			left: -5px;
+			background-image: url("http://bcavietnam.com/images/81938784_493565431301525_7713152348922576896_n-20200224090534.jpg");
+		}
+
+		#IMAGE183 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 0px;
+			left: 142.89px;
+		}
+
+		#IMAGE183>.ladi-image>.ladi-image-background {
+			width: 152.845px;
+			height: 103.25px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/65ea8dbc3631ce6f972017-20200224090534.jpg");
+		}
+
+		#IMAGE184 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 0px;
+			left: 285.78px;
+		}
+
+		#IMAGE184>.ladi-image>.ladi-image-background {
+			width: 134.22px;
+			height: 103.25px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/d89193c7284ad014895b13-20200224090534.jpg");
+		}
+
+		#IMAGE185 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 111.125px;
+			left: 0px;
+		}
+
+		#IMAGE185>.ladi-image>.ladi-image-background {
+			width: 144.806px;
+			height: 103.25px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/82123435_2755376247872324_150924704104841216_n-20200224090534.jpg");
+		}
+
+		#IMAGE186 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 111.125px;
+			left: 142.89px;
+		}
+
+		#IMAGE186>.ladi-image>.ladi-image-background {
+			width: 138.355px;
+			height: 103.25px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/img_7778-20200224090532.jpg");
+		}
+
+		#IMAGE187 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 111.125px;
+			left: 285.78px;
+		}
+
+		#IMAGE187>.ladi-image>.ladi-image-background {
+			width: 138.355px;
+			height: 103.25px;
+			top: 0px;
+			left: -4.135px;
+			background-image: url("http://bcavietnam.com/images/img_7786-20200224090533.jpg");
+		}
+
+		#IMAGE188 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 222.25px;
+			left: 0px;
+		}
+
+		#IMAGE188>.ladi-image>.ladi-image-background {
+			width: 144.806px;
+			height: 103.25px;
+			top: 0px;
+			left: -10.586px;
+			background-image: url("http://bcavietnam.com/images/82290925_1623305691160703_5530674475625873408_n-20200224090534.jpg");
+		}
+
+		#IMAGE189 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 222.25px;
+			left: 142.89px;
+		}
+
+		#IMAGE189>.ladi-image>.ladi-image-background {
+			width: 137.667px;
+			height: 103.25px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/0bf5bb3981b579eb20a45-20200224085219.jpg");
+		}
+
+		#IMAGE190 {
+			width: 134.22px;
+			height: 103.25px;
+			top: 222.25px;
+			left: 285.78px;
+		}
+
+		#IMAGE190>.ladi-image>.ladi-image-background {
+			width: 163.295px;
+			height: 103.25px;
+			top: 0px;
+			left: -15px;
+			background-image: url("http://bcavietnam.com/images/image1-20200224091137.jpeg");
+		}
+
+		#GROUP181 {
+			width: 420px;
+			height: 325.5px;
+			top: 134px;
+			left: 0px;
+		}
+
+		#LINE191 {
+			width: 167px;
+			top: 102px;
+			left: 126.5px;
+		}
+
+		#LINE191>.ladi-line>.ladi-line-container {
+			border-top: 1px dashed rgb(242, 67, 13);
+			border-right: 1px dashed rgb(242, 67, 13);
+			border-bottom: 1px dashed rgb(242, 67, 13);
+			border-left: 0px !important;
+		}
+
+		#LINE191>.ladi-line {
+			width: 100%;
+			padding: 8px 0px;
+		}
+
+		#SECTION179 {
+			height: 482px;
+		}
+
+		#SECTION179>.ladi-section-background {
+			background-color: rgba(235, 243, 255, 0.4);
+		}
+
+		#PARAGRAPH218 {
+			width: 400px;
+			top: 829px;
+			left: 10px;
+		}
+
+		#PARAGRAPH218>.ladi-paragraph {
+			color: rgb(36, 36, 36);
+			font-size: 17px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#HEADLINE219 {
+			width: 400px;
+			top: 739px;
+			left: 10px;
+		}
+
+		#HEADLINE219>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 18px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#SECTION220 {
+			height: 803.631px;
+		}
+
+		#SECTION220>.ladi-section-background {
+			background-color: rgb(255, 255, 255);
+		}
+
+		#BOX221 {
+			width: 400px;
+			height: 782.16px;
+			top: 10.4714px;
+			left: 11px;
+		}
+
+		#BOX221>.ladi-box {
+			box-shadow: 20px 20px 30px -20px rgba(0, 0, 0, 0.2);
+			-webkit-box-shadow: 20px 20px 30px -20px rgba(0, 0, 0, 0.2);
+			background-color: rgb(5, 31, 77);
+		}
+
+		#BOX222 {
+			width: 400px;
+			height: 225.221px;
+			top: 0px;
+			left: 2.25px;
+		}
+
+		#BOX222>.ladi-box {
+			background-color: rgba(253, 251, 251, 0);
+			border-style: solid;
+			border-color: rgba(255, 93, 46, 0.5);
+			border-width: 1px;
+		}
+
+		#PARAGRAPH223 {
+			width: 360px;
+			top: 159.944px;
+			left: 31px;
+		}
+
+		#PARAGRAPH223>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 16px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP224 {
+			width: 360px;
+			height: 472.665px;
+			top: 255.474px;
+			left: 36px;
+		}
+
+		#BOX225 {
+			width: 360px;
+			height: 472.665px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#BOX225>.ladi-box>.ladi-overlay {
+			background: #0D61F2;
+			background: -webkit-linear-gradient(180deg, #0D61F2, #154290);
+			background: linear-gradient(180deg, #0D61F2, #154290);
+			opacity: 0.9;
+		}
+
+		#BOX225>.ladi-box {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("http://bcavietnam.com/images/verne-ho-0lajfsna-xq-unsplash-20200117034330.jpg");
+			background-position: center top;
+			background-repeat: repeat;
+		}
+
+		#FORM226 {
+			width: 302.425px;
+			height: 240.727px;
+			top: 149.293px;
+			left: 29.143px;
+		}
+
+		#FORM226>.ladi-form {
+			color: rgba(5, 31, 78, 0.6);
+			font-size: 14px;
+			line-height: 1.6;
+		}
+
+		#FORM226 .ladi-form-item .ladi-form-control::placeholder,
+		#FORM226 .ladi-form .ladi-form-item .ladi-form-control-select[data-selected=""],
+		#FORM226 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+			color: rgba(5, 31, 78, 0.6);
+		}
+
+		#FORM226 .ladi-form-item {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+
+		#FORM226 .ladi-form-item.ladi-form-checkbox {
+			padding-left: 13px;
+			padding-right: 13px;
+		}
+
+		#FORM226 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+			background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(5%2C%2031%2C%2078%2C%200.6)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+		}
+
+		#FORM226 .ladi-form-item-container {
+			border-style: solid;
+			border-color: rgb(238, 238, 238);
+			border-width: 1px;
+		}
+
+		#FORM226 .ladi-form-item-background {
+			background-color: rgb(255, 255, 255);
+		}
+
+		#BUTTON227 {
+			width: 301.714px;
+			height: 40.7765px;
+			top: 199.951px;
+			left: 0.710546px;
+		}
+
+		#BUTTON227>.ladi-button>.ladi-button-background {
+			background-color: rgb(255, 92, 44);
+		}
+
+		#BUTTON227>.ladi-button {
+			border-radius: 0px;
+		}
+
+		#BUTTON_TEXT227 {
+			width: 301px;
+			top: 9.17471px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT227>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#FORM_ITEM229 {
+			width: 301.714px;
+			height: 40.7765px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#FORM_ITEM230 {
+			width: 301.714px;
+			height: 40.7765px;
+			top: 48.9318px;
+			left: 0px;
+		}
+
+		#FORM_ITEM231 {
+			width: 301.714px;
+			height: 40.7765px;
+			top: 97.8635px;
+			left: 0px;
+		}
+
+		#HEADLINE232 {
+			width: 303px;
+			top: 38.7376px;
+			left: 29px;
+		}
+
+		#HEADLINE232>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.4;
+		}
+
+		#PARAGRAPH233 {
+			width: 303px;
+			top: 75.4364px;
+			left: 29.143px;
+		}
+
+		#PARAGRAPH233>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			line-height: 1.6;
+		}
+
+		#PARAGRAPH234 {
+			width: 303px;
+			top: 392.473px;
+			left: 29.143px;
+		}
+
+		#PARAGRAPH234>.ladi-paragraph {
+			color: rgb(255, 255, 255);
+			font-size: 12px;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#GROUP237 {
+			width: 369.5px;
+			height: 116px;
+			top: 36.2788px;
+			left: 17.5px;
+		}
+
+		#HEADLINE238 {
+			width: 335px;
+			top: 8px;
+			left: 34.5px;
+		}
+
+		#HEADLINE238>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#SHAPE239 {
+			width: 80px;
+			height: 80px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE239 svg:last-child {
+			fill: rgba(255, 255, 255, 0.1);
+		}
+
+		#SHAPE240 {
+			width: 80px;
+			height: 79.8935px;
+			top: 322.047px;
+			left: -173px;
+		}
+
+		#SHAPE240 svg:last-child {
+			fill: rgba(255, 255, 255, 0.3);
+		}
+
+		#LINE262 {
+			width: 379px;
+			top: 410.827px;
+			left: 20.7105px;
+		}
+
+		#LINE262>.ladi-line>.ladi-line-container {
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			border-right: 1px solid rgba(255, 255, 255, 0.1);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			border-left: 0px !important;
+		}
+
+		#LINE262>.ladi-line {
+			width: 100%;
+			padding: 8px 0px;
+		}
+
+		#HEADLINE264 {
+			width: 256px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#HEADLINE264>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 1.4;
+		}
+
+		#SHAPE266 {
+			width: 22.5469px;
+			height: 22.5469px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE266 svg:last-child {
+			fill: rgba(255, 255, 255, 1);
+		}
+
+		#HEADLINE267 {
+			width: 373px;
+			top: 4px;
+			left: 33px;
+		}
+
+		#HEADLINE267>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: left;
+			line-height: 1.6;
+		}
+
+		#GROUP265 {
+			width: 406px;
+			height: 26px;
+			top: 41.9999px;
+			left: 4px;
+		}
+
+		#SHAPE269 {
+			width: 22.5469px;
+			height: 32.8809px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE269 svg:last-child {
+			fill: rgba(255, 255, 255, 1);
+		}
+
+		#HEADLINE270 {
+			width: 172px;
+			top: 4.91667px;
+			left: 29px;
+		}
+
+		#HEADLINE270>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: left;
+			line-height: 1.4;
+		}
+
+		#GROUP268 {
+			width: 201px;
+			height: 32.8809px;
+			top: 87.9999px;
+			left: 0px;
+		}
+
+		#SHAPE272 {
+			width: 22.5469px;
+			height: 22.5469px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#SHAPE272 svg:last-child {
+			fill: rgba(255, 255, 255, 1);
+		}
+
+		#HEADLINE273 {
+			width: 292px;
+			top: 2px;
+			left: 33px;
+		}
+
+		#HEADLINE273>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			text-align: left;
+			line-height: 1.4;
+		}
+
+		#GROUP271 {
+			width: 325px;
+			height: 22.5469px;
+			top: 139px;
+			left: 0px;
+		}
+
+		#GROUP263 {
+			width: 410px;
+			height: 161.547px;
+			top: 186.378px;
+			left: 15px;
+		}
+
+		#IMAGE274 {
+			width: 132px;
+			height: 132px;
+			top: 10px;
+			left: 144px;
+		}
+
+		#IMAGE274>.ladi-image>.ladi-image-background {
+			width: 132px;
+			height: 132px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/logo-bca-final-02-1-copy-20200226061304.png");
+		}
+
+		#SECTION261 {
+			height: 459.631px;
+		}
+
+		#SECTION261>.ladi-overlay {
+			background: rgba(13, 98, 242, 0.6);
+			background: -webkit-linear-gradient(180deg, rgba(13, 98, 242, 0.6), rgba(5, 31, 77, 1.0));
+			background: linear-gradient(180deg, rgba(13, 98, 242, 0.6), rgba(5, 31, 77, 1.0));
+		}
+
+		#SECTION261>.ladi-section-background {
+			background-size: cover;
+			background-attachment: scroll;
+			background-origin: content-box;
+			background-image: url("http://bcavietnam.com/images/6yn9ilez20200313033505.jpg");
+			background-position: left top;
+			background-repeat: no-repeat;
+		}
+
+		#HEADLINE275 {
+			width: 380px;
+			top: 12px;
+			left: 15px;
+		}
+
+		#HEADLINE275>.ladi-headline {
+			color: rgb(32, 13, 238);
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 1.2;
+		}
+
+		#SECTION280 {
+			height: 452.685px;
+		}
+
+		#SECTION280>.ladi-section-background {
+			background-color: rgb(5, 31, 77);
+		}
+
+		#GROUP282 {
+			width: 1092px;
+			height: 279.75px;
+			top: 37.1515px;
+			left: -336px;
+		}
+
+		#BOX283 {
+			width: 480px;
+			height: 279.75px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#BOX283>.ladi-box {
+			background: rgba(13, 98, 242, 1.0);
+			background: -webkit-linear-gradient(-90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+			background: linear-gradient(-90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+		}
+
+		#BOX284 {
+			width: 480px;
+			height: 279.75px;
+			top: 0px;
+			left: 612px;
+		}
+
+		#BOX284>.ladi-box {
+			background: rgba(13, 98, 242, 1.0);
+			background: -webkit-linear-gradient(90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+			background: linear-gradient(90deg, rgba(13, 98, 242, 1.0), rgba(234, 237, 238, 0.0));
+		}
+
+		#BOX285 {
+			width: 132px;
+			height: 279.75px;
+			top: 0px;
+			left: 480px;
+		}
+
+		#BOX285>.ladi-box {
+			background-color: rgb(13, 98, 242);
+		}
+
+		#HEADLINE286 {
+			width: 401px;
+			top: 57.1185px;
+			left: 10px;
+		}
+
+		#HEADLINE286>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(255, 255, 255);
+			font-size: 26px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 0px;
+			line-height: 1.4;
+		}
+
+		#BUTTON287 {
+			width: 220.999px;
+			height: 40px;
+			top: 359.118px;
+			left: 100px;
+		}
+
+		#BUTTON287>.ladi-button>.ladi-button-background {
+			background-color: rgb(244, 64, 37);
+		}
+
+		#BUTTON287>.ladi-button {
+			border-color: rgb(244, 64, 37);
+			border-width: 1px;
+			border-radius: 0px;
+		}
+
+		#BUTTON_TEXT287 {
+			width: 221px;
+			top: 9px;
+			left: 0px;
+		}
+
+		#BUTTON_TEXT287>.ladi-headline {
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#SECTION290 {
+			height: 973.146px;
+		}
+
+		#SECTION290>.ladi-section-background {
+			background-color: rgb(234, 242, 254);
+		}
+
+		#BOX291 {
+			width: 391px;
+			height: 229.75px;
+			top: 450.146px;
+			left: -250px;
+		}
+
+		#BOX291>.ladi-box {
+			background: rgba(13, 98, 242, 0.2);
+			background: -webkit-linear-gradient(-90deg, rgba(13, 98, 242, 0.2), rgba(234, 237, 238, 0.0));
+			background: linear-gradient(-90deg, rgba(13, 98, 242, 0.2), rgba(234, 237, 238, 0.0));
+		}
+
+		#HEADLINE292 {
+			width: 356px;
+			top: 480.146px;
+			left: 30px;
+		}
+
+		#HEADLINE292>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(36, 36, 36);
+			font-size: 30px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			letter-spacing: 0px;
+			line-height: 1.2;
+		}
+
+		#HEADLINE295 {
+			width: 308px;
+			top: 938.146px;
+			left: 30px;
+		}
+
+		#HEADLINE295>.ladi-headline {
+			color: rgb(36, 36, 36);
+			font-size: 12px;
+			text-align: left;
+			line-height: 1.4;
+		}
+
+		#IMAGE297 {
+			width: 400px;
+			height: 399.022px;
+			top: 0px;
+			left: 10px;
+		}
+
+		#IMAGE297>.ladi-image>.ladi-image-background {
+			width: 400px;
+			height: 399.022px;
+			top: 0px;
+			left: 0px;
+			background-image: url("http://bcavietnam.com/images/90790617_1484654481711838_1435138016011091968_n-20200616061103.jpg");
+		}
+
+		#HEADLINE298 {
+			width: 356px;
+			top: 562.146px;
+			left: 32px;
+		}
+
+		#HEADLINE298>.ladi-headline {
+			font-family: "Open Sans", sans-serif;
+			color: rgb(36, 36, 36);
+			font-size: 30px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: left;
+			letter-spacing: 0px;
+			line-height: 1.2;
+		}
+
+		#SECTION299 {
+			height: 1055.31px;
+		}
+
+		#SECTION299>.ladi-section-background {
+			background-color: rgba(255, 255, 255, 0);
+		}
+
+		#HEADLINE300 {
+			width: 400px;
+			top: 37px;
+			left: 10px;
+		}
+
+		#HEADLINE300>.ladi-headline {
+			color: rgb(5, 31, 77);
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.2;
+		}
+
+		#GROUP302 {
+			width: 225.283px;
+			height: 852.308px;
+			top: 142px;
+			left: 86.3585px;
+		}
+
+		#GROUP303 {
+			width: 225.283px;
+			height: 186.336px;
+			top: 0px;
+			left: 0px;
+		}
+
+		#BOX304 {
+			width: 225.283px;
+			height: 154.386px;
+			top: 31.951px;
+			left: 0px;
+		}
+
+		#BOX304>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX305 {
+			width: 55.9599px;
+			height: 57.5119px;
+			top: 0px;
+			left: 84.662px;
+		}
+
+		#BOX305>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE306 {
+			width: 34.4368px;
+			height: 35.3919px;
+			top: 11.0599px;
+			left: 95.4236px;
+		}
+
+		#SHAPE306 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH307 {
+			width: 168px;
+			top: 108.142px;
+			left: 28.6151px;
+		}
+
+		#PARAGRAPH307>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE308 {
+			width: 202px;
+			top: 80.6147px;
+			left: 11.7229px;
+		}
+
+		#HEADLINE308>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP309 {
+			width: 225.283px;
+			height: 186.336px;
+			top: 229.185px;
+			left: 0px;
+		}
+
+		#BOX310 {
+			width: 225.283px;
+			height: 154.386px;
+			top: 31.951px;
+			left: 0px;
+		}
+
+		#BOX310>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX311 {
+			width: 55.9599px;
+			height: 57.5119px;
+			top: 0px;
+			left: 84.662px;
+		}
+
+		#BOX311>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE312 {
+			width: 30.6105px;
+			height: 31.4595px;
+			top: 13.0262px;
+			left: 97.4888px;
+		}
+
+		#SHAPE312 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH313 {
+			width: 168px;
+			top: 108.142px;
+			left: 28.6151px;
+		}
+
+		#PARAGRAPH313>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE314 {
+			width: 202px;
+			top: 80.6147px;
+			left: 11.7229px;
+		}
+
+		#HEADLINE314>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#BOX316 {
+			width: 225.283px;
+			height: 154.385px;
+			top: 697.923px;
+			left: 0px;
+		}
+
+		#BOX316>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX317 {
+			width: 55.9599px;
+			height: 57.5118px;
+			top: 665.972px;
+			left: 84.662px;
+		}
+
+		#BOX317>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE318 {
+			width: 34.4368px;
+			height: 35.3919px;
+			top: 677.032px;
+			left: 95.4236px;
+		}
+
+		#SHAPE318 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH319 {
+			width: 168px;
+			top: 804.139px;
+			left: 28.6415px;
+		}
+
+		#PARAGRAPH319>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE320 {
+			width: 202px;
+			top: 746.587px;
+			left: 11.7229px;
+		}
+
+		#HEADLINE320>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#GROUP321 {
+			width: 225.283px;
+			height: 186.336px;
+			top: 441.926px;
+			left: 0px;
+		}
+
+		#BOX322 {
+			width: 225.283px;
+			height: 154.386px;
+			top: 31.951px;
+			left: 0px;
+		}
+
+		#BOX322>.ladi-box {
+			box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			-webkit-box-shadow: 0px 5px 0px 0px rgba(7, 58, 145, 1.0);
+			background-color: rgb(255, 255, 255);
+			border-radius: 0px;
+		}
+
+		#BOX323 {
+			width: 55.9599px;
+			height: 57.5119px;
+			top: 0px;
+			left: 84.662px;
+		}
+
+		#BOX323>.ladi-box {
+			background-color: rgb(7, 58, 145);
+			border-radius: 129px;
+		}
+
+		#SHAPE324 {
+			width: 34.4368px;
+			height: 35.3919px;
+			top: 11.0599px;
+			left: 95.4236px;
+		}
+
+		#SHAPE324 svg:last-child {
+			fill: rgba(255, 255, 255, 1.0);
+		}
+
+		#PARAGRAPH325 {
+			width: 168px;
+			top: 133.835px;
+			left: 28.7229px;
+		}
+
+		#PARAGRAPH325>.ladi-paragraph {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#HEADLINE326 {
+			width: 202px;
+			top: 80.6147px;
+			left: 11.7229px;
+		}
+
+		#HEADLINE326>.ladi-headline {
+			color: rgb(7, 58, 145);
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+
+		#FORM_ITEM327 {
+			width: 302.425px;
+			height: 40px;
+			top: 148.64px;
+			left: 0px;
+		}
+	}

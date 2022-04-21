@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="com_joomprofile_menu_profile_title" option="com_joomprofile_profile_view_option">
+		<message>
+			<![CDATA[com_joomprofile_menu_profile_desc]]>
+		</message>
+	</layout>
+
+<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request">
+			<field 	name="task" type="list"
+					description="COM_JOOMPROFILE_MENU_PROFILE_PARAM_FOR_LABEL"
+					label="COM_JOOMPROFILE_MENU_PROFILE_PARAM_FOR_DESC"
+					default="user.registration" 
+					usergroup="1">
+					<option value="user.registration">COM_JOOMPROFILE_MENU_PROFILE_PARAM_FOR_OPTION_REGISTRATION</option>
+					<option value="user.display">COM_JOOMPROFILE_MENU_PROFILE_PARAM_FOR_OPTION_PROFILE</option>
+					<option value="search.display">COM_JOOMPROFILE_MENU_PROFILE_PARAM_FOR_OPTION_SEARCH</option>
+			</field>
+
+		</fieldset>
+	</fields>
+
+	<fields name="params">
+		<fieldset name="basic">
+			<field
+				name="usergroup"
+				type="Joomprofile.usertype"
+				default=""
+				multiple="true"
+				label="COM_JOOMPROFILE_MENU_PROFILE_PARAM_FOR_USERGROUP_LABEL"
+				description="COM_JOOMPROFILE_MENU_PROFILE_PARAM_FOR_USERGROUP_DESC"
+				addfieldpath="/components/com_joomprofile/fields">
+			
+		</field>
+		</fieldset>
+	</fields>
+</metadata>
+

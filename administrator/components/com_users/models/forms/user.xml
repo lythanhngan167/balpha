@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="user_details">
+		<field
+			name="id"
+			type="number"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			class="readonly"
+			default="0"
+			readonly="true"
+		/>
+
+		<field
+			name="id_biznet"
+			type="number"
+			label="JGLOBAL_FIELD_ID_BIZNET_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			class="readonly"
+			default="0"
+			readonly="true"
+		/>
+
+		<field
+			name="name"
+			type="text"
+			label="COM_USERS_USER_FIELD_NAME_LABEL"
+			description="COM_USERS_USER_FIELD_NAME_DESC"
+			required="true"
+			size="30"
+		/>
+
+		<field
+			name="username"
+			type="text"
+			label="COM_USERS_USER_FIELD_USERNAME_LABEL"
+			description="COM_USERS_USER_FIELD_USERNAME_DESC"
+			required="true"
+			size="30"
+		/>
+
+		<field
+			name="password"
+			type="password"
+			label="JGLOBAL_PASSWORD"
+			description="COM_USERS_USER_FIELD_PASSWORD_DESC"
+			autocomplete="off"
+			class="validate-password"
+			filter="raw"
+			validate="password"
+			size="30"
+		/>
+
+		<field
+			name="password2"
+			type="password"
+			label="COM_USERS_USER_FIELD_PASSWORD2_LABEL"
+			description="COM_USERS_USER_FIELD_PASSWORD2_DESC"
+			autocomplete="off"
+			class="validate-password"
+			filter="raw"
+			message="COM_USERS_USER_FIELD_PASSWORD1_MESSAGE"
+			size="30"
+			validate="equals"
+			field="password"
+		/>
+
+		<field
+			name="email"
+			type="email"
+			label="JGLOBAL_EMAIL"
+			description="COM_USERS_USER_FIELD_EMAIL_DESC"
+			required="true"
+			size="30"
+			validate="email"
+			validDomains="com_users.domains"
+		/>
+		<field
+			name="sbdm_id"
+			type="hidden"
+			label="Người tạo"
+			description="Người tạo"
+
+
+
+		/>
+
+
+		<!-- <field
+			name="invited_id"
+			type="number"
+			label="COM_USERS_USER_FIELD_INVITED_ID_LABEL"
+			description="JGLOBAL_FIELD_SUPPORT_DESC"
+			class="readonly"
+			default="0"
+			readonly="true"
+		/> -->
+
+		<field name="invited_id" type="sql" label="Người Bảo trợ" query="SELECT us.id, us.username FROM #__users AS us LEFT JOIN #__user_usergroup_map AS usm
+ON usm.user_id = us.id WHERE usm.group_id = 3 AND us.block = 0" key_field="id" value_field="username" required="false" default="0">
+			<option value="0">Chọn Người Bảo trợ</option>
+		</field>
+
+		<field
+			name="money"
+			type="text"
+			label="COM_USERS_USER_FIELD_MONEY_LABEL"
+			description="COM_USERS_USER_FIELD_MONEY_LABEL"
+			required="false"
+			size="30"
+			readonly="true"
+		/>
+
+		<field
+			name="level"
+			type="number"
+			label="COM_USERS_USER_FIELD_LEVEL_LABEL"
+			description="COM_USERS_USER_FIELD_LEVEL_LABEL"
+			required="false"
+			size="30"
+			readonly="true"
+			default="1"
+		/>
+
+		<field name="level_tree" default="" type="list" required="false" label="COM_USERS_USER_FIELD_LEVEL_TREE_LABEL" description="COM_USERS_USER_FIELD_LEVEL_TREE_LABEL" class="inputbox" size="1">
+			<option value="">COM_USERS_OPTION_LABEL</option>
+			<option value="1">COM_USERS_USER_LEVEL_OPTION_1</option>
+			<option value="2">COM_USERS_USER_LEVEL_OPTION_2</option>
+			<option value="3">COM_USERS_USER_LEVEL_OPTION_3</option>
+			<option value="4">COM_USERS_USER_LEVEL_OPTION_4</option>
+			<option value="5">COM_USERS_USER_LEVEL_OPTION_5</option>
+			<option value="6">COM_USERS_USER_LEVEL_OPTION_6</option>
+			<option value="7">COM_USERS_USER_LEVEL_OPTION_7</option>
+		</field>
+
+		<field
+			name="is_leader"
+			type="radio"
+			label="COM_USERS_USER_FIELD_ISLEADER_LABEL"
+			description="COM_USERS_USER_FIELD_ISLEADER_LABEL"
+			default="0"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field name="parent_id" type="sql" label="Gán cho Leader" query="SELECT us.id, us.username FROM #__users AS us WHERE us.is_leader = 1 AND us.block = 0" key_field="id" value_field="username" required="false" default="0">
+			<option value="0">Chọn Leader</option>
+		</field>
+
+
+
+
+
+		<!-- <field
+			name="parent_id"
+			type="text"
+			label="COM_USERS_USER_FIELD_PARENT_LABEL"
+			description="COM_USERS_USER_FIELD_PARENT_LABEL"
+			required="false"
+			size="30"
+			readonly="true"
+		/> -->
+
+		<field name="sex" default="" type="list" required="false" label="Giới tính" description="Giới tính" class="inputbox" size="3">
+			<option value="">COM_USERS_OPTION_LABEL</option>
+			<option value="1">COM_USERS_USER_SEX_OPTION_1</option>
+			<option value="2">COM_USERS_USER_SEX_OPTION_2</option>
+		</field>
+
+		<field
+			name="birthday"
+			type="calendar"
+			label="Ngày sinh"
+			description=""
+			required="false"
+			readonly="false"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+		/>
+
+
+		<field name="job" default="" type="list" required="false" label="Công việc" description="Công việc" class="inputbox" size="1">
+			<option value="">COM_USERS_OPTION_LABEL</option>
+			<option value="Bán hàng">COM_USERS_USER_JOB_OPTION_1</option>
+			<option value="Chuyên gia">COM_USERS_USER_JOB_OPTION_2</option>
+			<option value="Chuyên viên trang điểm">COM_USERS_USER_JOB_OPTION_3</option>
+			<option value="Công chức">COM_USERS_USER_JOB_OPTION_4</option>
+			<option value="Công nhân">COM_USERS_USER_JOB_OPTION_5</option>
+			<option value="Dịch vụ khách hàng">COM_USERS_USER_JOB_OPTION_6</option>
+			<option value="Giám sát">COM_USERS_USER_JOB_OPTION_7</option>
+			<option value="Giáo viên">COM_USERS_USER_JOB_OPTION_8</option>
+			<option value="Hành chính/ Thư ký">COM_USERS_USER_JOB_OPTION_9</option>
+			<option value="IT">COM_USERS_USER_JOB_OPTION_10</option>
+			<option value="Khác">COM_USERS_USER_JOB_OPTION_11</option>
+			<option value="Kinh doanh riêng">COM_USERS_USER_JOB_OPTION_12</option>
+			<option value="Kiến trúc sư">COM_USERS_USER_JOB_OPTION_13</option>
+			<option value="Kỹ sư">COM_USERS_USER_JOB_OPTION_14</option>
+			<option value="Luật sư">COM_USERS_USER_JOB_OPTION_15</option>
+			<option value="Marketing">COM_USERS_USER_JOB_OPTION_16</option>
+			<option value="Nghiên cứu viên">COM_USERS_USER_JOB_OPTION_17</option>
+			<option value="Người điều hành/ Quản lý">COM_USERS_USER_JOB_OPTION_18</option>
+			<option value="Nhân viên y tế/ Chăm sóc sức khỏe">COM_USERS_USER_JOB_OPTION_19</option>
+			<option value="Nội trợ">COM_USERS_USER_JOB_OPTION_20</option>
+			<option value="Sinh viên/ Học sinh">COM_USERS_USER_JOB_OPTION_21</option>
+			<option value="Thất nghiệp">COM_USERS_USER_JOB_OPTION_22</option>
+			<option value="Về hưu">COM_USERS_USER_JOB_OPTION_23</option>
+		</field>
+
+		<field
+				name="province"
+				type="sql"
+				default=""
+				label="COM_USERS_HEADING_PROVINCE"
+				query="SELECT id, country_name FROM #__eshop_countries"
+				key_field="id"
+				value_field="country_name"
+				required="false">
+			<option value="">COM_USERS_OPTION_LABEL</option>
+		</field>
+
+		<field
+			name="address"
+			type="text"
+			label="COM_USERS_USER_FIELD_ADDRESS_LABEL"
+			description=""
+			required="false"
+			size="255"
+		/>
+
+		<field
+				name="card_id"
+				type="text"
+				label="COM_USERS_IDCARD_LABEL"
+				description="COM_USERS_IDCARD_DES"
+				required="false"
+				size="15"
+		/>
+
+		<field
+				name="card_front"
+				type="text"
+				label="COM_USERS_IDCARD_FRONT_IMAGE"
+				description=""
+				readonly="true"
+				required="false"
+		/>
+		<field
+				name="card_behind"
+				type="text"
+				label="COM_USERS_IDCARD_BEHIND_IMAGE"
+				description=""
+				readonly="true"
+				required="false"
+		/>
+
+		<field
+				name="bank_name"
+				type="text"
+				label="COM_USERS_BANK_NAME"
+				description=""
+				readonly="false"
+				required="false"
+		/>
+
+		<field
+				name="bank_account_name"
+				type="text"
+				label="COM_USERS_BANK_ACCOUNT_NAME"
+				description=""
+				readonly="false"
+				required="false"
+		/>
+
+		<field
+				name="bank_account_number"
+				type="text"
+				label="COM_USERS_BANK_ACCOUNT_NUMBER"
+				description=""
+				readonly="false"
+				required="false"
+		/>
+
+
+		<field name="favorite_service" default="" type="list" required="false" label="Dịch vụ bạn quan tâm" description="Dịch vụ bạn quan tâm" class="inputbox" size="1">
+			<option value="">COM_USERS_SERVICE</option>
+			<option value="8">COM_USERS_SERVICE_8</option>
+			<option value="9">COM_USERS_SERVICE_9</option>
+			<!-- <option value="10">COM_USERS_SERVICE_10</option> -->
+			<option value="11">COM_USERS_SERVICE_11</option>
+			<option value="12">COM_USERS_SERVICE_12</option>
+			<option value="13">COM_USERS_SERVICE_13</option>
+			<option value="14">COM_USERS_SERVICE_14</option>
+			<option value="15">COM_USERS_SERVICE_15</option>
+			<!-- <option value="Thẻ tín dụng (Credit card)">COM_USERS_SERVICE_1</option>
+			<option value="Vay tín chấp">COM_USERS_SERVICE_2</option>
+			<option value="Vay tiền mặt">COM_USERS_SERVICE_3</option>
+			<option value="Vay du học">COM_USERS_SERVICE_4</option>
+			<option value="Vay thế chấp">COM_USERS_SERVICE_5</option>
+			<option value="Vay mua ô tô">COM_USERS_SERVICE_6</option>
+			<option value="Vay mua nhà">COM_USERS_SERVICE_7</option> -->
+			<!-- <option value="Bảo hiểm nhân thọ">COM_USERS_SERVICE_8</option>
+			<option value="Bảo hiểm sức khỏe">COM_USERS_SERVICE_9</option>
+			<option value="Bảo hiểm thai sản">COM_USERS_SERVICE_10</option>
+			<option value="Bảo hiểm ôtô">COM_USERS_SERVICE_11</option>
+			<option value="Bảo hiểm du lịch">COM_USERS_SERVICE_12</option>
+			<option value="Bảo hiểm nhà">COM_USERS_SERVICE_13</option>
+			<option value="Bảo hiểm bệnh hiểm nghèo">COM_USERS_SERVICE_14</option> -->
+			<!-- <option value="Chứng khoán">COM_USERS_SERVICE_15</option>
+			<option value="Chứng chỉ quỹ">COM_USERS_SERVICE_16</option>
+			<option value="Trái phiếu doanh nghiệp">COM_USERS_SERVICE_17</option>
+			<option value="Gửi tiết kiệm">COM_USERS_SERVICE_18</option>
+			<option value="Thẻ ghi nợ">COM_USERS_SERVICE_19</option> -->
+
+			<!-- <option value="5">COM_USERS_SERVICE_OPTION_5</option> -->
+
+		</field>
+
+		<field
+			name="banned"
+			type="radio"
+			label="COM_USERS_USER_FIELD_BAN_DESC"
+			description="COM_USERS_USER_FIELD_BAN_DESC"
+			class="btn-group btn-group-yesno btn-group-reversed"
+			default="0"
+			>
+			<option value="1">COM_USERS_USER_FIELD_BLOCK</option>
+			<option value="0">COM_USERS_USER_FIELD_ENABLE</option>
+		</field>
+
+		<field
+			name="block_landingpage"
+			type="radio"
+			label="COM_USERS_USER_FIELD_BLOCK_LANDINGPAGE_DESC"
+			description="COM_USERS_USER_FIELD_BLOCK_LANDINGPAGE_DESC"
+			class="btn-group btn-group-yesno btn-group-reversed"
+			default="1"
+			>
+			<option value="1">COM_USERS_USER_FIELD_BLOCK</option>
+			<option value="0">COM_USERS_USER_FIELD_ENABLE</option>
+		</field>
+
+
+		<!-- <field
+			name="autobuy"
+			type="radio"
+			label="COM_USERS_USER_FIELD_AUTOBUY_DESC"
+			description="COM_USERS_USER_FIELD_AUTOBUY_DESC"
+			class="btn-group btn-group-yesno btn-group-reversed"
+			default="0"
+			>
+			<option value="1">COM_USERS_USER_FIELD_AUTOBUY_ENABLE</option>
+			<option value="0">COM_USERS_USER_FIELD_AUTOBUY_BLOCK</option>
+		</field> -->
+
+
+
+		<field
+			name="registerDate"
+			type="calendar"
+			label="COM_USERS_USER_FIELD_REGISTERDATE_LABEL"
+			description="COM_USERS_USER_FIELD_REGISTERDATE_DESC"
+			class="readonly"
+			readonly="true"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="lastvisitDate"
+			type="calendar"
+			label="COM_USERS_USER_FIELD_LASTVISIT_LABEL"
+			description="COM_USERS_USER_FIELD_LASTVISIT_DESC"
+			class="readonly"
+			readonly="true"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="lastResetTime"
+			type="calendar"
+			label="COM_USERS_USER_FIELD_LASTRESET_LABEL"
+			description="COM_USERS_USER_FIELD_LASTRESET_DESC"
+			class="readonly"
+			readonly="true"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="resetCount"
+			type="number"
+			label="COM_USERS_USER_FIELD_RESETCOUNT_LABEL"
+			description="COM_USERS_USER_FIELD_RESETCOUNT_DESC"
+			class="readonly"
+			default="0"
+			readonly="true"
+		/>
+
+		<field
+			name="sendEmail"
+			type="radio"
+			label="COM_USERS_USER_FIELD_SENDEMAIL_LABEL"
+			description="COM_USERS_USER_FIELD_SENDEMAIL_DESC"
+			default="1"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="block"
+			type="radio"
+			label="COM_USERS_USER_FIELD_BLOCK_LABEL"
+			description="COM_USERS_USER_FIELD_BLOCK_DESC"
+			class="btn-group btn-group-yesno btn-group-reversed"
+			default="0"
+			>
+			<option value="1">COM_USERS_USER_FIELD_BLOCK</option>
+			<option value="0">COM_USERS_USER_FIELD_ENABLE</option>
+		</field>
+
+		<field
+			name="requireReset"
+			type="radio"
+			label="COM_USERS_USER_FIELD_REQUIRERESET_LABEL"
+			description="COM_USERS_USER_FIELD_REQUIRERESET_DESC"
+			default="0"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+	</fieldset>
+	<field name="groups" type="hidden" />
+	<field name="twofactor" type="hidden" />
+
+	<fields name="params">
+
+		<!--  Basic user account settings. -->
+		<fieldset name="settings" label="COM_USERS_SETTINGS_FIELDSET_LABEL">
+
+			<field
+				name="admin_style"
+				type="templatestyle"
+				label="COM_USERS_USER_FIELD_BACKEND_TEMPLATE_LABEL"
+				description="COM_USERS_USER_FIELD_BACKEND_TEMPLATE_DESC"
+				client="administrator"
+				filter="uint"
+				>
+				<option value="">JOPTION_USE_DEFAULT</option>
+			</field>
+
+			<field
+				name="admin_language"
+				type="language"
+				label="COM_USERS_USER_FIELD_BACKEND_LANGUAGE_LABEL"
+				description="COM_USERS_USER_FIELD_BACKEND_LANGUAGE_DESC"
+				client="administrator"
+				>
+				<option value="">JOPTION_USE_DEFAULT</option>
+			</field>
+
+			<field
+				name="language"
+				type="language"
+				label="COM_USERS_USER_FIELD_FRONTEND_LANGUAGE_LABEL"
+				description="COM_USERS_USER_FIELD_FRONTEND_LANGUAGE_DESC"
+				client="site"
+				>
+				<option value="">JOPTION_USE_DEFAULT</option>
+			</field>
+
+			<field
+				name="editor"
+				type="plugins"
+				label="COM_USERS_USER_FIELD_EDITOR_LABEL"
+				description="COM_USERS_USER_FIELD_EDITOR_DESC"
+				folder="editors"
+				>
+				<option value="">JOPTION_USE_DEFAULT</option>
+			</field>
+
+			<field
+				name="timezone"
+				type="timezone"
+				label="COM_USERS_USER_FIELD_TIMEZONE_LABEL"
+				description="COM_USERS_USER_FIELD_TIMEZONE_DESC"
+				>
+				<option value="">JOPTION_USE_DEFAULT</option>
+			</field>
+
+		</fieldset>
+
+	</fields>
+</form>

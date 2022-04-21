@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset
+            name="updates"
+            label="COM_JOOMPROFILE_CONFIG_AUTO_UPDATE_SETTINGS"
+            description="">
+
+        <field name="downloadid" type="text" default="" size="30"
+            label="COM_JOOMPROFILE_CONFIG_DOWNLOAD_ID"
+            description ="COM_JOOMPROFILE_CONFIG_DOWNLOAD_ID_DESC" />
+    </fieldset>
+</config>
+

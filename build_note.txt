@@ -1,0 +1,14 @@
+SET GLOBAL sql_mode = '';
+SET SESSION sql_mode = '';
+-- 24/07
+Cấu hình quyền: Tạo, sửa
+Cho phép hồ sơ người dùng K2: Bật
+Editor - TinyMCE: 350px
+
+-- Build 5/11
+ALTER TABLE `wmspj_k2_items` ADD `send_notication` TINYINT NOT NULL DEFAULT '0' AFTER `date_send_notification`;
+index.php?option=com_k2&view=item&action=sendNotificationsPost
+
+
+-- Build 22/02
+ALTER TABLE `wmspj_registration` ADD `year_old` VARCHAR(255) NOT NULL AFTER `phone`;

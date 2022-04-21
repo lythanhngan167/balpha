@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="multi_mailchimp_list"  
+				type="radio"
+				class="btn-group"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_MULTI_MAILCHIMP_LIST_LABEL"
+				description="COM_JOOMPROFILE_FIELD_PARAMS_MULTI_MAILCHIMP_LIST_DESC"
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field  
+				name="mailchimp_api_key"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_MAILCHIMP_API_KEY_LABEL"
+				description="COM_JOOMPROFILE_FIELD_PARAMS_MAILCHIMP_API_KEY_DESC"
+				default="">
+			</field>
+			<field  
+				name="mailchimp_list"  
+				type="joomprofile.mailchimplists"
+				multiple="true"
+				class="chosen"
+				apiKey="aaa"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_MAILCHIMP_LIST_LABEL"
+				description="COM_JOOMPROFILE_FIELD_PARAMS_MAILCHIMP_LIST_DESC"
+				addfieldpath="/components/com_joomprofile/libraries/field/mailchimp"
+				default="">
+			</field>
+		</fieldset>	
+	</fields>
+</config>

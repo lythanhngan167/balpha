@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default" label="COM_USERS_REGISTRATION_DEFAULT_LABEL" addrulepath="components/com_users/models/rules">
+		<field
+			name="spacer"
+			type="spacer"
+			label="COM_USERS_REGISTER_REQUIRED"
+			class="text"
+		/>
+
+		<field name="favorite_service" default="" type="list" required="true" label="Dịch vụ bạn quan tâm" description="Dịch vụ bạn quan tâm" class="inputbox" size="1">
+			<option value="">COM_USERS_SERVICE</option>
+			<option value="8">COM_USERS_SERVICE_8</option>
+			<option value="9">COM_USERS_SERVICE_9</option>
+			<!-- <option value="10">COM_USERS_SERVICE_10</option> -->
+			<option value="11">COM_USERS_SERVICE_11</option>
+			<option value="12">COM_USERS_SERVICE_12</option>
+			<option value="13">COM_USERS_SERVICE_13</option>
+			<option value="14">COM_USERS_SERVICE_14</option>
+			<option value="15">COM_USERS_SERVICE_15</option>
+
+			<!-- <option value="Thẻ tín dụng (Credit card)">COM_USERS_SERVICE_1</option>
+			<option value="Vay tín chấp">COM_USERS_SERVICE_2</option>
+			<option value="Vay tiền mặt">COM_USERS_SERVICE_3</option>
+			<option value="Vay du học">COM_USERS_SERVICE_4</option>
+			<option value="Vay thế chấp">COM_USERS_SERVICE_5</option>
+			<option value="Vay mua ô tô">COM_USERS_SERVICE_6</option>
+			<option value="Vay mua nhà">COM_USERS_SERVICE_7</option> -->
+
+			<!-- <option value="Chứng khoán">COM_USERS_SERVICE_15</option>
+			<option value="Chứng chỉ quỹ">COM_USERS_SERVICE_16</option>
+			<option value="Trái phiếu doanh nghiệp">COM_USERS_SERVICE_17</option>
+			<option value="Gửi tiết kiệm">COM_USERS_SERVICE_18</option>
+			<option value="Thẻ ghi nợ">COM_USERS_SERVICE_19</option> -->
+
+			<!-- <option value="5">COM_USERS_SERVICE_OPTION_5</option> -->
+
+		</field>
+
+		<field
+			name="name"
+			type="text"
+			label="COM_USERS_REGISTER_NAME_LABEL"
+			description="COM_USERS_REGISTER_NAME_DESC"
+			filter="string"
+			required="true"
+			size="30"
+			hint="Họ và tên *"
+		/>
+
+		<field
+			name="username"
+			type="tel"
+			label="COM_USERS_REGISTER_USERNAME_LABEL"
+			description="COM_USERS_DESIRED_USERNAME"
+			class="validate-phonevalidate"
+			filter="username"
+			message="COM_USERS_REGISTER_USERNAME_MESSAGE"
+			required="true"
+			size="30"
+			validate="phonevalidate"
+			hint="Số điện thoại *"
+		/>
+
+		<field
+			name="password1"
+			type="password"
+			label="COM_USERS_PROFILE_PASSWORD1_LABEL"
+			description="COM_USERS_DESIRED_PASSWORD"
+			autocomplete="off"
+			class="validate-passwordVer"
+			field="password1"
+			filter="raw"
+			size="30"
+			validate="password"
+			required="true"
+			hint="COM_USERS_PROFILE_PASSWORD1_LABEL"
+		/>
+
+		<field
+			name="password2"
+			type="password"
+			label="COM_USERS_PROFILE_PASSWORD2_LABEL"
+			description="COM_USERS_PROFILE_PASSWORD2_DESC"
+			autocomplete="off"
+			class="validate-passwordVer"
+			field="password1"
+			filter="raw"
+			message="COM_USERS_PROFILE_PASSWORD1_MESSAGE"
+			size="30"
+			validate="equals"
+			required="true"
+
+			hint="COM_USERS_PROFILE_PASSWORD2_LABEL"
+		/>
+
+		<field
+				name="province"
+				type="sql"
+				default=""
+				label="Tỉnh/TP"
+				query="SELECT id, country_name FROM #__eshop_countries"
+				key_field="id"
+				value_field="country_name"
+				required="true">
+			<option value="">COM_USERS_PROVINCE_LABEL</option>
+		</field>
+
+			<field
+				name="email1"
+				type="text"
+				label="COM_USERS_REGISTER_EMAIL1_LABEL"
+				description="COM_USERS_REGISTER_EMAIL1_DESC"
+				field="id"
+				filter="string"
+				required="true"
+				class="validate-emailvalidate"
+				size="30"
+				unique="true"
+				validate="emailvalidate"
+				validDomains="com_users.domains"
+				autocomplete="email"
+				hint="COM_USERS_REGISTER_EMAIL1_LABEL"
+			/>
+
+			<field
+				name="email2"
+				type="text"
+				label="COM_USERS_REGISTER_EMAIL2_LABEL"
+				description="COM_USERS_REGISTER_EMAIL2_DESC"
+				field="email1"
+				filter="string"
+				message="COM_USERS_REGISTER_EMAIL2_MESSAGE"
+				required="true"
+				class="validate-emailvalidate"
+				size="30"
+				validate="equals"
+				hint="COM_USERS_REGISTER_EMAIL2_LABEL"
+			/>
+
+
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_USERS_CAPTCHA_LABEL"
+			description="COM_USERS_CAPTCHA_DESC"
+			validate="captcha"
+			hint="COM_USERS_CAPTCHA_LABEL"
+		/>
+	</fieldset>
+</form>

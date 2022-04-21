@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+				
+			<field  
+				name="allowed_ext"  
+				type="list"
+				class="chosen"
+				multiple="true"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_ALLOWED_EXT_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_ALLOWED_EXT_DESC"
+				default="">
+				<option value="bmp">bmp</option>
+				<option value="gif">gif</option>
+				<option value="jpg">jpg</option>
+				<option value="jpeg">jpeg</option>
+				<option value="jpe">jpe</option>
+				<option value="png">png</option>
+			</field>
+				
+			<field  
+				name="default_image"  
+				type="text"
+				class=""
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_IMAGE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_IMAGE_DESC"
+				default="media/com_joomprofile/images/default.png"/>
+				
+			<field  
+				name="default_width"  
+				type="text"
+				class="validate-number"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_WIDTH_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_WIDTH_DESC" 
+				default="140"/>
+				
+			<field  
+				name="default_height"  
+				type="text"
+				class="validate-number"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_HEIGHT_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_HEIGHT_DESC" 
+				default="140"/>
+		</fieldset>	
+	</fields>
+</config>

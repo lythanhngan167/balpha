@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_REGISTRATION_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <!-- <field name="state"
+               type="status"
+               label="COM_REGISTRATION_FILTER_STATE"
+               description="COM_REGISTRATION_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field> -->
+
+        <field name="status" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_STATUS" type="list" onchange="this.form.submit();" default="COM_REGISTRATION_REGISTRATIONS_STATUS_FILTER">
+        <option value="">COM_REGISTRATION_REGISTRATIONS_STATUS_FILTER</option>
+        <option value="new">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_NEW</option>
+        <option value="confirmed">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CONFIRMED</option>
+        <option value="converted">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CONVERTED</option>
+        <option value="cancel">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CANCEL</option>
+      </field>
+
+      <!-- <field name="project_id" label="Dự án" type="list" onchange="this.form.submit();" default="">
+        <option value="">Tất cả</option>
+        <option value="32">Dự án AT</option>
+        <option value="28">Dự án TP (Toàn Quốc 2)</option>
+      </field> -->
+
+      <field name="project_id"
+             type="sql"
+             label="Dự án"
+             description="Dự án"
+             query="SELECT id, title FROM #__projects WHERE state = 1 ORDER BY title ASC"
+              key_field="id"
+              value_field="title"
+             onchange="this.form.submit();"
+      >
+          <option value="">Chọn Dự án</option>
+      </field>
+
+      <field name="duplicate_first_bca" label="Trạng thái duyệt" type="hidden" onchange="this.form.submit();">
+  <option value="1"></option>
+</field>
+
+
+    </fields>
+
+    <fields name="list">
+
+        <field name="fullordering"
+               type="list"
+               label="COM_CONTENT_LIST_FULL_ORDERING"
+               description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.`id` ASC">ID Ascending</option><option value="a.`id` DESC">ID Descending</option><option value="a.`ordering` ASC">Order Ascending</option><option value="a.`ordering` DESC">Order Descending</option><option value="a.`state` ASC">State Ascending</option><option value="a.`state` DESC">State Descending</option><option value="a.`created_by` ASC">Created by Ascending</option><option value="a.`created_by` DESC">Created by Descending</option><option value="a.`name` ASC">Name Ascending</option><option value="a.`name` DESC">Name Descending</option><option value="a.`email` ASC">Email Ascending</option><option value="a.`email` DESC">Email Descending</option><option value="a.`phone` ASC">Phone Ascending</option><option value="a.`phone` DESC">Phone Descending</option><option value="a.`job` ASC">Job Ascending</option><option value="a.`job` DESC">Job Descending</option><option value="a.`address` ASC">Address Ascending</option><option value="a.`address` DESC">Address Descending</option><option value="a.`note` ASC">Note Ascending</option><option value="a.`note` DESC">Note Descending</option><option value="a.`province` ASC">Province Ascending</option><option value="a.`province` DESC">Province Descending</option><option value="a.`status` ASC">Status Ascending</option><option value="a.`status` DESC">Status Descending</option>
+
+        </field>
+
+        <field name="limit"
+               type="limitbox"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

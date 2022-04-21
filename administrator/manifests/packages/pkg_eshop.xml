@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5.0" method="upgrade">
+	<name>EShop Package</name>
+	<packagename>eshop</packagename>
+	<creationDate>May 2013</creationDate>
+	<author>Giang Dinh Truong</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.1.0</version>
+	<description>Powerful and Responsive Shopping Cart Extension for Joomla! 3.x</description>
+	<scriptfile>install.script.php</scriptfile>
+	<files folder="packages">
+		<file type="component" id="eshop">com_eshop.zip</file>
+		<file type="component" id="eshop">lib_omnipay.zip</file>
+		<file type="module" id="eshop">mod_eshop_advanced_search.zip</file>
+		<file type="module" id="eshop">mod_eshop_cart.zip</file>
+		<file type="module" id="eshop">mod_eshop_category.zip</file>
+		<file type="module" id="eshop">mod_eshop_currency.zip</file>
+		<file type="module" id="eshop">mod_eshop_manufacturer.zip</file>
+		<file type="module" id="eshop">mod_eshop_product.zip</file>
+		<file type="module" id="eshop">mod_eshop_products_filter.zip</file>
+		<file type="module" id="eshop">mod_eshop_quote.zip</file>
+		<file type="module" id="eshop">mod_eshop_search.zip</file>
+		<file type="module" id="eshop">mod_eshop_tags.zip</file>
+		<file type="plugin" id="eshop" group="content">plg_eshopcategory.zip</file>
+		<file type="plugin" id="eshop" group="system">plg_eshopcurrency.zip</file>
+		<file type="plugin" id="eshop" group="system">plg_eshopnotify.zip</file>
+		<file type="plugin" id="eshop" group="content">plg_eshopproduct.zip</file>
+		<file type="plugin" id="eshop" group="content">plg_eshopreminder.zip</file>
+		<file type="plugin" id="eshop" group="content">plg_installer_eshop.zip</file>
+		<file type="plugin" id="eshop" group="osmembership">plg_osmembership_eshop.zip</file>
+		<file type="plugin" id="eshop" group="search">plg_search_eshop.zip</file>
+		<file type="plugin" id="eshop" group="user">plg_user_eshop.zip</file>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="EShop Extension">http://joomdonation.com/updates/eshop.xml</server>
+	</updateservers>
+</extension>

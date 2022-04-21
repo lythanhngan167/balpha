@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" description="COM_NOTIFICATIONS_USER_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="state"
+               type="status"
+               label="COM_NOTIFICATIONS_USER_FILTER_STATE"
+               description="COM_NOTIFICATIONS_USER_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+
+        <field name="created_date.from" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_FROM" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_FROM"/>
+<field name="created_date.to" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_TO" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_CREATED_DATE_FILTER_TO"/>
+<field name="updated_date.from" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_FROM" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_FROM"/>
+<field name="updated_date.to" label="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_TO" type="calendar" onchange="this.form.submit();" filter="safehtml" class="inputbox" showtime="true" translateformat="true" hint="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_UPDATED_DATE_FILTER_TO"/>
+<field name="category" label="COM_NOTIFICATIONS_USER_FORM_LBL_NOTIFICATIONUSER_CATEGORY" type="category" extension="com_notifications_user.notificationusers" onchange="this.form.submit();" default="">
+  <option value=""/>
+  <option value="">JOPTION_SELECT_CATEGORY</option>
+</field>
+<field name="status" label="COM_NOTIFICATIONS_USER_FORM_LBL_NOTIFICATIONUSER_STATUS" type="list" onchange="this.form.submit();" default="COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_FILTER">
+  <option value="">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_FILTER</option>
+  <option value="1">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_OPTION_1</option>
+  <option value="2">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_OPTION_2</option>
+  <option value="99">COM_NOTIFICATIONS_USER_NOTIFICATIONUSERS_STATUS_OPTION_99</option>
+</field>
+
+
+    </fields>
+
+    <fields name="list">
+
+        <field name="fullordering"
+               type="list"
+               label="COM_NOTIFICATIONS_USER_LIST_FULL_ORDERING"
+               description="COM_NOTIFICATIONS_USER_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.`id` ASC">COM_NOTIFICATIONS_USER_ID_ASC</option><option value="a.`id` DESC">COM_NOTIFICATIONS_USER_ID_DESC</option><option value="a.`ordering` ASC">COM_NOTIFICATIONS_USER_ORDERING_ASC</option><option value="a.`ordering` DESC">COM_NOTIFICATIONS_USER_ORDERING_DESC</option><option value="a.`state` ASC">COM_NOTIFICATIONS_USER_STATE_ASC</option><option value="a.`state` DESC">COM_NOTIFICATIONS_USER_STATE_DESC</option><option value="a.`user_id` ASC">COM_NOTIFICATIONS_USER_USER_ID_ASC</option><option value="a.`user_id` DESC">COM_NOTIFICATIONS_USER_USER_ID_DESC</option><option value="a.`seen_flag` ASC">COM_NOTIFICATIONS_USER_SEEN_FLAG_ASC</option><option value="a.`seen_flag` DESC">COM_NOTIFICATIONS_USER_SEEN_FLAG_DESC</option><option value="a.`seen_at` ASC">COM_NOTIFICATIONS_USER_SEEN_AT_ASC</option><option value="a.`seen_at` DESC">COM_NOTIFICATIONS_USER_SEEN_AT_DESC</option><option value="a.`title` ASC">COM_NOTIFICATIONS_USER_TITLE_ASC</option><option value="a.`title` DESC">COM_NOTIFICATIONS_USER_TITLE_DESC</option><option value="a.`message` ASC">COM_NOTIFICATIONS_USER_MESSAGE_ASC</option><option value="a.`message` DESC">COM_NOTIFICATIONS_USER_MESSAGE_DESC</option><option value="a.`created_date` ASC">COM_NOTIFICATIONS_USER_CREATED_DATE_ASC</option><option value="a.`created_date` DESC">COM_NOTIFICATIONS_USER_CREATED_DATE_DESC</option><option value="a.`updated_date` ASC">COM_NOTIFICATIONS_USER_UPDATED_DATE_ASC</option><option value="a.`updated_date` DESC">COM_NOTIFICATIONS_USER_UPDATED_DATE_DESC</option><option value="a.`category` ASC">COM_NOTIFICATIONS_USER_CATEGORY_ASC</option><option value="a.`category` DESC">COM_NOTIFICATIONS_USER_CATEGORY_DESC</option><option value="a.`status` ASC">COM_NOTIFICATIONS_USER_STATUS_ASC</option><option value="a.`status` DESC">COM_NOTIFICATIONS_USER_STATUS_DESC</option>
+
+        </field>
+
+       <field name="limit"
+               type="limitbox"
+               label="COM_NOTIFICATIONS_USER_LIST_LIMIT"
+               description="COM_NOTIFICATIONS_USER_LIST_LIMIT_DESC"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

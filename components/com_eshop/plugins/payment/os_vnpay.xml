@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="payment">
+    <name>os_onepay</name>
+    <title>Payment Onepay Domestic</title>
+    <author>Le Van Son</author>
+    <creationDate>15-04-2017</creationDate>
+    <copyright>Copyright 2012 Ossolution Team</copyright>
+    <license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+    <authorEmail>contact@joomdonation.com</authorEmail>
+    <authorUrl>www.joomdonation.com</authorUrl>
+    <version>2.5.4</version>
+    <description>Vnpay for EShop.</description>
+    <config>
+        <fields name="params" addfieldpath="/administrator/components/com_eshop/elements/">
+            <fieldset name="basic">
+                <field name="merchant_id" type="text" label="Merchant ID" description="Merchant ID" size="255"
+                       default=""></field>
+                <!--<field name="access_code" type="text" label="Access code" description="Access code " size="255"
+                       default=""></field>-->
+                <field name="token" type="text" label="Hash Key" description="Hash Key" size="255"
+                       default=""></field>
+
+
+
+                <field name="enviroment" type="list" label="Môi trường " description="Môi trường " default="dev">
+                    <option value="dev">Test - Sandbox </option>
+                    <option value="pro">Thực tế </option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+    <params/>
+    <files>
+        <filename>os_vnpay.php</filename>
+    </files>
+    <installsql/>
+    <installfile/>
+</install>

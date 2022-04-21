@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="from_date" type="calendar" default="" label="Ngày bắt đầu" description=""
+	class="input-small" required="false" filter="user_utc"
+	showtime="false" todaybutton="false" filltable="false" translateformat="true" />
+    <field name="to_date" type="calendar" default="" label="Ngày kết thúc" description=""
+class="input-small" required="false" filter="user_utc"
+showtime="false" todaybutton="false" filltable="false" translateformat="true" />
+
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_customer" section="customer"/>
+  </fieldset>
+</form>

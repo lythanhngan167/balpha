@@ -1,0 +1,14 @@
+diff a/components/com_joomprofile/extensions/profile/helpers/field.php b/components/com_joomprofile/extensions/profile/helpers/field.php	(rejected hunks)
+@@ -17,10 +17,10 @@
+ 			return true;
+ 		}
+ 
+-		// delete the fields first 
++		// delete the fields first
+ 		$field_ids = array_keys($fieldValues);
+ 		$filter = array('`field_id` IN ('.implode(', ', $field_ids).')', '`user_id` = '.$userid);
+-		
++
+ 		$db = JFactory::getDbo();
+ 		//@TODO : use model if required
+ 		$query = "DELETE FROM `#__joomprofile_field_values` WHERE ".implode(' AND ', $filter);

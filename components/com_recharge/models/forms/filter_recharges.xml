@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_RECHARGE_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="status" label="COM_RECHARGE_FORM_LBL_RECHARGE_STATUS" type="list" onchange="this.form.submit();" default="COM_RECHARGE_RECHARGES_STATUS_FILTER">
+  <option value="">COM_RECHARGE_RECHARGES_STATUS_FILTER</option>
+  <option value="unconfirm">COM_RECHARGE_RECHARGES_STATUS_OPTION_UNCONFIRM</option>
+  <option value="confirmed">COM_RECHARGE_RECHARGES_STATUS_OPTION_CONFIRMED</option>
+  <option value="waiting">COM_RECHARGE_RECHARGES_STATUS_OPTION_WAITING</option>
+  <option value="cancel">COM_RECHARGE_RECHARGES_STATUS_OPTION_CANCEL</option>
+</field>
+<field name="type" label="COM_RECHARGE_FORM_LBL_RECHARGE_TYPE" type="list" onchange="this.form.submit();" default="COM_RECHARGE_RECHARGES_TYPE_FILTER">
+  <option value="">COM_RECHARGE_RECHARGES_TYPE_FILTER</option>
+  <option value="bank_tranfer">COM_RECHARGE_RECHARGES_TYPE_OPTION_BANK_TRANFER</option>
+  <option value="bank_online">COM_RECHARGE_RECHARGES_TYPE_OPTION_BANK_ONLINE</option>
+  <option value="office">COM_RECHARGE_RECHARGES_TYPE_OPTION_OFFICE</option>
+  <option value="other">COM_RECHARGE_RECHARGES_TYPE_OPTION_OTHER</option>
+</field>
+
+
+    </fields>
+</form>

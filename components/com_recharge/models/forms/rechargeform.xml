@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+        <field name="ordering"/>
+        <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox"
+               size="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="checked_out" type="hidden" filter="unset"/>
+        <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+        <field name="bank_name" type="checkboxes" required="false" multiple=""
+               label="COM_RECHARGE_FORM_LBL_RECHARGE_BANK_NAME" description="COM_RECHARGE_FORM_DESC_RECHARGE_BANK_NAME"
+               hint="COM_RECHARGE_FORM_LBL_RECHARGE_BANK_NAME">
+            <option value="ACB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_ACB</option>
+            <option value="AGB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_AGB</option>
+            <option value="ABB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_ABB</option>
+            <option value="BAB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_BAB</option>
+            <option value="BIDV">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_BIDV</option>
+            <option value="DAB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_DAB</option>
+            <option value="EXB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_EXB</option>
+            <option value="GPB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_GPB</option>
+            <option value="GAB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_GAB</option>
+            <option value="HDB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_HDB</option>
+
+            <option value="KLB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_KLB</option>
+            <option value="MB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_MB</option>
+            <option value="MSB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_MSB</option>
+            <option value="NAB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_NAB</option>
+            <option value="NVB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_NVB</option>
+            <option value="OJB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_OJB</option>
+            <option value="OCB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_OCB</option>
+            <option value="PGB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_PGB</option>
+            <option value="PBVN">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_PBVN</option>
+            <option value="SCB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_SCB</option>
+            <option value="STB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_STB</option>
+            <option value="SHB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_SHB</option>
+            <option value="SEA">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_SEA</option>
+            <option value="SGB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_SGB</option>
+            <option value="TPB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_TPB</option>
+            <option value="TCB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_TCB</option>
+            <option value="VRB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_VRB</option>
+            <option value="VAB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_VAB</option>
+            <option value="VPB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_VPB</option>
+            <option value="VCB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_VCB</option>
+            <option value="VIB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_VIB</option>
+            <option value="ICB">COM_RECHARGE_RECHARGES_BANK_NAME_OPTION_ICB</option>
+        </field>
+        <field name="amount" filter="safehtml" min="1000000" max="10000000" type="number" required="true"
+               label="COM_RECHARGE_FORM_LBL_RECHARGE_AMOUNT" description="COM_RECHARGE_FORM_DESC_RECHARGE_AMOUNT"
+               hint="COM_RECHARGE_FORM_LBL_RECHARGE_AMOUNT"/>
+        <field name="note" filter="safehtml" type="textarea" label="COM_RECHARGE_FORM_LBL_RECHARGE_NOTE"
+               description="COM_RECHARGE_FORM_DESC_RECHARGE_NOTE" hint="COM_RECHARGE_FORM_LBL_RECHARGE_NOTE"/>
+        <field name="status" default="unconfirm" type="list" required="true"
+               label="COM_RECHARGE_FORM_LBL_RECHARGE_STATUS" description="COM_RECHARGE_FORM_DESC_RECHARGE_STATUS"
+               hint="COM_RECHARGE_FORM_LBL_RECHARGE_STATUS">
+            <option value="unconfirm">COM_RECHARGE_RECHARGES_STATUS_OPTION_UNCONFIRM</option>
+            <option value="confirmed">COM_RECHARGE_RECHARGES_STATUS_OPTION_CONFIRMED</option>
+            <option value="waiting">COM_RECHARGE_RECHARGES_STATUS_OPTION_WAITING</option>
+            <option value="cancel">COM_RECHARGE_RECHARGES_STATUS_OPTION_CANCEL</option>
+        </field>
+        <field name="image" type="FileMultiple" label="COM_RECHARGE_FORM_LBL_RECHARGE_IMAGE"
+               description="COM_RECHARGE_FORM_DESC_RECHARGE_IMAGE" hint="COM_RECHARGE_FORM_LBL_RECHARGE_IMAGE"/>
+        <field name="created_time" type="timecreated" label="COM_RECHARGE_FORM_LBL_RECHARGE_CREATED_TIME"
+               description="COM_RECHARGE_FORM_DESC_RECHARGE_CREATED_TIME"
+               hint="COM_RECHARGE_FORM_LBL_RECHARGE_CREATED_TIME"/>
+        <field name="code" filter="safehtml" type="text" required="false" label="COM_RECHARGE_FORM_LBL_RECHARGE_CODE"
+               description="COM_RECHARGE_FORM_DESC_RECHARGE_CODE" hint="COM_RECHARGE_FORM_LBL_RECHARGE_CODE"/>
+        <field name="type" default="cash" type="list" required="true"
+               label="COM_RECHARGE_FORM_LBL_RECHARGE_TYPE" description="COM_RECHARGE_FORM_DESC_RECHARGE_TYPE"
+               hint="COM_RECHARGE_FORM_LBL_RECHARGE_TYPE">
+            <option value="cash">COM_RECHARGE_RECHARGES_TYPE_OPTION_CASH</option>
+            <option value="bank_tranfer">COM_RECHARGE_RECHARGES_TYPE_OPTION_BANK_TRANFER</option>
+            <!--      <option value="bank_online">COM_RECHARGE_RECHARGES_TYPE_OPTION_BANK_ONLINE</option>-->
+            <!--      <option value="office">COM_RECHARGE_RECHARGES_TYPE_OPTION_OFFICE</option>-->
+
+            <option value="other">COM_RECHARGE_RECHARGES_TYPE_OPTION_OTHER</option>
+        </field>
+        <field name="updated_time" type="timecreated" label="COM_RECHARGE_FORM_LBL_RECHARGE_UPDATED_TIME"
+               description="COM_RECHARGE_FORM_DESC_RECHARGE_UPDATED_TIME"
+               hint="COM_RECHARGE_FORM_LBL_RECHARGE_UPDATED_TIME"/>
+        <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+               description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+    </fieldset>
+    <fieldset name="accesscontrol">
+        <field name="asset_id" type="hidden" filter="unset"/>
+        <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules"
+               validate="rules" class="inputbox" component="com_recharge" section="recharge"/>
+    </fieldset>
+</form>

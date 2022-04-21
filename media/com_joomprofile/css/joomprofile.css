@@ -1,0 +1,34 @@
+#f90-overlay{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 244, 244, 0.5) url(../images/spinner.gif) center center no-repeat;
+    top: 0px;
+    z-index: 9999;
+}
+
+.f90-flat{
+	border-radius: 0 0 0 0 !important;
+}
+
+.f90pro-errorbox h2 {
+    color: #323949;
+    margin-bottom: 30px;
+}
+
+.f90pro-errorbox {
+    margin: 20px;
+}
+
+.jprequire::after{
+  content: "*";
+  color: #DE2121;
+}
+
+.jp-wrap{
+    position: relative;
+}
+
+.jp-field-iframe-100{
+    width: 100%;
+}

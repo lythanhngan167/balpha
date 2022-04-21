@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="title" filter="safehtml" type="text" required="true" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_TITLE" description="COM_TRANSACTION_HISTORY_FORM_DESC_TRANSACTIONHISTORY_TITLE" hint="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_TITLE"/>
+    <field name="amount" required="true" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_AMOUNT" description="COM_TRANSACTION_HISTORY_FORM_DESC_TRANSACTIONHISTORY_AMOUNT" hint="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_AMOUNT"/>
+    <field name="created_date" type="timecreated" required="true" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_CREATED_DATE" description="COM_TRANSACTION_HISTORY_FORM_DESC_TRANSACTIONHISTORY_CREATED_DATE" hint="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_CREATED_DATE"/>
+    <field name="type_transaction" type="list" required="true" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_TYPE_TRANSACTION" description="COM_TRANSACTION_HISTORY_FORM_DESC_TRANSACTIONHISTORY_TYPE_TRANSACTION" hint="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_TYPE_TRANSACTION">
+      <option value="charge">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_OPTION_CHARGE</option>
+      <option value="buydata">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_OPTION_BUYDATA</option>
+    </field>
+    <field name="status" type="list" required="true" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_STATUS" description="COM_TRANSACTION_HISTORY_FORM_DESC_TRANSACTIONHISTORY_STATUS" hint="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_STATUS">
+      <option value="completed">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_COMPLETED</option>
+      <option value="canceled">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_CANCELED</option>
+      <option value="unconfirmed">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_UNCONFIRMED</option>
+    </field>
+    <field name="reference_id" filter="safehtml" type="text" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_REFERENCE_ID" description="COM_TRANSACTION_HISTORY_FORM_DESC_TRANSACTIONHISTORY_REFERENCE_ID" hint="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_REFERENCE_ID"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_transaction_history" section="transactionhistory"/>
+  </fieldset>
+</form>

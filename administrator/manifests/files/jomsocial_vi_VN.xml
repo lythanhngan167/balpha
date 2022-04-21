@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="2.5">
+    <name>JomSocial Vietnamese (Viet Nam)</name>
+    <version>43</version>
+    <creationDate>2021-02-24</creationDate>
+    <author>Joomla! Translate</author>
+    <authorEmail>info@joomlatranslate.com</authorEmail>
+    <authorUrl>https://joomlatranslate.com</authorUrl>
+    <copyright>2021 - Joomla! Translate. All rights reserved!</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    
+	
+	
+    <fileset>
+		<files folder="backend" target="administrator/language/vi-VN">
+			<filename>vi-VN.com_community.ini</filename>
+			<filename>vi-VN.com_community.menu.ini</filename>
+			<filename>vi-VN.com_community.sys.ini</filename>
+			<filename>vi-VN.community.sys.ini</filename>
+			<filename>vi-VN.plg_community_mutualfriends.ini</filename>
+			<filename>vi-VN.plg_community_mutualfriends.sys.ini</filename>
+			<filename>vi-VN.plg_community_myarticles.ini</filename>
+			<filename>vi-VN.plg_community_myarticles.sys.ini</filename>
+			<filename>vi-VN.plg_community_mycontacts.ini</filename>
+			<filename>vi-VN.plg_community_mycontacts.sys.ini</filename>
+			<filename>vi-VN.plg_community_myfriends.ini</filename>
+			<filename>vi-VN.plg_community_myfriendslocation.ini</filename>
+			<filename>vi-VN.plg_community_myfriendslocation.sys.ini</filename>
+			<filename>vi-VN.plg_community_myfriends.sys.ini</filename>
+			<filename>vi-VN.plg_community_mygoogleads.ini</filename>
+			<filename>vi-VN.plg_community_mygoogleads.sys.ini</filename>
+			<filename>vi-VN.plg_community_mygroups.ini</filename>
+			<filename>vi-VN.plg_community_mygroups.sys.ini</filename>
+			<filename>vi-VN.plg_community_mykunenaposts.ini</filename>
+			<filename>vi-VN.plg_community_mykunenaposts.sys.ini</filename>
+			<filename>vi-VN.plg_community_mylatestphotos.ini</filename>
+			<filename>vi-VN.plg_community_mylatestphotos.sys.ini</filename>
+			<filename>vi-VN.plg_community_myrssfeeds.ini</filename>
+			<filename>vi-VN.plg_community_myrssfeeds.sys.ini</filename>
+			<filename>vi-VN.plg_community_mytaggedvideos.ini</filename>
+			<filename>vi-VN.plg_community_mytaggedvideos.sys.ini</filename>
+			<filename>vi-VN.plg_community_myvideos.ini</filename>
+			<filename>vi-VN.plg_community_myvideos.sys.ini</filename>
+			<filename>vi-VN.plg_community_twitter.ini</filename>
+			<filename>vi-VN.plg_community_twitter.sys.ini</filename>
+			<filename>vi-VN.plg_community_walls.ini</filename>
+			<filename>vi-VN.plg_community_walls.sys.ini</filename>
+			<filename>vi-VN.plg_community_wordfilter.ini</filename>
+			<filename>vi-VN.plg_community_wordfilter.sys.ini</filename>
+			<filename>vi-VN.plg_system_forceavatar.ini</filename>
+			<filename>vi-VN.plg_system_forceavatar.sys.ini</filename>
+			<filename>vi-VN.plg_system_forcefields.ini</filename>
+			<filename>vi-VN.plg_system_forcefields.sys.ini</filename>
+			<filename>vi-VN.plg_system_jomsocialredirect.ini</filename>
+			<filename>vi-VN.plg_user_jomsocialuser.ini</filename>
+			<filename>vi-VN.plg_user_jomsocialuser.sys.ini</filename>
+			<filename>vi-VN.plg_community_articlenotifications.ini</filename>
+			<filename>vi-VN.plg_community_articlenotifications.sys.ini</filename>
+			<filename>vi-VN.plg_community_myevents.ini</filename>
+			<filename>vi-VN.plg_community_myevents.sys.ini</filename>
+			<filename>vi-VN.plg_community_system.ini</filename>
+			<filename>vi-VN.plg_community_system.sys.ini</filename>
+			<filename>vi-VN.plg_content_articlecomments.ini</filename>
+			<filename>vi-VN.plg_content_articlecomments.sys.ini</filename>
+		</files>
+		<files folder="frontend" target="language/vi-VN">
+			<filename>vi-VN.com_community.country.ini</filename>
+			<filename>vi-VN.com_community.ini</filename>
+			<filename>vi-VN.mod_community_activitystream.ini</filename>
+			<filename>vi-VN.mod_community_bar.ini</filename>
+			<filename>vi-VN.mod_community_birthdays.ini</filename>
+			<filename>vi-VN.mod_community_discussions.ini</filename>
+			<filename>vi-VN.mod_community_eventscalendar.ini</filename>
+			<filename>vi-VN.mod_community_events.ini</filename>
+			<filename>vi-VN.mod_community_eventssuggestions.ini</filename>
+			<filename>vi-VN.mod_community_friendssuggestions.ini</filename>
+			<filename>vi-VN.mod_community_groups.ini</filename>
+			<filename>vi-VN.mod_community_groupssuggestions.ini</filename>
+			<filename>vi-VN.mod_community_hellome.ini</filename>
+			<filename>vi-VN.mod_community_members.ini</filename>
+			<filename>vi-VN.mod_community_membersmap.ini</filename>
+			<filename>vi-VN.mod_community_memberssearch.ini</filename>
+			<filename>vi-VN.mod_community_nearbyevents.ini</filename>
+			<filename>vi-VN.mod_community_notifications.ini</filename>
+			<filename>vi-VN.mod_community_photocomments.ini</filename>
+			<filename>vi-VN.mod_community_photos.ini</filename>
+			<filename>vi-VN.mod_community_popular_events.ini</filename>
+			<filename>vi-VN.mod_community_popular_groups.ini</filename>
+			<filename>vi-VN.mod_community_profilecompleteness.ini</filename>
+			<filename>vi-VN.mod_community_statistics.ini</filename>
+			<filename>vi-VN.mod_community_topmembers.ini</filename>
+			<filename>vi-VN.mod_community_trending_events.ini</filename>
+			<filename>vi-VN.mod_community_trending_groups.ini</filename>
+			<filename>vi-VN.mod_community_trending_hashtags.ini</filename>
+			<filename>vi-VN.mod_community_trending_photos.ini</filename>
+			<filename>vi-VN.mod_community_trending_videos.ini</filename>
+			<filename>vi-VN.mod_community_videocomments.ini</filename>
+			<filename>vi-VN.mod_community_videos.ini</filename>
+			<filename>vi-VN.mod_activegroups.ini</filename>
+			<filename>vi-VN.mod_community_dating.ini</filename>
+		</files>
+	</fileset>
+	
+</extension>

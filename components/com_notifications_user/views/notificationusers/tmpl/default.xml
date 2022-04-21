@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_NOTIFICATIONS_USER_TITLE_LIST_VIEW_NOTIFICATIONUSERS" option="View">
+        <message>
+                        <![CDATA[COM_NOTIFICATIONS_USER_TITLE_LIST_VIEW_NOTIFICATIONUSERS_DESC]]>
+        </message>
+	</layout>
+	
+			<fields name="request">
+				<fieldset name="request"
+					addfieldpath="/administrator/components/com_categories/models/fields"
+				>
+					<field
+						name="id"
+						type="modal_category"
+						label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+						description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+						extension="com_notifications_user.notificationusers"
+						select="true"
+						new="true"
+						edit="true"
+						clear="true"
+					/>
+				</fieldset>
+			</fields>
+			
+</metadata>

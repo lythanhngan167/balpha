@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="multi_acymailing_list"  
+				type="radio"
+				class="btn-group"
+				label="COM_JOOMPROFILE_FIELD_MULTI_ACYMAILING_LIST_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_MULTI_ACYMAILING_LIST_DESC" 
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field  
+				name="acymailing_list"  
+				type="joomprofile.acymailinglist"
+				multiple="true"
+				class="chosen"
+				label="COM_JOOMPROFILE_FIELD_ACYMAILING_LIST_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_ACYMAILING_LIST_DESC"
+				addfieldpath="/components/com_joomprofile/libraries/field/acymailinglist/fields"
+				default="">
+			</field>
+		</fieldset>	
+	</fields>
+</config>

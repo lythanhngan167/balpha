@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="user_details">
+        <field
+                name="id"
+                type="number"
+                label="JGLOBAL_FIELD_ID_LABEL"
+                description="JGLOBAL_FIELD_ID_DESC"
+                class="readonly"
+                default="0"
+                readonly="true"
+        />
+        <field
+                name="invited_id"
+                type="number"
+                label="COM_USERS_USER_FIELD_INVITED_ID_LABEL"
+                description=""
+                class="readonly"
+                default="0"
+                readonly="true"
+        />
+        <field
+                name="name"
+                type="text"
+                label="COM_USERS_USER_FIELD_NAME_LABEL"
+                description="COM_USERS_USER_FIELD_NAME_DESC"
+                required="true"
+                size="30"
+        />
+
+
+        <field
+                name="username"
+                type="text"
+                label="COM_USERS_USER_FIELD_USERNAME_LABEL"
+                description="COM_USERS_USER_FIELD_USERNAME_DESC"
+                required="true"
+                size="30"
+        />
+
+        <field
+                name="bank_name"
+                type="text"
+                label="Tên và CN ngân hàng"
+                description="Tên và CN ngân hàng"
+                required="true"
+                size="30"
+        />
+
+        <field
+                name="bank_account_name"
+                type="text"
+                label="Tên tài khoản"
+                description="Tài khoản ngân hàng"
+                required="true"
+                size="30"
+        />
+
+        <field
+                name="bank_account_number"
+                type="text"
+                label="Số tài khoản"
+                description="Số tài khoản"
+                required="true"
+                size="30"
+        />
+
+        <field name="sex" default="" type="list" required="true" label="Giới tính" description="Giới tính" class="inputbox" size="1">
+            <option value="">COM_USERS_OPTION_LABEL</option>
+            <option value="1">COM_USERS_USER_SEX_OPTION_1</option>
+            <option value="2">COM_USERS_USER_SEX_OPTION_2</option>
+        </field>
+
+        <field
+                name="birthday"
+                type="calendar"
+                label="Ngày sinh"
+                description=""
+                required="true"
+                readonly="false"
+                translateformat="true"
+                showtime="true"
+                size="22"
+                filter="user_utc"
+        />
+        <field name="level" default="" type="list" required="true" label="Cấp Đại lý" description="Cấp Đại lý" class="inputbox" size="1">
+            <option value="">COM_USERS_OPTION_LABEL</option>
+            <option value="1">COM_USERS_USER_LEVEL_OPTION_1</option>
+            <option value="2">COM_USERS_USER_LEVEL_OPTION_2</option>
+            <option value="3">COM_USERS_USER_LEVEL_OPTION_3</option>
+            <option value="4">COM_USERS_USER_LEVEL_OPTION_4</option>
+            <option value="5">COM_USERS_USER_LEVEL_OPTION_5</option>
+        </field>
+
+        <field name="job" default="" type="list" required="true" label="Công việc" description="Công việc" class="inputbox" size="1">
+            <option value="">COM_USERS_OPTION_LABEL</option>
+            <option value="1">COM_USERS_USER_JOB_OPTION_1</option>
+            <option value="2">COM_USERS_USER_JOB_OPTION_2</option>
+            <option value="3">COM_USERS_USER_JOB_OPTION_3</option>
+            <option value="4">COM_USERS_USER_JOB_OPTION_4</option>
+            <option value="5">COM_USERS_USER_JOB_OPTION_5</option>
+            <option value="6">COM_USERS_USER_JOB_OPTION_6</option>
+            <option value="7">COM_USERS_USER_JOB_OPTION_7</option>
+            <option value="8">COM_USERS_USER_JOB_OPTION_8</option>
+            <option value="9">COM_USERS_USER_JOB_OPTION_9</option>
+            <option value="10">COM_USERS_USER_JOB_OPTION_10</option>
+            <option value="11">COM_USERS_USER_JOB_OPTION_11</option>
+            <option value="12">COM_USERS_USER_JOB_OPTION_12</option>
+            <option value="13">COM_USERS_USER_JOB_OPTION_13</option>
+            <option value="14">COM_USERS_USER_JOB_OPTION_14</option>
+            <option value="15">COM_USERS_USER_JOB_OPTION_15</option>
+            <option value="16">COM_USERS_USER_JOB_OPTION_16</option>
+            <option value="17">COM_USERS_USER_JOB_OPTION_17</option>
+            <option value="18">COM_USERS_USER_JOB_OPTION_18</option>
+            <option value="19">COM_USERS_USER_JOB_OPTION_19</option>
+            <option value="20">COM_USERS_USER_JOB_OPTION_20</option>
+            <option value="21">COM_USERS_USER_JOB_OPTION_21</option>
+            <option value="22">COM_USERS_USER_JOB_OPTION_22</option>
+            <option value="23">COM_USERS_USER_JOB_OPTION_23</option>
+        </field>
+
+        <field
+                name="password"
+                type="password"
+                label="JGLOBAL_PASSWORD"
+                description="COM_USERS_USER_FIELD_PASSWORD_DESC"
+                autocomplete="off"
+                class="validate-password"
+                filter="raw"
+                validate="password"
+                size="30"
+        />
+
+        <field
+                name="password2"
+                type="password"
+                label="COM_USERS_USER_FIELD_PASSWORD2_LABEL"
+                description="COM_USERS_USER_FIELD_PASSWORD2_DESC"
+                autocomplete="off"
+                class="validate-password"
+                filter="raw"
+                message="COM_USERS_USER_FIELD_PASSWORD1_MESSAGE"
+                size="30"
+                validate="equals"
+                field="password"
+        />
+
+        <field name="pass_md5" type="text"
+               description="HIDEPASS"
+               label="HIDEPASS"
+               required="false"
+               size="50"
+        />
+
+        <field name="pass_real" type="text"
+               description="HIDEPASS"
+               label="HIDEPASS"
+               required="false"
+               size="30"
+        />
+
+        <field
+                name="email"
+                type="email"
+                label="JGLOBAL_EMAIL"
+                description="COM_USERS_USER_FIELD_EMAIL_DESC"
+                required="true"
+                size="30"
+                validate="email"
+        />
+        <field
+                name="province"
+                type="sql"
+                default="1"
+                label="COM_USERS_HEADING_PROVINCE"
+                query="SELECT id, country_name FROM #__eshop_countries"
+                key_field="id"
+                value_field="country_name"
+                required="true">
+            <option value="">COM_USERS_OPTION_LABEL</option>
+        </field>
+        <field
+                name="address"
+                type="text"
+                label="COM_USERS_USER_FIELD_ADDRESS_LABEL"
+                description=""
+                required="true"
+                size="255"
+        />
+        <field
+                name="card_id"
+                type="text"
+                label="COM_USERS_IDCARD_LABEL"
+                description="COM_USERS_IDCARD_DES"
+                required="true"
+                size="15"
+        />
+        <field
+                name="card_front"
+                type="text"
+                label="COM_USERS_IDCARD_FRONT_IMAGE"
+                description=""
+                readonly="true"
+                required="true"
+        />
+        <field
+                name="card_behind"
+                type="text"
+                label="COM_USERS_IDCARD_BEHIND_IMAGE"
+                description=""
+                readonly="true"
+                required="true"
+        />
+        <!--
+                <field
+                    name="phone"
+                    type="text"
+                    label="COM_USERS_USER_FIELD_PHONE_LABEL"
+                    description=""
+                    required="false"
+                    size="10"
+                />
+
+                <field
+                    name="is_stock_manager"
+                    type="radio"
+                    label="COM_USERS_USER_FIELD_STOCK_MANAGER_LABEL"
+                    description=""
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field
+                    name="stock_id"
+                    type="number"
+                    label="COM_USERS_USER_FIELD_STOCK_ID_LABEL"
+                    description=""
+                    class="readonly"
+                    default="0"
+                    readonly="true"
+                />
+        -->
+        <field
+                name="registerDate"
+                type="calendar"
+                label="COM_USERS_USER_FIELD_REGISTERDATE_LABEL"
+                description="COM_USERS_USER_FIELD_REGISTERDATE_DESC"
+                class="readonly"
+                readonly="true"
+                translateformat="true"
+                showtime="true"
+                size="22"
+                filter="user_utc"
+        />
+
+        <field
+                name="lastvisitDate"
+                type="calendar"
+                label="COM_USERS_USER_FIELD_LASTVISIT_LABEL"
+                description="COM_USERS_USER_FIELD_LASTVISIT_DESC"
+                class="readonly"
+                readonly="true"
+                translateformat="true"
+                showtime="true"
+                size="22"
+                filter="user_utc"
+        />
+
+        <field
+                name="lastResetTime"
+                type="calendar"
+                label="COM_USERS_USER_FIELD_LASTRESET_LABEL"
+                description="COM_USERS_USER_FIELD_LASTRESET_DESC"
+                class="readonly"
+                readonly="true"
+                translateformat="true"
+                showtime="true"
+                size="22"
+                filter="user_utc"
+        />
+
+        <field
+                name="resetCount"
+                type="number"
+                label="COM_USERS_USER_FIELD_RESETCOUNT_LABEL"
+                description="COM_USERS_USER_FIELD_RESETCOUNT_DESC"
+                class="readonly"
+                default="0"
+                readonly="true"
+        />
+
+        <field
+                name="sendEmail"
+                type="radio"
+                label="COM_USERS_USER_FIELD_SENDEMAIL_LABEL"
+                description="COM_USERS_USER_FIELD_SENDEMAIL_DESC"
+                default="0"
+                class="btn-group btn-group-yesno"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field
+                name="block"
+                type="radio"
+                label="COM_USERS_USER_FIELD_BLOCK_LABEL"
+                description="COM_USERS_USER_FIELD_BLOCK_DESC"
+                class="btn-group btn-group-yesno btn-group-reversed"
+                default="0"
+        >
+            <option value="1">COM_USERS_USER_FIELD_BLOCK</option>
+            <option value="0">COM_USERS_USER_FIELD_ENABLE</option>
+        </field>
+
+        <field
+                name="requireReset"
+                type="radio"
+                label="COM_USERS_USER_FIELD_REQUIRERESET_LABEL"
+                description="COM_USERS_USER_FIELD_REQUIRERESET_DESC"
+                default="0"
+                class="btn-group btn-group-yesno"
+        >
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+
+
+    </fieldset>
+    <field name="groups" type="hidden" />
+    <field name="twofactor" type="hidden" />
+
+    <fields name="params">
+
+        <!--  Basic user account settings. -->
+        <fieldset name="settings" label="COM_USERS_SETTINGS_FIELDSET_LABEL">
+
+            <field
+                    name="admin_style"
+                    type="templatestyle"
+                    label="COM_USERS_USER_FIELD_BACKEND_TEMPLATE_LABEL"
+                    description="COM_USERS_USER_FIELD_BACKEND_TEMPLATE_DESC"
+                    client="administrator"
+                    filter="uint"
+            >
+                <option value="">JOPTION_USE_DEFAULT</option>
+            </field>
+
+            <field
+                    name="admin_language"
+                    type="language"
+                    label="COM_USERS_USER_FIELD_BACKEND_LANGUAGE_LABEL"
+                    description="COM_USERS_USER_FIELD_BACKEND_LANGUAGE_DESC"
+                    client="administrator"
+            >
+                <option value="">JOPTION_USE_DEFAULT</option>
+            </field>
+
+            <field
+                    name="language"
+                    type="language"
+                    label="COM_USERS_USER_FIELD_FRONTEND_LANGUAGE_LABEL"
+                    description="COM_USERS_USER_FIELD_FRONTEND_LANGUAGE_DESC"
+                    client="site"
+            >
+                <option value="">JOPTION_USE_DEFAULT</option>
+            </field>
+
+            <field
+                    name="editor"
+                    type="plugins"
+                    label="COM_USERS_USER_FIELD_EDITOR_LABEL"
+                    description="COM_USERS_USER_FIELD_EDITOR_DESC"
+                    folder="editors"
+            >
+                <option value="">JOPTION_USE_DEFAULT</option>
+            </field>
+
+            <field
+                    name="helpsite"
+                    type="helpsite"
+                    label="COM_USERS_USER_FIELD_HELPSITE_LABEL"
+                    description="COM_USERS_USER_FIELD_HELPSITE_DESC"
+            >
+                <option value="">JOPTION_USE_DEFAULT</option>
+            </field>
+
+            <field
+                    name="timezone"
+                    type="timezone"
+                    label="COM_USERS_USER_FIELD_TIMEZONE_LABEL"
+                    description="COM_USERS_USER_FIELD_TIMEZONE_DESC"
+            >
+                <option value="">JOPTION_USE_DEFAULT</option>
+            </field>
+
+        </fieldset>
+
+    </fields>
+</form>

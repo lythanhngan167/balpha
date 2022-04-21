@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS `#__projects` (
+`id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+
+`asset_id` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+
+`title` VARCHAR(255)  NOT NULL ,
+`short_description` TEXT NOT NULL ,
+`description` TEXT NOT NULL ,
+`file_1` TEXT NOT NULL ,
+`file_2` TEXT NOT NULL ,
+`file_3` TEXT NOT NULL ,
+`file_4` TEXT NOT NULL ,
+`file_5` TEXT NOT NULL ,
+`ordering` INT(11)  NOT NULL ,
+`state` TINYINT(1)  NOT NULL ,
+`checked_out` INT(11)  NOT NULL ,
+`checked_out_time` DATETIME NOT NULL ,
+`created_by` INT(11)  NOT NULL ,
+`modified_by` INT(11)  NOT NULL ,
+`create_date` DATETIME NOT NULL ,
+`modified_date` DATETIME NOT NULL ,
+PRIMARY KEY (`id`)
+) DEFAULT COLLATE=utf8_general_ci;
+

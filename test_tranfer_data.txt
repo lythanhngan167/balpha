@@ -1,0 +1,1 @@
+{"website":"bcavietnam.com","name":"Ng\u00e0n L\u00fd","email":"lythanhngan@gmail.com","phone":"0936267607","province":"41","utm_source":"bizappco=1","utm_sourceonly":"","utm_mediumonly":"","utm_compainonly":"","from_landingpage":"bao-hiem-cong-nghe","state":"1","from_website":"bcavietnam.com","test":"1","status":"new","time":"21-09-2020 13:54:02"}

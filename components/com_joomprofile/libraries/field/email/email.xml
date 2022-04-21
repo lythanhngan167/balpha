@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="default_value"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_DESC" 
+				default=""/>
+				
+			<field  
+				name="placeholder"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_PLACEHOLDER_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_PLACEHOLDER_DESC" 
+				default=""/>
+			
+			<field  
+				name="pattern"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_PATTERN_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_PATTERN_DESC" 
+				default=""/>
+				
+			<field  
+				name="pattern_message"  
+				type="textarea"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_PATTERN_MESSAGE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_PATTERN_MESSAGE_DESC" 
+				default=""/>
+
+			<field
+				name="email_linkable"
+				class="btn-group"
+				type="radio"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_EMAIL_LINKABLE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_EMAIL_LINKABLE_DESC"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>	
+	</fields>
+</config>

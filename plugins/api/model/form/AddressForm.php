@@ -1,0 +1,44 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ASUS
+ * Date: 4/27/2019
+ * Time: 8:01 AM
+ */
+
+namespace api\model\form;
+
+use api\model\AbtractForm;
+
+/**
+ * @OA\Schema(required={"reason"}, @OA\Xml(name="AddressForm"))
+ */
+class AddressForm extends AbtractForm
+{
+    /**
+     * @OA\Property(example="customer_id")
+     * @var int
+     */
+    public $customer_id;
+
+
+    /**
+     * @OA\Property(example="address")
+     * @var string
+     */
+    public $address;
+
+
+    public function rule()
+    {
+        $rule = array(
+            'required' => array(
+                'customer_id',
+                'address'
+            )
+        );
+
+        return $rule;
+    }
+
+}

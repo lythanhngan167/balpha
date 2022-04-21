@@ -1,0 +1,179 @@
+.joomprofile-admin .red{
+	color: red;
+}
+
+.joomprofile-admin{
+	margin-right: 10px;
+	margin-top: 30px;
+}
+
+.joomprofile-admin h1, 
+.joomprofile-admin h2, 
+.joomprofile-admin h3, 
+.joomprofile-admin h4, 
+.joomprofile-admin h5 {
+  	margin-top: 5px;
+    color: #666666;
+    font-style: italic;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: normal;
+}
+
+.joomprofile-grid-header h1, 
+.joomprofile-grid-header h2, 
+.joomprofile-grid-header h3, 
+.joomprofile-grid-header h4, 
+.joomprofile-grid-header h5 {
+    float: left;
+}
+
+.joomprofile-filter-block {
+    margin-bottom: 34px;
+}
+
+.joomprofile-grid .table tbody tr:first-child td {
+	border-top: none;
+}
+
+.joomprofile-grid .table input{
+ 	float: left;
+    margin-right: 20px;
+}
+	
+.joomprofile-grid .table thead {
+    border-top: 1px solid #DEE3EA;
+}
+
+.joomprofile-grid .table thead th {
+    border-top: 0 none !important;
+    font-size: 11px;
+    font-weight: bold;
+    padding-bottom: 20px !important;
+    padding-top: 5px !important;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: top !important;
+}
+
+.joomprofile-grid .table td {
+    border-top-color: #EDF2F7 !important;
+    color: #526273;
+    vertical-align: middle !important;
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;    
+}
+
+.joomprofile-admin-sidebar {
+   background-color: #F7F7F7;
+   border-radius: 0 0 0 5px;
+   border-right: 1px solid #DAE3E9;
+   box-shadow: -3px 3px 3px -2px #F1F1F3;
+   height: 100%;
+   padding-top: 5.8em;
+   position: fixed;
+}
+
+.joomprofile-admin-sidebar .accordion-group {
+    border: 0px; /* 1px solid #E5E5E5;*/
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #DAE1E8;
+    box-shadow: 0 2px 1px -1px #FFFFFF;
+    position:relative;
+    border-radius: 0px;
+    
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+.joomprofile-admin-sidebar .accordion-inner{
+	border-top: 0px;
+}
+
+.joomprofile-admin-sidebar .accordion-group .accordion-heading a{
+    color: #666666;
+    display: block;
+    line-height: 21px;
+    margin-bottom: 5px;
+    margin-left: -15px;
+    outline: 0 none;
+    padding: 19px 14px 15px;
+}
+
+.joomprofile-admin-sidebar .accordion-group .accordion-heading a i{
+    color: #666666;
+    font-size: 20px;
+    height: initial;
+    width: initial;
+    height: 24px;
+    left: 0;
+    opacity: 0.7;
+    transition: opacity 0.1s ease 0s;
+    width: 24px;
+}
+.joomprofile-admin-sidebar .accordion-group .accordion-heading a i.fa-angle-down{
+	margin-left: 17px;
+}
+
+.joomprofile-admin-sidebar .accordion-group > .accordion-heading i {
+    font-size: 23px;
+    top: 17px;
+}
+
+.joomprofile-admin-sidebar .accordion-group .accordion-heading:hover i {
+    opacity: 1;
+    color: #0084B4;
+}
+
+.joomprofile-admin-sidebar .accordion-group .accordion-heading.active > a, 
+.joomprofile-admin-sidebar .accordion-group .accordion-heading > a:hover {
+    color: #0084B4;
+    text-decoration: none;
+}
+
+.joomprofile-admin-sidebar .accordion-group .accordion-heading.active a {
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.joomprofile-admin-sidebar .accordion-group .accordion-heading.active i {
+    opacity: 1;
+    color: #0084B4;
+}
+
+.joomprofile-admin-sidebar .accordion-group ul.submenu {
+   	list-style-type: none;
+    margin: 7px 5px 15px -15px;
+    padding-left: 15px;
+}
+.joomprofile-admin-sidebar .accordion-group ul.submenu.active {
+    display: block;
+}
+.joomprofile-admin-sidebar .accordion-group ul.submenu a {
+    color: #4C535A;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+.joomprofile-admin-sidebar .accordion-group ul.submenu a:hover {
+    text-decoration: underline;
+}
+.joomprofile-admin-sidebar .accordion-group ul.submenu a.active {
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.joomprofile-admin-sidebar .accordion-group.active,
+.joomprofile-admin-sidebar .accordion-group:hover{
+	border-right: 5px solid #0084B4; 
+}

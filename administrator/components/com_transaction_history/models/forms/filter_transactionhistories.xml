@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_TRANSACTION_HISTORY_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="state"
+               type="status"
+               label="COM_TRANSACTION_HISTORY_FILTER_STATE"
+               description="COM_TRANSACTION_HISTORY_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+
+        <field name="type_transaction" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_TYPE_TRANSACTION" type="list" onchange="this.form.submit();" default="COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_FILTER">
+  <option value="">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_FILTER</option>
+  <option value="charge">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_OPTION_CHARGE</option>
+  <option value="buydata">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_OPTION_BUYDATA</option>
+</field>
+<field name="status" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_STATUS" type="list" onchange="this.form.submit();" default="COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_FILTER">
+  <option value="">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_FILTER</option>
+  <option value="completed">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_COMPLETED</option>
+  <option value="canceled">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_CANCELED</option>
+  <option value="unconfirmed">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_UNCONFIRMED</option>
+</field>
+
+
+    </fields>
+
+    <fields name="list">
+
+        <field name="fullordering"
+               type="list"
+               label="COM_CONTENT_LIST_FULL_ORDERING"
+               description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.`id` ASC">ID Ascending</option><option value="a.`id` DESC">ID Descending</option><option value="a.`ordering` ASC">Order Ascending</option><option value="a.`ordering` DESC">Order Descending</option><option value="a.`state` ASC">State Ascending</option><option value="a.`state` DESC">State Descending</option><option value="a.`created_by` ASC">Created by Ascending</option><option value="a.`created_by` DESC">Created by Descending</option><option value="a.`title` ASC">Title Ascending</option><option value="a.`title` DESC">Title Descending</option><option value="a.`amount` ASC">Amount Ascending</option><option value="a.`amount` DESC">Amount Descending</option><option value="a.`created_date` ASC">Created Date Ascending</option><option value="a.`created_date` DESC">Created Date Descending</option><option value="a.`type_transaction` ASC">Type Transaction Ascending</option><option value="a.`type_transaction` DESC">Type Transaction Descending</option><option value="a.`status` ASC">Status Ascending</option><option value="a.`status` DESC">Status Descending</option><option value="a.`reference_id` ASC">Reference Id Ascending</option><option value="a.`reference_id` DESC">Reference Id Descending</option>
+
+        </field>
+
+        <field name="limit"
+               type="limitbox"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

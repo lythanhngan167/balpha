@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="default_value"  
+				type="text"
+				class="validate-url"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DEFAULT_VALUE_DESC" 
+				default=""/>
+				
+			<field  
+				name="placeholder"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_PLACEHOLDER_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_PLACEHOLDER_DESC" 
+				default=""/>						
+			
+			<field  
+				name="display_title"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_DISPLAY_TITLE_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_DISPLAY_TITLE_DESC" 
+				default=""/>	
+
+			<field  
+				name="target"  
+				type="list"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_TARGET_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_TARGET_DESC" 
+				default="_blank">	
+				<option value="_blank">COM_JOOMPROFILE_FIELD_PARAMS_TARGET_BLANK</option>
+				<option value="_self">COM_JOOMPROFILE_FIELD_PARAMS_TARGET_SELF</option>
+				<option value="_parent">COM_JOOMPROFILE_FIELD_PARAMS_TARGET_PARENT</option>
+				<option value="_top">COM_JOOMPROFILE_FIELD_PARAMS_TARGET_TOP</option>
+			</field>
+		</fieldset>	
+	</fields>
+</config>

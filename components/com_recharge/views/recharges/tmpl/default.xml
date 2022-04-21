@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RECHARGE_TITLE_LIST_VIEW_RECHARGES" option="View">
+        <message>
+                        <![CDATA[COM_RECHARGE_TITLE_LIST_VIEW_RECHARGES_DESC]]>
+        </message>
+	</layout>
+</metadata>

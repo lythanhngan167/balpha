@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="profile">
+		<fieldset name="joomprofile-config">
+			<field  
+				name="profile_editor"  
+				type="usergroup"
+				multiple="true"
+				class="chosen"				
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_PROFILE_EDITOR_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_PROFILE_EDITOR_DESC" 
+				default="" />
+
+			<field  
+				name="registration_jusergroups_selection"  
+				type="radio"
+				class="btn-group"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_JUSERGROUPS_SELECTION_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_JUSERGROUPS_SELECTION_DESC" 
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field  
+				name="registration_multi_jusergroups"  
+				type="radio"
+				class="btn-group"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_MULTI_JUSERGROUPS_LABEL" 
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_MULTI_JUSERGROUPS_DESC" 
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field  
+				name="registration_allowed_jusergroups"  
+				type="usergroup"
+				multiple="true"
+				class="chosen"
+				size="10"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_ALLOWED_JUSERGROUPS_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_ALLOWED_JUSERGROUPS_DESC" />
+				
+			<field  
+				name="registration_field_email"  
+				type="joomprofile.fields"
+				class="chosen"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_EMAIL_FIELD_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_EMAIL_FIELD_DESC"
+				addfieldpath="/components/com_joomprofile/extensions/profile/models/fields/">
+				<option value="">JSELECT</option>
+			</field>
+			
+			<field  
+				name="registration_field_username"  
+				type="joomprofile.fields"
+				class="chosen"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_USERNAME_FIELD_LABLE"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_USERNAME_FIELD_DESC"
+				addfieldpath="/components/com_joomprofile/extensions/profile/models/fields/">
+				<option value="">JSELECT</option>
+			</field>
+			
+			<field  
+				name="registration_field_name"  
+				type="joomprofile.fields"
+				class="chosen"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_NAME_FIELD_LABLE"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_NAME_FIELD_DESC"
+				addfieldpath="/components/com_joomprofile/extensions/profile/models/fields/">
+				<option value="">JSELECT</option>
+			</field>
+		
+			<field  
+				name="registration_field_password"  
+				type="joomprofile.fields"
+				class="chosen"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_PASSWORD_FIELD_LABLE"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_REGISTRATION_REGISTRATION_PASSWORD_FIELD_DESC"
+				addfieldpath="/components/com_joomprofile/extensions/profile/models/fields/">
+				<option value="">JSELECT</option>
+			</field>
+		
+			<field  
+				name="show_avatar_from"  
+				type="list"
+				class=""
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_SHOW_AVATAR_FROM_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_SHOW_AVATAR_FROM_DESC" 
+				default="2">
+				<option value="2">COM_JOOMPROFILE_GRAVATAR</option>
+				<option value="1">COM_JOOMPROFILE_FIELD</option>
+			</field>
+			
+			<field  
+				name="avatar_field"  
+				type="joomprofile.fields"
+				class="chosen"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_AVATAR_FIELD_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_AVATAR_FIELD_DESC"
+				addfieldpath="/components/com_joomprofile/extensions/profile/models/fields/">
+				<option value="">JSELECT</option>
+			</field>
+			
+			<field  
+				name="show_blank_field"  
+				type="radio"
+				class="btn-group"				
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_SHOW_BLANK_FIELD_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_SHOW_BLANK_FIELD_DESC" 
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field  
+				name="allow_keyword_search"  
+				type="radio"
+				class="btn-group"				
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_ALLOW_KEYWORD_SEARCH_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_ALLOW_KEYWORD_SEARCH_DESC" 
+				default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field  
+				name="keyword_search_in"
+				type="radio"
+				class="btn-group"				
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_KEYWORD_SEARCH_IN_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_KEYWORD_SEARCH_IN_DESC" 
+				default="all">
+				<option value="allowed">COM_JOOMPROFILE_PROFILE_CONFIG_KEYWORD_SEARCH_IN_ALLOWED</option>
+				<option value="all">COM_JOOMPROFILE_PROFILE_CONFIG_KEYWORD_SEARCH_IN_ALL</option>
+			</field>
+						
+			<field  
+				name="search_orderby"  
+				type="list"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_ORDERBY_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_ORDERBY_DESC" 
+				default="name" >
+				<option value="name">COM_JOOMPROFILE_SEARCH_SORT_BY_NAME</option>
+				<option value="registerDate">COM_JOOMPROFILE_SEARCH_SORT_BY_NAME_REGISTRATION_DATE</option>
+			</field>
+				
+			<field  
+				name="search_ordering"  
+				type="list"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_ORDERING_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_ORDERING_DESC" 
+				default="asc" >
+				<option value="asc">COM_JOOMPROFILE_SEARCH_SORT_IN_ASC</option>
+				<option value="desc">COM_JOOMPROFILE_SEARCH_SORT_IN_DESC</option>
+			</field>
+			
+			<field  
+				name="search_result_counter"  
+				type="text"
+				class=""				
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_RESULT_COUNTER_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_RESULT_COUNTER_DESC" 
+				default="20" />
+
+			<field  
+				name="search_show_all"  
+				type="radio"
+				label="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_SHOW_ALL_LABEL"
+				description ="COM_JOOMPROFILE_PROFILE_CONFIG_SEARCH_SHOW_ALL_DESC" 
+				default="1" 
+				class="btn-group">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>	
+	</fields>
+</form>

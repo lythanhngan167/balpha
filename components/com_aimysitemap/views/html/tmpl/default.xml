@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<metadata>
+  <layout title="AIMY_SM_VIEW_HTML_TITLE">
+    <message>
+      <![CDATA[AIMY_SM_VIEW_HTML_DSC]]>
+    </message>
+  </layout>
+  <fields name="request">
+    <fieldset name="request">
+      <field name="variant" type="list" default="list"
+        class="inputbox"
+        required="true"
+        label="AIMY_SM_FIELD_VARIANT_LBL"
+        description="AIMY_SM_FIELD_VARIANT_DSC">
+        <option value="index">AIMY_SM_V_INDEX</option>
+        <option value="list">AIMY_SM_V_LIST</option>
+
+
+      </field>
+      <field name="prevent_duplicate_titles"
+        type="radio"
+        default="1"
+        class="btn-group btn-group-yesno"
+        labelclass="control-group"
+        required="true"
+        label="AIMY_SM_FIELD_PREVENT_DUPLICATE_TITLES_LBL"
+        description="AIMY_SM_FIELD_PREVENT_DUPLICATE_TITLES_DSC">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+      </field>
+      <field name="container_style" type="list" default="bs2"
+        class="inputbox"
+        required="true"
+        label="AIMY_SM_FIELD_CONTAINER_STYLE_LBL"
+        description="AIMY_SM_FIELD_CONTAINER_STYLE_DSC">
+        <option value="bs2">Bootstrap 2</option>
+        <option value="bs3">Bootstrap 3/4</option>
+      </field>
+
+
+    </fieldset>
+  </fields>
+</metadata>
+
+<!-- vim: set ft=xml sw=2 ts=2 sts=2 ai et: -->

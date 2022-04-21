@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="eshopplugin" group="payment">
+    <name>os_onepay</name>
+    <title>Payment Onepay</title>
+    <author>Le Van Son</author>
+    <creationDate>15-04-2017</creationDate>
+    <copyright>Copyright 2012 Ossolution Team</copyright>
+    <license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+    <authorEmail>contact@joomdonation.com</authorEmail>
+    <authorUrl>www.joomdonation.com</authorUrl>
+    <version>2.5.4</version>
+    <description>Onepay for EShop.</description>
+    <config>
+        <fields name="params" addfieldpath="/administrator/components/com_eshop/elements/">
+            <fieldset name="basic">
+                <field name="gateway_domestic" type="checkbox" label="Cổng thanh toán nội địa "
+                       description="Cổng thanh toán nội địa" value="1"/>
+                <field name="domestic_name" type="text" label="Tên hiển thị" description="Tên hiển thị" size="255"
+                       default="Thanh toán bằng thẻ ATM nội điạ"></field>
+                <field name="domestic_merchant_id" type="text" label="Merchant ID" description="Merchant ID" size="255"
+                       default=""></field>
+                <field name="domestic_access_code" type="text" label="Access code" description="Access code " size="255"
+                       default=""></field>
+                <field name="domestic_token" type="text" label="Hash Key" description="Hash Key" size="255"
+                       default=""></field>
+
+                <field type="spacer" name="myspacer" hr="true"/>
+
+                <field name="gateway_international" type="checkbox" label="Cổng thanh toán quốc tế "
+                       description="Cổng thanh toán quốc tế " value="1"/>
+                <field name="international_name" type="text" label="Tên hiển thị" description="Tên hiển thị" size="255"
+                       default="Thanh toán bằng thẻ Visa, "></field>
+                <field name="international_merchant_id" type="text" label="Merchant ID" description="Merchant ID"
+                       size="255" default=""></field>
+                <field name="international_access_code" type="text" label="Access code" description="Access code "
+                       size="255" default=""></field>
+                <field name="international_token" type="text" label="Hash Key" description="Hash Key" size="255"
+                       default=""></field>
+
+
+                <field type="spacer" name="myspacer2" hr="true"/>
+
+                <field name="enviroment" type="list" label="Môi trường " description="Môi trường " default="dev">
+                    <option value="dev">Test - Sandbox </option>
+                    <option value="pro">Thực tế </option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+    <params/>
+    <files>
+        <filename>os_onepay.php</filename>
+    </files>
+    <installsql/>
+    <installfile/>
+</install>

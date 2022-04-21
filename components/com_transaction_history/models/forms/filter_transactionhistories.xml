@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_TRANSACTION_HISTORY_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="type_transaction" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_TYPE_TRANSACTION" type="list" onchange="this.form.submit();" default="COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_FILTER">
+  <option value="">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_FILTER</option>
+  <option value="charge">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_OPTION_CHARGE</option>
+  <option value="buydata">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_TYPE_TRANSACTION_OPTION_BUYDATA</option>
+</field>
+<field name="status" label="COM_TRANSACTION_HISTORY_FORM_LBL_TRANSACTIONHISTORY_STATUS" type="list" onchange="this.form.submit();" default="COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_FILTER">
+  <option value="">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_FILTER</option>
+  <option value="completed">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_COMPLETED</option>
+  <option value="canceled">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_CANCELED</option>
+  <option value="unconfirmed">COM_TRANSACTION_HISTORY_TRANSACTIONHISTORIES_STATUS_OPTION_UNCONFIRMED</option>
+</field>
+
+
+    </fields>
+</form>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+  <name>Slick Slider</name>
+  		<creationDate>08 December 2013</creationDate>
+        <author>Jobin Jose</author>
+        <copyright>Copyright (C)2013 www.walkswithme.net</copyright>
+        <license>GNU General Public License version 2 or later</license>
+        <authorEmail>jobinjose01@gmail.com</authorEmail>
+        <authorUrl>http://www.walkswithme.net</authorUrl>
+        <version>1.0</version>
+  <description>Joomla banner Slider will help you to create a slide show using Joomla default banner components with all features ,clicks,impression etc </description>
+  <files>
+    <filename>mod_bannerslider.xml</filename>
+    <filename module="mod_bannerslider">mod_bannerslider.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+	<filename>assets/css/slick.css</filename>
+	<filename>assets/css/slick-theme.css</filename>
+	<filename>assets/css/index.html</filename>
+	<filename>assets/fonts/slick.eot</filename>
+	<filename>assets/fonts/slick.svg</filename>
+	<filename>assets/fonts/slick.ttf</filename>
+	<filename>assets/fonts/slick.woff</filename>
+	<filename>assets/js/slick.min.js</filename>
+	<filename>assets/js/index.html</filename>
+	<filename>assets/scss/slick.scss</filename>
+	<filename>assets/scss/slick-theme.scss</filename>
+	<filename>assets/images/ajax-loader.gif</filename>
+	<filename>assets/images/index.html</filename>
+	<filename>assets/index.html</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <languages>
+		<language tag="en-GB">en-GB.mod_bannerslider.ini</language>
+		<language tag="en-GB">en-GB.mod_bannerslider.sys.ini</language>
+	</languages>
+  <help key="JHELP_EXTENSIONS_MODULE_MANAGER_BANNERS" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic"
+				addfieldpath="/administrator/components/com_banners/models/fields">
+				<field
+					name="target"
+					type="list"
+					default="1"
+					label="MOD_BANNERS_FIELD_TARGET_LABEL"
+					description="MOD_BANNERS_FIELD_TARGET_DESC">
+					<option
+						value="0">JBROWSERTARGET_PARENT</option>
+					<option
+						value="1">JBROWSERTARGET_NEW</option>
+					<option
+						value="2">JBROWSERTARGET_POPUP</option>
+				</field>
+
+				<field
+					name="count"
+					type="integer"
+					first="1"
+					last="10"
+					step="1"
+					default="5"
+					label="MOD_BANNERS_FIELD_COUNT_LABEL"
+					description="MOD_BANNERS_FIELD_COUNT_DESC" />
+				<field
+					name="cid"
+					type="bannerclient"
+					label="MOD_BANNERS_FIELD_BANNERCLIENT_LABEL"
+					description="MOD_BANNERS_FIELD_BANNERCLIENT_DESC" />
+
+				<field
+					name="catid"
+					type="category"
+					extension="com_banners"
+					label="JCATEGORY"
+					multiple="true" size="5"
+					default=""
+					description="MOD_BANNERS_FIELD_CATEGORY_DESC" >
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+
+				<field
+					name="tag_search"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="MOD_BANNERS_FIELD_TAG_LABEL"
+					description="MOD_BANNERS_FIELD_TAG_DESC">
+					<option
+						value="0">JNO</option>
+					<option
+						value="1">JYES</option>
+				</field>
+				<field
+					name="ordering"
+					type="list"
+					default="0"
+					label="MOD_BANNERS_FIELD_RANDOMISE_LABEL"
+					description="MOD_BANNERS_FIELD_RANDOMISE_DESC">
+					<option
+						value="0">MOD_BANNERS_VALUE_STICKYORDERING</option>
+					<option
+						value="random">MOD_BANNERS_VALUE_STICKYRANDOMISE</option>
+				</field>
+
+				<field
+					name="header_text"
+					type="textarea"
+					filter="safehtml"
+					rows="3"
+					cols="40"
+					label="MOD_BANNERS_FIELD_HEADER_LABEL"
+					description="MOD_BANNERS_FIELD_HEADER_DESC" />
+
+				<field
+					name="footer_text"
+					type="textarea"
+					filter="safehtml"
+					rows="3"
+					cols="40"
+					label="MOD_BANNERS_FIELD_FOOTER_LABEL"
+					description="MOD_BANNERS_FIELD_FOOTER_DESC" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+						name="slide_layout"
+						type="list"
+						default="1"
+						label="COM_MODULES_FIELD_SLIDE_LAYOUT_LABEL"
+						description="COM_MODULES_FIELD_SLIDE_LAYOUT_DESC">
+					<option
+							value="1">COM_MODULES_FIELD_SLIDE_LAYOUT_FULL_WITH</option>
+					<option
+							value="0">COM_MODULES_FIELD_SLIDE_LAYOUT_BOX</option>
+				</field>
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+					
+				<field
+					name="loadjs"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_LOADJS_LABEL"
+					description="COM_MODULES_FIELD_LOADJS_DESC">
+					<option
+						value="1">Yes</option>
+					<option
+						value="0">No</option>
+			</field>	
+			<field
+					name="hoverstop"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_HOVER_LABEL"
+					description="COM_MODULES_FIELD_HOVER_DESC">
+					<option
+						value="1">Yes</option>
+					<option
+						value="0">No</option>
+			</field>				
+			<field
+					name="slideeffect"
+					type="list"
+					default="all"
+					label="COM_MODULES_FIELD_EFFECT_LABEL"
+					description="COM_MODULES_FIELD_EFFECT_LABEL">
+					<option
+						value="all">All</option>
+					<option
+						value="shuffle">shuffle</option>
+					<option
+						value="zoom">zoom</option>
+					<option
+						value="fade">fade</option>
+					<option
+						value="turnDown">turnDown</option>
+					<option
+						value="curtainX">curtainX</option>
+					<option
+						value="scrollRight">scrollRight</option>
+					<option
+						value="blindX">blindX</option>
+						
+					<option
+						value="blindY">blindY</option>
+					<option
+						value="blindZ">blindZ</option>
+					<option
+						value="cover">cover</option>
+					<option
+						value="fadeZoom">fadeZoom</option>
+					<option
+						value="scrollUp">scrollUp</option>
+					<option
+						value="scrollDown">scrollDown</option>
+					<option
+						value="scrollLeft">scrollLeft</option>
+					<option
+						value="scrollRight">scrollRight</option>
+					<option
+						value="scrollHorz">scrollHorz</option>
+					<option
+						value="scrollVert">scrollVert</option>
+				</field>
+				
+			<field
+					name="timeout"
+					type="text"
+					default="3000"
+					label="COM_MODULES_FIELD_DELAY_TIME_LABEL"
+					description="COM_MODULES_FIELD_DELAY_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+  <params></params>
+</extension>

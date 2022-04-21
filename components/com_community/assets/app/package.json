@@ -1,0 +1,43 @@
+{
+  "name": "joms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js": "webpack --env.dev",
+    "css": "node-sass src/scss/app.scss dist/app.css -w",
+    "build:js": "webpack",
+    "build:emoji-data": "node ./src/components/emoji-mart-vue/scripts/build-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "emoji-datasource": "^4.1.0",
+    "emojilib": "^2.4.0",
+    "file-loader": "^4.3.0",
+    "inflection": "^1.12.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.0",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "animated-scroll-to": "^2.0.12",
+    "dropzone": "^5.7.2",
+    "leaflet": "^1.7.1",
+    "lodash": "^4.17.20",
+    "luxon": "^1.25.0",
+    "unescape": "^1.0.1",
+    "v-click-outside": "^2.1.5",
+    "vue": "^2.6.12",
+    "vue-datetime": "^1.0.0-beta.14",
+    "vue-quill-editor": "^3.0.6",
+    "vue-textarea-autosize": "^1.1.1",
+    "vuex": "^3.6.0",
+    "weekstart": "^1.0.1"
+  }
+}

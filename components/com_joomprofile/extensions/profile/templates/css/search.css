@@ -1,0 +1,184 @@
+/* function90 Profiler Frontend UI*/
+#jp-search {
+}
+.jp-search .jps-title {
+    font-size: 0.9em;
+    line-height: 1.333em;
+    border-top: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
+    text-transform: uppercase;
+    background-color: #F3F4F5;
+    padding: 4px 10px 2px;
+    clear: both;
+    cursor: pointer;
+}
+/*
+#jp-search-criteria-accord .accordion-group {
+	border: none;
+	border-radius: none;
+}
+#jp-search-criteria-accord .accordion-inner{
+	border-top: none;
+}
+*/
+#jp-search-criteria-accord .accordion-heading .accordion-toggle {
+	padding: initial;
+}
+/*.jp-search-criteria-fixed {
+	margin-top: 6px;
+	margin-bottom: 10px;
+}
+.jp-search .jp-search-criteria-fixed .jps-title{
+    cursor: default;
+    color: #07B;
+}*/
+.jp-search .jps-title a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+/*.jp-search .jps-fixed-form{
+    padding: 15px 0px;
+}
+.jp-search .jps-fixed-form input{
+    max-width: -moz-available;
+	max-width: intrinsic;
+}*/
+.jp-search .accordion-group input, .jp-search .accordion-group select{
+    max-width: -moz-available;
+	max-width: intrinsic;
+    max-width: -webkit-fill-available;
+}
+.jp-search .jps-users-list .jps-user{
+    padding: 10px;
+}
+.jp-search #jp-search-criteria-accord .checkbox{
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.jp-search .jps-user{
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+.jp-search .jps-user-image img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.jp-search .jps-user-details{
+}
+.jp-search .jps-user-details .jps-user-name{
+    font-size: 1.8em;
+    color: #777;
+    margin-top: 10px;
+}
+.jp-search .jps-user-details .jps-user-name a{
+    color: #777;
+}
+.jp-search .jps-user-details .jps-user-name a:hover{
+    text-decoration: none;
+    color: #3D9DCC;
+    transition: all 0.2s ease 0s;
+}
+.jp-search .jps-user-details .jps-user-add-info{
+    margin-top: 20px;
+    color: #999;
+    font-size: 0.9em;
+    padding-left: 20px;
+}
+
+@media (max-width: 980px){
+    .jp-search .jps-user-details{
+        max-width: 150px;
+    }
+   /* .jp-search .jps-fixed-form input[type='text'],
+    .jp-search .jps-fixed-form input[type='email']{
+        max-width: 150px;
+    }*/
+}
+@media (max-width: 480px) {
+    .jp-search .jps-users-list{
+        margin-top: 20px;
+    }
+	.jp-search .jps-user-image{
+	    text-align: center;
+	}
+    .jp-search .jps-user-image img{
+        margin-left: 32px;
+		float: none;
+    }
+    .jp-search .jps-user-details{
+        width: 100%;
+        text-align: center;
+		max-width: none;
+    }
+}
+
+.jps-filter-applied{
+   font-weight: 700;
+}
+
+.jps-filter-applied-child{
+   margin-right: 10px;
+   background-color: #DADADA;
+   padding: 2px;
+   color: #555;
+}
+
+.jp-search .accordion-group {
+    margin-bottom: 10px;
+}
+
+#jps-sort-by{
+   display: inline;
+}
+
+#jps-sort-in{
+   display: inline;
+}
+
+.jps-sort-bar{
+   margin-bottom: 10px;
+}
+
+#jp-search-criteria-accord .accordion-body{
+	max-height : 200px;
+	overflow: auto;
+}
+.jps-mini-profile{
+    margin-bottom: 5px;
+    clear: both;
+}
+.jps-mini-profile-title {
+    width: 30%;
+    float: left;
+    display: table-cell;
+    font-weight: bold;
+    text-align: left;
+    word-break: break-all;
+}
+.jps-mini-profile-value {
+    padding-left: 5px;
+    width: 70%;
+    display: table-cell;
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .jps-mini-profile-title {
+        width: 100%;
+        font-weight: bold;
+        text-align: left;
+    }
+    .jps-mini-profile-value {
+        padding-left: 0px;
+        width: 100%;
+        text-align: left;
+    }
+    .jps-mini-profile{
+        margin-bottom: 15px;
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+  <fieldset name="component"
+    label="AIMY_SM_CFG_LBL"
+    description="AIMY_SM_CFG_DSC">
+
+    <field name="xml_path"
+      type="text"
+      class="inputbox"
+      required="true"
+      filter="path"
+      default="sitemap.xml"
+      label="AIMY_SM_FIELD_XML_PATH_LBL"
+      description="AIMY_SM_FIELD_XML_PATH_DSC" />
+
+
+  </fieldset>
+
+  <fieldset name="defaults"
+    label="AIMY_SM_CFG_DFLT_LBL"
+    description="AIMY_SM_CFG_DFLT_DSC">
+
+    <field name="default_priority" type="list"
+      default="0.5"
+      class="inputbox"
+      required="true"
+      label="AIMY_SM_FIELD_DFLT_PRIO_LBL"
+      description="AIMY_SM_FIELD_DFLT_PRIO_DSC">
+        <option value="0.1">0.1</option>
+        <option value="0.2">0.2</option>
+        <option value="0.3">0.3</option>
+        <option value="0.4">0.4</option>
+        <option value="0.5">0.5</option>
+        <option value="0.6">0.6</option>
+        <option value="0.7">0.7</option>
+        <option value="0.8">0.8</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0">1.0</option>
+    </field>
+
+    <field name="default_changefreq"
+      type="list"
+      default="monthly"
+      required="true"
+      label="AIMY_SM_FIELD_DFLT_CHANGEFREQ_LBL"
+      description="AIMY_SM_FIELD_DFLT_CHANGEFREQ_DSC">
+      <option value="always">AIMY_SM_CF_ALWAYS</option>
+      <option value="hourly">AIMY_SM_CF_HOURLY</option>
+      <option value="daily">AIMY_SM_CF_DAILY</option>
+      <option value="weekly">AIMY_SM_CF_WEEKLY</option>
+      <option value="monthly">AIMY_SM_CF_MONTHLY</option>
+      <option value="yearly">AIMY_SM_CF_YEARLY</option>
+      <option value="never">AIMY_SM_CF_NEVER</option>
+    </field>
+
+    <field name="default_state"
+      type="radio"
+      default="1"
+      class="btn-group btn-group-yesno"
+      labelclass="control-group"
+      required="true"
+      label="AIMY_SM_FIELD_DFLT_STATE_LBL"
+      description="AIMY_SM_FIELD_DFLT_STATE_DSC">
+        <option value="1">JYES</option>
+        <option value="0">JNO</option>
+    </field>
+
+  </fieldset>
+
+  <fieldset name="crawl"
+    label="AIMY_SM_CFG_CRAWL_LBL"
+    description="AIMY_SM_CFG_CRAWL_DSC">
+
+    <field name="crawl_img"
+      type="radio"
+      default="1"
+      class="btn-group btn-group-yesno"
+      label="AIMY_SM_FIELD_CRAWL_IMG_LBL"
+      description="AIMY_SM_FIELD_CRAWL_IMG_DSC"
+      labelclass="control-label">
+        <option value="1">JYES</option>
+        <option value="0">JNO</option>
+    </field>
+
+    <field name="crawl_sleep"
+      type="list"
+      default="0.0"
+      class="inputbox"
+      label="AIMY_SM_FIELD_CRAWL_SLEEP_LBL"
+      description="AIMY_SM_FIELD_CRAWL_SLEEP_DSC">
+        <option value="0.0">0.0</option>
+        <option value="0.1">0.1</option>
+        <option value="0.2">0.2</option>
+        <option value="0.3">0.3</option>
+        <option value="0.4">0.4</option>
+        <option value="0.5">0.5</option>
+        <option value="0.6">0.6</option>
+        <option value="0.7">0.7</option>
+        <option value="0.8">0.8</option>
+        <option value="0.9">0.9</option>
+        <option value="1.0">1.0</option>
+        <option value="2.0">2.0</option>
+        <option value="3.0">3.0</option>
+        <option value="5.0">5.0</option>
+        <option value="10.0">10.0</option>
+    </field>
+
+    <field name="crawl_timeout"
+      type="integer"
+      default="30"
+      first="10" last="90" step="10"
+      class="inputbox"
+      label="AIMY_SM_FIELD_CRAWL_TIMEOUT_LBL"
+      description="AIMY_SM_FIELD_CRAWL_TIMEOUT_DSC" />
+
+    <field name="crawl_exclude_patterns"
+      type="textarea"
+      class="inputbox"
+      rows="10"
+      cols="30"
+      default="*.gif&#13;&#10;*/sampledata/*&#13;&#10;*/cache/*&#13;&#10;*/thumbs/*&#13;&#10;*/component/*&#13;&#10;*/media/system/*&#13;&#10;*/assets/*&#13;&#10;*/checkout/*"
+      label="AIMY_SM_FIELD_EXCLPAT_LBL"
+      description="AIMY_SM_FIELD_EXCLPAT_DSC" />
+
+    <field name="crawl_disguise"
+      type="radio"
+      default="0"
+      class="btn-group btn-group-yesno"
+      label="AIMY_SM_FIELD_CRAWL_DISGUISE_LBL"
+      description="AIMY_SM_FIELD_CRAWL_DISGUISE_DSC"
+      labelclass="control-label">
+        <option value="1">JYES</option>
+        <option value="0">JNO</option>
+    </field>
+
+
+  </fieldset>
+
+
+  <fieldset name="notify"
+    label="AIMY_SM_CFG_NOTIFY_LBL"
+    description="AIMY_SM_CFG_NOTIFY_DSC">
+
+    <field name="notify_google"
+      type="radio"
+      default="1"
+      class="btn-group btn-group-yesno"
+      labelclass="control-group"
+      required="true"
+      label="AIMY_SM_FIELD_NOTIFY_GOOGLE_LBL"
+      description="AIMY_SM_FIELD_NOTIFY_GOOGLE_DSC">
+        <option value="1">JYES</option>
+        <option value="0">JNO</option>
+    </field>
+
+    <field name="notify_bing"
+      type="radio"
+      default="1"
+      class="btn-group btn-group-yesno"
+      labelclass="control-group"
+      required="true"
+      label="AIMY_SM_FIELD_NOTIFY_BING_LBL"
+      description="AIMY_SM_FIELD_NOTIFY_BING_DSC">
+        <option value="1">JYES</option>
+        <option value="0">JNO</option>
+    </field>
+
+  </fieldset>
+
+
+  <fieldset name="permissions"
+    label="JCONFIG_PERMISSIONS_LABEL"
+    description="JCONFIG_PERMISSIONS_DESC">
+    <field name="rules" type="rules" component="com_aimysitemap"
+      filter="rules" validate="rules"
+      label="JCONFIG_PERMISSIONS_LABEL"
+      section="component" />
+  </fieldset>
+</config>
+
+<!-- vim: set ft=xml sts=2 sw=2 ts=2 ai et: -->

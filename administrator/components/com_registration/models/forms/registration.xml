@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_CREATED_BY" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_CREATED_BY" hidden="true" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_MODIFIED_BY" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_MODIFIED_BY" hidden="true" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_MODIFIED_BY"/>
+    <field name="name" filter="safehtml" type="text" required="true" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_NAME" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_NAME" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_NAME"/>
+    <field name="email" validate="email" type="email" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_EMAIL" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_EMAIL" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_EMAIL"/>
+    <field name="phone" filter="safehtml" type="tel" required="true" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_PHONE" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_PHONE" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_PHONE"/>
+    <field name="job" filter="safehtml" type="text" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_JOB" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_JOB" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_JOB"/>
+    <field name="address" filter="safehtml" type="text" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_ADDRESS" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_ADDRESS" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_ADDRESS"/>
+    <field name="note" filter="safehtml" type="textarea" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_NOTE" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_NOTE" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_NOTE"/>
+
+    <field name="province" default="" type="list" required="false" label="COM_REGISTRATION_PROVINCE" description="COM_REGISTRATION_PROVINCE" hint="">
+      <option value="">COM_REGISTRATION_PROVINCE_</option>
+      <option value="1">COM_REGISTRATION_PROVINCE_1</option>
+      <option value="2">COM_REGISTRATION_PROVINCE_2</option>
+      <option value="3">COM_REGISTRATION_PROVINCE_3</option>
+      <option value="4">COM_REGISTRATION_PROVINCE_4</option>
+      <option value="5">COM_REGISTRATION_PROVINCE_5</option>
+      <option value="6">COM_REGISTRATION_PROVINCE_6</option>
+      <option value="7">COM_REGISTRATION_PROVINCE_7</option>
+      <option value="8">COM_REGISTRATION_PROVINCE_8</option>
+      <option value="9">COM_REGISTRATION_PROVINCE_9</option>
+      <option value="10">COM_REGISTRATION_PROVINCE_10</option>
+      <option value="11">COM_REGISTRATION_PROVINCE_11</option>
+      <option value="12">COM_REGISTRATION_PROVINCE_12</option>
+      <option value="13">COM_REGISTRATION_PROVINCE_13</option>
+      <option value="14">COM_REGISTRATION_PROVINCE_14</option>
+      <option value="15">COM_REGISTRATION_PROVINCE_15</option>
+      <option value="16">COM_REGISTRATION_PROVINCE_16</option>
+      <option value="17">COM_REGISTRATION_PROVINCE_17</option>
+      <option value="18">COM_REGISTRATION_PROVINCE_18</option>
+      <option value="19">COM_REGISTRATION_PROVINCE_19</option>
+      <option value="20">COM_REGISTRATION_PROVINCE_20</option>
+      <option value="21">COM_REGISTRATION_PROVINCE_21</option>
+      <option value="22">COM_REGISTRATION_PROVINCE_22</option>
+      <option value="23">COM_REGISTRATION_PROVINCE_23</option>
+      <option value="24">COM_REGISTRATION_PROVINCE_24</option>
+      <option value="25">COM_REGISTRATION_PROVINCE_25</option>
+      <option value="26">COM_REGISTRATION_PROVINCE_26</option>
+      <option value="27">COM_REGISTRATION_PROVINCE_27</option>
+      <option value="28">COM_REGISTRATION_PROVINCE_28</option>
+      <option value="29">COM_REGISTRATION_PROVINCE_29</option>
+      <option value="30">COM_REGISTRATION_PROVINCE_30</option>
+      <option value="31">COM_REGISTRATION_PROVINCE_31</option>
+      <option value="32">COM_REGISTRATION_PROVINCE_32</option>
+      <option value="33">COM_REGISTRATION_PROVINCE_33</option>
+      <option value="34">COM_REGISTRATION_PROVINCE_34</option>
+      <option value="35">COM_REGISTRATION_PROVINCE_35</option>
+      <option value="36">COM_REGISTRATION_PROVINCE_36</option>
+      <option value="37">COM_REGISTRATION_PROVINCE_37</option>
+      <option value="38">COM_REGISTRATION_PROVINCE_38</option>
+      <option value="39">COM_REGISTRATION_PROVINCE_39</option>
+      <option value="40">COM_REGISTRATION_PROVINCE_40</option>
+      <option value="41">COM_REGISTRATION_PROVINCE_41</option>
+      <option value="42">COM_REGISTRATION_PROVINCE_42</option>
+      <option value="43">COM_REGISTRATION_PROVINCE_43</option>
+      <option value="44">COM_REGISTRATION_PROVINCE_44</option>
+      <option value="45">COM_REGISTRATION_PROVINCE_45</option>
+      <option value="46">COM_REGISTRATION_PROVINCE_46</option>
+      <option value="47">COM_REGISTRATION_PROVINCE_47</option>
+      <option value="48">COM_REGISTRATION_PROVINCE_48</option>
+      <option value="49">COM_REGISTRATION_PROVINCE_49</option>
+      <option value="50">COM_REGISTRATION_PROVINCE_50</option>
+      <option value="51">COM_REGISTRATION_PROVINCE_51</option>
+      <option value="52">COM_REGISTRATION_PROVINCE_52</option>
+      <option value="53">COM_REGISTRATION_PROVINCE_53</option>
+      <option value="54">COM_REGISTRATION_PROVINCE_54</option>
+      <option value="55">COM_REGISTRATION_PROVINCE_55</option>
+      <option value="56">COM_REGISTRATION_PROVINCE_56</option>
+      <option value="57">COM_REGISTRATION_PROVINCE_57</option>
+      <option value="58">COM_REGISTRATION_PROVINCE_58</option>
+      <option value="59">COM_REGISTRATION_PROVINCE_59</option>
+      <option value="60">COM_REGISTRATION_PROVINCE_60</option>
+      <option value="61">COM_REGISTRATION_PROVINCE_61</option>
+      <option value="62">COM_REGISTRATION_PROVINCE_62</option>
+      <option value="63">COM_REGISTRATION_PROVINCE_63</option>
+
+    </field>
+    <field name="utm_source" filter="safehtml" type="text" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_UTM" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_UTM" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_UTM"/>
+    <field name="utm_sourceonly" filter="safehtml" type="text" label="Source" description="Source" hint="Source"/>
+    <field name="utm_mediumonly" filter="safehtml" type="text" label="Medium" description="Medium" hint="Medium"/>
+    <field name="utm_compainonly" filter="safehtml" type="text" label="Compain" description="Compain" hint="Compain"/>
+    <field name="from_landingpage" filter="safehtml" type="text" label="Landingpage" description="Landingpage" hint="Landingpage"/>
+    <field name="status" default="new" type="list" required="true" label="COM_REGISTRATION_FORM_LBL_REGISTRATION_STATUS" description="COM_REGISTRATION_FORM_DESC_REGISTRATION_STATUS" hint="COM_REGISTRATION_FORM_LBL_REGISTRATION_STATUS">
+      <option value="new">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_NEW</option>
+      <option value="confirmed">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CONFIRMED</option>
+      <option value="converted">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CONVERTED</option>
+      <option value="cancel">COM_REGISTRATION_REGISTRATIONS_STATUS_OPTION_CANCEL</option>
+    </field>
+
+    <field
+			name="is_exist"
+			type="radio"
+			label="COM_REGISTRATION_FORM_LBL_REGISTRATION_ISEXIST"
+			description="COM_REGISTRATION_FORM_LBL_REGISTRATION_ISEXIST"
+			default="0"
+      readonly="true"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+    <field
+			name="againt_registration"
+			type="radio"
+			label="Đăng ký lại"
+			description="Đăng ký lại"
+			default="0"
+      readonly="true"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_registration" section="registration"/>
+  </fieldset>
+</form>

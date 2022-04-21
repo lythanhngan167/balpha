@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<extension type="component" version="2.5" method="upgrade">
+<name>JOOMPROFILE</name> 
+<creationDate>16th March 2018</creationDate> 
+<author>Function90</author> 
+<authorEmail>dev.function90@gmail.com</authorEmail> 
+<authorUrl>http://www.function90.com</authorUrl> 
+<copyright>2013 function90</copyright> 
+<license>This component in released under the GNU/GPL v3 or later license</license> 
+<version>1.4.5</version>
+<description>Profile Manager for Joomla</description> 
+
+<files folder="site">
+	<filename>index.html</filename> 
+	<filename>joomprofile.php</filename>
+	<filename>router.php</filename>
+	<folder>base</folder>
+	<folder>extensions</folder>
+	<folder>libraries</folder>
+	<folder>helpers</folder>
+	<folder>includes</folder>
+	<folder>views</folder>
+	<folder>fields</folder>
+	<folder>layouts</folder>
+</files>
+
+<media destination="com_joomprofile" folder="media">
+	<folder>js</folder> 
+	<folder>css</folder> 
+	<folder>images</folder> 
+	<folder>fonts</folder> 
+	<filename>index.html</filename> 
+</media>
+  
+<scriptfile>script.php</scriptfile> 
+  
+<languages>
+	<language tag="en-GB">languages/site/en-GB.com_joomprofile.ini</language> 
+</languages>
+
+<install>
+	<sql>
+	<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file> 
+  	</sql>
+</install>
+
+<updateservers>
+	<server type="extension" priority="1" name="JoomProfile Updates">https://updates.codextrous.com/com_joomprofile.xml</server>
+</updateservers>
+
+  <!--  Administrator back-end section 
+  --> 
+<administration>
+	<menu link="option=com_joomprofile&amp;view=config&amp;task=config.grid">COM_JOOMPROFILE</menu> 
+	<submenu>
+		<menu link="option=com_joomprofile&amp;view=config&amp;task=config.grid">COM_JOOMPROFILE_CONFIG</menu> 
+		<menu link="option=com_joomprofile&amp;view=profile&amp;task=field.grid">COM_JOOMPROFILE_PROFILE</menu> 
+	</submenu>
+	<files folder="admin">
+		<filename>index.html</filename> 
+		<filename>joomprofile.php</filename>
+		<folder>sql</folder>
+		<folder>plugins</folder>
+		<folder>tmpl</folder>
+		<filename>config.xml</filename> 
+	</files>
+	
+	<languages>
+		<language tag="en-GB">languages/admin/en-GB.com_joomprofile.ini</language> 
+		<language tag="en-GB">languages/admin/en-GB.com_joomprofile.sys.ini</language> 
+	</languages>
+</administration>
+</extension>

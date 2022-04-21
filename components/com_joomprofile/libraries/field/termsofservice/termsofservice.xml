@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="title"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_TERMSOFSERVICE_TITLE"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_TERMSOFSERVICE_TITLE_DESC" 
+				default=""/>
+			<field  
+				name="link"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_TERMSOFSERVICE_LINK"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_TERMSOFSERVICE_LINK_DESC"
+				default=""/>
+			<field  
+				name="article_id"  
+				type="Joomprofile.article"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_TERMSOFSERVICE_ARTICLE_ID"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_TERMSOFSERVICE_ARTICLE_ID_DESC"
+				addfieldpath="/components/com_joomprofile/fields">
+				<option value="">COM_JOOMPROFILE_SELECT_OPTION</option>
+			</field>
+		</fieldset>	
+	</fields>
+</config>

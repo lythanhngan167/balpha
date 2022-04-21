@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="ordering"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" default="0000-00-00 00:00:00" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_CREATED_BY" description="COM_AGENT_CONTACT_FORM_DESC_AGENTCONTACT_CREATED_BY" hidden="true" hint="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_MODIFIED_BY" description="COM_AGENT_CONTACT_FORM_DESC_AGENTCONTACT_MODIFIED_BY" hidden="true" hint="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_MODIFIED_BY"/>
+    <field name="phone" filter="safehtml" type="tel" required="true" label="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_PHONE" description="COM_AGENT_CONTACT_FORM_DESC_AGENTCONTACT_PHONE" hint="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_PHONE"/>
+    <field name="email" validate="email" type="email" label="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_EMAIL" description="COM_AGENT_CONTACT_FORM_DESC_AGENTCONTACT_EMAIL" hint="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_EMAIL"/>
+    <field name="address" filter="safehtml" type="text" label="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_ADDRESS" description="COM_AGENT_CONTACT_FORM_DESC_AGENTCONTACT_ADDRESS" hint="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_ADDRESS"/>
+    <field name="facebookpage" validate="url" type="url" label="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_FACEBOOKPAGE" description="COM_AGENT_CONTACT_FORM_DESC_AGENTCONTACT_FACEBOOKPAGE" hint="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_FACEBOOKPAGE"/>
+    <field name="youtubepage" validate="url" type="url" label="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_YOUTUBEPAGE" description="COM_AGENT_CONTACT_FORM_DESC_AGENTCONTACT_YOUTUBEPAGE" hint="COM_AGENT_CONTACT_FORM_LBL_AGENTCONTACT_YOUTUBEPAGE"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_agent_contact" section="agentcontact"/>
+  </fieldset>
+</form>

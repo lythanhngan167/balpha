@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="field">
+		<field 
+			name="id"  
+			type="hidden" 
+			default="0"/>
+			
+		<field 
+			name="title"  
+			type="text" 
+			required="true" 
+			label="COM_JOOMPROFILE_TITLE"
+			description ="COM_JOOMPROFILE_FIELD_TITLE_DESC" 
+			default=""/>
+			
+		<field 
+			name="tooltip"  
+			type="textarea"
+			label="COM_JOOMPROFILE_TOOLTIP"
+			description="COM_JOOMPROFILE_FIELD_TOOLTIP_DESC" 
+			default=""/>
+			
+		<field  
+			name="published"  
+			type="radio"
+			class="btn-group"
+			label="COM_JOOMPROFILE_PUBLISHED"
+			description ="COM_JOOMPROFILE_FIELD_PUBLISHED_DESC" 
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field  
+			name="css_class"  
+			type="text"
+			label="COM_JOOMPROFILE_CSS_CLASS"
+			description ="COM_JOOMPROFILE_FIELD_CSS_CLASS_DESC" />
+			
+		<field  
+			name="type"  
+			type="joomprofile.fieldtypes"
+			required="true"
+			label="COM_JOOMPROFILE_FIELD_TYPE_LABEL"
+			description ="COM_JOOMPROFILE_FIELD_TYPE_DESC">
+			<option value="">COM_JOOMPROFILE_SELECT_OPTION</option>
+			</field>
+		
+	</fieldset>	
+</form>

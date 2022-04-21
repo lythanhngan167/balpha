@@ -1,0 +1,15 @@
+{
+    "name": "sonlv/sonlv",
+    "description": "Make swager document for com api",
+    "require": {
+        "zircote/swagger-php": "^3.0",
+        "firebase/php-jwt": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "le son",
+            "email": "lvson1087@gmail.com"
+        }
+    ],
+    "minimum-stability": "RC"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="user" method="upgrade">
+  <name>Users - Affiliate Tracker</name>
+  <author>JoomlaThat!</author>
+  <creationDate>October 2016</creationDate>
+  <copyright>Copyright (C) 2016 JoomlaThat. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joomlathat.com</authorEmail>
+  <authorUrl>www.joomlathat.com</authorUrl>
+  <version>2.0.1</version>
+  <description>Integration between Joomla users and Affiliate Tracker</description>
+  <files>
+    <filename plugin="affiliates">affiliates.php</filename>
+  
+  </files>
+ 
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        
+        <field name="activation" type="radio" class="btn-group" default="0" label="Automatically approve the new conversions" description="Automatically approve the new conversions">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+
+        <field name="value" type="text" class="input-mini" default="0" label="Monetary value for user registration" description="Monetary value for user registration" />
+
+        <field type="spacer"/>
+
+        <field name="note1" type="note" label="Default commissions configuration" />
+
+        <field name="note2" type="note" class="alert alert-info" label="Note for Affiliate Tracker extended version users" description="Enter the commission type and each default commission level amount (if you have multi-level support enabled) separated by coma starting for the first level. This values can be overridden for each user. Learn more about it here: http://www.joomlathat.com/documentation/affiliate-tracker/multi-level-affiliates. If you don't want to use multi-level, just enter one default commission amount."/>
+        <field name="note3" type="note" class="alert alert-info" label="Note for Affiliate Tracker normal version users" description="Enter the commission type and the default commission amount. If you enter more than one value, only the first one will be taken into account."/>
+
+        <field name="defaultType" type="radio" class="btn-group" default="percent" label="Default commission type for the conversions" description="Default commission type for the conversions">
+          <option value="percent">Percentage (%)</option>
+          <option value="flat">Flat rate</option>
+        </field>
+
+        <field name="defaultLevels" type="text" label="Default commission levels" />
+        
+      </fieldset>
+    </fields>
+  </config>
+ 
+  
+</extension>

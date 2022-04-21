@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_REFERRAL_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="cat_id" label="COM_REFERRAL_FORM_LBL_REFERRAL_CAT_ID" type="category" extension="com_referral.referrals" onchange="this.form.submit();" default="">
+  <option value=""/>
+  <option value="">JOPTION_SELECT_CATEGORY</option>
+</field>
+<field name="status_id" label="COM_REFERRAL_FORM_LBL_REFERRAL_STATUS_ID" type="list" onchange="this.form.submit();" default="COM_REFERRAL_REFERRALS_STATUS_ID_FILTER">
+  <option value="">COM_REFERRAL_REFERRALS_STATUS_ID_FILTER</option>
+  <option value="new">COM_REFERRAL_REFERRALS_STATUS_ID_OPTION_NEW</option>
+  <option value="confirmed">COM_REFERRAL_REFERRALS_STATUS_ID_OPTION_CONFIRMED</option>
+  <option value="converted">COM_REFERRAL_REFERRALS_STATUS_ID_OPTION_CONVERTED</option>
+  <option value="cancel">COM_REFERRAL_REFERRALS_STATUS_ID_OPTION_CANCEL</option>
+</field>
+
+
+    </fields>
+</form>

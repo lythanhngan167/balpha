@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+		<fieldset name="params">
+			<field  
+				name="register_date_display_format"  
+				type="text"
+				label="COM_JOOMPROFILE_FIELD_PARAMS_JOOMLAREGISTERDATE_DISPLAY_FORMAT_LABEL"
+				description ="COM_JOOMPROFILE_FIELD_PARAMS_JOOMLAREGISTERDATE_DISPLAY_FORMAT_DESC" 
+				default="d M Y"/>
+		</fieldset>	
+	</fields>
+</config>

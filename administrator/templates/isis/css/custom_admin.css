@@ -1,0 +1,52 @@
+/* #menu li.dropdown, #menu li.disabled {
+  display: none;
+} */
+.container-title h1.page-title{
+     padding-top: 0px!important;
+}
+.page-title span:before {
+    content: "\2d";
+}
+#j-sidebar-container{
+	display: none;
+}
+#j-main-container{
+  width: 100%;
+  float: left;
+}
+#system-message-container.j-toggle-main, #j-main-container.j-toggle-main, #system-debug.j-toggle-main {
+    float: left;
+    width: 100%;
+    margin-left: 0px!important;
+}
+#toolbar-delete,#toolbar-trash,#toolbar-archive,#toolbar-checkin,#toolbar-copy{
+  display: none;
+}
+#menu-item-368,
+#menu-item-390,
+#menu-item-391 ,
+#menu-item-392 ,
+#menu-item-393 ,
+#menu-item-376 ,
+#menu-item-415 ,
+#menu-item-417 ,
+#menu-item-418
+{
+  display: none;
+}
+
+#menu-item-372 ul li{
+  display: none;
+}
+#menu-item-494{
+  display: block!important;
+}
+#menu-item-372 ul li#menu-item-400{
+  display: block;
+}
+#menu-item-372 ul li#menu-item-424{
+  display: block;
+}
+#k2SelectorEditor{
+  display: none;
+}
