@@ -116,4 +116,11 @@ class JConfig {
 	public $showed_top_item = array("0" => "4", "1" => "5", "2" => "40", "3" => "41", "4" => "42", "5" => "43", "6" => "44", "7" => "45", "8" => "46", "9" => "100");
 	public $categories_post_send_notification = array("0" => "3", "1" => "86", "2" => "78", "3" => "8", "4" => "107", "5" => "111");
 	public $categories_post_send_app_notification = array("0" => "3", "1" => "86");
+	public $categories_faq = array(
+	"0" => "90",
+	"1" => "91",
+	"2" => "93",
+	"3" => "94",
+	"4" => "95",
+	"5" => "96");
 }

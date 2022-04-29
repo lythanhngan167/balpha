@@ -459,6 +459,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		}
 	<?php } ?>
 
+
+	<?php
+		// hoidap FAQ
+		if($_REQUEST['Itemid'] == 387 || $_REQUEST['Itemid'] == 382
+		|| $_REQUEST['Itemid'] == 386 || $_REQUEST['Itemid'] == 383
+		|| $_REQUEST['Itemid'] == 385 || $_REQUEST['Itemid'] == 384
+		|| $_REQUEST['Itemid'] == 347){ ?>
+			.main-content .container .row{
+				display:block!important;
+			}
+			.right-main-content{
+				display:block!important;
+				float:left;
+				margin-top: 80px;
+			}
+			.left-main-content{
+				display:block!important;
+				float:right;
+			}
+			.itemListCategory h2{
+				margin-left:-35%;
+			}
+			#itemListPrimary .item .groupPrimary .catItemHeader{
+				width: 100%;
+			}
+
+	<?php } ?>
+
+
+
+
 	</style>
 
 	<?php if($is_home_page == 1){
@@ -993,6 +1024,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="content-dk content-image">
 								<a class="btn-dk" href="https://insurance.bcavietnam.com/ctv-bao-hiem-online">Đăng ký ngay</a>
 								<p>Hotline:<a class="hotline-balpha" href="tel:02866708870">02866708870</a></p>
+							</div>
+
+						</div>
+						<div class="col-image11">
+							<div class="corner-image">
+								<img width="38" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/corner.png" alt="" />
 							</div>
 						</div>
 						<div class="bg-info1"></div>

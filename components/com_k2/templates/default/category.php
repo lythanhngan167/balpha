@@ -164,6 +164,10 @@ switch($this->category->id){
 
     <?php if ((isset($this->leading) || isset($this->primary) || isset($this->secondary) || isset($this->links)) && (count($this->leading) || count($this->primary) || count($this->secondary) || count($this->links))): ?>
     <!-- Item list -->
+    <?php //if (in_array("Glenn", $people))
+    $config = new JConfig();
+    //print_r($config->categories_faq);
+    ?>
     <div class="itemList">
         <?php if (isset($this->leading) && count($this->leading)): ?>
         <!-- Leading items -->
