@@ -543,6 +543,115 @@ defined('_JEXEC') or die;
     </div>
     <?php endif; ?>
 
+
+
+        <?php if(
+            $this->item->params->get('itemComments') &&
+            (($this->item->params->get('comments') == '2' && !$this->user->guest) || ($this->item->params->get('comments') == '1'))
+        ): ?>
+        <!-- K2 Plugins: K2CommentsBlock -->
+        <?php echo $this->item->event->K2CommentsBlock; ?>
+        <?php endif; ?>
+
+        <?php if(
+            $this->item->params->get('itemComments') &&
+            ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2')) && empty($this->item->event->K2CommentsBlock)
+        ): ?>
+        <!-- Item comments -->
+        <a name="itemCommentsAnchor" id="itemCommentsAnchor"></a>
+        <div class="itemComments">
+            <?php if($this->item->params->get('commentsFormPosition')=='above' && $this->item->params->get('itemComments') && !JRequest::getInt('print') && ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2' && K2HelperPermissions::canAddComment($this->item->catid)))): ?>
+            <!-- Item comments form -->
+            <div class="itemCommentsForm">
+                <?php echo $this->loadTemplate('comments_form'); ?>
+            </div>
+            <?php endif; ?>
+
+            <?php if($this->item->numOfComments>0 && $this->item->params->get('itemComments') && ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2'))): ?>
+            <!-- Item user comments -->
+            <h3 class="itemCommentsCounter">
+                <span><?php echo $this->item->numOfComments; ?></span> <?php echo ($this->item->numOfComments>1) ? JText::_('K2_COMMENTS') : JText::_('K2_COMMENT'); ?>
+            </h3>
+
+            <ul class="itemCommentsList">
+                <?php foreach ($this->item->comments as $key=>$comment): ?>
+                <li class="<?php echo ($key%2) ? "odd" : "even"; echo (!$this->item->created_by_alias && $comment->userID==$this->item->created_by) ? " authorResponse" : ""; echo($comment->published) ? '':' unpublishedComment'; ?>">
+                    <span class="commentLink">
+                        <a href="<?php echo $this->item->link; ?>#comment<?php echo $comment->id; ?>" name="comment<?php echo $comment->id; ?>" id="comment<?php echo $comment->id; ?>">
+                            <?php echo JText::_('K2_COMMENT_LINK'); ?>
+                        </a>
+                    </span>
+
+                    <?php if($comment->userImage): ?>
+                    <img src="<?php echo $comment->userImage; ?>" alt="<?php echo JFilterOutput::cleanText($comment->userName); ?>" width="<?php echo $this->item->params->get('commenterImgWidth'); ?>" />
+                    <?php endif; ?>
+
+                    <span class="commentDate"><?php echo JHTML::_('date', $comment->commentDate, JText::_('K2_DATE_FORMAT_LC2')); ?></span>
+
+                    <span class="commentAuthorName">
+                        <?php echo JText::_('K2_POSTED_BY'); ?>
+                        <?php if(!empty($comment->userLink)): ?>
+                        <a href="<?php echo JFilterOutput::cleanText($comment->userLink); ?>" title="<?php echo JFilterOutput::cleanText($comment->userName); ?>" target="_blank" rel="nofollow"><?php echo $comment->userName; ?></a>
+                        <?php else: ?>
+                        <?php echo $comment->userName; ?>
+                        <?php endif; ?>
+                    </span>
+
+                    <p><?php echo $comment->commentText; ?></p>
+
+                    <?php if(
+                        $this->inlineCommentsModeration ||
+                        ($comment->published && ($this->params->get('commentsReporting')=='1' || ($this->params->get('commentsReporting')=='2' && !$this->user->guest)))
+                    ): ?>
+                    <span class="commentToolbar">
+                        <?php if($this->inlineCommentsModeration): ?>
+                        <?php if(!$comment->published): ?>
+                        <a class="commentApproveLink" href="<?php echo JRoute::_('index.php?option=com_k2&view=comments&task=publish&commentID='.$comment->id.'&format=raw')?>"><?php echo JText::_('K2_APPROVE')?></a>
+                        <?php endif; ?>
+
+                        <a class="commentRemoveLink" href="<?php echo JRoute::_('index.php?option=com_k2&view=comments&task=remove&commentID='.$comment->id.'&format=raw')?>"><?php echo JText::_('K2_REMOVE')?></a>
+                        <?php endif; ?>
+
+                        <?php if($comment->published && ($this->params->get('commentsReporting')=='1' || ($this->params->get('commentsReporting')=='2' && !$this->user->guest))): ?>
+                        <a data-k2-modal="iframe" href="<?php echo JRoute::_('index.php?option=com_k2&view=comments&task=report&commentID='.$comment->id)?>"><?php echo JText::_('K2_REPORT')?></a>
+                        <?php endif; ?>
+
+                        <?php if($comment->reportUserLink): ?>
+                        <a class="k2ReportUserButton" href="<?php echo $comment->reportUserLink; ?>"><?php echo JText::_('K2_FLAG_AS_SPAMMER'); ?></a>
+                        <?php endif; ?>
+                    </span>
+                    <?php endif; ?>
+
+                    <div class="clr"></div>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+
+            <!-- Comments Pagination -->
+            <div class="itemCommentsPagination">
+                <?php echo $this->pagination->getPagesLinks(); ?>
+                <div class="clr"></div>
+            </div>
+            <?php endif; ?>
+
+            <?php if(
+                $this->item->params->get('commentsFormPosition')=='below' &&
+                $this->item->params->get('itemComments') &&
+                !JRequest::getInt('print') &&
+                ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2' && K2HelperPermissions::canAddComment($this->item->catid)))
+            ): ?>
+            <!-- Item comments form -->
+            <div class="itemCommentsForm">
+                <?php echo $this->loadTemplate('comments_form'); ?>
+            </div>
+            <?php endif; ?>
+
+            <?php $user = JFactory::getUser(); if($this->item->params->get('comments') == '2' && $user->guest): ?>
+            <div class="itemCommentsLoginFirst"><?php echo JText::_('K2_LOGIN_TO_POST_COMMENTS'); ?></div>
+            <?php endif; ?>
+        </div>
+        <?php endif; ?>
+
     <?php
 
     if($this->item->catid == LIFE_INSURANCE ||
@@ -697,112 +806,6 @@ defined('_JEXEC') or die;
     <!-- K2 Plugins: K2AfterDisplay -->
     <?php echo $this->item->event->K2AfterDisplay; ?>
 
-    <?php if(
-        $this->item->params->get('itemComments') &&
-        (($this->item->params->get('comments') == '2' && !$this->user->guest) || ($this->item->params->get('comments') == '1'))
-    ): ?>
-    <!-- K2 Plugins: K2CommentsBlock -->
-    <?php echo $this->item->event->K2CommentsBlock; ?>
-    <?php endif; ?>
-
-    <?php if(
-        $this->item->params->get('itemComments') &&
-        ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2')) && empty($this->item->event->K2CommentsBlock)
-    ): ?>
-    <!-- Item comments -->
-    <a name="itemCommentsAnchor" id="itemCommentsAnchor"></a>
-    <div class="itemComments">
-        <?php if($this->item->params->get('commentsFormPosition')=='above' && $this->item->params->get('itemComments') && !JRequest::getInt('print') && ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2' && K2HelperPermissions::canAddComment($this->item->catid)))): ?>
-        <!-- Item comments form -->
-        <div class="itemCommentsForm">
-            <?php echo $this->loadTemplate('comments_form'); ?>
-        </div>
-        <?php endif; ?>
-
-        <?php if($this->item->numOfComments>0 && $this->item->params->get('itemComments') && ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2'))): ?>
-        <!-- Item user comments -->
-        <h3 class="itemCommentsCounter">
-            <span><?php echo $this->item->numOfComments; ?></span> <?php echo ($this->item->numOfComments>1) ? JText::_('K2_COMMENTS') : JText::_('K2_COMMENT'); ?>
-        </h3>
-
-        <ul class="itemCommentsList">
-            <?php foreach ($this->item->comments as $key=>$comment): ?>
-            <li class="<?php echo ($key%2) ? "odd" : "even"; echo (!$this->item->created_by_alias && $comment->userID==$this->item->created_by) ? " authorResponse" : ""; echo($comment->published) ? '':' unpublishedComment'; ?>">
-                <span class="commentLink">
-                    <a href="<?php echo $this->item->link; ?>#comment<?php echo $comment->id; ?>" name="comment<?php echo $comment->id; ?>" id="comment<?php echo $comment->id; ?>">
-                        <?php echo JText::_('K2_COMMENT_LINK'); ?>
-                    </a>
-                </span>
-
-                <?php if($comment->userImage): ?>
-                <img src="<?php echo $comment->userImage; ?>" alt="<?php echo JFilterOutput::cleanText($comment->userName); ?>" width="<?php echo $this->item->params->get('commenterImgWidth'); ?>" />
-                <?php endif; ?>
-
-                <span class="commentDate"><?php echo JHTML::_('date', $comment->commentDate, JText::_('K2_DATE_FORMAT_LC2')); ?></span>
-
-                <span class="commentAuthorName">
-                    <?php echo JText::_('K2_POSTED_BY'); ?>
-                    <?php if(!empty($comment->userLink)): ?>
-                    <a href="<?php echo JFilterOutput::cleanText($comment->userLink); ?>" title="<?php echo JFilterOutput::cleanText($comment->userName); ?>" target="_blank" rel="nofollow"><?php echo $comment->userName; ?></a>
-                    <?php else: ?>
-                    <?php echo $comment->userName; ?>
-                    <?php endif; ?>
-                </span>
-
-                <p><?php echo $comment->commentText; ?></p>
-
-                <?php if(
-                    $this->inlineCommentsModeration ||
-                    ($comment->published && ($this->params->get('commentsReporting')=='1' || ($this->params->get('commentsReporting')=='2' && !$this->user->guest)))
-                ): ?>
-                <span class="commentToolbar">
-                    <?php if($this->inlineCommentsModeration): ?>
-                    <?php if(!$comment->published): ?>
-                    <a class="commentApproveLink" href="<?php echo JRoute::_('index.php?option=com_k2&view=comments&task=publish&commentID='.$comment->id.'&format=raw')?>"><?php echo JText::_('K2_APPROVE')?></a>
-                    <?php endif; ?>
-
-                    <a class="commentRemoveLink" href="<?php echo JRoute::_('index.php?option=com_k2&view=comments&task=remove&commentID='.$comment->id.'&format=raw')?>"><?php echo JText::_('K2_REMOVE')?></a>
-                    <?php endif; ?>
-
-                    <?php if($comment->published && ($this->params->get('commentsReporting')=='1' || ($this->params->get('commentsReporting')=='2' && !$this->user->guest))): ?>
-                    <a data-k2-modal="iframe" href="<?php echo JRoute::_('index.php?option=com_k2&view=comments&task=report&commentID='.$comment->id)?>"><?php echo JText::_('K2_REPORT')?></a>
-                    <?php endif; ?>
-
-                    <?php if($comment->reportUserLink): ?>
-                    <a class="k2ReportUserButton" href="<?php echo $comment->reportUserLink; ?>"><?php echo JText::_('K2_FLAG_AS_SPAMMER'); ?></a>
-                    <?php endif; ?>
-                </span>
-                <?php endif; ?>
-
-                <div class="clr"></div>
-            </li>
-            <?php endforeach; ?>
-        </ul>
-
-        <!-- Comments Pagination -->
-        <div class="itemCommentsPagination">
-            <?php echo $this->pagination->getPagesLinks(); ?>
-            <div class="clr"></div>
-        </div>
-        <?php endif; ?>
-
-        <?php if(
-            $this->item->params->get('commentsFormPosition')=='below' &&
-            $this->item->params->get('itemComments') &&
-            !JRequest::getInt('print') &&
-            ($this->item->params->get('comments') == '1' || ($this->item->params->get('comments') == '2' && K2HelperPermissions::canAddComment($this->item->catid)))
-        ): ?>
-        <!-- Item comments form -->
-        <div class="itemCommentsForm">
-            <?php echo $this->loadTemplate('comments_form'); ?>
-        </div>
-        <?php endif; ?>
-
-        <?php $user = JFactory::getUser(); if($this->item->params->get('comments') == '2' && $user->guest): ?>
-        <div class="itemCommentsLoginFirst"><?php echo JText::_('K2_LOGIN_TO_POST_COMMENTS'); ?></div>
-        <?php endif; ?>
-    </div>
-    <?php endif; ?>
 
     <?php if(!JRequest::getCmd('print')): ?>
     <div class="itemBackToTop">

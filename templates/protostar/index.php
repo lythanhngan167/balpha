@@ -1678,7 +1678,7 @@ function changeVideo(vId){
 .slide-categories .banner-1{
   height: calc(100vw * (500/(1280 + 0)))!important;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
 	.box-service-2 .bg-info1{
 		height: calc(100% - 0px);
 	}
