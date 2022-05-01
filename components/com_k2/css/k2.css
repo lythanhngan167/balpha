@@ -50,7 +50,7 @@ div.k2FeedIcon a:hover span {display:none;}
 div.itemRatingForm .formLogLoading {background:url(../images/loaders/generic.gif) no-repeat left center;height:25px;padding:0 0 0 20px;}
 .itemRatingList,
 .itemRatingList a:hover,
-.itemRatingList .itemCurrentRating {background:transparent url(../images/ratingstars.gif) left -1000px repeat-x;}
+.itemRatingList .itemCurrentRating {background:transparent url(../images/ratingstars.png) left -1000px repeat-x;}
 .itemRatingList {position:relative;float:left;width:125px;height:25px;overflow:hidden;list-style:none;margin:0;padding:0;background-position:left top;}
 .itemRatingList li {display:inline;background:none;padding:0;}
 .itemRatingList a,

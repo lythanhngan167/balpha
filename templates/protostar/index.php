@@ -488,6 +488,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<?php } ?>
 
 
+	<?php
+		// error 404
+		if($_REQUEST['Itemid'] == 259){ ?>
+			.itemRatingBlock{
+				display:none;
+			}
+			.author-bottom{
+				display:none;
+			}
+	<?php } ?>
+
+
 
 
 	</style>
