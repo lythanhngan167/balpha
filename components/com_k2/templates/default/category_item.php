@@ -401,6 +401,8 @@ $config = new JConfig();
 <script>
 function showFaq(id){
   var catItemFullText = jQuery('#catItemFullText-'+id).html();
+  jQuery('.show-faq').removeClass("active");
+  jQuery('#show-faq-'+id).addClass("active");
   jQuery('#faq-result-content').html(catItemFullText);
   jQuery('html, body').animate({
         scrollTop: jQuery(".itemList-right").offset().top - 50
@@ -410,6 +412,9 @@ function showFaq(id){
 jQuery(document).ready(function(){
   var catItemFullTextFirst =  jQuery('#itemListPrimary .first-row .catItemFullText').html();
   jQuery('#faq-result-content').html(catItemFullTextFirst);
+  jQuery('#itemListPrimary .first-row .show-faq').addClass("active");
+
+
 });
 </script>
 <style>
