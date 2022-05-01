@@ -164,11 +164,22 @@ switch($this->category->id){
 
     <?php if ((isset($this->leading) || isset($this->primary) || isset($this->secondary) || isset($this->links)) && (count($this->leading) || count($this->primary) || count($this->secondary) || count($this->links))): ?>
     <!-- Item list -->
-    <?php //if (in_array("Glenn", $people))
+    <?php
     $config = new JConfig();
-    //print_r($config->categories_faq);
+
+
     ?>
     <div class="itemList">
+      <?php
+      if(in_array($this->category->id, $config->categories_faq)){
+      ?>
+      <div class="itemList-title-faq">
+        NHỮNG CÂU HỎI THƯỜNG GẶP VỀ <?php echo str_replace("Hỏi đáp","",$this->category->name);; ?>
+      </div>
+
+      <div class="itemList-left">
+        <h3 class="faq">Câu hỏi</h3>
+      <?php } ?>
         <?php if (isset($this->leading) && count($this->leading)): ?>
         <!-- Leading items -->
         <div id="itemListLeading">
@@ -307,7 +318,12 @@ switch($this->category->id){
             <?php } ?>
 
             <?php foreach($this->primary as $key=>$item): ?>
+
             <?php
+            $firs_row = '';
+            if($key == 0){
+              $firs_row = 'first-row';
+            }
             // Define a CSS class for the last container on each row
             if ((($key+1)%($this->params->get('num_primary_columns'))==0) || count($this->primary) < $this->params->get('num_primary_columns'))
                 $lastContainer= ' itemContainerLast';
@@ -315,7 +331,7 @@ switch($this->category->id){
                 $lastContainer='';
             ?>
 
-            <div class="itemContainer<?php echo $lastContainer; ?> <?php echo $type_insurance; ?>"<?php echo (count($this->primary)==0) ? '' : ' style="width:'.number_format(100/$this->params->get('num_primary_columns'), 1).'%;"'; ?>>
+            <div class="<?php echo $firs_row; ?> itemContainer<?php echo $lastContainer; ?> <?php echo $type_insurance; ?>"<?php echo (count($this->primary)==0) ? '' : ' style="width:'.number_format(100/$this->params->get('num_primary_columns'), 1).'%;"'; ?>>
 
                 <?php
                     // Load category_item.php by default
@@ -451,6 +467,17 @@ switch($this->category->id){
             <!-- <div class="clr"></div> -->
         </div>
         <?php endif; ?>
+        <?php
+        if(in_array($this->category->id, $config->categories_faq)){
+        ?>
+        </div>
+        <div class="itemList-right">
+          <h3 class="faq faq-result">Đáp</h3>
+          <div class="faq-result-content" id="faq-result-content">
+          </div>
+        </div>
+        <?php } ?>
+
     </div>
 
     <!-- Pagination -->

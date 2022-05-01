@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '1318042022';
+$version = '201052022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();

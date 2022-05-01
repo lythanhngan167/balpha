@@ -134,10 +134,20 @@ $config = new JConfig();
             </span>
             <?php endif; ?>
 
+
             <?php if ($this->item->params->get('catItemTitleLinked')): ?>
+            <?php
+            if(in_array($this->item->category->id, $config->categories_faq)){ ?>
+              <a href="#" class="show-faq" id="show-faq-<?php echo $this->item->id; ?>" onclick="showFaq(<?php echo $this->item->id; ?>)">
+                  <?php echo $this->item->title; ?>
+              </a>
+            <?php
+            }else{
+            ?>
             <a href="<?php echo $this->item->link; ?>">
                 <?php echo $this->item->title; ?>
             </a>
+          <?php } ?>
             <?php else: ?>
             <?php echo $this->item->title; ?>
             <?php endif; ?>
@@ -162,9 +172,31 @@ $config = new JConfig();
 
         <?php if($this->item->params->get('catItemIntroText')): ?>
         <!-- Item introtext -->
+        <div class="catItemFullText" id="catItemFullText-<?php echo $this->item->id; ?>">
+          <?php if($this->item->fulltext !=''):
+            echo $this->item->fulltext;
+            ?>
+          <?php else:
+            echo $this->item->introtext;
+          ?>
+          <?php endif; ?>
+          <div class="author-bottom">
+              <div style="text-align:left" class="title-author">Tác giả</div>
+              <a rel="author" href="<?php echo $this->item->author->link; ?>">
+                <img class="image-avatar float-left" src="<?php echo $this->item->author->avatar; ?>" onerror="if (this.src != 'error.jpg') this.src = '<?php echo JURI::root().'images/avatark2/avatardefault.png?v=101052022' ?>'" alt="<?php echo K2HelperUtilities::cleanHtml($this->item->author->name); ?>" />
+              </a>
+              <div class="float-left info-author">
+              <h3 class=""><a rel="author" href="<?php echo $this->item->author->link; ?>"><?php echo $this->item->author->name; ?></a>
+              <span style="font-size: 15px;"><?php echo $this->item->author->profile->description; ?></span>
+              </h3>
+              </div>
+          </div>
+        </div>
         <div class="catItemIntroText">
+
         <?php
         //echo $this->item->introtext;
+        $this->item->introtext = strip_tags($this->item->introtext);
         $more_text = '';
         if(strlen($this->item->introtext) >= 300){
           $more_text = ' ...';
@@ -208,7 +240,8 @@ $config = new JConfig();
     </div>
     <div class="catItemIntroText-mobile">
     <?php
-    //echo $this->item->introtext;
+
+    $this->item->introtext = strip_tags($this->item->introtext);
     $more_text = '';
     if(strlen($this->item->introtext) >= 300){
       $more_text = ' ...';
@@ -365,6 +398,46 @@ $config = new JConfig();
 })
 }( jQuery ));
 </script>
+<script>
+function showFaq(id){
+  var catItemFullText = jQuery('#catItemFullText-'+id).html();
+  jQuery('#faq-result-content').html(catItemFullText);
+  jQuery('html, body').animate({
+        scrollTop: jQuery(".itemList-right").offset().top - 50
+    }, 1000);
+}
+
+jQuery(document).ready(function(){
+  var catItemFullTextFirst =  jQuery('#itemListPrimary .first-row .catItemFullText').html();
+  jQuery('#faq-result-content').html(catItemFullTextFirst);
+});
+</script>
 <style>
     .modal-body iframe{height: 315px;}
+    <?php
+    if(in_array($this->item->category->id, $config->categories_faq)){ ?>
+    div.catItemCommentsLink,.catItemIntroText,.catItemDateCreated{
+      display:none;
+    }
+    #k2Container div.catItemView{
+      padding:0px;
+    }
+    #k2Container .itemContainer{
+      margin-bottom: 0px;
+    }
+    #k2Container div.catItemView .catItemTitle{
+      min-height: 20px;
+    }
+    #k2Container .itemContainer{
+      box-shadow: none;
+    }
+    #k2Container .catItemTitle a.show-faq{
+      color:#646464!important;
+      font-weight: normal;
+    }
+    #itemListPrimary .item .groupPrimary .catItemHeader .catItemTitle {
+      min-height: 20px;
+    }
+
+    <?php } ?>
 </style>
