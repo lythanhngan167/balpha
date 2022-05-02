@@ -400,20 +400,51 @@ $config = new JConfig();
 </script>
 <script>
 function showFaq(id){
-  var catItemFullText = jQuery('#catItemFullText-'+id).html();
-  jQuery('.show-faq').removeClass("active");
-  jQuery('#show-faq-'+id).addClass("active");
-  jQuery('#faq-result-content').html(catItemFullText);
-  jQuery('html, body').animate({
-        scrollTop: jQuery(".itemList-right").offset().top - 50
-    }, 1000);
+  var is_mobile = 0;
+  if(jQuery( "body" ).hasClass( "mobile" )){
+    is_mobile  = 1;
+  }
+  if(is_mobile == 0){
+    var catItemFullText = jQuery('#catItemFullText-'+id).html();
+    jQuery('.show-faq').removeClass("active");
+    jQuery('#show-faq-'+id).addClass("active");
+    jQuery('#faq-result-content').html(catItemFullText);
+    jQuery('html, body').animate({
+          scrollTop: jQuery(".itemList-right").offset().top - 50
+      }, 1000);
+  }else{
+    jQuery('.show-faq').removeClass("active");
+    jQuery('#show-faq-'+id).addClass("active");
+
+    if (jQuery('#catItemFullText-'+id).is(':visible')) {
+			jQuery('#catItemFullText-'+id).css("display","none");
+      jQuery('html, body').animate({
+            scrollTop: jQuery("#show-faq-"+id).offset().top - 50
+        }, 1000);
+		}else{
+      jQuery('.catItemFullText').css("display","none");
+			jQuery('#catItemFullText-'+id).css("display","block");
+      jQuery('html, body').animate({
+            scrollTop: jQuery("#catItemFullText-"+id).offset().top - 70
+        }, 1000);
+		}
+
+
+
+  }
+
 }
 
 jQuery(document).ready(function(){
-  var catItemFullTextFirst =  jQuery('#itemListPrimary .first-row .catItemFullText').html();
-  jQuery('#faq-result-content').html(catItemFullTextFirst);
-  jQuery('#itemListPrimary .first-row .show-faq').addClass("active");
-
+  var is_mobile = 0;
+  if(jQuery( "body" ).hasClass( "mobile" )){
+    is_mobile  = 1;
+  }
+  if(is_mobile == 0){
+    var catItemFullTextFirst =  jQuery('#itemListPrimary .first-row .catItemFullText').html();
+    jQuery('#faq-result-content').html(catItemFullTextFirst);
+    jQuery('#itemListPrimary .first-row .show-faq').addClass("active");
+  }
 
 });
 </script>
@@ -442,6 +473,27 @@ jQuery(document).ready(function(){
     }
     #itemListPrimary .item .groupPrimary .catItemHeader .catItemTitle {
       min-height: 20px;
+    }
+
+    @media (max-width: 960px) {
+      #itemListPrimary .item .groupPrimary .catItemHeader{
+        padding-top: 0px;
+      }
+      #itemListPrimary .item .groupPrimary .catItemIntroText-mobile{
+        display:none!important;
+      }
+      .itemListCategory h2 {
+        margin-left: 0px!important;
+      }
+      #k2Container .itemList-left h3.faq{
+        margin-right: 0px;
+      }
+      .itemList-left {
+        padding-right: 0px;
+      }
+      .item .groupPrimary .catItemHeader {
+        padding-bottom: 5px;
+      }
     }
 
     <?php } ?>
