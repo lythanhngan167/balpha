@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '201052022';
+$version = '102052022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();
@@ -594,8 +594,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 							<div class="col-xs-12 col-md-2 left-logo-search-account">
 								<a class="brand pull-left logo-desktop" href="<?php echo $this->baseurl; ?>/">
-									<?php echo $logo; ?>
-
+									<?php //echo $logo; ?>
+									<img width="155" height="60" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logo-vertical.svg" alt="<?php echo $sitename ?>" />
 									<?php if ($this->params->get('sitedescription')) : ?>
 										<?php //echo '<div class="site-description">' . htmlspecialchars($this->params->get('sitedescription'), ENT_COMPAT, 'UTF-8') . '</div>'; ?>
 									<?php endif; ?>
@@ -920,16 +920,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container-fluid comparation">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-md-12 left-comparation">
+				<div class="col-xs-12 col-md-12 left-comparation left-comparation1">
 
 					<div class="box-service">
 						<div class="image"></div>
 						<div class="info">
-							<a href="#" class="item-center">BẢO HIỂM </br>CÔNG NGHỆ 4.0</a>
-							<div class="item">
+							<a href="#" class="item-center">BẢO HIỂM </br>CÔNG NGHỆ </br>4.0</a>
+							<div class="item item-special-1">
 								<div class="box-service-item">
 									<a href="#" class="box-service-item-icon"><div class="item-icon">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.983" height="61.857" viewBox="0 0 61.983 61.857"><defs><clipPath id="a1"><rect width="61.983" height="61.857" transform="translate(0)" fill="#f78d2d"/></clipPath></defs><g clip-path="url(#a1)"><path d="M30.758,66.476l-.245-.5.278-.487,3.882-6.834A7.038,7.038,0,1,0,40.5,64.63l-6.667,3.788-.446.253-.476-.19a4.043,4.043,0,0,1-2.152-2.005" transform="translate(-11.638 -25.628)" fill="#f78d2d"/><path d="M56.378,60.192l1.666.543a12.906,12.906,0,0,0-1.55-2.955l-1.846,1.847Z" transform="translate(-23.917 -25.288)" fill="#f78d2d"/><path d="M28.915,47.9a12.983,12.983,0,1,0,12.347,8.983l-1.63.926-.9.51a10.16,10.16,0,1,1-7.089-7.211l.467-.819.965-1.7a12.91,12.91,0,0,0-4.162-.689" transform="translate(-6.975 -20.965)" fill="#f78d2d"/><path d="M48.277,52.889,50.16,51a12.963,12.963,0,0,0-2.98-1.6l.551,1.754Z" transform="translate(-20.649 -21.62)" fill="#f78d2d"/><path d="M41.049,53.906A19.14,19.14,0,1,1,33.881,39L35.9,36.989a22,22,0,1,0,3.073,3.1l-2.015,2.015a19.016,19.016,0,0,1,4.1,11.8" transform="translate(0 -13.99)" fill="#f78d2d"/><path d="M70.307.277a6.786,6.786,0,0,0-1.447,2.991L67.9,8.134,66.55,9.483l.962-4.867a3.111,3.111,0,0,0,.066-.584c0-.6-.29-.736-.754-.272A6.8,6.8,0,0,0,65.377,6.75l-.962,4.867-1.348,1.348L64.029,8.1a3.1,3.1,0,0,0,.066-.583c0-.6-.29-.737-.753-.273a6.8,6.8,0,0,0-1.448,2.991L60.932,15.1,42.764,33.268l-1.072-3.416L35.709,40.384a3,3,0,0,0,1.586,1.478l10.462-5.944-3.384-1.1L62.511,16.677l4.867-.961a6.821,6.821,0,0,0,2.992-1.448.76.76,0,0,0,.276-.47c0-.263-.408-.36-1.132-.218l-4.868.963L65.993,13.2l4.866-.962a6.794,6.794,0,0,0,2.992-1.448.76.76,0,0,0,.277-.468c0-.264-.409-.362-1.134-.218l-4.868.962,1.348-1.348,4.868-.962A6.793,6.793,0,0,0,77.333,7.3a.76.76,0,0,0,.278-.469c0-.264-.409-.362-1.133-.218L69.773,7.94l-.1-.1,1.324-6.7A3.105,3.105,0,0,0,71.06.549c0-.6-.29-.737-.753-.273" transform="translate(-15.628 0)" fill="#f78d2d"/></g></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100.004" viewBox="0 0 100 100.004">
+  <g id="ic-05" transform="translate(-1016.518 -609.787)">
+    <path id="Path_262" data-name="Path 262" d="M1066.64,618.243a41.425,41.425,0,1,0,29.486,12.18A41.425,41.425,0,0,0,1066.64,618.243Zm-7.469,57.8h0a5.662,5.662,0,0,1-1.5-.255,7.1,7.1,0,0,1-1.226-.936l-9.377-9.37a3.506,3.506,0,0,1-1.136-2.912,3.74,3.74,0,0,1,1.136-2.839,3.8,3.8,0,0,1,3.021-1.092,3.747,3.747,0,0,1,2.843,1.092l6.236,6.447,21.262-21.175a3.888,3.888,0,0,1,2.912-1.143,4.022,4.022,0,0,1,2.836,1.143,3.679,3.679,0,0,1,1.139,2.912,3.272,3.272,0,0,1-1.139,2.752l-24.025,24.193a9.684,9.684,0,0,0-1.318.936,6.014,6.014,0,0,1-1.7.255Zm7.469,33.744h0a50,50,0,1,1,35.23-14.641A50,50,0,0,1,1066.64,709.791Z" transform="translate(0)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
 
 
 									</div></a>
@@ -938,30 +942,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<p>Tìm kiếm Data nóng, Khách hàng có nhu cầu, Data không trùng lặp, được remarketing.</p>
 									</div>
 								</div>
-							</div> <div class="item">
+							</div> <div class="item item-special-2">
 								<div class="box-service-item">
 									<a href="#" class="box-service-item-icon"><div class="item-icon">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.865" height="61.857" viewBox="0 0 61.865 61.857"><defs><clipPath id="a2"><rect width="61.865" height="61.857" fill="#f78d2d"/></clipPath></defs><g clip-path="url(#a2)"><path d="M6.61,59.57a7.855,7.855,0,0,0,11.083,0L30.423,46.838a1.567,1.567,0,1,0-2.216-2.217L15.475,57.353a4.721,4.721,0,0,1-6.649,0L4.508,53.035a4.706,4.706,0,0,1,0-6.649L46.389,4.5a4.721,4.721,0,0,1,6.65,0l4.318,4.318a4.707,4.707,0,0,1,0,6.649L35.377,37.452a4.721,4.721,0,0,1-6.65,0l-.836-.836a4.707,4.707,0,0,1,0-6.649L46.345,11.514A1.567,1.567,0,1,0,44.128,9.3L25.675,27.751a7.845,7.845,0,0,0,0,11.082l.836.836a7.854,7.854,0,0,0,11.082,0L59.574,17.688a7.845,7.845,0,0,0,0-11.081L55.255,2.287a7.857,7.857,0,0,0-11.083,0L2.291,44.169a7.847,7.847,0,0,0,0,11.083Zm9.5-.679a6.3,6.3,0,0,1-7.41.371,6.3,6.3,0,0,0,7.41-.371M30.264,40.132a6.224,6.224,0,0,1-2.646-1.572,6.224,6.224,0,0,0,2.646,1.572" transform="translate(0)" fill="#f78d2d"/></g></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="66" height="139.152" viewBox="0 0 66 139.152">
+  <g id="ic-06" transform="translate(-1744.988 -545.892)">
+    <path id="Path_366" data-name="Path 366" d="M1764,666.78V583.873a11.125,11.125,0,0,1,3.354-8.215,14.624,14.624,0,0,1,10.589-4.13,12.509,12.509,0,0,1,13.481,11.462c.026.295.041.589.041.883v71.44a3.942,3.942,0,0,1-3.735,4.145,2.9,2.9,0,0,1-.36.005,3.491,3.491,0,0,1-3.644-3.323,3.77,3.77,0,0,1,.061-.827v-71.44a4.284,4.284,0,0,0-2.618-4.059,8.2,8.2,0,0,0-8.367,1.182,3.886,3.886,0,0,0-1.223,2.872l.066,82.825c.34,1.8,2.618,10.655,16.743,10.655a16.339,16.339,0,0,0,11.959-3.963,10,10,0,0,0,3-6.6l.081-85.565c-.081-1.193-.786-27.7-25.876-27.7a22.833,22.833,0,0,0-16.648,6.414,33.11,33.11,0,0,0-8.25,21.112v85.524a3.624,3.624,0,0,1-1.055,2.613,3.917,3.917,0,0,1-2.766,1.192,3.648,3.648,0,0,1-2.709-1.192,3.752,3.752,0,0,1-1.141-2.613l.091-85.575a40.912,40.912,0,0,1,10.655-26.658,29.431,29.431,0,0,1,21.817-8.428c25.877,0,33.2,23.046,33.436,35.126V666.9a18.518,18.518,0,0,1-5.337,12.06A23.854,23.854,0,0,1,1788.368,685c-17.9,0-23.847-11.609-24.4-18.225Z" transform="translate(0.001 0)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
+
 									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="">QUY TRÌNH GIAO KẾT HỢP ĐỒNG ĐẶC BIỆT</h3>
-										<p>Minh bạch, tinh gọn; với sự tham gia của bên thứ ba - đại diện về mặt pháp lý; qui trình được ghi âm, ghi hình.</p>
+										<p>Minh bạch, tinh gọn; với sự tham gia của bên thứ ba - đại diện về mặt pháp lý; quy trình được ghi âm, ghi hình.</p>
 									</div>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item item-special-3">
 								<div class="box-service-item">
-									<a href="#" class="box-service-item-icon"><div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84.215" height="61.857" viewBox="0 0 84.215 61.857"><defs><clipPath id="ac"><rect width="84.215" height="61.857" fill="#f78d2d"/></clipPath></defs><g clip-path="url(#ac)"><path d="M31.691,49.54a1.072,1.072,0,0,0,1.016.733c12.855,0,26.148,0,39.334.033h0a1.07,1.07,0,0,0,0-2.141c-12.925-.033-25.951-.033-38.566-.033-1.5-4.546-2.828-8.965-4.23-13.633-.739-2.46-1.5-5-2.29-7.547-.635-2.288-1.286-4.4-2.175-7.067C23.042,14.117,19.539,2.811,19.5,2.7a1.073,1.073,0,0,0-1.023-.754H16.4A2.391,2.391,0,0,0,14.008,0H2.425A2.368,2.368,0,0,0,0,2.3V3.74a2.369,2.369,0,0,0,2.425,2.3H14.008A2.392,2.392,0,0,0,16.4,4.086h1.289c.816,2.637,3.57,11.541,5.048,16.433a.23.23,0,0,1,.01.028c.88,2.642,1.524,4.733,2.152,6.994,0,.01.006.019.008.029.784,2.541,1.549,5.086,2.289,7.547,1.416,4.715,2.882,9.592,4.493,14.424" transform="translate(0 0)" fill="#f78d2d"/><path d="M101.31,21.277H47.027a2.37,2.37,0,0,0-2.426,2.3v1.437a2.369,2.369,0,0,0,2.426,2.3H47.8l8.148,27.705a1.069,1.069,0,0,0,1.027.769H91.362a1.07,1.07,0,0,0,1.027-.769l8.148-27.705h.773a2.367,2.367,0,0,0,2.425-2.3V23.579a2.368,2.368,0,0,0-2.425-2.3" transform="translate(-19.52 -9.312)" fill="#f78d2d"/><path d="M53.8,90.177a5.573,5.573,0,1,0,5.574,5.573A5.58,5.58,0,0,0,53.8,90.177" transform="translate(-21.105 -39.467)" fill="#f78d2d"/><path d="M124.822,90.177A5.573,5.573,0,1,0,130.4,95.75a5.579,5.579,0,0,0-5.574-5.573" transform="translate(-52.191 -39.467)" fill="#f78d2d"/></g></svg></div></a>
+									<a href="#" class="box-service-item-icon"><div class="item-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="80" height="100.8" viewBox="0 0 80 100.8">
+  <g id="ic-07" transform="translate(-488.869 -865.026)">
+    <path id="Path_115" data-name="Path 115" d="M502.028,865.026H555.7v37.313h13.167v63.487h-80V902.339h13.159Zm7.993,37.313H547.6V872.245H510.021Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
+
+									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="">SIÊU THỊ BẢO HIỂM ĐA DẠNG CÁC SẢN PHẨM</h3>
 										<p>Hơn 200 sản phẩm bảo hiểm Nhân thọ và Phi nhân thọ; đối tác là các doanh nghiệp bảo hiểm uy tín hàng đầu Việt Nam; trao quyền chủ động lựa chọn sản phẩm cho Khách hàng.</p>
 									</div>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item item-special-4">
 								<div class="box-service-item">
 									<a href="#" class="box-service-item-icon"><div class="item-icon">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.958" height="61.857" viewBox="0 0 54.958 61.857"><defs><clipPath id="a3"><rect width="54.958" height="61.857" fill="#f78d2d"/></clipPath></defs><g clip-path="url(#a3)"><path d="M25.616,25.214c2.917,6.935,8.475,10.709,12.182,10.709,3.642,0,8.746-3.647,11.7-10.493a31.908,31.908,0,0,0,1.771-5.862,23.346,23.346,0,0,0,.75-6.457C52.024,6,45.655,0,37.8,0S23.576,6,23.576,13.111a31.024,31.024,0,0,0,.331,4.823,28.286,28.286,0,0,0,1.709,7.28" transform="translate(-10.318)" fill="#f78d2d"/><path d="M52.631,74.977c-2.844-3.04-10.838-2.278-14.79-4.367-1.757,3.287-1.78,8.688-4.7,8.688a2.5,2.5,0,0,1-.39-.031c-4.4-.659-2.2-11.869-5.275-11.869s-.879,11.21-5.274,11.869a2.513,2.513,0,0,1-.391.031c-2.916,0-2.94-5.4-4.7-8.688C13.168,72.7,5.174,71.937,2.34,74.977.8,76.624,0,86.823,0,91.355H54.958c0-4.532-.795-14.731-2.327-16.378" transform="translate(0 -29.498)" fill="#f78d2d"/></g></svg>
+										<svg xmlns="http://www.w3.org/2000/svg" width="100" height="93.097" viewBox="0 0 100 93.097">
+  <g id="ic-01" transform="translate(-250 -1472)">
+    <path id="Path_381" data-name="Path 381" d="M539.741,472.393h.01c-2.494-.316-2.494-7.269-2.494-7.269a34.763,34.763,0,0,0,8.877-16.787c4.224,0,6.912-10.261,2.687-14.028.153-3.614,5.457-29.757-21.449-29.757-26.642,0-21.46,26.143-21.256,29.757-4.357,3.777-1.67,14.028,2.494,14.028a35.514,35.514,0,0,0,8.877,16.787s0,6.953-2.454,7.269c-8,1.222-34.49,10.618-34.49,25.257h100C580.543,483.021,547.8,473.625,539.741,472.393Z" transform="translate(-230.543 1067.447)" fill="#fff"/>
+  </g>
+</svg>
+
 									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="">ĐỘI NGŨ TƯ VẤN TÀI CHÍNH</h3>
@@ -969,9 +990,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item item-special-5">
 								<div class="box-service-item">
-									<a href="#" class="box-service-item-icon"><div class="item-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.844" height="61.857" viewBox="0 0 68.844 61.857"><defs><clipPath id="ad"><rect width="68.844" height="61.857" fill="#f78d2d"/></clipPath></defs><g clip-path="url(#ad)"><path d="M39.911,10.923h1.651c.81,0,1.494-.368,1.494-.8v-4.5a1,1,0,0,1,.984-.984H58.431a1,1,0,0,1,.984.984v4.545c0,.4.7.755,1.493.755h1.652c.8,0,1.494-.352,1.494-.755V5.623A5.628,5.628,0,0,0,58.431,0H44.039a5.629,5.629,0,0,0-5.622,5.623v4.423c0,.476.685.877,1.494.877" transform="translate(-16.814)" fill="#f78d2d"/><path d="M56,72.5h4.549A1.5,1.5,0,0,0,62.048,71V69.3a1.5,1.5,0,0,0-1.494-1.493H56A1.5,1.5,0,0,0,54.51,69.3V71A1.5,1.5,0,0,0,56,72.5" transform="translate(-23.857 -29.678)" fill="#f78d2d"/><path d="M2.614,0h2.31A2.614,2.614,0,0,1,7.537,2.614v0A2.614,2.614,0,0,1,4.923,5.229H2.616A2.616,2.616,0,0,1,0,2.614v0A2.614,2.614,0,0,1,2.614,0Z" transform="translate(30.653 45.397)" fill="#f78d2d"/><path d="M66.053,70.649c-.4.15-.757.276-1.086.387A88.678,88.678,0,0,1,41.6,75.6v2.9A4.608,4.608,0,0,1,37,83.1H33.964a4.608,4.608,0,0,1-4.6-4.6V75.6A87.835,87.835,0,0,1,4.323,70.437c-.223-.064-.629-.221-1.608-.614l-.126-.05-.163-.065V88.586a3.772,3.772,0,0,0,3.767,3.769H64.774a3.772,3.772,0,0,0,3.767-3.769v-18.9c-.263.106-.546.219-.841.336Z" transform="translate(-1.062 -30.498)" fill="#f78d2d"/><path d="M65.191,24.478H3.654A3.658,3.658,0,0,0,0,28.133V44.465a1.526,1.526,0,0,0,.735,1.129c.011,0,.674.3,1.753.725a85.735,85.735,0,0,0,25.823,5.638V49.211c0-1.821,2.747-3.062,4.592-3.062H35.94c2.143,0,4.589,1.406,4.54,3.544v2.263a86.514,86.514,0,0,0,22.578-4.416c2.221-.765,5.027-1.96,5.055-1.972a1.476,1.476,0,0,0,.73-1.1V28.133a3.659,3.659,0,0,0-3.654-3.655" transform="translate(0 -10.713)" fill="#f78d2d"/></g></svg></div></a>
+									<a href="#" class="box-service-item-icon"><div class="item-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="99.058" viewBox="0 0 100 99.058">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="100" height="99.058" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="ic-11" clip-path="url(#clip-path)">
+    <path id="Path_26" data-name="Path 26" d="M67.373,95.123H37.4A13.4,13.4,0,0,0,24,108.52H80.771a13.4,13.4,0,0,0-13.4-13.4" transform="translate(-2.388 -9.462)" fill="#fff"/>
+    <rect id="Rectangle_21" data-name="Rectangle 21" width="17.458" height="10.15" transform="translate(41.271 72.669)" fill="#fff"/>
+    <path id="Path_27" data-name="Path 27" d="M97.47,0H2.53A2.537,2.537,0,0,0,0,2.531v64.36a2.537,2.537,0,0,0,2.53,2.53H97.47a2.537,2.537,0,0,0,2.53-2.53V2.531A2.537,2.537,0,0,0,97.47,0M90.286,57.148A2.564,2.564,0,0,1,87.7,59.679H12.3a2.564,2.564,0,0,1-2.583-2.531V12.274A2.564,2.564,0,0,1,12.3,9.744H87.7a2.564,2.564,0,0,1,2.583,2.53Z" transform="translate(0 0)" fill="#fff"/>
+  </g>
+</svg>
+
+									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="balpha-academy">HỌC VIỆN BẢO HIỂM SỐ B-Alpha ACADEMY</h3>
 										<p>Tiên phong đào tạo nhân lực bảo hiểm; chuyển giao nền tảng công nghệ; trao kiến thức, niềm tin cho mọi người dân Việt Nam.</p>
