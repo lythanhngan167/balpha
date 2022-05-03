@@ -7194,8 +7194,9 @@ clip-path: polygon(80% 4%, 64% 7%, 50% 13%, 35% 21%, 22% 34%, 12% 50%, 5% 71%, 0
     align-items: center;
     box-shadow: inset 0px 10px 10px -5px #00000038;
     // background: #f2f2f2;
-    background: rgb(54,139,151);
-    background: linear-gradient(45deg, rgba(54,139,151,1) 0%, rgba(54,139,151,1) 41%, rgba(244,140,52,1) 100%);
+    background: rgb(55,139,149);
+    background: linear-gradient(30deg, rgba(64, 138, 123, 1) 0%, rgba(64, 138, 123, 1) 0%, rgba(204, 133, 55, 1) 100%);
+
     border-radius: 50%;
     border: 5px solid #fff;
     margin-right: 40px;
@@ -7255,7 +7256,7 @@ clip-path: polygon(80% 4%, 64% 7%, 50% 13%, 35% 21%, 22% 34%, 12% 50%, 5% 71%, 0
 	.box-service-2 .col-info ul li span{
 		width: 35px;
 		height: 35px;
-		border-width: 5px;
+		border-width: 2px;
 		box-shadow: inset 0px 5px 10px -5px #00000038;
 		margin-right: 15px;
 	}
@@ -7622,7 +7623,7 @@ ul.ul-index{
   margin-top:-168px!important;
 }
 .loop-line{
-  background-image: url("../images/loop-line.png");
+  background-image: url("../images/loop-line2.png");
 	background-repeat: repeat-x;
   height: 13px;
   width: 100%;
@@ -7636,7 +7637,7 @@ ul.ul-index{
   display:none;
 }
 .loop-line2{
-  background-image: url("../images/loop-left-line.png");
+  // background-image: url("../images/loop-left-line.png");
   background-position: left;
 	background-repeat: no-repeat;
   z-index: 99;
@@ -8109,7 +8110,8 @@ ul.nav-child li.item-102{
   ul{
     li{
       line-height: 30px!important;
-      border: 1px solid #c1edeb;
+      // border: 1px solid #c1edeb;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 5px;
       height: auto!important;
       padding: 20px 10px 30px 10px;
@@ -8152,32 +8154,48 @@ ul.nav-child li.item-102{
       height:71px;
       width: 71px;
       border-radius: 50%;
-      background-color: #f2f2f2;
+      // background-color: #f2f2f2;
+      background: rgb(55,139,149);
+      background: linear-gradient(30deg, rgba(64, 138, 123, 1) 0%, rgba(64, 138, 123, 1) 0%, rgba(204, 133, 55, 1) 100%);
+
       box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
       .circle-innner2{
         height:71px;
         width: 71px;
+
         &.inner2-500 {
-          background: url('../images/svg/ic1-1.svg') CENTER CENTER NO-REPEAT;
+          background: url('../images/svg/ic-01.svg') CENTER CENTER NO-REPEAT;
+          background-size: 36px 36px;
+          background-position: center;
         }
         &.inner2-501 {
-          background: url('../images/svg/ic1-2.svg') CENTER CENTER NO-REPEAT;
+          background: url('../images/svg/ic-02.svg') CENTER CENTER NO-REPEAT;
+          background-size: 36px 36px;
+          background-position: center;
         }
 
         &.inner2-502 {
-          background: url('../images/svg/ic1-3.svg') CENTER CENTER NO-REPEAT;
+          background: url('../images/svg/ic-03.svg') CENTER CENTER NO-REPEAT;
+          background-size: 36px 36px;
+          background-position: center;
         }
 
         &.inner2-503 {
-          background: url('../images/svg/ic1-4.svg') CENTER CENTER NO-REPEAT;
+          background: url('../images/svg/ic-04.svg') CENTER CENTER NO-REPEAT;
+          background-size: 36px 36px;
+          background-position: center;
         }
 
         &.inner2-504 {
-          background: url('../images/svg/ic1-5.svg') CENTER CENTER NO-REPEAT;
+          background: url('../images/svg/ic-09.svg') CENTER CENTER NO-REPEAT;
+          background-size: 36px 36px;
+          background-position: center;
         }
 
         &.inner2-505 {
-          background: url('../images/svg/ic1-6.svg') CENTER CENTER NO-REPEAT;
+          background: url('../images/svg/ic-10.svg') CENTER CENTER NO-REPEAT;
+          background-size: 36px 36px;
+          background-position: center;
         }
 
       }
@@ -8334,7 +8352,7 @@ div.itemCommentsPagination {
   padding-bottom:30px;
   color:#646464;
 }
-body #k2Container *{
+body #k2Container .itemFullText *{
   font-family: 'Open Sans'!important;
 }
 
@@ -8382,7 +8400,7 @@ body #k2Container *{
 .item-special-2{
   .item-icon{
     svg{
-      width: 35px!important;
+      width: 30px!important;
     }
   }
 }
@@ -8390,7 +8408,7 @@ body #k2Container *{
 .item-special-3{
   .item-icon{
     svg{
-      width: 42px!important;
+      width: 36px!important;
     }
   }
 }
@@ -8398,7 +8416,7 @@ body #k2Container *{
 .item-special-4{
   .item-icon{
     svg{
-      width: 50px!important;
+      width: 45px!important;
     }
   }
 }
@@ -8406,7 +8424,7 @@ body #k2Container *{
 .item-special-5{
   .item-icon{
     svg{
-      width: 50px!important;
+      width: 45px!important;
     }
   }
 }
@@ -8414,7 +8432,35 @@ body #k2Container *{
 .item-special-1{
   .item-icon{
     svg{
-      width: 50px!important;
+      width: 45px!important;
     }
   }
+}
+.box-service-2 .col-info ul li span svg{
+  width:35px;
+}
+.box-service{
+  .info{
+    .item-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      .special-item-center{
+        display:block;
+      }
+    }
+  }
+}
+.background-top-image{
+  height: 80px;
+	background-image: url("../images/banner-top-image.png");
+	background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.background-container{
+  padding-right: 0px!important;
+    padding-left: 0px!important;
 }
