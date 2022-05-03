@@ -292,7 +292,7 @@ jQuery(document).ready(function(){
 
 	jQuery('#mySidenav .closebtn').click(function(){
 
-		jQuery('#mySidenav').attr('style','left:-350px');
+		jQuery('#mySidenav').attr('style','left:-365px');
 		jQuery('#top_main_menu_mobile').css('display','none!important');
 		jQuery('.collapse:not(.show)').css('display','none!important');
 
@@ -300,8 +300,8 @@ jQuery(document).ready(function(){
 	});
 
 	jQuery('#overlay').click(function(){
-		jQuery('#mySidenav').attr('style','left:-350px');
-		jQuery('#mySidenav2').attr('style','right:-350px');
+		jQuery('#mySidenav').attr('style','left:-365px');
+		jQuery('#mySidenav2').attr('style','right:-365px');
 		jQuery('#overlay').hide();
 	});
 
