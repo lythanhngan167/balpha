@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '102052022';
+$version = '205052022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();
@@ -1780,7 +1780,7 @@ function changeVideo(vId){
 	height: calc(100% - 150px);
 }
 .slide-categories .banner-1{
-  height: calc(100vw * (433/(1280 + 0)))!important;
+  height: calc(100vw * (547/(1280 + 0)))!important;
 }
 @media (max-width: 960px) {
 	.box-service-2 .bg-info1{
@@ -1790,7 +1790,7 @@ function changeVideo(vId){
 	    clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 100%, 0 100%);
 	}
 	.slide-categories .banner-1{
-	  height: calc(100vw * (600/(1280 + 0)))!important;
+	  height: calc(100vw * (700/(1280 + 0)))!important;
 	}
 }
 
