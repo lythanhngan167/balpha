@@ -2051,7 +2051,9 @@
   }
 
   .container-fluid.main-menu {
-    height: 50px;
+    height: 70px;
+    position: fixed;
+    z-index: 8888;
   }
 
   #mySidenav{
@@ -3364,7 +3366,7 @@
         text-decoration: none;
         color:#128b97;
         line-height: 35px;
-        padding-left: 60px;
+        padding-left: 30px;
         margin:0px 0px 10px 0px;
       }
     }
@@ -3714,6 +3716,7 @@
     #K2FilterBox120{
       form{
         margin-bottom:10px;
+        margin-top: 45px;
       }
     }
   }
@@ -3857,19 +3860,20 @@
   }
   .partners h3{
     margin-top:30px;
+    padding: 10px 45px;
   }
   .box-service{
     .info{
       .item-center{
         margin: 0px 0px 21px 0px;
         color:#FFF;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
         flex-direction: row;
         .special-item-center{
-          display:block;
+          display:inline-block;
           padding-right: 6px;
         }
       }
@@ -3890,7 +3894,22 @@
     width: 25px!important;
   }
 
+  .slide-categories .banner-1{
+    top: 49px;
+  }
 
-
+  #mySidenav.sidenav .mod-list#top_main_menu_mobile li ul.nav-child li ul.nav-child li a::before{
+    content: "\f111"!important;
+    font-family: FontAwesome;
+    font-size:13px;
+  }
+  #mySidenav.sidenav .mod-list#top_main_menu_mobile li ul.nav-child li ul.nav-child li a{
+    display:block;
+  }
+  #mySidenav.sidenav .mod-list#top_main_menu_mobile li ul.nav-child li ul.nav-child li a::before{
+    content: "\f111"!important;
+    font-family: FontAwesome;
+    font-size:13px;
+  }
 
 }
