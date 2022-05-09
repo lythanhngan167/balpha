@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '606052022';
+$version = '309052022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();
@@ -1780,7 +1780,7 @@ function changeVideo(vId){
 	height: calc(100% - 150px);
 }
 .slide-categories .banner-1{
-  height: calc(100vw * (547/(1280 + 0)))!important;
+  height: calc(100vw * (560/(1280 + 0)))!important;
 }
 
 <?php if($is_home_page){ ?>
@@ -1788,7 +1788,7 @@ function changeVideo(vId){
   height: 13px;
   width: 100%;
   z-index: 99;
-	margin-top: -100px;
+	margin-top: -95px;
 
 }
 .loop-line::after{
@@ -1799,7 +1799,7 @@ function changeVideo(vId){
   height: 8vw;
   width: 100%;
   background: white;
-  border-radius: calc(15% + 100px) 0 0 0;
+  border-radius: calc(12% + 70px) 0 0 0;
   border-top: solid 8px #038A96;
   box-shadow: inset 0 5px 0 #F58C29;
 }
@@ -1839,6 +1839,7 @@ function changeVideo(vId){
 	  height: calc(100vw * (800/(1280 + 50)))!important;
 	}
 }
+
 
 
 </style>
