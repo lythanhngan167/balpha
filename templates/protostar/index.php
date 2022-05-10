@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '309052022';
+$version = '509052022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();
@@ -767,7 +767,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<?php if ($position7ModuleCount || $position8ModuleCount) : ?>
 						<?php
 							if((!($_REQUEST['option'] == 'com_joomprofile' && $_REQUEST['view'] == 'profile' && $_REQUEST['task'] == 'user.display')) && ($position7ModuleCount > 0 || $position8ModuleCount > 0)): // profile consultinger
-						?> col-lg-9 col-md-9
+						?> col-lg-9 col-md-12
 						<?php else: ?>
 						col-lg-12 col-md-12
 					<?php endif; ?>
