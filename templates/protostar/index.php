@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '509052022';
+$version = '210052022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();
@@ -1082,7 +1082,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<h2 class="">
 							<img width="220" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/logo-text-balpha.png?t=123" alt="<?php echo $sitename ?>" />
 							</h2>
-							<h3 class="">Nên tảng phân phối bảo hiểm online</h3>
+							<h3 class="">Nền tảng phân phối bảo hiểm online</h3>
 							<ul>
 								<li><span>
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="99.058" viewBox="0 0 100 99.058">
