@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '210052022';
+$version = '917052022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();
@@ -936,7 +936,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 									</div></a>
 									<div class="box-service-item-info">
-										<h3 class="">GIẢI PHÁP DATACENTER</h3>
+										<h3 class="">GIẢI PHÁP DATA CENTER</h3>
 											<ul class="special-balpha one">
 												<li>Tìm kiếm Data nóng, Khách hàng có nhu cầu</li>
 												<li>Data không trùng lặp</li>
@@ -1155,7 +1155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </g>
 </svg>
 
-								</span>Nguồn khách hàng không giới hạn với DataCenter</li>
+								</span>Nguồn khách hàng không giới hạn với Data Center</li>
 
 								<li><span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="100" height="117.388" viewBox="0 0 100 117.388">
@@ -1806,6 +1806,8 @@ function changeVideo(vId){
   height: calc(100vw * (560/(1280 + 0)))!important;
 }
 
+
+
 <?php if($is_home_page){ ?>
 .loop-line{
   height: 13px;
@@ -1859,10 +1861,9 @@ function changeVideo(vId){
 	    clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 100%, 0 100%);
 	}
 	.slide-categories .banner-1{
-	  height: calc(100vw * (800/(1280 + 50)))!important;
+	  height: calc(100vw * (890/(1280 + 50)))!important;
 	}
 }
-
 
 
 </style>
