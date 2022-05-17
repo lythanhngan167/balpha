@@ -535,4 +535,12 @@ jQuery(document).ready(function(){
 		}
 	});
 
+
+	jQuery(".k2filter-field-category-select select option[value='112']").each(function() {
+    jQuery(this).remove();
+	});
+	jQuery(".k2filter-field-category-select select option[value='117']").each(function() {
+    jQuery(this).remove();
+	});
+
 });

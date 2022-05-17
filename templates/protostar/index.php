@@ -937,7 +937,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="">GIẢI PHÁP DATACENTER</h3>
-										<p>Tìm kiếm Data nóng, Khách hàng có nhu cầu, Data không trùng lặp, được remarketing.</p>
+											<ul class="special-balpha one">
+												<li>Tìm kiếm Data nóng, Khách hàng có nhu cầu</li>
+												<li>Data không trùng lặp</li>
+												<li>Data được Remarketing</li>
+											</ul>
 									</div>
 								</div>
 							</div> <div class="item item-special-2">
@@ -952,7 +956,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="">QUY TRÌNH GIAO KẾT HỢP ĐỒNG ĐẶC BIỆT</h3>
-										<p>Minh bạch, tinh gọn; với sự tham gia của bên thứ ba - đại diện về mặt pháp lý; quy trình được ghi âm, ghi hình.</p>
+										<ul class="special-balpha two">
+											<li>Minh bạch, tinh gọn</li>
+											<li>Có sự tham gia của bên thứ ba – đại diện về mặt pháp lý</li>
+											<li>Quy trình được ghi âm, ghi hình</li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -968,7 +976,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="">SIÊU THỊ BẢO HIỂM ĐA DẠNG CÁC SẢN PHẨM</h3>
-										<p>Hơn 200 sản phẩm bảo hiểm Nhân thọ và Phi nhân thọ; đối tác là các doanh nghiệp bảo hiểm uy tín hàng đầu Việt Nam; trao quyền chủ động lựa chọn sản phẩm cho Khách hàng.</p>
+										<ul class="special-balpha two">
+											<li>Hơn 200 sản phẩm bảo hiểm nhân thọ và phi nhân thọ</li>
+											<li>Đối tác là các doanh nghiệp bảo hiểm uy tín</li>
+											<li>Trao quyền chủ động lựa chọn sản phẩm cho khách hàng</li>
+										</ul>
+
 									</div>
 								</div>
 							</div>
@@ -984,7 +997,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="">ĐỘI NGŨ TƯ VẤN TÀI CHÍNH</h3>
-										<p>Kiến thức chuyên môn bài bản; khách quan, trung thực, tận tâm; có kinh nghiệm kỹ năng vững chắc.</p>
+										<ul class="special-balpha two">
+											<li>Kiến thức chuyên môn vững chắc</li>
+											<li>Có bề dày kinh nghiệm</li>
+											<li>Khách quan, trung thực, tận tâm</li>
+										</ul>
+
 									</div>
 								</div>
 							</div>
@@ -1007,7 +1025,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									</div></a>
 									<div class="box-service-item-info">
 										<h3 class="balpha-academy">HỌC VIỆN BẢO HIỂM SỐ B-Alpha ACADEMY</h3>
-										<p>Tiên phong đào tạo nhân lực bảo hiểm; chuyển giao nền tảng công nghệ; trao kiến thức, niềm tin cho mọi người dân Việt Nam.</p>
+										<ul class="special-balpha two">
+											<li>Tiên phong đào tạo nguồn nhân lực bảo hiểm</li>
+											<li>Chuyển giao nền tảng công nghệ</li>
+											<li>Trao kiến thức, niềm tin cho mọi người dân Việt Nam</li>
+										</ul>
+
 									</div>
 								</div>
 							</div>
