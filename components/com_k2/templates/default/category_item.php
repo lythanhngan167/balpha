@@ -183,7 +183,7 @@ $config = new JConfig();
           <div class="author-bottom">
               <div style="text-align:left" class="title-author">Tác giả</div>
               <a rel="author" href="<?php echo $this->item->author->link; ?>">
-                <img class="image-avatar float-left" src="<?php echo $this->item->author->avatar; ?>" onerror="if (this.src != 'error.jpg') this.src = '<?php echo JURI::root().'images/avatark2/avatardefault.png?v=101052022' ?>'" alt="<?php echo K2HelperUtilities::cleanHtml($this->item->author->name); ?>" />
+                <img class="image-avatar float-left" src="<?php echo $this->item->author->avatar; ?>" onerror="if (this.src != 'error.jpg') this.src = '<?php echo JURI::root().'images/avatark2/avatardefault.png?v=118062022' ?>'" alt="<?php echo K2HelperUtilities::cleanHtml($this->item->author->name); ?>" />
               </a>
               <div class="float-left info-author">
               <h3 class=""><a rel="author" href="<?php echo $this->item->author->link; ?>"><?php echo $this->item->author->name; ?></a>
