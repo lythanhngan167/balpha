@@ -169,7 +169,13 @@ switch($this->category->id){
 
 
     ?>
-    <div class="itemList">
+    <?php
+    $faqText = '';
+    if(in_array($this->category->id, $config->categories_faq)){
+      $faqText = 'list-faq';
+    }
+    ?>
+    <div class="itemList <?php echo $faqText; ?>">
       <?php
       if(in_array($this->category->id, $config->categories_faq)){
       ?>
