@@ -49,6 +49,7 @@ if($user->id > 0){
 
 	$userid = $session->get('landingpage_userid');
 	$username = $session->get('landingpage_username');
+	$pageid = $session->get('landingpage_pageid');
 
 	//$agent = $this->getUserNameAgent($userid);
 
@@ -1492,5 +1493,7 @@ img.mfp-img {
   display: block!important;
 }
 <?php } ?>
-
+/* .container-fluid.landingpage{
+	display:none;
+} */
 </style>

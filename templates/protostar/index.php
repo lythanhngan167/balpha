@@ -47,7 +47,7 @@ else
 JHtml::_('bootstrap.framework');
 // Add Stylesheets
 //JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => true));
-$version = '118062022';
+$version = '218062022';
 
 if($_SERVER['HTTP_HOST'] == 'localhost'){
 	$version = time();
@@ -78,7 +78,12 @@ if($_REQUEST['Itemid'] == FOUNDER_STORY){
 }
 
 if($_REQUEST['Itemid'] == FOUR_ZERO_INSURACNE || $_REQUEST['Itemid'] == AGENT){
-    $document->addStyleSheet(JURI::base() . '/templates/protostar/css/registrations_landingpage725.css?'.$version);
+	if($_REQUEST['task'] == 'cohoikinhdoanh'){
+		$document->addStyleSheet(JURI::base() . '/templates/protostar/css/landingpage_chkd.css');
+		$document->addScript(JURI::base().'templates/protostar/js/ladipage.vi.min.chkd.js?'.$version,'text/javascript', false, false);
+
+	}else{
+		$document->addStyleSheet(JURI::base() . '/templates/protostar/css/registrations_landingpage725.css?'.$version);
 		$document->addStyleSheet(JURI::base() . '/templates/protostar/css/landingpage_423.css?'.$version);
 		//$document->addStyleSheet(JURI::base() . '/templates/protostar/css/landingpage_725.css?'.$version);
 		$document->addStyleSheet(JURI::base() . '/templates/protostar/css/ladipage.min-2.css?'.$version);
@@ -86,6 +91,8 @@ if($_REQUEST['Itemid'] == FOUR_ZERO_INSURACNE || $_REQUEST['Itemid'] == AGENT){
 		$document->addScript(JURI::base().'templates/protostar/js/jquery.magnific-popup.min.js','text/javascript', false, false);
 		//$document->addScript(JURI::base().'templates/protostar/js/ladipage.vi.min.js','text/javascript', false, false);
 		$document->addScript(JURI::base().'templates/protostar/js/ladipage.min.js?'.$version,'text/javascript', false, false);
+	}
+
 }
 
 //shop
@@ -96,6 +103,8 @@ if($option == 'com_eshop'){
 	$document->addStyleSheet($this->baseurl."/templates/protostar/less/shop2.css?".$version, array('version'=>'auto'));
 	JHtml::_('script', 'jquery.smartWizard.min.js', array('version' => $version, 'relative' => true));
 }
+
+
 
 // Add template js
 JHtml::_('script', 'template.js', array('version' => 'auto', 'relative' => true));
@@ -1736,8 +1745,6 @@ function changeVideo(vId){
   height: calc(100vw * (560/(1280 + 0)))!important;
 }
 
-
-
 <?php if($is_home_page){ ?>
 .loop-line{
   height: 13px;
@@ -1782,6 +1789,12 @@ function changeVideo(vId){
 }
 <?php } ?>
 
+<?php if($_REQUEST['task'] == 'cohoikinhdoanh'): ?>
+.custom.baohiem40{
+	display:none;
+}
+<?php endif; ?>
+
 
 @media (max-width: 960px) {
 	.box-service-2 .bg-info1{
@@ -1796,6 +1809,215 @@ function changeVideo(vId){
 }
 
 
+
 </style>
+
+<?php if($_REQUEST['task'] == 'cohoikinhdoanh'): ?>
+<script id="script_event_data" type="application/json">
+	{
+		"BUTTON378": {
+			"type": "button",
+			"option.data_event": [{
+				"action_type": "action",
+				"type": "section",
+				"action": "SECTION387"
+			}]
+		},
+		"BUTTON406": {
+			"type": "button",
+			"desktop.style.animation-name": "bounce",
+			"desktop.style.animation-delay": "1s",
+			"mobile.style.animation-name": "bounce",
+			"mobile.style.animation-delay": "1s"
+		},
+		"COUNTDOWN407": {
+			"type": "countdown",
+			"option.countdown_type": "countdown",
+			"option.countdown_minute": 27
+		},
+		"COUNTDOWN_ITEM408": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "day"
+		},
+		"COUNTDOWN_ITEM409": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "hour"
+		},
+		"COUNTDOWN_ITEM410": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "minute"
+		},
+		"COUNTDOWN_ITEM411": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "seconds"
+		},
+		"BUTTON563": {
+			"type": "button",
+			"option.data_event": [{
+				"action_type": "action",
+				"type": "section",
+				"action": "SECTION679"
+			}]
+		},
+		"GROUP662": {
+			"type": "group",
+			"option.data_event": [{
+				"action_type": "action",
+				"type": "section",
+				"action": "SECTION679"
+			}]
+		},
+		"BUTTON664": {
+			"type": "button",
+			"desktop.style.animation-name": "bounce",
+			"desktop.style.animation-delay": "1s",
+			"mobile.style.animation-name": "bounce",
+			"mobile.style.animation-delay": "1s"
+		},
+		"GROUP663": {
+			"type": "group",
+			"option.data_event": [{
+				"action_type": "action",
+				"type": "section",
+				"action": "SECTION679"
+			}]
+		},
+		"IMAGE678": {
+			"type": "image",
+			"option.data_event": [{
+				"action_type": "action",
+				"type": "section",
+				"action": "SECTION679"
+			}]
+		},
+		"FORM686": {
+			"type": "form",
+			"option.form_config_id": "6284a1c406715500224b3e88",
+			"option.form_send_ladipage": true,
+			"option.thankyou_type": "url",
+			"option.thankyou_value": "https://bcainsurance.biznet.com.vn/con-1-buoc-nua",
+			"option.form_auto_funnel": true,
+			"option.form_captcha": true,
+			"option.form_auto_complete": true
+		},
+		"FORM_ITEM689": {
+			"type": "form_item",
+			"option.input_type": "text",
+			"option.input_tabindex": 1
+		},
+		"FORM_ITEM690": {
+			"type": "form_item",
+			"option.input_type": "email",
+			"option.input_tabindex": 2
+		},
+		"FORM_ITEM691": {
+			"type": "form_item",
+			"option.input_type": "tel",
+			"option.input_tabindex": 3
+		},
+		"COUNTDOWN_ITEM726": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "day"
+		},
+		"COUNTDOWN_ITEM727": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "hour"
+		},
+		"COUNTDOWN_ITEM728": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "minute"
+		},
+		"COUNTDOWN_ITEM729": {
+			"type": "countdown_item",
+			"option.countdown_item_type": "seconds"
+		},
+		"COUNTDOWN725": {
+			"type": "countdown",
+			"option.countdown_type": "countdown",
+			"option.countdown_minute": 27
+		},
+		"BUTTON769": {
+			"type": "button",
+			"option.data_event": [{
+				"type": "section",
+				"action": "SECTION679",
+				"action_type": "action"
+			}]
+		},
+		"BUTTON777": {
+			"type": "button",
+			"option.data_event": [{
+				"action_type": "action",
+				"type": "section",
+				"action": "SECTION356"
+			}]
+		},
+		"SECTION780": {
+			"type": "section",
+			"desktop.option.sticky": true,
+			"desktop.option.sticky_position": "bottom",
+			"desktop.option.sticky_position_top": "0px",
+			"desktop.option.sticky_position_bottom": "0px",
+			"mobile.option.sticky": true,
+			"mobile.option.sticky_position": "bottom",
+			"mobile.option.sticky_position_top": "0px",
+			"mobile.option.sticky_position_bottom": "0px"
+		},
+		"BUTTON782": {
+			"type": "button",
+			"option.data_event": [{
+				"action_type": "action",
+				"type": "section",
+				"action": "SECTION679"
+			}]
+		},
+		"PARAGRAPH817": {
+			"type": "paragraph",
+			"desktop.style.animation-name": "bounceInDown",
+			"desktop.style.animation-delay": "0s",
+			"mobile.style.animation-name": "bounceInDown",
+			"mobile.style.animation-delay": "0s"
+		},
+		"FORM_ITEM821": {
+			"type": "form_item",
+			"option.input_type": "text",
+			"option.input_tabindex": 4
+		}
+	}
+</script>
+<script id="script_ladipage_run" type="text/javascript">
+	(function() {
+		var run = function() {
+			if (typeof window.LadiPageScript == "undefined" || window.LadiPageScript == undefined || typeof window.ladi == "undefined" || window.ladi == undefined) {
+				setTimeout(run, 100);
+				return;
+			}
+			window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2();
+			window.LadiPageScript.runtime.ladipage_id = '62849196687c60002c78d5e29999999999999';
+			window.LadiPageScript.runtime.publish_platform = 'LADIPAGEDNS';
+			window.LadiPageScript.runtime.is_mobile_only = false;
+			window.LadiPageScript.runtime.version = '16538757912789999999999';
+			window.LadiPageScript.runtime.cdn_url = 'https://w.ladicdn.com/v2/source/';
+			window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["b-alpha.vn"];
+			window.LadiPageScript.runtime.DOMAIN_FREE = ["ldp.page"];
+			window.LadiPageScript.runtime.bodyFontSize = 12;
+			window.LadiPageScript.runtime.store_id = "5e4cf269a9c6692c79a6477c9999999";
+			window.LadiPageScript.runtime.time_zone = 7;
+			window.LadiPageScript.runtime.currency = "VND";
+			window.LadiPageScript.runtime.convert_replace_str = true;
+			window.LadiPageScript.runtime.desktop_width = 960;
+			window.LadiPageScript.runtime.mobile_width = 420;
+			window.LadiPageScript.run(true);
+			window.LadiPageScript.runEventScroll();
+		};
+		run();
+	})();
+</script>
+<?php endif; ?>
+
+
+
+<?php //print_r($_REQUEST); ?>
+
 </body>
 </html>

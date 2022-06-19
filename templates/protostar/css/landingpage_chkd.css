@@ -1,0 +1,6419 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+body {
+	line-height: 1
+}
+
+a {
+	text-decoration: none
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.ladi-html strong {
+	font-weight: 700
+}
+
+.ladi-html em {
+	font-style: italic
+}
+
+.ladi-html a {
+	text-decoration: underline
+}
+
+body {
+	font-size: 12px;
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	background: #fff
+}
+
+.ladi-loading {
+	width: 80px;
+	height: 80px;
+	z-index: 900000000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden
+}
+
+.ladi-loading div {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	border-radius: 50%;
+	animation: ladi-loading 1.2s linear infinite
+}
+
+.ladi-loading div:nth-child(1) {
+	animation-delay: 0s;
+	top: 37px;
+	left: 66px
+}
+
+.ladi-loading div:nth-child(2) {
+	animation-delay: -.1s;
+	top: 22px;
+	left: 62px
+}
+
+.ladi-loading div:nth-child(3) {
+	animation-delay: -.2s;
+	top: 11px;
+	left: 52px
+}
+
+.ladi-loading div:nth-child(4) {
+	animation-delay: -.3s;
+	top: 7px;
+	left: 37px
+}
+
+.ladi-loading div:nth-child(5) {
+	animation-delay: -.4s;
+	top: 11px;
+	left: 22px
+}
+
+.ladi-loading div:nth-child(6) {
+	animation-delay: -.5s;
+	top: 22px;
+	left: 11px
+}
+
+.ladi-loading div:nth-child(7) {
+	animation-delay: -.6s;
+	top: 37px;
+	left: 7px
+}
+
+.ladi-loading div:nth-child(8) {
+	animation-delay: -.7s;
+	top: 52px;
+	left: 11px
+}
+
+.ladi-loading div:nth-child(9) {
+	animation-delay: -.8s;
+	top: 62px;
+	left: 22px
+}
+
+.ladi-loading div:nth-child(10) {
+	animation-delay: -.9s;
+	top: 66px;
+	left: 37px
+}
+
+.ladi-loading div:nth-child(11) {
+	animation-delay: -1s;
+	top: 62px;
+	left: 52px
+}
+
+.ladi-loading div:nth-child(12) {
+	animation-delay: -1.1s;
+	top: 52px;
+	left: 62px
+}
+
+@keyframes ladi-loading {
+
+	0%,
+	100%,
+	20%,
+	80% {
+		transform: scale(1)
+	}
+
+	50% {
+		transform: scale(1.5)
+	}
+}
+
+.overflow-hidden {
+	overflow: hidden
+}
+
+.ladi-transition {
+	transition: all 150ms linear 0s
+}
+
+.opacity-0 {
+	opacity: 0
+}
+
+.height-0 {
+	height: 0 !important
+}
+
+.transition-readmore {
+	transition: height 350ms linear 0s
+}
+
+.transition-collapse {
+	transition: height 150ms linear 0s
+}
+
+.transition-parent-collapse-height {
+	transition: height 150ms linear 0s
+}
+
+.transition-parent-collapse-top {
+	transition: top 150ms linear 0s
+}
+
+.pointer-events-none {
+	pointer-events: none
+}
+
+.ladi-google-recaptcha-checkbox {
+	position: absolute;
+	display: inline-block;
+	transform: translateY(-100%);
+	margin-top: -5px;
+	z-index: 90000010
+}
+
+.ladipage-message {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000000000;
+	background: rgba(0, 0, 0, .3)
+}
+
+.ladipage-message .ladipage-message-box {
+	width: 400px;
+	max-width: calc(100% - 50px);
+	height: 160px;
+	border: 1px solid rgba(0, 0, 0, .3);
+	background-color: #fff;
+	position: fixed;
+	top: calc(50% - 155px);
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 10px
+}
+
+.ladipage-message .ladipage-message-box span {
+	display: block;
+	background-color: rgba(6, 21, 40, .05);
+	color: #000;
+	padding: 12px 15px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 16px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px
+}
+
+.ladipage-message .ladipage-message-box .ladipage-message-text {
+	display: -webkit-box;
+	font-size: 14px;
+	padding: 0 20px;
+	margin-top: 10px;
+	line-height: 18px;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.ladipage-message .ladipage-message-box .ladipage-message-close {
+	display: block;
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border: none;
+	width: 80px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	background-color: #e6e6e6;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 600;
+	cursor: pointer
+}
+
+.ladi-wraper {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	overflow: hidden
+}
+
+.ladi-section {
+	margin: 0 auto;
+	position: relative
+}
+
+.ladi-section[data-tab-id] {
+	display: none
+}
+
+.ladi-section.selected[data-tab-id] {
+	display: block
+}
+
+.ladi-section .ladi-section-arrow-down {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	cursor: pointer;
+	z-index: 90000040
+}
+
+.ladi-section .ladi-section-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	z-index: 90000040
+}
+
+.ladi-section .ladi-section-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	overflow: hidden
+}
+
+.ladi-container {
+	position: relative;
+	margin: 0 auto;
+	height: 100%
+}
+
+.ladi-element {
+	position: absolute
+}
+
+.ladi-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	pointer-events: none
+}
+
+.ladi-survey {
+	width: 100%;
+	display: inline-block
+}
+
+.ladi-survey .ladi-survey-option {
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	text-decoration-line: inherit;
+	-webkit-text-decoration-line: inherit;
+	transition: inherit;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+.ladi-survey .ladi-survey-option-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	transition: inherit
+}
+
+.ladi-survey .ladi-survey-option-label {
+	display: block;
+	text-decoration-line: inherit;
+	-webkit-text-decoration-line: inherit;
+	position: relative
+}
+
+.ladi-survey .ladi-survey-option-image {
+	background-size: cover;
+	background-position: center center;
+	pointer-events: none;
+	vertical-align: middle;
+	border-radius: inherit;
+	position: relative
+}
+
+.ladi-survey .ladi-survey-button-next {
+	display: block
+}
+
+.ladi-survey .ladi-survey-button-next.empty {
+	display: none
+}
+
+.ladi-survey .ladi-survey-button-next.no-select {
+	display: none
+}
+
+.ladi-survey .ladi-survey-button-next button {
+	background-color: #fff;
+	border: 1px solid #eee;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 2px
+}
+
+.ladi-survey .ladi-survey-button-next button:active {
+	transform: translateY(2px);
+	transition: transform .2s linear
+}
+
+.ladi-carousel {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	touch-action: pan-y
+}
+
+.ladi-carousel .ladi-carousel-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	transition: left 350ms ease-in-out
+}
+
+.ladi-carousel .ladi-carousel-arrow {
+	position: absolute;
+	top: calc(50% - (33px)/ 2);
+	cursor: pointer;
+	z-index: 90000040
+}
+
+.ladi-carousel .ladi-carousel-arrow-left {
+	left: 5px;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg)
+}
+
+.ladi-carousel .ladi-carousel-arrow-right {
+	right: 5px
+}
+
+.ladi-gallery {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-gallery .ladi-gallery-view {
+	position: absolute;
+	overflow: hidden;
+	touch-action: pan-y
+}
+
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+	transition: transform .5s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	perspective: 1000px
+}
+
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.play-video {
+	cursor: pointer
+}
+
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.play-video:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 60px;
+	height: 60px;
+	background: url(https://w.ladicdn.com/source/ladipage-play.svg) no-repeat center center;
+	background-size: contain;
+	pointer-events: none;
+	cursor: pointer
+}
+
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.next,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected.right {
+	left: 0;
+	transform: translate3d(100%, 0, 0)
+}
+
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.prev,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected.left {
+	left: 0;
+	transform: translate3d(-100%, 0, 0)
+}
+
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.next.left,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.prev.right,
+.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item.selected {
+	left: 0;
+	transform: translate3d(0, 0, 0)
+}
+
+.ladi-gallery .ladi-gallery-view>.next,
+.ladi-gallery .ladi-gallery-view>.prev,
+.ladi-gallery .ladi-gallery-view>.selected {
+	display: block
+}
+
+.ladi-gallery .ladi-gallery-view>.selected {
+	left: 0
+}
+
+.ladi-gallery .ladi-gallery-view>.next,
+.ladi-gallery .ladi-gallery-view>.prev {
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.ladi-gallery .ladi-gallery-view>.next {
+	left: 100%
+}
+
+.ladi-gallery .ladi-gallery-view>.prev {
+	left: -100%
+}
+
+.ladi-gallery .ladi-gallery-view>.next.left,
+.ladi-gallery .ladi-gallery-view>.prev.right {
+	left: 0
+}
+
+.ladi-gallery .ladi-gallery-view>.selected.left {
+	left: -100%
+}
+
+.ladi-gallery .ladi-gallery-view>.selected.right {
+	left: 100%
+}
+
+.ladi-gallery .ladi-gallery-control {
+	position: absolute;
+	overflow: hidden;
+	touch-action: pan-y
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-view {
+	width: 100%
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control {
+	top: 0;
+	width: 100%
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-view {
+	top: 0;
+	width: 100%
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control {
+	width: 100%;
+	bottom: 0
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-view {
+	height: 100%
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control {
+	height: 100%
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-view {
+	height: 100%
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control {
+	height: 100%;
+	right: 0
+}
+
+.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow {
+	position: absolute;
+	top: calc(50% - (33px)/ 2);
+	cursor: pointer;
+	z-index: 90000040
+}
+
+.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow-left {
+	left: 5px;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg)
+}
+
+.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow-right {
+	right: 5px
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-arrow {
+	position: absolute;
+	cursor: pointer;
+	z-index: 90000040
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow,
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow {
+	top: calc(50% - (33px)/ 2)
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow-left {
+	left: 0;
+	transform: rotate(180deg) scale(.6);
+	-webkit-transform: rotate(180deg) scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow-right {
+	right: 0;
+	transform: scale(.6);
+	-webkit-transform: scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-left {
+	left: 0;
+	transform: rotate(180deg) scale(.6);
+	-webkit-transform: rotate(180deg) scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-right {
+	right: 0;
+	transform: scale(.6);
+	-webkit-transform: scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow,
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow {
+	left: calc(50% - (33px)/ 2)
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow-left {
+	top: 0;
+	transform: scale(.6) rotate(270deg);
+	-webkit-transform: scale(.6) rotate(270deg)
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow-right {
+	bottom: 0;
+	transform: scale(.6) rotate(90deg);
+	-webkit-transform: scale(.6) rotate(90deg)
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow-left {
+	top: 0;
+	transform: scale(.6) rotate(270deg);
+	-webkit-transform: scale(.6) rotate(270deg)
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow-right {
+	bottom: 0;
+	transform: scale(.6) rotate(90deg);
+	-webkit-transform: scale(.6) rotate(90deg)
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box {
+	position: relative
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-box {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	left: 0;
+	transition: left 150ms ease-in-out
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-box {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	left: 0;
+	transition: left 150ms ease-in-out
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-box {
+	display: inline-grid;
+	top: 0;
+	transition: top 150ms ease-in-out
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-box {
+	display: inline-grid;
+	top: 0;
+	transition: top 150ms ease-in-out
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	filter: invert(15%)
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.play-video:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	background: url(https://w.ladicdn.com/source/ladipage-play.svg) no-repeat center center;
+	background-size: contain;
+	pointer-events: none;
+	cursor: pointer
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:hover {
+	filter: none
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.selected {
+	filter: none
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:last-child {
+	margin-right: 0 !important;
+	margin-bottom: 0 !important
+}
+
+.ladi-table {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: auto
+}
+
+.ladi-table table {
+	width: 100%
+}
+
+.ladi-table table td {
+	vertical-align: middle
+}
+
+.ladi-table tbody td {
+	word-break: break-word
+}
+
+.ladi-table table td img {
+	cursor: pointer;
+	width: 100%
+}
+
+.ladi-box {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.ladi-tabs {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-tabs .ladi-tabs-background {
+	height: 100%;
+	width: 100%;
+	pointer-events: none
+}
+
+.ladi-tabs>.ladi-element[data-index] {
+	display: none
+}
+
+.ladi-tabs>.ladi-element.selected[data-index] {
+	display: block
+}
+
+.ladi-frame {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.ladi-frame .ladi-frame-background {
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	transition: inherit
+}
+
+.ladi-banner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.ladi-banner .ladi-banner-background {
+	height: 100%;
+	width: 100%;
+	pointer-events: none
+}
+
+#SECTION_POPUP .ladi-container {
+	z-index: 90000070
+}
+
+#SECTION_POPUP .ladi-container>.ladi-element {
+	z-index: 90000070;
+	position: fixed;
+	display: none
+}
+
+#SECTION_POPUP .ladi-container>.ladi-element[data-fixed-close=true] {
+	position: relative !important
+}
+
+#SECTION_POPUP .ladi-container>.ladi-element.hide-visibility {
+	display: block !important;
+	visibility: hidden !important
+}
+
+#SECTION_POPUP .popup-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9000000080;
+	cursor: pointer
+}
+
+.ladi-popup {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-popup .ladi-popup-background {
+	height: 100%;
+	width: 100%;
+	pointer-events: none
+}
+
+.ladi-countdown {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-countdown .ladi-countdown-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit;
+	display: table;
+	pointer-events: none
+}
+
+.ladi-countdown .ladi-countdown-text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-decoration: inherit;
+	display: table;
+	pointer-events: none
+}
+
+.ladi-countdown .ladi-countdown-text span {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.ladi-countdown>.ladi-element {
+	text-decoration: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit;
+	position: relative;
+	display: inline-block
+}
+
+.ladi-countdown>.ladi-element:last-child {
+	margin-right: 0 !important
+}
+
+.ladi-button {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.ladi-button:active {
+	transform: translateY(2px);
+	transition: transform .2s linear
+}
+
+.ladi-button .ladi-button-background {
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+	transition: inherit
+}
+
+.ladi-button>.ladi-element {
+	width: 100% !important;
+	height: 100% !important;
+	top: 0 !important;
+	left: 0 !important;
+	display: table;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+.ladi-button>.ladi-element .ladi-headline {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.ladi-collection {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-collection.carousel {
+	overflow: hidden
+}
+
+.ladi-collection .ladi-collection-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	transition: left 350ms ease-in-out
+}
+
+.ladi-collection .ladi-collection-content .ladi-collection-item {
+	display: block;
+	position: relative;
+	float: left
+}
+
+.ladi-collection .ladi-collection-content .ladi-collection-page {
+	float: left
+}
+
+.ladi-collection .ladi-collection-arrow {
+	position: absolute;
+	top: calc(50% - (33px)/ 2);
+	cursor: pointer;
+	z-index: 90000040
+}
+
+.ladi-collection .ladi-collection-arrow-left {
+	left: 5px;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg)
+}
+
+.ladi-collection .ladi-collection-arrow-right {
+	right: 5px
+}
+
+.ladi-collection .ladi-collection-button-next {
+	position: absolute;
+	bottom: -40px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	cursor: pointer;
+	z-index: 90000040;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg)
+}
+
+.ladi-form {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-form>.ladi-element {
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-form .ladi-button>.ladi-element {
+	color: initial;
+	font-size: initial;
+	font-weight: initial;
+	text-transform: initial;
+	text-decoration: initial;
+	font-style: initial;
+	text-align: initial;
+	letter-spacing: initial;
+	line-height: initial
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container {
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-form>[data-quantity=true] .ladi-form-item-container {
+	overflow: hidden
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item {
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item-background {
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-size: 9px 6px !important;
+	background-position: right .5rem center;
+	background-repeat: no-repeat
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-2 {
+	width: calc(100% / 2 - 5px);
+	max-width: calc(100% / 2 - 5px);
+	min-width: calc(100% / 2 - 5px)
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-2:nth-child(3) {
+	margin-left: 7.5px
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3 {
+	width: calc(100% / 3 - 5px);
+	max-width: calc(100% / 3 - 5px);
+	min-width: calc(100% / 3 - 5px)
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(3) {
+	margin-left: 7.5px
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(4) {
+	margin-left: 7.5px
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select option {
+	color: initial
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control:not(.ladi-form-control-select) {
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+	text-transform: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select:not([data-selected=""]) {
+	text-decoration: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item {
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit;
+	vertical-align: middle
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked=true] {
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked=false] {
+	text-transform: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-form .ladi-form-item-container {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-form .ladi-form-item-title-value {
+	font-weight: 700;
+	word-break: break-word
+}
+
+.ladi-form .ladi-form-label-container {
+	position: relative;
+	width: 100%
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	border-radius: 0 !important;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.no-value {
+	display: none !important
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.text.disabled {
+	opacity: .35
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.image.disabled {
+	opacity: .2
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.color.disabled {
+	opacity: .15
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.selected:before {
+	content: '';
+	width: 0;
+	height: 0;
+	bottom: -1px;
+	right: -1px;
+	position: absolute;
+	border-width: 0 0 15px 15px;
+	border-color: transparent;
+	border-style: solid
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.selected:after {
+	content: '';
+	background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 12 12' viewBox='0 0 12 12' x='0' fill='%23fff' y='0'%3E%3Cg%3E%3Cpath d='m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	width: 7px;
+	height: 7px;
+	bottom: 0;
+	right: 0;
+	position: absolute
+}
+
+.ladi-form .ladi-form-item {
+	width: 100%;
+	height: 100%;
+	position: absolute
+}
+
+.ladi-form .ladi-form-item-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox {
+	height: auto
+}
+
+.ladi-form .ladi-form-item .ladi-form-control {
+	background-color: transparent;
+	min-width: 100%;
+	min-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	padding: 0 5px;
+	color: inherit;
+	font-size: inherit;
+	border: none
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox {
+	padding: 10px 5px
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-vertical .ladi-form-checkbox-item {
+	margin-top: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	display: table;
+	border: none
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item {
+	margin-top: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 10px !important;
+	display: inline-block;
+	border: none;
+	position: relative
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item input {
+	vertical-align: middle;
+	width: 13px;
+	height: 13px;
+	display: table-cell;
+	margin-right: 5px
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span {
+	display: table-cell;
+	cursor: default;
+	vertical-align: middle;
+	word-break: break-word
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item input {
+	position: absolute;
+	top: 4px
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item span {
+	padding-left: 18px
+}
+
+.ladi-form .ladi-form-item textarea.ladi-form-control {
+	resize: none;
+	padding: 5px
+}
+
+.ladi-form .ladi-button {
+	cursor: pointer
+}
+
+.ladi-form .ladi-button .ladi-headline {
+	cursor: pointer;
+	user-select: none
+}
+
+.ladi-combobox {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-combobox .ladi-combobox-item-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-transform: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item .ladi-combobox-control option {
+	color: initial
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item .ladi-combobox-control {
+	background-color: transparent;
+	min-width: 100%;
+	min-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+	height: 100%;
+	padding: 0 5px;
+	font-size: inherit;
+	border: none;
+	text-transform: inherit;
+	text-align: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+	background-size: inherit;
+	background-attachment: inherit;
+	background-origin: inherit;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-size: 9px 6px !important;
+	background-position: right .5rem center;
+	background-repeat: no-repeat
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item .ladi-combobox-control:not([data-selected=""]) {
+	text-decoration: inherit
+}
+
+.ladi-cart {
+	position: absolute;
+	width: 100%;
+	font-size: 12px
+}
+
+.ladi-cart .ladi-cart-row {
+	position: relative;
+	display: inline-table;
+	width: 100%
+}
+
+.ladi-cart .ladi-cart-row:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	width: 100%;
+	background: #dcdcdc
+}
+
+.ladi-cart .ladi-cart-no-product {
+	text-align: center;
+	font-size: 16px;
+	vertical-align: middle
+}
+
+.ladi-cart .ladi-cart-image {
+	width: 16%;
+	vertical-align: middle;
+	position: relative;
+	text-align: center
+}
+
+.ladi-cart .ladi-cart-image img {
+	max-width: 100%
+}
+
+.ladi-cart .ladi-cart-title {
+	vertical-align: middle;
+	padding: 0 5px;
+	word-break: break-all
+}
+
+.ladi-cart .ladi-cart-title .ladi-cart-title-name {
+	display: block;
+	margin-bottom: 5px;
+	word-break: break-word
+}
+
+.ladi-cart .ladi-cart-title .ladi-cart-title-variant {
+	font-weight: 700;
+	display: block;
+	word-break: break-word
+}
+
+.ladi-cart .ladi-cart-image .ladi-cart-image-quantity {
+	position: absolute;
+	top: -3px;
+	right: -5px;
+	background: rgba(150, 149, 149, .9);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	line-height: 20px
+}
+
+.ladi-cart .ladi-cart-quantity {
+	width: 70px;
+	vertical-align: middle;
+	text-align: center
+}
+
+.ladi-cart .ladi-cart-quantity-content {
+	display: -webkit-inline-flex;
+	display: inline-flex
+}
+
+.ladi-cart .ladi-cart-quantity input {
+	width: 24px;
+	text-align: center;
+	height: 22px;
+	-moz-appearance: textfield;
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc
+}
+
+.ladi-cart .ladi-cart-quantity input::-webkit-inner-spin-button,
+.ladi-cart .ladi-cart-quantity input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+
+.ladi-cart .ladi-cart-quantity button {
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+	text-align: center;
+	width: 21px;
+	height: 22px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+.ladi-cart .ladi-cart-quantity button:active {
+	transform: translateY(2px);
+	transition: transform .2s linear
+}
+
+.ladi-cart .ladi-cart-quantity button span {
+	font-size: 18px;
+	position: relative;
+	left: .5px
+}
+
+.ladi-cart .ladi-cart-quantity button:first-child span {
+	top: -1.2px
+}
+
+.ladi-cart .ladi-cart-price {
+	width: 100px;
+	vertical-align: middle;
+	text-align: right;
+	padding: 0 10px 0 5px
+}
+
+.ladi-cart .ladi-cart-row.has-promotion .ladi-cart-price span {
+	text-decoration: line-through;
+	display: block;
+	margin-bottom: 3px
+}
+
+.ladi-cart .ladi-cart-row.has-promotion .ladi-cart-price span.price-compare {
+	text-decoration: none;
+	color: #e85d04;
+	font-weight: 700;
+	margin-bottom: 0
+}
+
+.ladi-cart .ladi-cart-row.has-promotion .ladi-cart-title span.promotion-name {
+	margin-top: 5px;
+	display: block;
+	word-break: break-word
+}
+
+.ladi-cart .ladi-cart-action {
+	width: 28px;
+	vertical-align: middle;
+	text-align: center
+}
+
+.ladi-cart .ladi-cart-action button {
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+	text-align: center;
+	width: 25px;
+	height: 22px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+.ladi-cart .ladi-cart-action button:active {
+	transform: translateY(2px);
+	transition: transform .2s linear
+}
+
+.ladi-cart .ladi-cart-action button span {
+	font-size: 13px;
+	position: relative;
+	top: .5px
+}
+
+.ladi-video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	overflow: hidden
+}
+
+.ladi-video .ladi-video-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none
+}
+
+.ladi-group {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-button-group {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-button-group>.ladi-element {
+	transition: inherit
+}
+
+.ladi-button-group>.ladi-element>.ladi-button {
+	transition: inherit
+}
+
+.ladi-shape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none
+}
+
+.ladi-html-code {
+	position: absolute;
+	width: 100%;
+	height: 100%
+}
+
+.ladi-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none
+}
+
+.ladi-image .ladi-image-background {
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	background-attachment: scroll;
+	background-origin: content-box;
+	position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	pointer-events: none
+}
+
+.ladi-headline {
+	width: 100%;
+	display: inline-block;
+	background-size: cover;
+	background-position: center center
+}
+
+.ladi-headline a {
+	text-decoration: underline
+}
+
+.ladi-paragraph {
+	width: 100%;
+	display: inline-block
+}
+
+.ladi-paragraph a {
+	text-decoration: underline
+}
+
+.ladi-list-paragraph {
+	width: 100%;
+	display: inline-block
+}
+
+.ladi-list-paragraph a {
+	text-decoration: underline
+}
+
+.ladi-list-paragraph ul li {
+	position: relative;
+	counter-increment: linum
+}
+
+.ladi-list-paragraph ul li:before {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	left: 0
+}
+
+.ladi-list-paragraph ul li:last-child {
+	padding-bottom: 0 !important
+}
+
+.ladi-line {
+	position: relative
+}
+
+.ladi-line .ladi-line-container {
+	border-bottom: 0 !important;
+	border-right: 0 !important;
+	width: 100%;
+	height: 100%
+}
+
+a[data-action] {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: pointer
+}
+
+a:visited {
+	color: inherit
+}
+
+a:link {
+	color: inherit
+}
+
+.button-unmute {
+	cursor: pointer;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto
+}
+
+.button-unmute div {
+	background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2036%2036%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22m%2021.48%2C17.98%20c%200%2C-1.77%20-1.02%2C-3.29%20-2.5%2C-4.03%20v%202.21%20l%202.45%2C2.45%20c%20.03%2C-0.2%20.05%2C-0.41%20.05%2C-0.63%20z%20m%202.5%2C0%20c%200%2C.94%20-0.2%2C1.82%20-0.54%2C2.64%20l%201.51%2C1.51%20c%20.66%2C-1.24%201.03%2C-2.65%201.03%2C-4.15%200%2C-4.28%20-2.99%2C-7.86%20-7%2C-8.76%20v%202.05%20c%202.89%2C.86%205%2C3.54%205%2C6.71%20z%20M%209.25%2C8.98%20l%20-1.27%2C1.26%204.72%2C4.73%20H%207.98%20v%206%20H%2011.98%20l%205%2C5%20v%20-6.73%20l%204.25%2C4.25%20c%20-0.67%2C.52%20-1.42%2C.93%20-2.25%2C1.18%20v%202.06%20c%201.38%2C-0.31%202.63%2C-0.95%203.69%2C-1.81%20l%202.04%2C2.05%201.27%2C-1.27%20-9%2C-9%20-7.72%2C-7.72%20z%20m%207.72%2C.99%20-2.09%2C2.08%202.09%2C2.09%20V%209.98%20z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 100%;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center center
+}
+
+[data-opacity="0"] {
+	opacity: 0
+}
+
+[data-hidden=true] {
+	display: none
+}
+
+[data-action=true] {
+	cursor: pointer
+}
+
+.ladi-hidden {
+	display: none
+}
+
+.backdrop-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 90000060
+}
+
+.backdrop-dropbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 90000080
+}
+
+.lightbox-screen {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	z-index: 9000000080;
+	background: rgba(0, 0, 0, .5)
+}
+
+.lightbox-screen .lightbox-close {
+	position: absolute;
+	z-index: 9000000090;
+	cursor: pointer
+}
+
+.lightbox-screen .lightbox-hidden {
+	display: none
+}
+
+.ladi-animation-hidden {
+	visibility: hidden !important
+}
+
+.ladi-lazyload {
+	background-image: none !important
+}
+
+.ladi-list-paragraph ul li.ladi-lazyload:before {
+	background-image: none !important
+}
+
+.ladi-cart-number {
+	position: absolute;
+	top: -2px;
+	right: -7px;
+	background: #f36e36;
+	text-align: center;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 11px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 100%
+}
+
+.ladi-form-quantity {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	border-color: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item.ladi-form-quantity .ladi-form-control {
+	text-align: center;
+	pointer-events: none;
+	-moz-appearance: textfield;
+	width: calc(100% - 45px);
+	padding: 0;
+	min-width: 24px;
+	border-top: 1px hidden;
+	border-bottom: 1px hidden;
+	border-color: inherit
+}
+
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item.ladi-form-quantity input::-webkit-inner-spin-button,
+.ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item.ladi-form-quantity input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+
+.ladi-form-quantity button {
+	border: 1px hidden;
+	border-color: inherit;
+	cursor: pointer;
+	text-align: center;
+	width: 30px;
+	height: 100%;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+.ladi-form-quantity button span {
+	font-size: 18px;
+	position: relative;
+	left: .5px
+}
+
+.ladi-form-quantity button:first-child span {
+	top: -1.2px
+}
+
+.ladi-form [data-variant=true] select option[disabled] {
+	background: #fff;
+	color: #b8b8b8 !important
+}
+
+.ladi-story-page-progress-bar {
+	width: 100%;
+	height: 25px;
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+.ladi-story-page-progress-bar-item {
+	height: 100%;
+	width: 100%;
+	display: block;
+	float: left;
+	margin: 0 5px;
+	position: relative;
+	cursor: pointer
+}
+
+.ladi-story-page-progress-bar-item:before {
+	content: '';
+	position: absolute;
+	background: rgba(255, 255, 255, .4);
+	border-radius: 10px;
+	width: 100%;
+	height: 4px;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+
+.ladi-story-page-progress-bar-item.active:before {
+	background: #fff
+}
+
+.ladi-story-page-progress-bar-item span {
+	background: #fff;
+	border-radius: 10px;
+	height: 4px;
+	display: block;
+	margin: auto 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	transition: width .3s linear;
+	width: 0%
+}
+
+.ladi-carousel .ladi-carousel-arrow,
+.ladi-collection .ladi-collection-arrow,
+.ladi-collection .ladi-collection-button-next,
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-arrow,
+.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow,
+.ladi-section .ladi-section-arrow-down {
+	width: 33px;
+	height: 33px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E")
+}
+
+#SECTION_POPUP .popup-close,
+.ladi-section .ladi-section-close,
+.lightbox-screen .lightbox-close {
+	width: 18px;
+	height: 18px;
+	margin: 6px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20148.1%20148.1%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M83.4%2C74l54.1-54.1c2.6-2.6%2C2.6-6.8%2C0-9.3c-2.6-2.6-6.8-2.6-9.3%2C0L74%2C64.7L20%2C10.5c-2.6-2.6-6.8-2.6-9.3%2C0c-2.6%2C2.6-2.6%2C6.8%2C0%2C9.3l54%2C54.1l-54.1%2C54.1c-2.6%2C2.6-2.6%2C6.8%2C0%2C9.3c2.6%2C2.6%2C6.8%2C2.6%2C9.3%2C0l54.1-54l54.1%2C54.1c1.3%2C1.3%2C3%2C1.9%2C4.7%2C1.9s3.4-0.6%2C4.7-1.9c1.3-1.3%2C2-3.1%2C2-4.9c0-1.7-0.8-3.4-2-4.6L83.4%2C74z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E")
+}
+
+#BODY_BACKGROUND {
+	position: fixed;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 100vh !important
+}
+
+#POPUP_BLOG .ladi-headline img,
+#POPUP_BLOG .ladi-paragraph img {
+	max-width: 100%
+}
+
+@media (min-width:768px) {
+	.ladi-fullwidth {
+		width: 100vw !important;
+		left: calc(-50vw + 50%) !important;
+		box-sizing: border-box !important;
+		transform: none !important
+	}
+
+	.ladi-fullwidth .ladi-gallery-view-item {
+		transition-duration: 1.5s
+	}
+}
+
+@media (max-width:767px) {
+	.ladi-element.ladi-auto-scroll {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		width: 100% !important;
+		left: 0 !important;
+		-webkit-overflow-scrolling: touch
+	}
+
+	.ladi-section.ladi-auto-scroll {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch
+	}
+
+	.ladi-carousel .ladi-carousel-content {
+		transition: left .3s ease-in-out
+	}
+
+	.ladi-gallery .ladi-gallery-view>.ladi-gallery-view-item {
+		transition: transform .3s ease-in-out
+	}
+
+	#POPUP_BLOG .ladi-headline img,
+	#POPUP_BLOG .ladi-paragraph img {
+		height: auto !important
+	}
+}
+
+.ladi-notify-transition {
+	transition: top .5s ease-in-out, bottom .5s ease-in-out, opacity .5s ease-in-out
+}
+
+.ladi-notify {
+	padding: 5px;
+	box-shadow: 0 0 1px rgba(64, 64, 64, .3), 0 8px 50px rgba(64, 64, 64, .05);
+	border-radius: 40px;
+	line-height: 1.6;
+	width: 100%;
+	height: 100%;
+	font-size: 13px
+}
+
+.ladi-notify .ladi-notify-image img {
+	float: left;
+	margin-right: 13px;
+	border-radius: 50%;
+	width: 53px;
+	height: 53px;
+	pointer-events: none
+}
+
+.ladi-notify .ladi-notify-title {
+	font-size: 100%;
+	height: 17px;
+	overflow: hidden;
+	font-weight: 700;
+	overflow-wrap: break-word;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.ladi-notify .ladi-notify-content {
+	font-size: 92.308%;
+	height: 17px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 1;
+	padding-top: 2px
+}
+
+.ladi-notify .ladi-notify-time {
+	line-height: 1.6;
+	font-size: 84.615%;
+	display: inline-block;
+	overflow-wrap: break-word;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: calc(100% - 155px);
+	overflow: hidden
+}
+
+.ladi-notify .ladi-notify-copyright {
+	font-size: 76.9231%;
+	margin-left: 2px;
+	position: relative;
+	padding: 0 5px;
+	cursor: pointer;
+	opacity: .6;
+	display: inline-block;
+	top: -4px
+}
+
+.ladi-notify .ladi-notify-copyright svg {
+	vertical-align: middle
+}
+
+.ladi-notify .ladi-notify-copyright svg:not(:root) {
+	overflow: hidden
+}
+
+.ladi-notify .ladi-notify-copyright div {
+	text-decoration: none;
+	color: rgba(64, 64, 64, 1);
+	display: inline
+}
+
+.ladi-notify .ladi-notify-copyright strong {
+	font-weight: 700
+}
+
+.builder-container .ladi-notify {
+	transition: unset
+}
+
+.ladi-spin-lucky {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	box-shadow: 0 0 7px 0 rgba(64, 64, 64, .6), 0 8px 50px rgba(64, 64, 64, .3);
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-start {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 20%;
+	height: 20%;
+	cursor: pointer;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: transform .3s ease-in-out;
+	-webkit-transition: transform .3s ease-in-out
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-start:hover {
+	transform: scale(1.1)
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-screen {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	transition: transform 7s cubic-bezier(.25, .1, 0, 1);
+	-webkit-transition: transform 7s cubic-bezier(.25, .1, 0, 1);
+	text-decoration-line: inherit;
+	-webkit-text-decoration-line: inherit;
+	text-transform: inherit
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-screen:before {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	width: 42%;
+	padding-left: 12%;
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	text-decoration-line: inherit;
+	-webkit-text-decoration-line: inherit;
+	text-transform: inherit;
+	line-height: 1.6;
+	text-shadow: rgba(0, 0, 0, .5) 1px 0 2px
+}
+
+@media (min-width: 768px) {
+	.ladi-section .ladi-container {
+		width: 960px;
+	}
+}
+
+@media (max-width: 767px) {
+	.ladi-section .ladi-container {
+		width: 420px;
+	}
+}
+
+body {
+	font-family: Roboto, sans-serif
+}
+
+@media (min-width: 768px) {
+	#SECTION_POPUP {
+		height: 0px;
+	}
+
+	#SECTION_POPUP .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#SECTION14 {
+		height: 597px;
+	}
+
+	#SECTION14>.ladi-overlay {
+		background-color: rgb(16, 124, 145);
+		opacity: 0.85;
+	}
+
+	#SECTION14>.ladi-section-background {
+		background-size: cover;
+		background-attachment: fixed;
+		background-image: url("https://w.ladicdn.com/s1440x597/57b167c9ca57d39c18a1c57c/slider1-687701.jpg");
+		background-position: left top;
+		background-repeat: no-repeat;
+	}
+
+	#SECTION14 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE16 {
+		width: 554px;
+		top: 148px;
+		left: 203px;
+	}
+
+	#HEADLINE16>.ladi-headline {
+		font-family: "Roboto", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 31px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#HEADLINE25 {
+		width: 939px;
+		top: 83.101px;
+		left: 10.5px;
+	}
+
+	#HEADLINE25>.ladi-headline {
+		color: rgb(232, 140, 48);
+		font-size: 26px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#HEADLINE342 {
+		width: 533px;
+		top: 248px;
+		left: 213.5px;
+	}
+
+	#HEADLINE342>.ladi-headline {
+		font-family: "Roboto", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 38px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#IMAGE345 {
+		width: 488.082px;
+		height: 551px;
+		top: 71.746px;
+		left: 0px;
+	}
+
+	#IMAGE345>.ladi-image>.ladi-image-background {
+		width: 853.765px;
+		height: 569.461px;
+		top: -14.461px;
+		left: -365.683px;
+		background-image: url("https://w.ladicdn.com/s1200x900/5c7362c6c417ab07e5196b05/brooke-cagle-g1kr4ozfoac-unsplash-20200117035203.jpg");
+	}
+
+	#IMAGE345>.ladi-image {
+		border-style: solid;
+		border-color: rgb(250, 250, 250);
+		border-width: 2px;
+	}
+
+	#SECTION356 {
+		height: 656.492px;
+	}
+
+	#SECTION356 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#GROUP361 {
+		width: 342px;
+		height: 97.5005px;
+		top: 71.746px;
+		left: 504.082px;
+	}
+
+	#HEADLINE362 {
+		width: 312px;
+		top: 25.5005px;
+		left: 30px;
+	}
+
+	#HEADLINE362>.ladi-headline {
+		color: rgb(5, 31, 77);
+		font-size: 30px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#SHAPE363 {
+		width: 33px;
+		height: 45.7507px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#SHAPE363 svg:last-child {
+		fill: rgba(16, 124, 145, 1);
+	}
+
+	#LIST_PARAGRAPH372 {
+		width: 427px;
+		top: 185.726px;
+		left: 533px;
+	}
+
+	#LIST_PARAGRAPH372>.ladi-list-paragraph {
+		font-size: 16px;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#LIST_PARAGRAPH372 ul li {
+		padding-bottom: 7px;
+		padding-left: 33px;
+	}
+
+	#LIST_PARAGRAPH372 ul li:before {
+		content: "";
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20version%3D%221.0%22%20fit%3D%22%22%20height%3D%22100%25%22%20width%3D%22100%25%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20style%3D%22pointer-events%3A%20none%3B%20display%3A%20inline-block%3B%22%20fill%3D%22rgba(254%2C73%2C24%2C1)%22%3E%3Cpath%20d%3D%22M16%202.672C8.64%202.672%202.672%208.64%202.672%2016S8.64%2029.328%2016%2029.328c7.36%200%2013.328-5.967%2013.328-13.328S23.36%202.672%2016%202.672zm0%2025.59c-6.76%200-12.262-5.5-12.262-12.262S9.238%203.738%2016%203.738c6.76%200%2012.262%205.5%2012.262%2012.262S22.762%2028.262%2016%2028.262z%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M22.667%2011.24l-8.56%208.3-2.997-2.998c-.312-.312-.818-.312-1.13%200s-.313.818%200%201.13l3.554%203.556c.156.156.36.234.565.234.2%200%20.4-.075.555-.225l9.124-8.848c.316-.31.324-.815.017-1.132-.31-.318-.814-.325-1.13-.018z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+		width: 24px;
+		height: 24px;
+		top: 0px;
+	}
+
+	#PARAGRAPH373 {
+		width: 387px;
+		top: 402.686px;
+		left: 560px;
+	}
+
+	#PARAGRAPH373>.ladi-paragraph {
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#PARAGRAPH374 {
+		width: 381px;
+		top: 452.686px;
+		left: 560px;
+	}
+
+	#PARAGRAPH374>.ladi-paragraph {
+		color: rgb(232, 140, 48);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#PARAGRAPH375 {
+		width: 387px;
+		top: 502.686px;
+		left: 560px;
+	}
+
+	#PARAGRAPH375>.ladi-paragraph {
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#LINE360 {
+		height: 194px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#LINE360>.ladi-line>.ladi-line-container {
+		border-top: 0px !important;
+		border-right: 5px solid rgb(16, 124, 145);
+		border-bottom: 5px solid rgb(16, 124, 145);
+		border-left: 5px solid rgb(16, 124, 145);
+	}
+
+	#LINE360>.ladi-line {
+		height: 100%;
+		padding: 0px 8px;
+	}
+
+	#PARAGRAPH359 {
+		width: 325px;
+		top: 9.235px;
+		left: 32.082px;
+	}
+
+	#PARAGRAPH359>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#GROUP357 {
+		width: 357.082px;
+		height: 194px;
+		top: 359.516px;
+		left: 525.918px;
+	}
+
+	#SECTION377 {
+		height: 165px;
+	}
+
+	#SECTION377>.ladi-section-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#SECTION377 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#BUTTON378 {
+		width: 225.85px;
+		height: 40px;
+		top: 44px;
+		left: 715.15px;
+	}
+
+	#BUTTON378>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON378>.ladi-button {
+		border-radius: 50px;
+	}
+
+	#BUTTON_TEXT378 {
+		width: 180px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT378>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE381 {
+		width: 758px;
+		top: 12.2623px;
+		left: 51.2787px;
+	}
+
+	#HEADLINE381>.ladi-headline {
+		color: rgb(244, 220, 156);
+		font-size: 23px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	#PARAGRAPH382 {
+		width: 699px;
+		top: 43.4754px;
+		left: 51.2787px;
+	}
+
+	#PARAGRAPH382>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 22px;
+		line-height: 1.6;
+	}
+
+	#BOX383 {
+		width: 30.0984px;
+		height: 136px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BOX383>.ladi-box {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#PARAGRAPH384 {
+		width: 627px;
+		top: 73px;
+		left: 52.15px;
+	}
+
+	#PARAGRAPH384>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 22px;
+		line-height: 1.6;
+	}
+
+	#SECTION387 {
+		height: 697px;
+	}
+
+	#SECTION387>.ladi-overlay {
+		background: rgba(10, 78, 92, 1);
+		background: -webkit-linear-gradient(180deg, rgba(10, 78, 92, 1), rgba(22, 169, 199, 1));
+		background: linear-gradient(180deg, rgba(10, 78, 92, 1), rgba(22, 169, 199, 1));
+		opacity: 0.6;
+	}
+
+	#SECTION387>.ladi-section-background {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s1440x697/57b167c9ca57d39c18a1c57c/ionsgaqj20200505063315.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+	}
+
+	#SECTION387 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE388 {
+		width: 825px;
+		top: 137px;
+		left: 75.5px;
+	}
+
+	#HEADLINE388>.ladi-headline {
+		font-family: "Open Sans", sans-serif;
+		color: rgb(234, 242, 254);
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0px;
+		line-height: 1.2;
+	}
+
+	#HEADLINE390 {
+		width: 480px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#HEADLINE390>.ladi-headline {
+		color: rgb(232, 140, 48);
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE395 {
+		width: 309px;
+		top: 83.508px;
+		left: 348.075px;
+	}
+
+	#HEADLINE395>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SHAPE396 {
+		width: 57.3658px;
+		height: 27.8793px;
+		top: 18.062px;
+		left: 67.167px;
+	}
+
+	#SHAPE396 svg:last-child {
+		fill: rgba(244, 200, 156, 1);
+	}
+
+	#SHAPE397 {
+		width: 57.3659px;
+		height: 27.8793px;
+		top: 18.062px;
+		left: 351.984px;
+	}
+
+	#SHAPE397>.ladi-shape {
+		transform: rotate(179deg);
+		-webkit-transform: rotate(179deg);
+	}
+
+	#SHAPE397 svg:last-child {
+		fill: rgba(244, 200, 156, 1);
+	}
+
+	#BOX398 {
+		width: 353.15px;
+		height: 48px;
+		top: 80.508px;
+		left: 327.075px;
+	}
+
+	#BOX398>.ladi-box {
+		background-color: rgb(232, 140, 48);
+		border-radius: 50px;
+	}
+
+	#HEADLINE400 {
+		width: 128px;
+		top: 72.008px;
+		left: 64.35px;
+	}
+
+	#HEADLINE400>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 23px;
+		text-align: right;
+		line-height: 1.6;
+	}
+
+	#HEADLINE401 {
+		width: 128px;
+		top: 96.008px;
+		left: 64.35px;
+	}
+
+	#HEADLINE401>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 37px;
+		font-weight: bold;
+		text-align: right;
+		line-height: 1.6;
+	}
+
+	#LINE402 {
+		height: 61px;
+		top: 80.008px;
+		left: 209.35px;
+	}
+
+	#LINE402>.ladi-line>.ladi-line-container {
+		border-top: 0px !important;
+		border-right: 4px solid rgb(255, 255, 255);
+		border-bottom: 4px solid rgb(255, 255, 255);
+		border-left: 4px solid rgb(255, 255, 255);
+	}
+
+	#LINE402>.ladi-line {
+		height: 100%;
+		padding: 0px 8px;
+	}
+
+	#HEADLINE403 {
+		width: 128px;
+		top: 72.008px;
+		left: 245.35px;
+	}
+
+	#HEADLINE403>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 23px;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	#HEADLINE404 {
+		width: 161px;
+		top: 102.508px;
+		left: 245.35px;
+	}
+
+	#HEADLINE404>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 29px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	#BUTTON406 {
+		width: 731px;
+		height: 87px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BUTTON406>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON406>.ladi-button {
+		border-radius: 10px;
+	}
+
+	#BUTTON406.ladi-animation>.ladi-button {
+		animation-name: bounce;
+		-webkit-animation-name: bounce;
+		animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	#BUTTON_TEXT406 {
+		width: 404px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT406>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#COUNTDOWN407 {
+		width: 320px;
+		height: 57px;
+		top: 5.463px;
+		left: 0px;
+	}
+
+	#COUNTDOWN407>.ladi-countdown {
+		color: rgb(0, 0, 0);
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#COUNTDOWN407>.ladi-countdown>.ladi-element {
+		width: calc((100% - 10px * 3) / 4);
+		margin-right: 10px;
+		height: 100%;
+	}
+
+	#BOX412 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 5.15px;
+	}
+
+	#BOX412>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#BOX413 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 88.687px;
+	}
+
+	#BOX413>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#BOX414 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0.731px;
+		left: 169.15px;
+	}
+
+	#BOX414>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#BOX415 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 1.731px;
+		left: 252.15px;
+	}
+
+	#BOX415>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#GROUP416 {
+		width: 320px;
+		height: 64.194px;
+		top: 428.545px;
+		left: 342.575px;
+	}
+
+	#HEADLINE417 {
+		width: 432px;
+		top: 44px;
+		left: 159.183px;
+	}
+
+	#HEADLINE417>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SHAPE418 {
+		width: 36.2551px;
+		height: 44.7543px;
+		top: 8.246px;
+		left: 79px;
+	}
+
+	#SHAPE418 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#SECTION562 {
+		height: 711.208px;
+	}
+
+	#SECTION562>.ladi-section-background {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#SECTION562 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#BUTTON563 {
+		width: 333.26px;
+		height: 50px;
+		top: 128.838px;
+		left: 309.87px;
+	}
+
+	#BUTTON563>.ladi-button>.ladi-button-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#BUTTON563>.ladi-button {
+		border-style: solid;
+		border-color: rgb(16, 124, 145);
+		border-width: 1px;
+		border-radius: 100px;
+	}
+
+	#BUTTON_TEXT563 {
+		width: 392px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT563>.ladi-headline {
+		color: rgb(16, 124, 145);
+		font-size: 19px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE568 {
+		width: 505px;
+		top: 38.481px;
+		left: 220.5px;
+	}
+
+	#HEADLINE568>.ladi-headline {
+		color: rgb(16, 124, 145);
+		font-size: 30px;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#GROUP570 {
+		width: 960px;
+		height: 407.915px;
+		top: 221.838px;
+		left: 0px;
+	}
+
+	#GROUP571 {
+		width: 449.5px;
+		height: 190px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#FRAME572 {
+		width: 390px;
+		height: 190px;
+		top: 0px;
+		left: 59.5px;
+	}
+
+	#FRAME572>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#FRAME572>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE573 {
+		width: 196.855px;
+		height: 196.855px;
+		top: 59.5px;
+		left: 251.5px;
+	}
+
+	#SHAPE573 svg:last-child {
+		fill: rgba(217, 235, 255, 0.3);
+	}
+
+	#PARAGRAPH574 {
+		width: 276px;
+		top: 79.331px;
+		left: 88.5px;
+	}
+
+	#PARAGRAPH574>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH575 {
+		width: 243px;
+		top: 45.766px;
+		left: 88.5px;
+	}
+
+	#PARAGRAPH575>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX576 {
+		width: 127.506px;
+		height: 127.506px;
+		top: 29.162px;
+		left: 0px;
+	}
+
+	#BOX576>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/drgdrt-20200201062510.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#GROUP577 {
+		width: 449.5px;
+		height: 190px;
+		top: 217.915px;
+		left: 0px;
+	}
+
+	#FRAME578 {
+		width: 390px;
+		height: 190px;
+		top: 0px;
+		left: 59.5px;
+	}
+
+	#FRAME578>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#FRAME578>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE579 {
+		width: 196.855px;
+		height: 196.855px;
+		top: 59.5px;
+		left: 251.5px;
+	}
+
+	#SHAPE579 svg:last-child {
+		fill: rgba(217, 235, 255, 0.3);
+	}
+
+	#PARAGRAPH580 {
+		width: 276px;
+		top: 79.331px;
+		left: 88.5px;
+	}
+
+	#PARAGRAPH580>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH581 {
+		width: 243px;
+		top: 45.766px;
+		left: 88.5px;
+	}
+
+	#PARAGRAPH581>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX582 {
+		width: 127.506px;
+		height: 127.506px;
+		top: 31.247px;
+		left: 0px;
+	}
+
+	#BOX582>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/dtydt6un6tu6-20200201062607.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#GROUP583 {
+		width: 452px;
+		height: 190px;
+		top: 0px;
+		left: 508px;
+	}
+
+	#FRAME584 {
+		width: 390px;
+		height: 190px;
+		top: 0px;
+		left: 62px;
+	}
+
+	#FRAME584>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#FRAME584>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE585 {
+		width: 196.855px;
+		height: 196.855px;
+		top: 59.5px;
+		left: 251.5px;
+	}
+
+	#SHAPE585 svg:last-child {
+		fill: rgba(217, 235, 255, 0.1);
+	}
+
+	#PARAGRAPH586 {
+		width: 277px;
+		top: 76.5px;
+		left: 92.5px;
+	}
+
+	#PARAGRAPH586>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH587 {
+		width: 258px;
+		top: 42.5px;
+		left: 92.5px;
+	}
+
+	#PARAGRAPH587>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX588 {
+		width: 127.506px;
+		height: 127.506px;
+		top: 29.162px;
+		left: 0px;
+	}
+
+	#BOX588>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/drtserytbsery-20200201062647.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#GROUP589 {
+		width: 452px;
+		height: 190px;
+		top: 217.915px;
+		left: 508px;
+	}
+
+	#FRAME590 {
+		width: 390px;
+		height: 190px;
+		top: 0px;
+		left: 62px;
+	}
+
+	#FRAME590>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#FRAME590>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE591 {
+		width: 196.855px;
+		height: 196.855px;
+		top: 59.5px;
+		left: 251.5px;
+	}
+
+	#SHAPE591 svg:last-child {
+		fill: rgba(217, 235, 255, 0.3);
+	}
+
+	#PARAGRAPH592 {
+		width: 276px;
+		top: 79.331px;
+		left: 88.5px;
+	}
+
+	#PARAGRAPH592>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH593 {
+		width: 243px;
+		top: 45.766px;
+		left: 88.5px;
+	}
+
+	#PARAGRAPH593>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX594 {
+		width: 127.506px;
+		height: 127.506px;
+		top: 31.247px;
+		left: 0px;
+	}
+
+	#BOX594>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/dgry5ryg54y-20200201062721.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#SECTION595 {
+		height: 862.9px;
+	}
+
+	#SECTION595>.ladi-overlay {
+		background-color: rgb(16, 124, 145);
+		opacity: 0.88;
+	}
+
+	#SECTION595>.ladi-section-background {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s1440x862/57b167c9ca57d39c18a1c57c/bsumsztd20200511065423.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+	}
+
+	#SECTION595 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE596 {
+		width: 669px;
+		top: 23.792px;
+		left: 153.5px;
+	}
+
+	#HEADLINE596>.ladi-headline {
+		font-family: "Open Sans", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0px;
+		line-height: 1.2;
+	}
+
+	#SHAPE659 {
+		width: 26.5341px;
+		height: 32.7545px;
+		top: 137.461px;
+		left: 327px;
+	}
+
+	#SHAPE659 svg:last-child {
+		fill: rgba(16, 124, 145, 1);
+	}
+
+	#PARAGRAPH661 {
+		width: 632px;
+		top: 72.812px;
+		left: 172px;
+	}
+
+	#PARAGRAPH661>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#GROUP662 {
+		width: 731px;
+		height: 87px;
+		top: 536.508px;
+		left: 120px;
+	}
+
+	#BUTTON_TEXT664 {
+		width: 404px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT664>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#BUTTON664 {
+		width: 731px;
+		height: 87px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BUTTON664>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON664>.ladi-button {
+		border-radius: 10px;
+	}
+
+	#BUTTON664.ladi-animation>.ladi-button {
+		animation-name: bounce;
+		-webkit-animation-name: bounce;
+		animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	#HEADLINE666 {
+		width: 432px;
+		top: 44px;
+		left: 159.183px;
+	}
+
+	#HEADLINE666>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SHAPE667 {
+		width: 36.2551px;
+		height: 44.7543px;
+		top: 8.246px;
+		left: 79px;
+	}
+
+	#SHAPE667 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#GROUP663 {
+		width: 731px;
+		height: 87px;
+		top: 159.302px;
+		left: 114.5px;
+	}
+
+	#IMAGE678 {
+		width: 960px;
+		height: 514px;
+		top: 281.3px;
+		left: 0px;
+		filter: drop-shadow(rgb(209, 243, 250) 0px 15px 20px);
+	}
+
+	#IMAGE678>.ladi-image>.ladi-image-background {
+		width: 960px;
+		height: 720px;
+		top: -206px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s1300x1050/5e4cf269a9c6692c79a6477c/workshop-bi-quyet-xay-dung-thu-nhap-thu-dong-2-20220519090437.png");
+	}
+
+	#SECTION679 {
+		height: 729.9px;
+	}
+
+	#SECTION679>.ladi-section-background {
+		background-color: rgb(233, 251, 255);
+	}
+
+	#SECTION679 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE680 {
+		width: 661px;
+		top: 48.9px;
+		left: 149.5px;
+	}
+
+	#HEADLINE680>.ladi-headline {
+		color: rgb(13, 98, 242);
+		font-size: 35px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0px;
+		line-height: 1.4;
+	}
+
+	#GROUP684 {
+		width: 960.002px;
+		height: 341.929px;
+		top: 173.985px;
+		left: 0px;
+	}
+
+	#BOX685 {
+		width: 960.002px;
+		height: 341.929px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BOX685>.ladi-box {
+		box-shadow: 2px 7px 15px 0px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 2px 7px 15px 0px rgba(0, 0, 0, 0.2);
+		background-color: rgb(16, 124, 145);
+		border-radius: 10px;
+	}
+
+	#FORM686 {
+		width: 425.543px;
+		height: 173.391px;
+		top: 99.382px;
+		left: 491.687px;
+	}
+
+	#FORM686>.ladi-form {
+		color: rgb(132, 132, 132);
+		font-size: 14px;
+		letter-spacing: 0px;
+		line-height: 1.6;
+	}
+
+	#FORM686 .ladi-form-item .ladi-form-control::placeholder,
+	#FORM686 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+		color: rgba(132, 132, 132, 1.0);
+	}
+
+	#FORM686 .ladi-form-item {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	#FORM686 .ladi-form-item.ladi-form-checkbox {
+		padding-left: 13px;
+		padding-right: 13px;
+	}
+
+	#FORM686 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(132%2C%20132%2C%20132%2C%201.0)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+	}
+
+	#FORM686 .ladi-form-item-container,
+	#FORM686 .ladi-form-label-container .ladi-form-label-item {
+		border-style: solid;
+		border-color: rgb(180, 180, 180);
+		border-width: 1px;
+		border-radius: 0px;
+	}
+
+	#FORM686 .ladi-form-item-container .ladi-form-quantity button {
+		background-color: rgb(180, 180, 180);
+	}
+
+	#FORM686 .ladi-form-item-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#BUTTON687 {
+		width: 424.599px;
+		height: 38.8721px;
+		top: 134.519px;
+		left: 0px;
+	}
+
+	#BUTTON687>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON687>.ladi-button {
+		border-radius: 0px;
+	}
+
+	#BUTTON_TEXT687 {
+		width: 360px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT687>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 21px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#FORM_ITEM689 {
+		width: 423.372px;
+		height: 38.8721px;
+		top: 0px;
+		left: 0.943678px;
+	}
+
+	#FORM_ITEM690 {
+		width: 207.68px;
+		height: 38.8721px;
+		top: 46.6465px;
+		left: 216.92px;
+	}
+
+	#FORM_ITEM691 {
+		width: 208.253px;
+		height: 38.8721px;
+		top: 46.6465px;
+		left: 0px;
+	}
+
+	#HEADLINE692 {
+		width: 411px;
+		top: 289.912px;
+		left: 502.687px;
+	}
+
+	#HEADLINE692>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#HEADLINE693 {
+		width: 433px;
+		top: 19.2266px;
+		left: 491.687px;
+	}
+
+	#HEADLINE693>.ladi-headline {
+		color: rgb(244, 200, 156);
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#GROUP707 {
+		width: 480px;
+		height: 155.008px;
+		top: 257px;
+		left: 263.65px;
+	}
+
+	#HEADLINE718 {
+		width: 352px;
+		top: 221.454px;
+		left: 542.82px;
+	}
+
+	#HEADLINE718>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 23px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#IMAGE719 {
+		width: 452.18px;
+		height: 295.797px;
+		top: 191.552px;
+		left: 15px;
+	}
+
+	#IMAGE719>.ladi-image>.ladi-image-background {
+		width: 599.862px;
+		height: 386.311px;
+		top: -31.2491px;
+		left: -74.3512px;
+		background-image: url("https://w.ladicdn.com/s900x700/5c11184bf5d1592491ee49e5/xem-nhieu-nguoi-tren-zoom-20220518055850.jpeg");
+	}
+
+	#BOX721 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 1.731px;
+		left: 252.15px;
+	}
+
+	#BOX721>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#BOX722 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0.731px;
+		left: 169.15px;
+	}
+
+	#BOX722>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#BOX723 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 88.687px;
+	}
+
+	#BOX723>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#BOX724 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 5.15px;
+	}
+
+	#BOX724>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#COUNTDOWN725 {
+		width: 320px;
+		height: 57px;
+		top: 5.463px;
+		left: 0px;
+	}
+
+	#COUNTDOWN725>.ladi-countdown {
+		color: rgb(0, 0, 0);
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#COUNTDOWN725>.ladi-countdown>.ladi-element {
+		width: calc((100% - 10px * 3) / 4);
+		margin-right: 10px;
+		height: 100%;
+	}
+
+	#GROUP720 {
+		width: 320px;
+		height: 64.194px;
+		top: 589.442px;
+		left: 320px;
+	}
+
+	#HEADLINE730 {
+		width: 58px;
+		top: 653.636px;
+		left: 326px;
+	}
+
+	#HEADLINE730>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE731 {
+		width: 58px;
+		top: 653.636px;
+		left: 409.18px;
+	}
+
+	#HEADLINE731>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE732 {
+		width: 58px;
+		top: 653.636px;
+		left: 492.18px;
+	}
+
+	#HEADLINE732>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE733 {
+		width: 58px;
+		top: 653.636px;
+		left: 574.18px;
+	}
+
+	#HEADLINE733>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE734 {
+		width: 212px;
+		top: 553.9px;
+		left: 384px;
+	}
+
+	#HEADLINE734>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SECTION735 {
+		height: 765.334px;
+	}
+
+	#SECTION735>.ladi-section-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#SECTION735 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE737 {
+		width: 824px;
+		top: 57.41px;
+		left: 68px;
+	}
+
+	#HEADLINE737>.ladi-headline {
+		font-family: "Montserrat", sans-serif;
+		background: rgba(0, 171, 169, 1.0);
+		background: -webkit-linear-gradient(180deg, rgba(0, 171, 169, 1.0), rgba(8, 69, 69, 1.0));
+		background: linear-gradient(180deg, rgba(0, 171, 169, 1.0), rgba(8, 69, 69, 1.0));
+		color: rgb(0, 0, 0);
+		font-size: 35px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#HEADLINE737 .ladi-headline {
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	#IMAGE739 {
+		width: 40.6207px;
+		height: 31px;
+		top: 159.169px;
+		left: 374.483px;
+	}
+
+	#IMAGE739>.ladi-image>.ladi-image-background {
+		width: 40.6207px;
+		height: 31px;
+		top: 0px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s350x350/5e4cf269a9c6692c79a6477c/quotes-1-20211013073612.png");
+	}
+
+	#IMAGE740 {
+		width: 40.6207px;
+		height: 31px;
+		top: 253.764px;
+		left: 769.483px;
+	}
+
+	#IMAGE740>.ladi-image>.ladi-image-background {
+		width: 40.6207px;
+		height: 31px;
+		top: 0px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s350x350/5e4cf269a9c6692c79a6477c/quotes-1-20211013073612.png");
+	}
+
+	#IMAGE740>.ladi-image {
+		transform: rotate(-179deg);
+		-webkit-transform: rotate(-179deg);
+	}
+
+	#IMAGE741 {
+		width: 327.372px;
+		height: 558.689px;
+		top: 131.645px;
+		left: 0px;
+		filter: drop-shadow(rgb(0, 140, 149) 0px 15px 20px);
+	}
+
+	#IMAGE741>.ladi-image>.ladi-image-background {
+		width: 440.372px;
+		height: 660.558px;
+		top: -74.779px;
+		left: -76.0003px;
+		background-image: url("https://w.ladicdn.com/s750x1000/5e4cf269a9c6692c79a6477c/21cd6f52e465173b4e74-20210302035227.jpg");
+	}
+
+	#HEADLINE743 {
+		width: 503px;
+		top: 168.482px;
+		left: 418.787px;
+	}
+
+	#HEADLINE743>.ladi-headline {
+		color: rgb(0, 140, 149);
+		font-size: 21px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#LIST_PARAGRAPH762 {
+		width: 375px;
+		top: 193.482px;
+		left: 415.104px;
+	}
+
+	#LIST_PARAGRAPH762>.ladi-list-paragraph {
+		color: rgb(0, 0, 0);
+		font-size: 17px;
+		line-height: 1.6;
+	}
+
+	#LIST_PARAGRAPH762 ul li {
+		padding-left: 28px;
+	}
+
+	#LIST_PARAGRAPH762 ul li:before {
+		content: "";
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20%20viewBox%3D%220%200%20758.1503%201896.0833%22%20class%3D%22%22%20fill%3D%22rgba(0%2C%20140%2C%20149%2C%201)%22%3E%20%3Cpath%20d%3D%22M595%20960q0%2013-10%2023l-466%20466q-10%2010-23%2010t-23-10l-50-50q-10-10-10-23t10-23l393-393L23%20567q-10-10-10-23t10-23l50-50q10-10%2023-10t23%2010l466%20466q10%2010%2010%2023z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
+		width: 29px;
+		height: 29px;
+		top: -3px;
+	}
+
+	#BOX766 {
+		width: 744.5px;
+		height: 243.5px;
+		top: 294.3px;
+		left: 215.5px;
+	}
+
+	#BOX766>.ladi-box {
+		background: rgba(16, 124, 145, 1);
+		background: -webkit-linear-gradient(18020deg, rgba(16, 124, 145, 1), rgba(109, 190, 209, 1.0));
+		background: linear-gradient(18020deg, rgba(16, 124, 145, 1), rgba(109, 190, 209, 1.0));
+	}
+
+	#BUTTON769 {
+		width: 399px;
+		height: 61px;
+		top: 567.636px;
+		left: 415.104px;
+	}
+
+	#BUTTON769>.ladi-button {
+		border-style: solid;
+		border-color: rgb(16, 124, 145);
+		border-width: 1px;
+		border-radius: 100px;
+	}
+
+	#BUTTON_TEXT769 {
+		width: 397px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT769>.ladi-headline {
+		color: rgb(0, 140, 149);
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#LIST_PARAGRAPH773 {
+		width: 512px;
+		top: 328.49px;
+		left: 415.104px;
+	}
+
+	#LIST_PARAGRAPH773>.ladi-list-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		line-height: 1.6;
+	}
+
+	#LIST_PARAGRAPH773 ul li {
+		padding-left: 20px;
+	}
+
+	#LIST_PARAGRAPH773 ul li:before {
+		content: counter(linum, disc);
+		color: rgba(209, 243, 250, 1);
+		font-size: 40px;
+		top: -20px;
+	}
+
+	#SHAPE774 {
+		width: 22.4835px;
+		height: 27.7543px;
+		top: 584.259px;
+		left: 436px;
+	}
+
+	#SHAPE774 svg:last-child {
+		fill: rgba(0, 140, 149, 1);
+	}
+
+	#HEADLINE775 {
+		width: 358px;
+		top: 375px;
+		left: 301px;
+	}
+
+	#HEADLINE775>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#LINE776 {
+		width: 350px;
+		top: 352px;
+		left: 305px;
+	}
+
+	#LINE776>.ladi-line>.ladi-line-container {
+		border-top: 1px solid rgb(232, 140, 48);
+		border-right: 1px solid rgb(232, 140, 48);
+		border-bottom: 1px solid rgb(232, 140, 48);
+		border-left: 0px !important;
+	}
+
+	#LINE776>.ladi-line {
+		width: 100%;
+		padding: 8px 0px;
+	}
+
+	#BUTTON777 {
+		width: 160px;
+		height: 40px;
+		top: 410.5px;
+		left: 400px;
+	}
+
+	#BUTTON777>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON777>.ladi-button {
+		border-radius: 50px;
+	}
+
+	#BUTTON_TEXT777 {
+		width: 160px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT777>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SECTION780 {
+		height: 60px;
+	}
+
+	#SECTION780>.ladi-section-background {
+		background-color: rgb(199, 111, 22);
+	}
+
+	#SECTION780 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE781 {
+		width: 623px;
+		top: 16px;
+		left: 28px;
+	}
+
+	#HEADLINE781>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#BUTTON782 {
+		width: 286.85px;
+		height: 34px;
+		top: 16px;
+		left: 575.15px;
+	}
+
+	#BUTTON782>.ladi-button>.ladi-button-background {
+		background-color: rgb(0, 140, 149);
+	}
+
+	#BUTTON782>.ladi-button {
+		border-radius: 50px;
+	}
+
+	#BUTTON_TEXT782 {
+		width: 182px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT782>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#BOX784 {
+		width: 960px;
+		height: 136px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BOX784>.ladi-box {
+		background-color: rgb(16, 124, 145);
+	}
+
+	#SECTION803 {
+		height: 188.269px;
+	}
+
+	#SECTION803>.ladi-overlay {
+		background: #00aba9;
+		background: -webkit-linear-gradient(180deg, #00aba9, rgba(8, 69, 69, 1));
+		background: linear-gradient(180deg, #00aba9, rgba(8, 69, 69, 1));
+	}
+
+	#SECTION803>.ladi-section-background {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s1440x188/5c7362c6c417ab07e5196b05/6yn9ilez20200313033505.jpg");
+		background-position: left top;
+		background-repeat: no-repeat;
+	}
+
+	#SECTION803 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#LINE804 {
+		width: 960px;
+		top: 130.269px;
+		left: 9.425px;
+	}
+
+	#LINE804>.ladi-line>.ladi-line-container {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		border-left: 0px !important;
+	}
+
+	#LINE804>.ladi-line {
+		width: 100%;
+		padding: 8px 0px;
+	}
+
+	#GROUP805 {
+		width: 258.354px;
+		height: 106.881px;
+		top: 23.3879px;
+		left: 628px;
+	}
+
+	#HEADLINE806 {
+		width: 176px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#HEADLINE806>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#GROUP807 {
+		width: 258.354px;
+		height: 24px;
+		top: 25px;
+		left: 0px;
+	}
+
+	#SHAPE808 {
+		width: 20.6935px;
+		height: 22.5469px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#SHAPE808 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#HEADLINE809 {
+		width: 239px;
+		top: 1px;
+		left: 19.5856px;
+	}
+
+	#HEADLINE809>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	#GROUP810 {
+		width: 231.908px;
+		height: 32.8809px;
+		top: 74px;
+		left: 0px;
+	}
+
+	#SHAPE811 {
+		width: 26.9081px;
+		height: 32.8809px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#SHAPE811 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#HEADLINE812 {
+		width: 206px;
+		top: 6.94045px;
+		left: 26.9081px;
+	}
+
+	#HEADLINE812>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#GROUP816 {
+		width: 450.25px;
+		height: 116px;
+		top: 14.498px;
+		left: 135.25px;
+	}
+
+	#PARAGRAPH817 {
+		width: 450px;
+		top: 49px;
+		left: 0px;
+	}
+
+	#PARAGRAPH817>.ladi-paragraph {
+		font-family: "Montserrat", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		text-align: justify;
+		line-height: 1.6;
+	}
+
+	#PARAGRAPH817.ladi-animation>.ladi-paragraph {
+		animation-name: bounceInDown;
+		-webkit-animation-name: bounceInDown;
+		animation-delay: 0s;
+		-webkit-animation-delay: 0s;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	#HEADLINE819 {
+		width: 445px;
+		top: 0px;
+		left: 5.25px;
+	}
+
+	#HEADLINE819>.ladi-headline {
+		font-family: "Oswald", sans-serif;
+		background: rgba(255, 162, 74, 1.0);
+		background: -webkit-linear-gradient(152deg, rgba(255, 162, 74, 1.0), #e46511);
+		background: linear-gradient(152deg, rgba(255, 162, 74, 1.0), #e46511);
+		color: rgb(255, 255, 255);
+		font-size: 24px;
+		font-weight: bold;
+		font-style: italic;
+		text-align: left;
+		line-height: 1.6;
+		filter: drop-shadow(rgb(231, 119, 27) 6px 6px 6px);
+		-webkit-text-stroke: 1px rgb(255, 255, 255);
+	}
+
+	#HEADLINE819 .ladi-headline {
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	#IMAGE820 {
+		width: 124.373px;
+		height: 46.3436px;
+		top: 14.498px;
+		left: 0px;
+	}
+
+	#IMAGE820>.ladi-image>.ladi-image-background {
+		width: 124.373px;
+		height: 46.3436px;
+		top: 0px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s450x350/5e4cf269a9c6692c79a6477c/logo-20220520074432.png");
+	}
+
+	#FORM_ITEM821 {
+		width: 424.599px;
+		height: 35px;
+		top: 91.5185px;
+		left: 0.943678px;
+	}
+}
+
+@media (max-width: 767px) {
+	#SECTION_POPUP {
+		height: 0px;
+	}
+
+	#SECTION_POPUP .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#SECTION14 {
+		height: 399px;
+	}
+
+	#SECTION14>.ladi-overlay {
+		background-color: rgb(16, 124, 145);
+		opacity: 0.85;
+	}
+
+	#SECTION14>.ladi-section-background {
+		background-size: cover;
+		background-attachment: fixed;
+		background-image: url("https://w.ladicdn.com/s768x399/57b167c9ca57d39c18a1c57c/slider1-687701.jpg");
+		background-position: left top;
+		background-repeat: no-repeat;
+	}
+
+	#SECTION14 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE16 {
+		width: 400px;
+		top: 27px;
+		left: 10px;
+	}
+
+	#HEADLINE16>.ladi-headline {
+		font-family: "Roboto", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 23px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#HEADLINE25 {
+		width: 400px;
+		top: 43px;
+		left: 8.25px;
+	}
+
+	#HEADLINE25>.ladi-headline {
+		color: rgb(232, 140, 48);
+		font-size: 22px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#HEADLINE342 {
+		width: 340px;
+		top: 100px;
+		left: 33.5px;
+	}
+
+	#HEADLINE342>.ladi-headline {
+		font-family: "Roboto", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 34px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#IMAGE345 {
+		width: 400px;
+		height: 374.563px;
+		top: 546px;
+		left: 13px;
+	}
+
+	#IMAGE345>.ladi-image>.ladi-image-background {
+		width: 695.689px;
+		height: 464.024px;
+		top: -12.461px;
+		left: -295.689px;
+		background-image: url("https://w.ladicdn.com/s1000x800/5c7362c6c417ab07e5196b05/brooke-cagle-g1kr4ozfoac-unsplash-20200117035203.jpg");
+	}
+
+	#IMAGE345>.ladi-image {
+		border-style: solid;
+		border-color: rgb(250, 250, 250);
+		border-width: 2px;
+	}
+
+	#SECTION356 {
+		height: 946.064px;
+	}
+
+	#SECTION356 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#GROUP361 {
+		width: 342px;
+		height: 97.5005px;
+		top: 26.5635px;
+		left: 17px;
+	}
+
+	#HEADLINE362 {
+		width: 312px;
+		top: 25.5005px;
+		left: 30px;
+	}
+
+	#HEADLINE362>.ladi-headline {
+		color: rgb(5, 31, 77);
+		font-size: 30px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#SHAPE363 {
+		width: 33px;
+		height: 45.7507px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#SHAPE363 svg:last-child {
+		fill: rgba(16, 124, 145, 1);
+	}
+
+	#LIST_PARAGRAPH372 {
+		width: 378px;
+		top: 138.064px;
+		left: 20px;
+	}
+
+	#LIST_PARAGRAPH372>.ladi-list-paragraph {
+		font-size: 16px;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#LIST_PARAGRAPH372 ul li {
+		padding-bottom: 7px;
+		padding-left: 33px;
+	}
+
+	#LIST_PARAGRAPH372 ul li:before {
+		content: "";
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20version%3D%221.0%22%20fit%3D%22%22%20height%3D%22100%25%22%20width%3D%22100%25%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20style%3D%22pointer-events%3A%20none%3B%20display%3A%20inline-block%3B%22%20fill%3D%22rgba(254%2C73%2C24%2C1)%22%3E%3Cpath%20d%3D%22M16%202.672C8.64%202.672%202.672%208.64%202.672%2016S8.64%2029.328%2016%2029.328c7.36%200%2013.328-5.967%2013.328-13.328S23.36%202.672%2016%202.672zm0%2025.59c-6.76%200-12.262-5.5-12.262-12.262S9.238%203.738%2016%203.738c6.76%200%2012.262%205.5%2012.262%2012.262S22.762%2028.262%2016%2028.262z%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M22.667%2011.24l-8.56%208.3-2.997-2.998c-.312-.312-.818-.312-1.13%200s-.313.818%200%201.13l3.554%203.556c.156.156.36.234.565.234.2%200%20.4-.075.555-.225l9.124-8.848c.316-.31.324-.815.017-1.132-.31-.318-.814-.325-1.13-.018z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+		width: 24px;
+		height: 24px;
+		top: 0px;
+	}
+
+	#PARAGRAPH373 {
+		width: 323px;
+		top: 342.064px;
+		left: 51.5px;
+	}
+
+	#PARAGRAPH373>.ladi-paragraph {
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#PARAGRAPH374 {
+		width: 304px;
+		top: 404.064px;
+		left: 51.5px;
+	}
+
+	#PARAGRAPH374>.ladi-paragraph {
+		color: rgb(232, 140, 48);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#PARAGRAPH375 {
+		width: 323px;
+		top: 470.064px;
+		left: 51.5px;
+	}
+
+	#PARAGRAPH375>.ladi-paragraph {
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#LINE360 {
+		height: 227px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#LINE360>.ladi-line>.ladi-line-container {
+		border-top: 0px !important;
+		border-right: 5px solid rgb(16, 124, 145);
+		border-bottom: 5px solid rgb(16, 124, 145);
+		border-left: 5px solid rgb(16, 124, 145);
+	}
+
+	#LINE360>.ladi-line {
+		height: 100%;
+		padding: 0px 8px;
+	}
+
+	#PARAGRAPH359 {
+		width: 325px;
+		top: 9.235px;
+		left: 32.082px;
+	}
+
+	#PARAGRAPH359>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+	}
+
+	#GROUP357 {
+		width: 357.082px;
+		height: 227px;
+		top: 299.064px;
+		left: 17px;
+	}
+
+	#SECTION377 {
+		height: 218.738px;
+	}
+
+	#SECTION377>.ladi-section-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#SECTION377 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#BUTTON378 {
+		width: 180.129px;
+		height: 33px;
+		top: 143.667px;
+		left: 52px;
+	}
+
+	#BUTTON378>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON378>.ladi-button {
+		border-radius: 50px;
+	}
+
+	#BUTTON_TEXT378 {
+		width: 226px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT378>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE381 {
+		width: 357px;
+		top: 10.6801px;
+		left: 51.2787px;
+	}
+
+	#HEADLINE381>.ladi-headline {
+		color: rgb(244, 220, 156);
+		font-size: 21px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH382 {
+		width: 699px;
+		top: 66.5124px;
+		left: 51.2787px;
+	}
+
+	#PARAGRAPH382>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	#BOX383 {
+		width: 30.0984px;
+		height: 224.476px;
+		top: -5.7377px;
+		left: 0px;
+	}
+
+	#BOX383>.ladi-box {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#PARAGRAPH384 {
+		width: 400px;
+		top: 95.667px;
+		left: 52px;
+	}
+
+	#PARAGRAPH384>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	#SECTION387 {
+		height: 579.202px;
+	}
+
+	#SECTION387>.ladi-overlay {
+		background: rgba(10, 78, 92, 1);
+		background: -webkit-linear-gradient(180deg, rgba(10, 78, 92, 1), rgba(22, 169, 199, 1));
+		background: linear-gradient(180deg, rgba(10, 78, 92, 1), rgba(22, 169, 199, 1));
+		opacity: 0.6;
+	}
+
+	#SECTION387>.ladi-section-background {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s768x579/57b167c9ca57d39c18a1c57c/ionsgaqj20200505063315.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+	}
+
+	#SECTION387 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE388 {
+		width: 401px;
+		top: 108px;
+		left: 7.25px;
+	}
+
+	#HEADLINE388>.ladi-headline {
+		font-family: "Open Sans", sans-serif;
+		color: rgb(234, 242, 254);
+		font-size: 27px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0px;
+		line-height: 1.2;
+	}
+
+	#HEADLINE390 {
+		width: 480px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#HEADLINE390>.ladi-headline {
+		color: rgb(232, 140, 48);
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE395 {
+		width: 309px;
+		top: 63px;
+		left: 50.2787px;
+	}
+
+	#HEADLINE395>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SHAPE396 {
+		width: 57.3658px;
+		height: 27.8793px;
+		top: 18.062px;
+		left: 67.167px;
+	}
+
+	#SHAPE396 svg:last-child {
+		fill: rgba(244, 200, 156, 1);
+	}
+
+	#SHAPE397 {
+		width: 57.3659px;
+		height: 27.8793px;
+		top: 18.062px;
+		left: 351.984px;
+	}
+
+	#SHAPE397>.ladi-shape {
+		transform: rotate(179deg);
+		-webkit-transform: rotate(179deg);
+	}
+
+	#SHAPE397 svg:last-child {
+		fill: rgba(244, 200, 156, 1);
+	}
+
+	#BOX398 {
+		width: 353.15px;
+		height: 48px;
+		top: 43px;
+		left: 508.425px;
+	}
+
+	#BOX398>.ladi-box {
+		background-color: rgb(232, 140, 48);
+		border-radius: 50px;
+	}
+
+	#HEADLINE400 {
+		width: 128px;
+		top: 76.008px;
+		left: 64.35px;
+	}
+
+	#HEADLINE400>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		text-align: right;
+		line-height: 1.6;
+	}
+
+	#HEADLINE401 {
+		width: 128px;
+		top: 96.008px;
+		left: 64.35px;
+	}
+
+	#HEADLINE401>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 30px;
+		font-weight: bold;
+		text-align: right;
+		line-height: 1.6;
+	}
+
+	#LINE402 {
+		height: 61px;
+		top: 80.008px;
+		left: 209.35px;
+	}
+
+	#LINE402>.ladi-line>.ladi-line-container {
+		border-top: 0px !important;
+		border-right: 4px solid rgb(255, 255, 255);
+		border-bottom: 4px solid rgb(255, 255, 255);
+		border-left: 4px solid rgb(255, 255, 255);
+	}
+
+	#LINE402>.ladi-line {
+		height: 100%;
+		padding: 0px 8px;
+	}
+
+	#HEADLINE403 {
+		width: 128px;
+		top: 76.008px;
+		left: 245.35px;
+	}
+
+	#HEADLINE403>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	#HEADLINE404 {
+		width: 161px;
+		top: 97.008px;
+		left: 245.35px;
+	}
+
+	#HEADLINE404>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 29px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	#BUTTON406 {
+		width: 403.5px;
+		height: 79px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BUTTON406>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON406>.ladi-button {
+		border-radius: 10px;
+	}
+
+	#BUTTON406.ladi-animation>.ladi-button {
+		animation-name: bounce;
+		-webkit-animation-name: bounce;
+		animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	#BUTTON_TEXT406 {
+		width: 731px;
+		top: 8.17241px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT406>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#COUNTDOWN407 {
+		width: 320px;
+		height: 57px;
+		top: 5.463px;
+		left: 0px;
+	}
+
+	#COUNTDOWN407>.ladi-countdown {
+		color: rgb(0, 0, 0);
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#COUNTDOWN407>.ladi-countdown>.ladi-element {
+		width: calc((100% - 10px * 3) / 4);
+		margin-right: 10px;
+		height: 100%;
+	}
+
+	#BOX412 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 5.15px;
+	}
+
+	#BOX412>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#BOX413 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 88.687px;
+	}
+
+	#BOX413>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#BOX414 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0.731px;
+		left: 169.15px;
+	}
+
+	#BOX414>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#BOX415 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 1.731px;
+		left: 252.15px;
+	}
+
+	#BOX415>.ladi-box {
+		background: #fdfbfb;
+		background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+		background: linear-gradient(180deg, #fdfbfb, #eaedee);
+	}
+
+	#GROUP416 {
+		width: 320px;
+		height: 64.194px;
+		top: 355.008px;
+		left: 51px;
+	}
+
+	#HEADLINE417 {
+		width: 316px;
+		top: 39.046px;
+		left: 43.9332px;
+	}
+
+	#HEADLINE417>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 15px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SHAPE418 {
+		width: 20.0122px;
+		height: 26.1102px;
+		top: 17.4763px;
+		left: 9.6067px;
+	}
+
+	#SHAPE418 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#SECTION562 {
+		height: 1025.67px;
+	}
+
+	#SECTION562>.ladi-section-background {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#SECTION562 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#BUTTON563 {
+		width: 394.38px;
+		height: 50px;
+		top: 915px;
+		left: 15.62px;
+	}
+
+	#BUTTON563>.ladi-button>.ladi-button-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#BUTTON563>.ladi-button {
+		border-style: solid;
+		border-color: rgb(16, 124, 145);
+		border-width: 1px;
+		border-radius: 100px;
+	}
+
+	#BUTTON_TEXT563 {
+		width: 331px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT563>.ladi-headline {
+		color: rgb(16, 124, 145);
+		font-size: 17px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE568 {
+		width: 400px;
+		top: 10px;
+		left: 10px;
+	}
+
+	#HEADLINE568>.ladi-headline {
+		color: rgb(16, 124, 145);
+		font-size: 22px;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#GROUP570 {
+		width: 410.495px;
+		height: 763.915px;
+		top: 130.755px;
+		left: 5.0024px;
+	}
+
+	#GROUP571 {
+		width: 407.5px;
+		height: 174px;
+		top: 0px;
+		left: 0.99765px;
+	}
+
+	#FRAME572 {
+		width: 365px;
+		height: 174px;
+		top: 0px;
+		left: 42.5px;
+	}
+
+	#FRAME572>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#FRAME572>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE573 {
+		width: 196.855px;
+		height: 235.996px;
+		top: 71.3304px;
+		left: 251.5px;
+	}
+
+	#SHAPE573 svg:last-child {
+		fill: rgba(217, 235, 255, 0.3);
+	}
+
+	#PARAGRAPH574 {
+		width: 273px;
+		top: 65.7632px;
+		left: 81.5px;
+	}
+
+	#PARAGRAPH574>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH575 {
+		width: 243px;
+		top: 37.7632px;
+		left: 81.5px;
+	}
+
+	#PARAGRAPH575>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX576 {
+		width: 110.506px;
+		height: 110.506px;
+		top: 24.162px;
+		left: 0px;
+	}
+
+	#BOX576>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/drgdrt-20200201062510.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#GROUP577 {
+		width: 406.5px;
+		height: 171px;
+		top: 201.915px;
+		left: 1.99765px;
+	}
+
+	#FRAME578 {
+		width: 365px;
+		height: 174px;
+		top: 0px;
+		left: 41.5px;
+	}
+
+	#FRAME578>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#FRAME578>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE579 {
+		width: 196.855px;
+		height: 235.996px;
+		top: 71.3304px;
+		left: 251.5px;
+	}
+
+	#SHAPE579 svg:last-child {
+		fill: rgba(217, 235, 255, 0.3);
+	}
+
+	#PARAGRAPH580 {
+		width: 273px;
+		top: 65.7632px;
+		left: 81.5px;
+	}
+
+	#PARAGRAPH580>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH581 {
+		width: 243px;
+		top: 37.7632px;
+		left: 81.5px;
+	}
+
+	#PARAGRAPH581>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX582 {
+		width: 112.506px;
+		height: 112.506px;
+		top: 25.247px;
+		left: 0px;
+	}
+
+	#BOX582>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/dtydt6un6tu6-20200201062607.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#GROUP583 {
+		width: 410.495px;
+		height: 165px;
+		top: 401.33px;
+		left: 0px;
+	}
+
+	#FRAME584 {
+		width: 370.586px;
+		height: 165px;
+		top: 0px;
+		left: 39.9093px;
+	}
+
+	#FRAME584>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#FRAME584>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE585 {
+		width: 187.056px;
+		height: 196.855px;
+		top: 59.5px;
+		left: 238.98px;
+	}
+
+	#SHAPE585 svg:last-child {
+		fill: rgba(217, 235, 255, 0.1);
+	}
+
+	#PARAGRAPH586 {
+		width: 263px;
+		top: 59.5px;
+		left: 87.8954px;
+	}
+
+	#PARAGRAPH586>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH587 {
+		width: 245px;
+		top: 27.5px;
+		left: 87.8954px;
+	}
+
+	#PARAGRAPH587>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX588 {
+		width: 102.155px;
+		height: 107.506px;
+		top: 28.747px;
+		left: 0px;
+	}
+
+	#BOX588>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/drtserytbsery-20200201062647.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#GROUP589 {
+		width: 403.879px;
+		height: 174px;
+		top: 589.915px;
+		left: 1.1187px;
+	}
+
+	#FRAME590 {
+		width: 365px;
+		height: 174px;
+		top: 0px;
+		left: 38.879px;
+	}
+
+	#FRAME590>.ladi-frame>.ladi-frame-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#FRAME590>.ladi-frame {
+		box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.2);
+	}
+
+	#SHAPE591 {
+		width: 196.855px;
+		height: 235.996px;
+		top: 71.3304px;
+		left: 251.5px;
+	}
+
+	#SHAPE591 svg:last-child {
+		fill: rgba(217, 235, 255, 0.3);
+	}
+
+	#PARAGRAPH592 {
+		width: 273px;
+		top: 65.7632px;
+		left: 81.5px;
+	}
+
+	#PARAGRAPH592>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#PARAGRAPH593 {
+		width: 243px;
+		top: 37.7632px;
+		left: 81.5px;
+	}
+
+	#PARAGRAPH593>.ladi-paragraph {
+		color: rgb(5, 31, 77);
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#BOX594 {
+		width: 104.429px;
+		height: 103.858px;
+		top: 38.4599px;
+		left: 0px;
+	}
+
+	#BOX594>.ladi-box {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/dgry5ryg54y-20200201062721.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+		border-radius: 1000px;
+	}
+
+	#SECTION595 {
+		height: 490.167px;
+	}
+
+	#SECTION595>.ladi-overlay {
+		background-color: rgb(16, 124, 145);
+		opacity: 0.88;
+	}
+
+	#SECTION595>.ladi-section-background {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s768x490/57b167c9ca57d39c18a1c57c/bsumsztd20200511065423.jpg");
+		background-position: center top;
+		background-repeat: repeat;
+	}
+
+	#SECTION595 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE596 {
+		width: 400px;
+		top: 87px;
+		left: 479px;
+	}
+
+	#HEADLINE596>.ladi-headline {
+		font-family: "Open Sans", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 21px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0px;
+		line-height: 1.2;
+	}
+
+	#SHAPE659 {
+		width: 26.5341px;
+		height: 32.7545px;
+		top: 923.623px;
+		left: 68.733px;
+	}
+
+	#SHAPE659 svg:last-child {
+		fill: rgba(16, 124, 145, 1);
+	}
+
+	#PARAGRAPH661 {
+		width: 400px;
+		top: 31px;
+		left: 15.6201px;
+	}
+
+	#PARAGRAPH661>.ladi-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#GROUP662 {
+		width: 403.5px;
+		height: 79px;
+		top: 437.202px;
+		left: 7.25px;
+	}
+
+	#BUTTON_TEXT664 {
+		width: 731px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT664>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 17px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	#BUTTON664 {
+		width: 404px;
+		height: 73px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BUTTON664>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON664>.ladi-button {
+		border-radius: 10px;
+	}
+
+	#BUTTON664.ladi-animation>.ladi-button {
+		animation-name: bounce;
+		-webkit-animation-name: bounce;
+		animation-delay: 1s;
+		-webkit-animation-delay: 1s;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	#HEADLINE666 {
+		width: 299px;
+		top: 35.0003px;
+		left: 54.5px;
+	}
+
+	#HEADLINE666>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SHAPE667 {
+		width: 20.037px;
+		height: 26.7543px;
+		top: 12.246px;
+		left: 6.07934px;
+	}
+
+	#SHAPE667 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#GROUP663 {
+		width: 404px;
+		height: 73px;
+		top: 350px;
+		left: 8.25015px;
+	}
+
+	#IMAGE678 {
+		width: 415.262px;
+		height: 221.3px;
+		top: 117.867px;
+		left: 2.61915px;
+		filter: drop-shadow(rgb(209, 243, 250) 0px 15px 20px);
+	}
+
+	#IMAGE678>.ladi-image>.ladi-image-background {
+		width: 415.262px;
+		height: 311.446px;
+		top: -90.146px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s750x650/5e4cf269a9c6692c79a6477c/workshop-bi-quyet-xay-dung-thu-nhap-thu-dong-2-20220519090437.png");
+	}
+
+	#SECTION679 {
+		height: 880.786px;
+	}
+
+	#SECTION679>.ladi-section-background {
+		background-color: rgb(233, 251, 255);
+	}
+
+	#SECTION679 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE680 {
+		width: 400px;
+		top: 10px;
+		left: 10px;
+	}
+
+	#HEADLINE680>.ladi-headline {
+		color: rgb(13, 98, 242);
+		font-size: 23px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 0px;
+		line-height: 1.4;
+	}
+
+	#GROUP684 {
+		width: 403.738px;
+		height: 339.929px;
+		top: 366.5px;
+		left: 6.262px;
+	}
+
+	#BOX685 {
+		width: 403.738px;
+		height: 339.929px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#BOX685>.ladi-box {
+		box-shadow: 2px 7px 15px 0px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 2px 7px 15px 0px rgba(0, 0, 0, 0.2);
+		background-color: rgb(16, 124, 145);
+		border-radius: 10px;
+	}
+
+	#FORM686 {
+		width: 359.999px;
+		height: 188.426px;
+		top: 92.4042px;
+		left: 21.9455px;
+	}
+
+	#FORM686>.ladi-form {
+		color: rgb(132, 132, 132);
+		font-size: 14px;
+		letter-spacing: 0px;
+		line-height: 1.6;
+	}
+
+	#FORM686 .ladi-form-item .ladi-form-control::placeholder,
+	#FORM686 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+		color: rgba(132, 132, 132, 1.0);
+	}
+
+	#FORM686 .ladi-form-item {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	#FORM686 .ladi-form-item.ladi-form-checkbox {
+		padding-left: 13px;
+		padding-right: 13px;
+	}
+
+	#FORM686 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(132%2C%20132%2C%20132%2C%201.0)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+	}
+
+	#FORM686 .ladi-form-item-container,
+	#FORM686 .ladi-form-label-container .ladi-form-label-item {
+		border-style: solid;
+		border-color: rgb(180, 180, 180);
+		border-width: 1px;
+		border-radius: 0px;
+	}
+
+	#FORM686 .ladi-form-item-container .ladi-form-quantity button {
+		background-color: rgb(180, 180, 180);
+	}
+
+	#FORM686 .ladi-form-item-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#BUTTON687 {
+		width: 359.847px;
+		height: 41.3429px;
+		top: 147.083px;
+		left: 0px;
+	}
+
+	#BUTTON687>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON687>.ladi-button {
+		border-radius: 0px;
+	}
+
+	#BUTTON_TEXT687 {
+		width: 360px;
+		top: 9.57206px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT687>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 21px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#FORM_ITEM689 {
+		width: 358.807px;
+		height: 41.3429px;
+		top: 0px;
+		left: 0.799765px;
+	}
+
+	#FORM_ITEM690 {
+		width: 176.008px;
+		height: 41.3429px;
+		top: 49.6115px;
+		left: 183.839px;
+	}
+
+	#FORM_ITEM691 {
+		width: 176.494px;
+		height: 41.3429px;
+		top: 49.6115px;
+		left: 0px;
+	}
+
+	#HEADLINE692 {
+		width: 360px;
+		top: 295.929px;
+		left: 21.9455px;
+	}
+
+	#HEADLINE692>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#HEADLINE693 {
+		width: 379px;
+		top: 9.28126px;
+		left: 12.369px;
+	}
+
+	#HEADLINE693>.ladi-headline {
+		color: rgb(244, 200, 156);
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#GROUP707 {
+		width: 480px;
+		height: 144.008px;
+		top: 194px;
+		left: -29px;
+	}
+
+	#HEADLINE718 {
+		width: 352px;
+		top: 403.592px;
+		left: 34px;
+	}
+
+	#HEADLINE718>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 23px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#IMAGE719 {
+		width: 392.119px;
+		height: 261.663px;
+		top: 89.929px;
+		left: 14.1906px;
+	}
+
+	#IMAGE719>.ladi-image>.ladi-image-background {
+		width: 530.64px;
+		height: 341.732px;
+		top: -31.2491px;
+		left: -74.3512px;
+		background-image: url("https://w.ladicdn.com/s850x650/5c11184bf5d1592491ee49e5/xem-nhieu-nguoi-tren-zoom-20220518055850.jpeg");
+	}
+
+	#BOX721 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 1.731px;
+		left: 252.15px;
+	}
+
+	#BOX721>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#BOX722 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0.731px;
+		left: 169.15px;
+	}
+
+	#BOX722>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#BOX723 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 88.687px;
+	}
+
+	#BOX723>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#BOX724 {
+		width: 62.463px;
+		height: 62.463px;
+		top: 0px;
+		left: 5.15px;
+	}
+
+	#BOX724>.ladi-box {
+		background-color: rgb(209, 243, 250);
+	}
+
+	#COUNTDOWN725 {
+		width: 320px;
+		height: 57px;
+		top: 5.463px;
+		left: 0px;
+	}
+
+	#COUNTDOWN725>.ladi-countdown {
+		color: rgb(0, 0, 0);
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#COUNTDOWN725>.ladi-countdown>.ladi-element {
+		width: calc((100% - 10px * 3) / 4);
+		margin-right: 10px;
+		height: 100%;
+	}
+
+	#GROUP720 {
+		width: 320px;
+		height: 64.194px;
+		top: 740.592px;
+		left: 50.869px;
+	}
+
+	#HEADLINE730 {
+		width: 58px;
+		top: 804.786px;
+		left: 56px;
+	}
+
+	#HEADLINE730>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE731 {
+		width: 58px;
+		top: 804.786px;
+		left: 141px;
+	}
+
+	#HEADLINE731>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE732 {
+		width: 58px;
+		top: 804.786px;
+		left: 221px;
+	}
+
+	#HEADLINE732>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE733 {
+		width: 58px;
+		top: 804.786px;
+		left: 305px;
+	}
+
+	#HEADLINE733>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#HEADLINE734 {
+		width: 212px;
+		top: 703.592px;
+		left: 104.869px;
+	}
+
+	#HEADLINE734>.ladi-headline {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SECTION735 {
+		height: 1072.27px;
+	}
+
+	#SECTION735>.ladi-section-background {
+		background-color: rgb(255, 255, 255);
+	}
+
+	#SECTION735 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE737 {
+		width: 400px;
+		top: 10px;
+		left: 10px;
+	}
+
+	#HEADLINE737>.ladi-headline {
+		font-family: "Montserrat", sans-serif;
+		background: rgba(0, 171, 169, 1.0);
+		background: -webkit-linear-gradient(180deg, rgba(0, 171, 169, 1.0), rgba(8, 69, 69, 1.0));
+		background: linear-gradient(180deg, rgba(0, 171, 169, 1.0), rgba(8, 69, 69, 1.0));
+		color: rgb(0, 0, 0);
+		font-size: 23px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	#HEADLINE737 .ladi-headline {
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	#IMAGE739 {
+		width: 40.6207px;
+		height: 31px;
+		top: 595.689px;
+		left: 29.6897px;
+	}
+
+	#IMAGE739>.ladi-image>.ladi-image-background {
+		width: 40.6207px;
+		height: 31px;
+		top: 0px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s350x350/5e4cf269a9c6692c79a6477c/quotes-1-20211013073612.png");
+	}
+
+	#IMAGE740 {
+		width: 40.6207px;
+		height: 31px;
+		top: 655.689px;
+		left: 517.69px;
+	}
+
+	#IMAGE740>.ladi-image>.ladi-image-background {
+		width: 40.6207px;
+		height: 31px;
+		top: 0px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s350x350/5e4cf269a9c6692c79a6477c/quotes-1-20211013073612.png");
+	}
+
+	#IMAGE740>.ladi-image {
+		transform: rotate(-179deg);
+		-webkit-transform: rotate(-179deg);
+	}
+
+	#IMAGE741 {
+		width: 327.372px;
+		height: 512.689px;
+		top: 59px;
+		left: 43.497px;
+		filter: drop-shadow(rgb(0, 140, 149) 0px 15px 20px);
+	}
+
+	#IMAGE741>.ladi-image>.ladi-image-background {
+		width: 440.372px;
+		height: 660.558px;
+		top: -74.779px;
+		left: -76.0003px;
+		background-image: url("https://w.ladicdn.com/s750x1000/5e4cf269a9c6692c79a6477c/21cd6f52e465173b4e74-20210302035227.jpg");
+	}
+
+	#HEADLINE743 {
+		width: 400px;
+		top: 601.689px;
+		left: 80px;
+	}
+
+	#HEADLINE743>.ladi-headline {
+		color: rgb(0, 140, 149);
+		font-size: 21px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.2;
+	}
+
+	#LIST_PARAGRAPH762 {
+		width: 375px;
+		top: 637.635px;
+		left: 37.5px;
+	}
+
+	#LIST_PARAGRAPH762>.ladi-list-paragraph {
+		color: rgb(0, 0, 0);
+		font-size: 17px;
+		line-height: 1.6;
+	}
+
+	#LIST_PARAGRAPH762 ul li {
+		padding-left: 28px;
+	}
+
+	#LIST_PARAGRAPH762 ul li:before {
+		content: "";
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20%20viewBox%3D%220%200%20758.1503%201896.0833%22%20class%3D%22%22%20fill%3D%22rgba(0%2C%20140%2C%20149%2C%201)%22%3E%20%3Cpath%20d%3D%22M595%20960q0%2013-10%2023l-466%20466q-10%2010-23%2010t-23-10l-50-50q-10-10-10-23t10-23l393-393L23%20567q-10-10-10-23t10-23l50-50q10-10%2023-10t23%2010l466%20466q10%2010%2010%2023z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
+		width: 29px;
+		height: 29px;
+		top: -3px;
+	}
+
+	#BOX766 {
+		width: 400px;
+		height: 233.826px;
+		top: 734.689px;
+		left: 10px;
+	}
+
+	#BOX766>.ladi-box {
+		background: rgba(16, 124, 145, 1);
+		background: -webkit-linear-gradient(18020deg, rgba(16, 124, 145, 1), rgba(109, 190, 209, 1.0));
+		background: linear-gradient(18020deg, rgba(16, 124, 145, 1), rgba(109, 190, 209, 1.0));
+	}
+
+	#BUTTON769 {
+		width: 399px;
+		height: 52px;
+		top: 1000.52px;
+		left: 10.5px;
+	}
+
+	#BUTTON769>.ladi-button {
+		border-style: solid;
+		border-color: rgb(16, 124, 145);
+		border-width: 1px;
+		border-radius: 100px;
+	}
+
+	#BUTTON_TEXT769 {
+		width: 397px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT769>.ladi-headline {
+		color: rgb(0, 140, 149);
+		font-size: 17px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#LIST_PARAGRAPH773 {
+		width: 383px;
+		top: 753.515px;
+		left: 18.5px;
+	}
+
+	#LIST_PARAGRAPH773>.ladi-list-paragraph {
+		color: rgb(255, 255, 255);
+		font-size: 17px;
+		line-height: 1.6;
+	}
+
+	#LIST_PARAGRAPH773 ul li {
+		padding-left: 20px;
+	}
+
+	#LIST_PARAGRAPH773 ul li:before {
+		content: counter(linum, disc);
+		color: rgba(209, 243, 250, 1);
+		font-size: 40px;
+		top: -20px;
+	}
+
+	#SHAPE774 {
+		width: 22.4835px;
+		height: 27.7543px;
+		top: 1012.64px;
+		left: 37.5px;
+	}
+
+	#SHAPE774 svg:last-child {
+		fill: rgba(0, 140, 149, 1);
+	}
+
+	#HEADLINE775 {
+		width: 358px;
+		top: 264px;
+		left: 31px;
+	}
+
+	#HEADLINE775>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#LINE776 {
+		width: 217px;
+		top: 236px;
+		left: 100px;
+	}
+
+	#LINE776>.ladi-line>.ladi-line-container {
+		border-top: 1px solid rgb(232, 140, 48);
+		border-right: 1px solid rgb(232, 140, 48);
+		border-bottom: 1px solid rgb(232, 140, 48);
+		border-left: 0px !important;
+	}
+
+	#LINE776>.ladi-line {
+		width: 100%;
+		padding: 8px 0px;
+	}
+
+	#BUTTON777 {
+		width: 160px;
+		height: 40px;
+		top: 302px;
+		left: 128.5px;
+	}
+
+	#BUTTON777>.ladi-button>.ladi-button-background {
+		background-color: rgb(232, 140, 48);
+	}
+
+	#BUTTON777>.ladi-button {
+		border-radius: 50px;
+	}
+
+	#BUTTON_TEXT777 {
+		width: 160px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT777>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#SECTION780 {
+		height: 43px;
+	}
+
+	#SECTION780>.ladi-section-background {
+		background-color: rgb(199, 111, 22);
+	}
+
+	#SECTION780 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#HEADLINE781 {
+		width: 194px;
+		top: 6px;
+		left: 10.5px;
+	}
+
+	#HEADLINE781>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		text-align: center;
+		line-height: 1;
+	}
+
+	#BUTTON782 {
+		width: 182.19px;
+		height: 28px;
+		top: 6px;
+		left: 219.31px;
+	}
+
+	#BUTTON782>.ladi-button>.ladi-button-background {
+		background-color: rgb(0, 140, 149);
+	}
+
+	#BUTTON782>.ladi-button {
+		border-radius: 50px;
+	}
+
+	#BUTTON_TEXT782 {
+		width: 287px;
+		top: 9px;
+		left: 0px;
+	}
+
+	#BUTTON_TEXT782>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 13px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.6;
+	}
+
+	#BOX784 {
+		width: 420px;
+		height: 222.191px;
+		top: -4px;
+		left: 0px;
+	}
+
+	#BOX784>.ladi-box {
+		background-color: rgb(16, 124, 145);
+	}
+
+	#SECTION803 {
+		height: 273.162px;
+	}
+
+	#SECTION803>.ladi-overlay {
+		background: #00aba9;
+		background: -webkit-linear-gradient(180deg, #00aba9, rgba(8, 69, 69, 1));
+		background: linear-gradient(180deg, #00aba9, rgba(8, 69, 69, 1));
+	}
+
+	#SECTION803>.ladi-section-background {
+		background-size: cover;
+		background-attachment: scroll;
+		background-origin: content-box;
+		background-image: url("https://w.ladicdn.com/s768x273/5c7362c6c417ab07e5196b05/6yn9ilez20200313033505.jpg");
+		background-position: left top;
+		background-repeat: no-repeat;
+	}
+
+	#SECTION803 .ladi-section-arrow-down {
+		background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20.15px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+	}
+
+	#LINE804 {
+		width: 379px;
+		top: 243.162px;
+		left: 20.5px;
+	}
+
+	#LINE804>.ladi-line>.ladi-line-container {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		border-left: 0px !important;
+	}
+
+	#LINE804>.ladi-line {
+		width: 100%;
+		padding: 8px 0px;
+	}
+
+	#GROUP805 {
+		width: 393.146px;
+		height: 80.8809px;
+		top: 131.713px;
+		left: 10px;
+	}
+
+	#HEADLINE806 {
+		width: 250px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#HEADLINE806>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-weight: bold;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#GROUP807 {
+		width: 391.195px;
+		height: 48px;
+		top: 25px;
+		left: 1.95122px;
+	}
+
+	#SHAPE808 {
+		width: 21.997px;
+		height: 22.5469px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#SHAPE808 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#HEADLINE809 {
+		width: 364px;
+		top: 4px;
+		left: 27.1952px;
+	}
+
+	#HEADLINE809>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 13px;
+		text-align: justify;
+		line-height: 1.6;
+	}
+
+	#GROUP810 {
+		width: 199.293px;
+		height: 32.8809px;
+		top: 48px;
+		left: 1.95122px;
+	}
+
+	#SHAPE811 {
+		width: 21.997px;
+		height: 32.8809px;
+		top: 0px;
+		left: 0px;
+	}
+
+	#SHAPE811 svg:last-child {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	#HEADLINE812 {
+		width: 168px;
+		top: 7.91667px;
+		left: 31.2927px;
+	}
+
+	#HEADLINE812>.ladi-headline {
+		color: rgb(255, 255, 255);
+		font-size: 13px;
+		text-align: left;
+		line-height: 1.4;
+	}
+
+	#GROUP816 {
+		width: 395px;
+		height: 84px;
+		top: 26.335px;
+		left: 10px;
+	}
+
+	#PARAGRAPH817 {
+		width: 395px;
+		top: 42px;
+		left: 0px;
+	}
+
+	#PARAGRAPH817>.ladi-paragraph {
+		font-family: "Montserrat", sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 13px;
+		text-align: justify;
+		line-height: 1.4;
+	}
+
+	#PARAGRAPH817.ladi-animation>.ladi-paragraph {
+		animation-name: bounceInDown;
+		-webkit-animation-name: bounceInDown;
+		animation-delay: 0s;
+		-webkit-animation-delay: 0s;
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	#HEADLINE819 {
+		width: 378px;
+		top: 0px;
+		left: 2.5px;
+	}
+
+	#HEADLINE819>.ladi-headline {
+		font-family: "Oswald", sans-serif;
+		background: rgba(255, 162, 74, 1.0);
+		background: -webkit-linear-gradient(152deg, rgba(255, 162, 74, 1.0), #e46511);
+		background: linear-gradient(152deg, rgba(255, 162, 74, 1.0), #e46511);
+		color: rgb(255, 255, 255);
+		font-size: 21px;
+		font-weight: bold;
+		font-style: italic;
+		line-height: 1.6;
+		filter: drop-shadow(rgb(231, 119, 27) 6px 6px 6px);
+		-webkit-text-stroke: 1px rgb(255, 255, 255);
+	}
+
+	#HEADLINE819 .ladi-headline {
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	#IMAGE820 {
+		width: 68.502px;
+		height: 68.502px;
+		top: -13.167px;
+		left: -190px;
+	}
+
+	#IMAGE820>.ladi-image>.ladi-image-background {
+		width: 68.502px;
+		height: 68.502px;
+		top: 0px;
+		left: 0px;
+		background-image: url("https://w.ladicdn.com/s400x400/5e4cf269a9c6692c79a6477c/logo-20220520074432.png");
+	}
+
+	#FORM_ITEM821 {
+		width: 359.999px;
+		height: 37.2247px;
+		top: 101.59px;
+		left: 0px;
+	}
+}
