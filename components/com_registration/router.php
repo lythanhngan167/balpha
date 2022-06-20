@@ -142,7 +142,7 @@ class RegistrationRouter extends \Joomla\CMS\Component\Router\RouterBase
 		$session->set('landingpage_userid', 0);
 		$session->set('landingpage_pageid', '');
 
-		if($segments[0] == 'cohoikinhdoanh'){
+		if($segments[0] == 'workshop2h'){
 			$session->set('landingpage_pageid', $segments[0]);
 		}else{
 			$session->set('landingpage_pageid', '');

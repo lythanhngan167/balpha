@@ -78,7 +78,7 @@ if($_REQUEST['Itemid'] == FOUNDER_STORY){
 }
 
 if($_REQUEST['Itemid'] == FOUR_ZERO_INSURACNE || $_REQUEST['Itemid'] == AGENT){
-	if($_REQUEST['task'] == 'cohoikinhdoanh'){
+	if($_REQUEST['task'] == 'workshop2h'){
 		$document->addStyleSheet(JURI::base() . '/templates/protostar/css/landingpage_chkd.css');
 		$document->addScript(JURI::base().'templates/protostar/js/ladipage.vi.min.chkd.js?'.$version,'text/javascript', false, false);
 
@@ -1789,8 +1789,34 @@ function changeVideo(vId){
 }
 <?php } ?>
 
-<?php if($_REQUEST['task'] == 'cohoikinhdoanh'): ?>
+<?php if($_REQUEST['task'] == 'workshop2h'): ?>
 .custom.baohiem40{
+	display:none;
+}
+#registration-wrap{
+	display:block;
+}
+.landingpage-intro{
+	display:none;
+}
+.team-member{
+	display:none;
+}
+#GROUP590{
+	display:none;
+}
+#SECTION588{
+	display:none;
+}
+.control-group.registrationform{
+	margin-bottom: 75px;
+}
+.join-us {
+    display: block!important;
+		clear:both;
+}
+<?php else: ?>
+.custom.workshop2h{
 	display:none;
 }
 <?php endif; ?>
@@ -1812,7 +1838,7 @@ function changeVideo(vId){
 
 </style>
 
-<?php if($_REQUEST['task'] == 'cohoikinhdoanh'): ?>
+<?php if($_REQUEST['task'] == 'workshop2h'): ?>
 <script id="script_event_data" type="application/json">
 	{
 		"BUTTON378": {
