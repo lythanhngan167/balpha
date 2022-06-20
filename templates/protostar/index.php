@@ -80,7 +80,8 @@ if($_REQUEST['Itemid'] == FOUNDER_STORY){
 if($_REQUEST['Itemid'] == FOUR_ZERO_INSURACNE || $_REQUEST['Itemid'] == AGENT){
 	if($_REQUEST['task'] == 'workshop2h'){
 		$document->addStyleSheet(JURI::base() . '/templates/protostar/css/landingpage_chkd.css');
-		$document->addScript(JURI::base().'templates/protostar/js/ladipage.vi.min.chkd.js?'.$version,'text/javascript', false, false);
+		$document->addScript(JURI::base().'templates/protostar/js/jquery.magnific-popup.min.js','text/javascript', false, false);
+		//$document->addScript(JURI::base().'templates/protostar/js/ladipage.vi.min.chkd.js?'.$version,'text/javascript', false, false);
 
 	}else{
 		$document->addStyleSheet(JURI::base() . '/templates/protostar/css/registrations_landingpage725.css?'.$version);
@@ -1812,11 +1813,22 @@ function changeVideo(vId){
 	margin-bottom: 75px;
 }
 .join-us {
-    display: block!important;
+    display: none!important;
 		clear:both;
+}
+.container-fluid.main-content{
+	padding-right: 0px;
+  padding-left: 0px;
+}
+.left-main-content #content{
+	padding-left: 0px;
+  padding-right: 0px;
 }
 <?php else: ?>
 .custom.workshop2h{
+	display:none;
+}
+#SECTION803{
 	display:none;
 }
 <?php endif; ?>

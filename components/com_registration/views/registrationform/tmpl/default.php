@@ -511,6 +511,121 @@ if($user->id > 0){
 </div>
 <?php } ?>
 
+<div id="SECTION803" class="ladi-section">
+	<?php if($contact->id > 0 && $_REQUEST['layout'] != 'edit'){
+		if($contact->phone != ''){
+			$c_phone = $contact->phone;
+		}else{
+			$c_phone = $userinfo->username;
+		}
+		if($contact->email != ''){
+			$c_email = $contact->email;
+		}else{
+			$c_email = 'bcavietnam.insurance@gmail.com';
+		}
+		if($contact->address !=''){
+			$c_address = $contact->address;
+		}else{
+			$c_address = '55 Trương Quốc Dung, P.10, Q. Phú Nhuận, TP.HCM';
+		}
+
+	} ?>
+  <div class="ladi-section-background"></div>
+  <div class="ladi-overlay"></div>
+  <div class="ladi-container">
+    <div id="LINE804" class="ladi-element">
+      <div class="ladi-line">
+        <div class="ladi-line-container"></div>
+      </div>
+    </div>
+    <div id="GROUP805" class="ladi-element">
+      <div class="ladi-group">
+        <div id="HEADLINE806" class="ladi-element">
+          <h4 class="ladi-headline">Thông Tin Liên Hệ</h4>
+        </div>
+        <div id="GROUP807" class="ladi-element">
+          <div class="ladi-group">
+            <div id="SHAPE808" class="ladi-element">
+              <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(255,255,255,1)">
+                  <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path>
+                </svg></div>
+            </div>
+            <div id="HEADLINE809" class="ladi-element">
+              <p class="ladi-headline">Địa chỉ: <?php echo $c_address; ?><br></p>
+            </div>
+          </div>
+        </div>
+        <div id="GROUP810" class="ladi-element CGROUP8101">
+          <div class="ladi-group">
+            <div id="SHAPE811" class="ladi-element">
+              <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(255,255,255,1)">
+                  <path
+                    d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z">
+                  </path>
+                </svg></div>
+            </div>
+            <div id="HEADLINE812" class="ladi-element">
+              <p class="ladi-headline">Điện thoại: <a class="hotline" href="tel:<?php echo $contact->phone; ?>"><?php echo $c_phone; ?></a></p>
+            </div>
+          </div>
+        </div>
+
+				<div id="GROUP810" class="ladi-element CGROUP8102">
+          <div class="ladi-group">
+            <div id="SHAPE811" class="ladi-element">
+              <div class="ladi-shape"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 24 24" fill="rgba(255,255,255,1)">
+									<path d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z"></path>
+								</svg></div>
+            </div>
+            <div id="HEADLINE812" class="ladi-element">
+              <p class="ladi-headline">Email: <a href="mailto:<?php echo $contact->email; ?>"><?php echo $c_email; ?></a></p>
+            </div>
+          </div>
+        </div>
+
+				<?php if($contact->id != 9999999999){ ?>
+				<div id="GROUP810" class="ladi-element CGROUP8103">
+					<div class="ladi-group">
+						<div id="SHAPE5992" class="ladi-element">
+							<div class="ladi-shape">
+								<i class="fa fa-globe" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div id="HEADLINE6002" class="ladi-element">
+							<div class="ladi-headline">
+
+									<span>Kết nối qua:</span>
+									<a href="<?php echo $contact->facebookpage; ?>" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+									<a href="<?php echo $contact->youtubepage; ?>" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+									<a href="http://zalo.me/<?php echo $contact->phone; ?>" target="_blank"><i class="fa fa-zalo" aria-hidden="true"><img width="23" src="<?php echo JUri::root() . 'images/zalo.png'; ?>" /></i></a>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+
+      </div>
+    </div>
+    <div id="GROUP816" class="ladi-element">
+      <div class="ladi-group">
+        <div id="PARAGRAPH817" class="ladi-element ladi-animation">
+          <p class="ladi-paragraph">Biznet là tên viết tắt của Business Network. Ý nghĩa của Biznet là kết nối cộng đồng kinh doanh và phát triển hệ sinh thái với chuỗi giá trị bền vững<br></p>
+        </div>
+        <div id="HEADLINE819" class="ladi-element">
+          <h3 class="ladi-headline">WORKSHOP ĐƯỢC TỔ CHỨC BỞI BIZNET</h3>
+        </div>
+      </div>
+    </div>
+    <div id="IMAGE820" class="ladi-element">
+      <div class="ladi-image">
+        <div class="ladi-image-background"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="SECTION588" class="ladi-section">
 	<?php if($contact->id > 0 && $_REQUEST['layout'] != 'edit'){
 		if($contact->phone != ''){
@@ -596,7 +711,7 @@ if($user->id > 0){
 											<span>Kết nối qua:</span>
 											<a href="<?php echo $contact->facebookpage; ?>" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 											<a href="<?php echo $contact->youtubepage; ?>" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-											<a href="http://zalo.me/<?php echo $contact->phone; ?>" target="_blank"><i class="fa fa-zalo" aria-hidden="true"><img width="28" src="<?php echo JUri::root() . 'images/zalo.png'; ?>" /></i></a>
+											<a href="http://zalo.me/<?php echo $contact->phone; ?>" target="_blank"><i class="fa fa-zalo" aria-hidden="true"><img width="23" src="<?php echo JUri::root() . 'images/zalo.png'; ?>" /></i></a>
 
 									</div>
 
@@ -890,6 +1005,70 @@ jQuery('#VIDEO462').on('click', function(ev) {
 	 	ev.preventDefault();
 	}, 500);
 });
+
+jQuery('#BUTTON777').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION356").offset().top
+	}, 1500);
+});
+
+jQuery('#BUTTON378').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION387").offset().top
+	}, 1500);
+});
+
+jQuery('#GROUP662').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION679").offset().top
+	}, 1500);
+});
+
+jQuery('#BUTTON563').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION679").offset().top
+	}, 1500);
+});
+
+jQuery('#GROUP663').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION679").offset().top
+	}, 1500);
+});
+
+jQuery('#IMAGE678').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION679").offset().top
+	}, 1500);
+});
+
+jQuery('#BUTTON769').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION679").offset().top
+	}, 1500);
+});
+
+jQuery('#BUTTON782').click(function() {
+	jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#SECTION679").offset().top
+	}, 1500);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4156,7 +4156,7 @@ body {
 	}
 
 	#SECTION803 {
-		height: 188.269px;
+		height: 230px;
 	}
 
 	#SECTION803>.ladi-overlay {
@@ -4180,7 +4180,7 @@ body {
 
 	#LINE804 {
 		width: 960px;
-		top: 130.269px;
+		top: 195.269px;
 		left: 9.425px;
 	}
 
@@ -4200,12 +4200,12 @@ body {
 		width: 258.354px;
 		height: 106.881px;
 		top: 23.3879px;
-		left: 628px;
+		left: 675px;
 	}
 
 	#HEADLINE806 {
 		width: 176px;
-		top: 0px;
+		top: -6px;
 		left: 0px;
 	}
 
@@ -4236,9 +4236,9 @@ body {
 	}
 
 	#HEADLINE809 {
-		width: 239px;
+		width: 350px;
 		top: 1px;
-		left: 19.5856px;
+		left: 26.5856px;
 	}
 
 	#HEADLINE809>.ladi-headline {
@@ -4251,12 +4251,12 @@ body {
 	#GROUP810 {
 		width: 231.908px;
 		height: 32.8809px;
-		top: 74px;
+		top: 64px;
 		left: 0px;
 	}
 
 	#SHAPE811 {
-		width: 26.9081px;
+		width: 20.9081px;
 		height: 32.8809px;
 		top: 0px;
 		left: 0px;
@@ -4267,8 +4267,8 @@ body {
 	}
 
 	#HEADLINE812 {
-		width: 206px;
-		top: 6.94045px;
+		width: 300px;
+		top: 2.94045px;
 		left: 26.9081px;
 	}
 
@@ -4312,7 +4312,7 @@ body {
 	}
 
 	#HEADLINE819 {
-		width: 445px;
+		width: 550px;
 		top: 0px;
 		left: 5.25px;
 	}
@@ -6428,4 +6428,98 @@ body {
 }
 #GROUP720,#HEADLINE730,#HEADLINE731,#HEADLINE732,#HEADLINE733,#HEADLINE734{
 	display:none;
+}
+.CGROUP8102{
+	top: 93px!important;
+}
+.CGROUP8103{
+	top: 127px!important;
+}
+.CGROUP8103 i{
+	font-size:22px!important;
+
+}
+.CGROUP8103 i.fa-globe{
+	margin-top: 4px!important;
+}
+#HEADLINE6002{
+	padding-left: 27px;
+}
+i.fa-youtube-play {
+    color: red!important;
+    font-size: 28px;
+    padding-right: 5px;
+}
+i.fa-facebook-official {
+    color: #4267B2!important;
+    font-size: 28px;
+    padding-right: 5px;
+}
+.CGROUP8103 i.fa-globe {
+    font-size: 25px;
+    color: #FFF;
+}
+#HEADLINE6002 {
+    color: #FFF;
+}
+#GROUP810 a{
+	text-decoration: none;
+}
+#GROUP810 a:hover{
+	color:rgb(232, 140, 48);
+}
+
+@media (max-width:767px) {
+	#HEADLINE16 h1 span{
+		font-size: 21px;
+	}
+	#HEADLINE342 h1 span{
+		font-size: 31px;
+	}
+	#PARAGRAPH382>.ladi-paragraph{
+		text-align: left;
+	}
+	#PARAGRAPH384>.ladi-paragraph{
+		text-align: left;
+	}
+	#HEADLINE417>.ladi-headline{
+		font-size: 14px;
+	}
+	#PARAGRAPH592>.ladi-paragraph{
+		font-size: 19px;
+	}
+	#PARAGRAPH661>.ladi-paragraph {
+		font-size: 17px;
+	}
+	#HEADLINE666>.ladi-headline{
+		font-size: 13px;
+	}
+	#LIST_PARAGRAPH773>.ladi-list-paragraph {
+    font-size: 16px;
+	}
+	#SECTION803 {
+    top: 26px;
+	}
+	#HEADLINE819>.ladi-headline{
+		font-size: 18px;
+	}
+	#SECTION803 {
+    height: 340.162px;
+	}
+	#HEADLINE812 {
+    width: 100%;
+	}
+	#GROUP810 {
+    top: 57px;
+	}
+	.CGROUP8103 {
+    top: 138px!important;
+	}
+	#GROUP810 {
+    width: 100%;
+	}
+	.join-us {
+    display: none!important;
+	}
+
 }
