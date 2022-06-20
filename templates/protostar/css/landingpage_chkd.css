@@ -4156,7 +4156,7 @@ body {
 	}
 
 	#SECTION803 {
-		height: 230px;
+		height: 246px;
 	}
 
 	#SECTION803>.ladi-overlay {
@@ -6468,6 +6468,9 @@ i.fa-facebook-official {
 #GROUP810 a:hover{
 	color:rgb(232, 140, 48);
 }
+#LINE804{
+	display:none;
+}
 
 @media (max-width:767px) {
 	#HEADLINE16 h1 span{
@@ -6521,5 +6524,9 @@ i.fa-facebook-official {
 	.join-us {
     display: none!important;
 	}
+	#SECTION803 {
+    height: 376.162px;
+	}	
+
 
 }

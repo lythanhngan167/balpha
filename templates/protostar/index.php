@@ -1824,6 +1824,12 @@ function changeVideo(vId){
 	padding-left: 0px;
   padding-right: 0px;
 }
+@media (max-width:767px) {
+	#SECTION780{
+		top: calc(100% - 40px)!important;
+	}
+}
+
 <?php else: ?>
 .custom.workshop2h{
 	display:none;
