@@ -1510,6 +1510,36 @@ function checkSubmitFormNew2(){
 	}
 }
 
+function checkSubmitFormNew3(){
+	var name = jQuery('#form-name3').val();
+	var phone = jQuery('#form-phone3').val();
+	var email = jQuery('#form-email3').val();
+	var year_old = jQuery('#form-year_old3').val();
+	if(name == ''){
+		alert("Vui lòng nhập Họ tên!");
+	}else{
+		if(phone == '' || phone.length != 10){
+			alert("Vui lòng nhập Số điện thoại 10 số!");
+		}else{
+			if(onlyDigits(phone)){
+				if(validateEmail(email)){
+						jQuery('#BUTTON_TEXT687').attr('onclick','');
+						jQuery('#BUTTON_TEXT687 p').html('Đang xử lý...');
+						jQuery('#jform_phone').val(phone);
+						jQuery('#jform_name').val(name);
+						jQuery('#jform_email').val(email);
+						jQuery('#jform_year_old').val(year_old);
+						jQuery('#form-registration').submit();
+				}else{
+					alert("Vui lòng nhập đúng dạng Email!");
+				}
+			}else{
+				alert("Vui lòng nhập Số điện thoại dạng 10 số, ví dụ: 0999888777 .");
+			}
+		}
+	}
+}
+
 function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
