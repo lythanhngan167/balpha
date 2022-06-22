@@ -51,8 +51,15 @@ if($user->id){
 
 	echo '
 	<span>Link Landingpage của bạn '.$temp_block.': </span><br>
-	<a target="_blank" href="http://bcavietnam.com/agent/'.$username.'.html'.'">';
-	echo "http://bcavietnam.com/agent/".$username.".html";
+	<a target="_blank" href="https://b-alpha.vn/agent/'.$username.'.html'.'">';
+	echo "https://b-alpha.vn/agent/".$username.".html";
+	echo '</a>';
+
+  echo '
+  <br>
+	<span>Link Landingpage Workshop của bạn '.$temp_block.': </span><br>
+	<a target="_blank" href="https://b-alpha.vn/agent/'.$username.'/workshop2h.html'.'">';
+	echo "https://b-alpha.vn/agent/".$username."/workshop2h.html";
 	echo '</a>';
 
   // echo '

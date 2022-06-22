@@ -3291,7 +3291,7 @@ body {
 
 	#PARAGRAPH592>.ladi-paragraph {
 		color: rgb(5, 31, 77);
-		font-size: 20px;
+		font-size: 19px;
 		text-align: left;
 		line-height: 1.2;
 	}
@@ -3328,7 +3328,7 @@ body {
 	}
 
 	#SECTION595 {
-		height: 862.9px;
+		height: 666.9px;
 	}
 
 	#SECTION595>.ladi-overlay {
@@ -5350,7 +5350,7 @@ body {
 
 	#PARAGRAPH592>.ladi-paragraph {
 		color: rgb(5, 31, 77);
-		font-size: 20px;
+		font-size: 19px;
 		text-align: left;
 		line-height: 1.2;
 	}
@@ -5523,7 +5523,7 @@ body {
 	#GROUP663 {
 		width: 404px;
 		height: 73px;
-		top: 350px;
+		top: 117px;
 		left: 8.25015px;
 	}
 
@@ -6472,6 +6472,36 @@ i.fa-facebook-official {
 	display:none;
 }
 
+#IMAGE823 {
+    width: 85.8672px;
+    height: 87.272px;
+    top: 9.03px;
+    left: 28px;
+		background-color: #FFF;
+}
+
+#IMAGE823 > .ladi-image > .ladi-image-background {
+    width: 85.8672px;
+    height: 87.272px;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://w.ladicdn.com/s400x400/5e4cf269a9c6692c79a6477c/rbg/screen-shot-2022-03-27-at-40051-pm-20220401051157.png);
+}
+
+#IMAGE822 {
+    width: 724.206px;
+    height: 363.914px;
+    top: 265.136px;
+    left: 114.5px;
+}
+#IMAGE822 > .ladi-image > .ladi-image-background {
+    width: 724.206px;
+    height: 363.914px;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://w.ladicdn.com/s1050x700/5e4cf269a9c6692c79a6477c/1200x603-20220621024338.png);
+}
+
 @media (max-width:767px) {
 	#HEADLINE16 h1 span{
 		font-size: 21px;
@@ -6526,7 +6556,52 @@ i.fa-facebook-official {
 	}
 	#SECTION803 {
     height: 376.162px;
-	}	
+	}
+	#PARAGRAPH592>.ladi-paragraph{
+		font-size: 19px!important;
+	}
+	#HEADLINE596 {
+    width: 400px;
+    top: 87px;
+    left: 479px;
+	}
+	#IMAGE822 {
+    width: 400px;
+    height: 201px;
+    top: 200.867px;
+    left: 10px;
+	}
+	#IMAGE822 > .ladi-image > .ladi-image-background {
+    width: 400px;
+    height: 201px;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://w.ladicdn.com/s750x550/5e4cf269a9c6692c79a6477c/1200x603-20220621024338.png);
+	}
+	#SECTION595 {
+    height: 469.034px;
+	}
+	#SECTION679 {
+    height: 773.786px;
+	}
 
+	#IMAGE823 {
+    width: 85.8672px;
+    height: 87.272px;
+    top: 10px;
+    left: 167.066px;
+	}
+	#GROUP816 {
+    top: 116.335px;
+	}
+	#GROUP805{
+		top: 211.713px;
+	}
+	#SECTION803 {
+    height: 450.162px;
+	}
+	#HEADLINE819>.ladi-headline {
+    font-size: 17px;
+	}
 
 }

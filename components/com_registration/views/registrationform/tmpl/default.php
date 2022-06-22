@@ -513,6 +513,7 @@ if($user->id > 0){
 
 <div id="SECTION803" class="ladi-section">
 	<?php if($contact->id > 0 && $_REQUEST['layout'] != 'edit'){
+
 		if($contact->phone != ''){
 			$c_phone = $contact->phone;
 		}else{
@@ -605,24 +606,58 @@ if($user->id > 0){
 					</div>
 				</div>
 			<?php } ?>
+			<div id="hour_start" style="display:none;"><?php if($contact->hour_start != ''){ echo $contact->hour_start; }else{ echo "19:00"; }  ?></div>
+			<div id="day_start" style="display:none;"><?php if($contact->day_start != ''){ echo $contact->day_start; }else{ echo date('d/m/Y'); }  ?></div>
+			<div id="monday_start" style="display:none;"><?php if($contact->day_start != ''){
+				$day_start_array = explode("/",$contact->day_start);
+				$new_date = $day_start_array[2]."-".$day_start_array[1]."-".$day_start_array[0];
 
+				$timestamp_start = strtotime($new_date);
+				$monday_start = date('l', $timestamp_start);
+
+				switch ($monday_start) {
+					case 'Monday':
+						echo 'THỨ 2';
+						break;
+					case 'Tuesday':
+						echo 'THỨ 3';
+						break;
+					case 'Wednesday':
+						echo 'THỨ 4';
+						break;
+					case 'Thursday':
+						echo 'THỨ 5';
+						break;
+					case 'Friday':
+						echo 'THỨ 6';
+						break;
+					case 'Saturday':
+						echo 'THỨ 7';
+						break;
+					case 'Sunday':
+						echo 'CHỦ NHẬT';
+						break;
+					default:
+						echo 'THỨ #';
+						break;
+				}
+			}else{
+				echo 'THỨ #';
+			} ?></div>
       </div>
     </div>
     <div id="GROUP816" class="ladi-element">
       <div class="ladi-group">
         <div id="PARAGRAPH817" class="ladi-element ladi-animation">
-          <p class="ladi-paragraph">Biznet là tên viết tắt của Business Network. Ý nghĩa của Biznet là kết nối cộng đồng kinh doanh và phát triển hệ sinh thái với chuỗi giá trị bền vững<br></p>
+          <p class="ladi-paragraph">B-Alpha là đội ngũ đầu tiên tại Việt Nam, ứng dụng công nghệ trực tuyến vào ngành bảo hiểm để hỗ trợ việc tìm kiếm khách hàng.<br></p>
         </div>
         <div id="HEADLINE819" class="ladi-element">
-          <h3 class="ladi-headline">WORKSHOP ĐƯỢC TỔ CHỨC BỞI BIZNET</h3>
+          <h3 class="ladi-headline">WORKSHOP ĐƯỢC TỔ CHỨC BỞI B-ALPHA</h3>
         </div>
       </div>
     </div>
-    <div id="IMAGE820" class="ladi-element">
-      <div class="ladi-image">
-        <div class="ladi-image-background"></div>
-      </div>
-    </div>
+
+		<div id="IMAGE823" class="ladi-element"><div class="ladi-image"><div class="ladi-image-background"></div></div></div>
   </div>
 </div>
 
@@ -878,6 +913,7 @@ if($user->id > 0){
 					<?php if($userid > 0){ ?>
 						<input type="hidden" name="landingpage_uid" value="<?php echo $userid; ?>"/>
 						<input type="hidden" name="landingpage_uname" value="<?php echo $username; ?>"/>
+						<input type="hidden" name="landingpage_name" value="<?php echo $pageid; ?>"/>
 					<?php } ?>
 					<input type="hidden" name="task"
 						   value="registrationform.save"/>
@@ -1075,6 +1111,24 @@ jQuery('#BUTTON782').click(function() {
 jQuery(document).ready(function(){
 		jQuery('#form-FORM582').submit(false);
 		jQuery('#form-FORM342').submit(false);
+
+		var hour_start = '';
+		hour_start = jQuery('#hour_start').text();
+		jQuery('#HEADLINE401 h3').text(hour_start);
+
+		var day_start = '';
+		day_start = jQuery('#day_start').text();
+		jQuery('#HEADLINE404 h3').text(day_start);
+
+		var monday_start = '';
+		monday_start = jQuery('#monday_start').text();
+		jQuery('#HEADLINE403 h3').text(monday_start);
+
+		<?php if($images->image5 != ''): ?>
+		jQuery('#IMAGE822 .ladi-image-background').css({
+				'background-image': 'url(<?php echo BIZNET_WEB . 'images/landingpage/'.$images->image5; ?>)'
+		});
+		<?php endif; ?>
 
 		jQuery('#form-FORM582 :submit').attr("disabled", "disabled");
 		jQuery('#form-FORM342 :submit').attr("disabled", "disabled");

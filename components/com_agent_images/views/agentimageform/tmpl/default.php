@@ -63,6 +63,7 @@ echo $active->title;
 
 				<?php echo $this->form->getInput('created_by'); ?>
 				<?php echo $this->form->getInput('modified_by'); ?>
+        <h4>Hình ảnh đội nhóm</h4>
 	<div class="group-image"><?php echo $this->form->renderField('image1'); ?></div>
 	<div class="control-group">
 			<div class="control-label">
@@ -156,7 +157,8 @@ echo $active->title;
 				<?php endif; ?>
 			</div>
 	</div>
-  <div class="image5" style="display:none;">
+  <h4>Banner WorkShop</h4>
+  <div class="image5">
 	<div class="group-image"><?php echo $this->form->renderField('image5'); ?></div>
 	<div class="control-group">
 			<div class="control-label">

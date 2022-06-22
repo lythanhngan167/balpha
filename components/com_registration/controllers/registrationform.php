@@ -275,6 +275,8 @@ class RegistrationControllerRegistrationForm extends \Joomla\CMS\MVC\Controller\
 		$landingpage_uid = Factory::getApplication()->input->get('landingpage_uid', 0);
 		if($landingpage_uid > 0){
 			$data['created_by'] = $landingpage_uid;
+			$landingpage_name = Factory::getApplication()->input->get('landingpage_name', '');
+			$data['landingpage_name'] = $landingpage_name;
 		}
 
 		if($data['created_by'] > 0){
