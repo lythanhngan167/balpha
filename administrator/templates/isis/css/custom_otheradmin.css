@@ -22,3 +22,18 @@
 #toolbar-delete,#toolbar-trash,#toolbar-archive,#toolbar-checkin,#toolbar-copy{
   display: none;
 }
+
+#menu-item-394,
+#menu-item-443,
+#menu-item-442 ,
+#menu-item-447 ,
+#menu-item-425 ,
+#menu-item-395 ,
+#menu-item-396 ,
+#menu-item-397 ,
+#menu-item-398,
+#menu-item-399,
+#menu-item-434
+{
+  display: none;
+}

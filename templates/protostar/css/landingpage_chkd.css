@@ -6522,7 +6522,7 @@ i.fa-facebook-official {
 		font-size: 19px;
 	}
 	#PARAGRAPH661>.ladi-paragraph {
-		font-size: 17px;
+		font-size: 15px;
 	}
 	#HEADLINE666>.ladi-headline{
 		font-size: 13px;
@@ -6604,4 +6604,48 @@ i.fa-facebook-official {
     font-size: 17px;
 	}
 
+	#PARAGRAPH359 .ladi-paragraph,#PARAGRAPH373 .ladi-paragraph,#PARAGRAPH374 .ladi-paragraph,#PARAGRAPH375 .ladi-paragraph{
+	  text-align: left;
+	}
+
+	#PARAGRAPH359>.ladi-paragraph,#PARAGRAPH373>.ladi-paragraph,#PARAGRAPH374>.ladi-paragraph,#PARAGRAPH375>.ladi-paragraph{
+	  font-size: 17px;
+	}
+
+	#HEADLINE404>.ladi-headline {
+    font-size: 26px;
+	}
+	#BUTTON_TEXT406>.ladi-headline {
+    font-size: 16px;
+	}
+	#HEADLINE25>.ladi-headline {
+    font-size: 22px;
+	}
+	#PARAGRAPH661>.ladi-paragraph {
+    font-size: 15px;
+	}
+	#BUTTON_TEXT664>.ladi-headline {
+    font-size: 16px;
+	}
+	#HEADLINE680>.ladi-headline {
+    font-size: 21px;
+	}
+	#HEADLINE693>.ladi-headline {
+    font-size: 15px;
+	}
+	#HEADLINE25 > .ladi-headline{
+		font-size: 18px;
+	}
+	#HEADLINE680 span{
+		display:block!important;
+	}
+	#HEADLINE693>.ladi-headline {
+    font-size: 14px;
+	}
+	#BUTTON_TEXT769>.ladi-headline {
+    font-size: 16px;
+	}
+	#HEADLINE388>.ladi-headline {
+    font-size: 25px;
+	}
 }
