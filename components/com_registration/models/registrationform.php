@@ -563,7 +563,7 @@ class RegistrationModelRegistrationForm extends \Joomla\CMS\MVC\Model\FormModel
               }
 
             }
-
+            $biznet_id = 0;
             if($tranferBiznet == 1){
               $data['from_website'] = 'bcavietnam.com';
               //unset($data['status']);
@@ -762,7 +762,12 @@ class RegistrationModelRegistrationForm extends \Joomla\CMS\MVC\Model\FormModel
 
               }
             }
-            return $table->id;
+            if($biznet_id == 909){
+              return $biznet_id;
+            }else{
+              return $table->id;
+            }
+
         }
         else
         {

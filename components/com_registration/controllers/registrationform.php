@@ -329,7 +329,11 @@ class RegistrationControllerRegistrationForm extends \Joomla\CMS\MVC\Controller\
 		$landingpage_uname = Factory::getApplication()->input->get('landingpage_uname', '');
 
 		if($landingpage_uid > 0){
-			$this->setMessage(Text::_('COM_REGISTRATION_ITEM_SAVED_SUCCESSFULLY2'));
+			if($return == 909){
+				$this->setMessage(Text::_('COM_REGISTRATION_ITEM_SAVED_EXIST'));
+			}else{
+				$this->setMessage(Text::_('COM_REGISTRATION_ITEM_SAVED_SUCCESSFULLY2'));
+			}
 		}else{
 			if($_REQUEST['Itemid'] == AGENT || $_REQUEST['Itemid'] == FOUR_ZERO_INSURACNE){
 				$this->setMessage(Text::_('COM_REGISTRATION_ITEM_SAVED_SUCCESSFULLY2'));
@@ -356,7 +360,11 @@ class RegistrationControllerRegistrationForm extends \Joomla\CMS\MVC\Controller\
 			if($landingpage_name == 'workshop2h'){
 				$this->setRedirect('http://ws.b-alpha.vn/con-1-buoc-nua', '', false);
 			}else{
-				$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+				if($return != 909){
+					$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+				}else{
+					$this->setRedirect(JUri::root().'agent/'.$landingpage_uid.'.html#system-message', Text::_('COM_REGISTRATION_ITEM_SAVED_EXIST'), 'warning');
+				}
 			}
 
 		}else{
@@ -367,7 +375,12 @@ class RegistrationControllerRegistrationForm extends \Joomla\CMS\MVC\Controller\
 				if($landingpage_name == 'workshop2h'){
 					$this->setRedirect('http://ws.b-alpha.vn/con-1-buoc-nua', '', false);
 				}else{
-					$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+					if($return != 909){
+						$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+					}else{
+						$this->setRedirect(JUri::root().'agent/'.$landingpage_uid.'.html#system-message', Text::_('COM_REGISTRATION_ITEM_SAVED_EXIST'), 'warning');
+					}
+
 				}
 
 			}else{
@@ -379,7 +392,11 @@ class RegistrationControllerRegistrationForm extends \Joomla\CMS\MVC\Controller\
 						if($landingpage_name == 'workshop2h'){
 							$this->setRedirect('http://ws.b-alpha.vn/con-1-buoc-nua', '', false);
 						}else{
-							$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+							if($return != 909){
+								$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+							}else{
+								$this->setRedirect(JUri::root().'agent/'.$landingpage_uid.'.html#sp-component', Text::_('COM_REGISTRATION_ITEM_SAVED_EXIST'), 'warning');
+							}
 						}
 					}elseif($_REQUEST['Itemid'] == FOUNDER_STORY){
 						//$this->setRedirect(JUri::root().'cam-on-ban-da-dang-ky.html?type=total&lpage=ccslbca'.$params_link, '', false);
@@ -387,7 +404,11 @@ class RegistrationControllerRegistrationForm extends \Joomla\CMS\MVC\Controller\
 						if($landingpage_name == 'workshop2h'){
 							$this->setRedirect('http://ws.b-alpha.vn/con-1-buoc-nua', '', false);
 						}else{
-							$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+							if($return != 909){
+								$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+							}else{
+								$this->setRedirect(JUri::root().'agent/'.$landingpage_uid.'.html#sp-component', Text::_('COM_REGISTRATION_ITEM_SAVED_EXIST'), 'warning');
+							}
 						}
 					}else{
 						//$this->setRedirect(JUri::root().'cam-on-ban-da-dang-ky.html?type=total'.$params_link, '', false);
@@ -395,7 +416,11 @@ class RegistrationControllerRegistrationForm extends \Joomla\CMS\MVC\Controller\
 						if($landingpage_name == 'workshop2h'){
 							$this->setRedirect('http://ws.b-alpha.vn/con-1-buoc-nua', '', false);
 						}else{
-							$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+							if($return != 909){
+								$this->setRedirect('https://tuyendung.b-alpha.vn/trang-cam-on', '', false);
+							}else{
+								$this->setRedirect(JUri::root().'agent/'.$landingpage_uid.'.html#sp-component', Text::_('COM_REGISTRATION_ITEM_SAVED_EXIST'), 'warning');
+							}
 						}
 
 					}
