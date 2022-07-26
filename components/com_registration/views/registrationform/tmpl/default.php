@@ -1112,6 +1112,7 @@ jQuery(document).ready(function(){
 		jQuery('#form-FORM582').submit(false);
 		jQuery('#form-FORM342').submit(false);
 
+		<?php if($pageid == 'workshop2h'){ ?>
 		var hour_start = '';
 		hour_start = jQuery('#hour_start').text();
 		jQuery('#HEADLINE401 h3').text(hour_start);
@@ -1123,6 +1124,7 @@ jQuery(document).ready(function(){
 		var monday_start = '';
 		monday_start = jQuery('#monday_start').text();
 		jQuery('#HEADLINE403 h3').text(monday_start);
+		<?php } ?>
 
 		<?php if($images->image5 != ''): ?>
 		jQuery('#IMAGE822 .ladi-image-background').css({
