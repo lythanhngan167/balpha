@@ -1761,7 +1761,7 @@ function changeVideo(vId){
   left: 0;
   height: 8vw;
   width: 100%;
-  background: white;
+  background: #f8f8f8;
   border-radius: calc(12% + 70px) 0 0 0;
   border-top: solid 8px #038A96;
   box-shadow: inset 0 5px 0 #F58C29;
@@ -1783,7 +1783,7 @@ function changeVideo(vId){
   left: 0;
   height: 8vw;
   width: 100%;
-  background: white;
+  background: #f8f8f8;
   border-radius: calc(15% + 100px) 0 0 0;
   border-top: solid 8px #038A96;
   box-shadow: inset 0 5px 0 #F58C29;
